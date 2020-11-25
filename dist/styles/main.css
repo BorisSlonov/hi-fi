@@ -517,10 +517,23 @@ body {
 }
 
 .right-text {
+  position: relative;
   background-image: url(../img/bg/right-text-bg.png);
   background-size: cover;
   background-position: 50% 50%;
   padding: 3rem 0;
+}
+
+.right-text::after {
+  content: '';
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  right: 0;
+  top: -40px;
+  background-image: url(../img/square-dots.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .right-text__row {
@@ -940,6 +953,12 @@ body {
     align-items: flex-start;
     width: 100%;
     max-width: 40%;
+  }
+
+  .right-text::after {
+    width: 100px;
+    height: 100px;
+    top: 10px;
   }
 
   .right-text__item {

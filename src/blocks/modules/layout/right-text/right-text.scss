@@ -1,8 +1,21 @@
 .right-text {
+    position: relative;
     background-image: url(../img/bg/right-text-bg.png);
     background-size: cover;
     background-position: 50% 50%;
     padding: 3rem 0;
+
+    &::after {
+        content:'';
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        right: 0;
+        top: -40px;
+        background-image: url(../img/square-dots.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
 
     &__row {
         display: flex;
@@ -68,6 +81,12 @@
     }
 
     .right-text {
+
+        &::after {
+            width: 100px;
+            height: 100px;
+            top: 10px;
+        }
         &__item {
             flex-basis: 100%;
         }
