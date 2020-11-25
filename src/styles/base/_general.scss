@@ -1,0 +1,56 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $titleFont;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+html,
+body {
+    font-family: $textFont;
+    font-size: 16px;
+    color: $sec-color;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+@media(max-width: 768px) {
+
+    body {
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 425px) {
+
+    body {
+        font-size: 12px;
+    }
+}
+
+.container-fluid {
+    max-width: 1980px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
