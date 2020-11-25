@@ -1,3 +1,53 @@
 .footer {
     background-image: url(../img/bg/footer-bg.png);
+    background-size: cover;
+    background-position: 50% 50%;
+    padding: 3rem 0;
+    color: #00516b;
+
+    &__title {
+        color: #fff;
+        font-family: $textFont;
+        font-size: 28px;
+        letter-spacing: .35px;
+    }
+
+    &__row {
+        display: flex;
+        margin-top: 3rem;
+        justify-content: space-between;
+
+    }
+
+    &__item {
+        flex-basis: calc(50% - 40px)
+    }
+
+    &__link-div {
+        margin-top: 2rem;
+    }
+
+    &__link {
+        color: #00516b;
+    }
+}
+
+
+.rules {
+    color: #fff;
+    text-align: center;
+    border-top: 1px solid #fff;
+    padding-top: 3rem;
+    margin-top: 1.5rem;
+}
+
+@media(max-width:550px) {
+    .footer {
+        &__row {
+            flex-direction: column;
+        }
+        &__item:last-child {
+            margin-top: 3rem;
+        }
+    }
 }
