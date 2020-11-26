@@ -1,0 +1,250 @@
+.neon-ball-bg {
+    padding-top: 200px;
+    background-image: url(../img/bg/neon-bg.png);
+    background-size: cover;
+    background-position: 50% bottom;
+    background-repeat: no-repeat;
+}
+
+.neon-ball {
+    height: 300px;
+    background-image: url(../img/bg/neon-ball.png);
+    background-size: contain;
+    background-position: 50% bottom;
+    background-repeat: no-repeat;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    &__row {
+        display: inline-flex;
+        justify-content: space-between;
+    }
+
+    &__row:first-child {
+        margin-top: -10px;
+    }
+
+    &__row:last-child {
+        margin-bottom: 80px;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &_text-left {
+            flex-direction: row-reverse;
+        }
+
+        &_text-bottom {
+            flex-direction: column;
+        }
+
+        &_text-top {
+            flex-direction: column-reverse;
+            margin-bottom: 50px;
+        }
+
+        &_perf {
+            position: relative;
+            transform: translate(-55px, 50px);
+
+        }
+
+        &_per {
+            transform: translate(35px, 50px);
+        }
+
+        &_1 {
+            transform: translate(-55px, 30px);
+        }
+
+        &_3 {
+            transform: translate(70px, 36px);
+        }
+    }
+
+    &__icon-wrap {
+        position: relative;
+
+        &_1 {
+
+            &::before {
+                content: '';
+                position: absolute;
+                width: 160px;
+                height: 2px;
+                background-color: #fff;
+                bottom: -34px;
+                transform: rotate(40deg);
+            }
+
+        }
+
+
+        &_2 {
+
+            &::before {
+                content: '';
+                position: absolute;
+                height: 160px;
+                width: 2px;
+                background-color: #fff;
+                bottom: -140px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+        }
+
+        &_3 {
+            &::before {
+                content: '';
+                position: absolute;
+                width: 160px;
+                height: 2px;
+                background-color: #fff;
+                bottom: -35px;
+                left: 0;
+                transform: translateX(-75%) rotate(-45deg);
+            }
+        }
+
+        &_4 {
+            &::before {
+                content: '';
+                position: absolute;
+                width: 160px;
+                height: 2px;
+                background-color: #fff;
+                bottom: 50%;
+                transform: translateY(-15px) rotate(-10deg);
+                left: 15px;
+            }
+        }
+
+
+        &_5 {
+            &::before {
+                content: '';
+                position: absolute;
+                width: 160px;
+                height: 2px;
+                background-color: #fff;
+                bottom: 50%;
+                left: -145px;
+                transform: translateY(-15px) rotate(10deg);
+            }
+        }
+    }
+
+    &__icon {
+        width: 30px;
+        height: 30px;
+        flex-shrink: 0;
+    }
+
+    &__title {
+        position: relative;
+        background-color: #fff;
+        padding: 5px 30px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: #fff;
+        }
+    }
+
+    &__title-text {
+        position: relative;
+        z-index: 2;
+    }
+
+    &__text {
+        color: #fff;
+        font-weight: 700;
+
+        &_1 {
+            transform: translate(-10px, -3px);
+        }
+    }
+}
+
+
+@media(max-width:768px) {
+
+    .neon-ball {
+        &__row:first-child {
+            margin-top: 20px;
+        }
+    }
+}
+
+
+@media(max-width:550px) {
+    .neon-ball-bg {
+        background-image: url(../img/bg/neon-bg-mob.png);
+        padding-top: 3rem;
+
+    }
+
+    .neon-ball {
+        max-width: 70%;
+        zoom: .95;
+
+
+        &__row:first-child {
+            margin-top: 20%;
+        }
+
+        &__title {
+            font-size: 18px;
+        }
+
+
+
+    }
+
+    .neon-ball__title-text {
+        white-space: nowrap;
+    }
+}
+
+@media(max-width:485px) {
+
+
+
+    .neon-ball {
+        zoom: .75;
+
+        &__row:first-child {
+            margin-top: 10%;
+        }
+    }
+}
+
+@media(max-width:425px) {
+
+
+
+    .neon-ball {
+
+        &__row:first-child {
+            margin-top: 15%;
+        }
+    }
+}
+
+@media(max-width:375px) {
+    .neon-ball {
+        zoom: .65;
+    }
+}

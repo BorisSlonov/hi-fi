@@ -1,0 +1,111 @@
+.first-page-bg {
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    z-index: 1;
+    background-color: $main-color;
+
+    &_main {
+        background-image: url(../img/bg/main-bg.jpg);
+
+    }
+
+    &_about {
+        background-image: url(../img/bg/first-about-bg.png);
+    }
+
+    &_sectors {
+        background-image: url(../img/bg/first-sectors-bg.png);
+    }
+
+    &_lines {
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            height: 20vh;
+            width: 1px;
+            background-color: #fff;
+            top: 0;
+            margin-left: 50%;
+            transform: translate(-50%);
+            z-index: -1;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            height: 15vh;
+            width: 1px;
+            background-color: #fff;
+            bottom: 0;
+            margin-left: 50%;
+            transform: translate(-50%);
+            z-index: -1;
+        }
+
+    }
+
+
+
+}
+
+
+.first-page {
+    height: 100%;
+    min-height: 75vh;
+    padding: 10rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__row {
+        display: flex;
+        align-items: center;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title {
+        color: #fff;
+        font-size: 95px;
+        line-height: 1;
+        text-align: center;
+        text-transform: uppercase;
+
+        &_about {
+            font-size: 75px;
+        }
+
+        &_sectors {
+            font-size: 65px;
+        }
+    }
+}
+
+@media(max-width:768px) {
+    .first-page {
+        &__title {
+            font-size: 52px;
+        }
+    }
+}
+
+@media(max-width:425px) {
+    .first-page {
+        &__title {
+            font-size: 42px;
+
+            &_sectors {
+                font-size: 24px;
+                line-height: 1.5;
+            }
+        }
+    }
+}
