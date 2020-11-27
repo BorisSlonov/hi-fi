@@ -23,11 +23,13 @@
     }
 
     &__row:first-child {
-        margin-top: -10px;
+        margin-top: -30px;
     }
 
     &__row:last-child {
         margin-bottom: 80px;
+        margin-right: 35px;
+
     }
 
     &__item {
@@ -50,12 +52,12 @@
 
         &_perf {
             position: relative;
-            transform: translate(-55px, 50px);
+            transform: translate(-58px, 50px);
 
         }
 
         &_per {
-            transform: translate(35px, 50px);
+            transform: translate(68px, 50px);
         }
 
         &_1 {
@@ -75,11 +77,12 @@
             &::before {
                 content: '';
                 position: absolute;
-                width: 160px;
+                width: 180px;
                 height: 2px;
                 background-color: #fff;
-                bottom: -34px;
-                transform: rotate(40deg);
+                bottom: -43px;
+                left: -10px;
+                transform: rotate(45deg);
             }
 
         }
@@ -171,6 +174,7 @@
     &__text {
         color: #fff;
         font-weight: 700;
+        background-color: rgb(100, 100, 100);
 
         &_1 {
             transform: translate(-10px, -3px);
@@ -210,6 +214,82 @@
         }
 
 
+        &__icon-wrap {
+            position: relative;
+
+            &_1 {
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 100px;
+                    height: 2px;
+                    background-color: #fff;
+                    bottom: -15px;
+                    left: 0;
+                    transform: rotate(45deg);
+                }
+
+            }
+
+
+            &_2 {
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    height: 120px;
+                    width: 3px;
+                    background-color: #fff;
+                    bottom: -100px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+
+            }
+
+            &_3 {
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 100px;
+                    height: 2px;
+                    background-color: #fff;
+                    bottom: -12px;
+                    left: -12px;
+                    transform: translateX(-55%) rotate(-45deg);
+                }
+            }
+
+            &_4 {
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 160px;
+                    height: 2px;
+                    background-color: #fff;
+                    bottom: 50%;
+                    transform: translateY(-15px) rotate(-10deg);
+                    left: 15px;
+                }
+            }
+
+
+            &_5 {
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 160px;
+                    height: 2px;
+                    background-color: #fff;
+                    bottom: 50%;
+                    left: -145px;
+                    transform: translateY(-15px) rotate(10deg);
+                }
+            }
+        }
+
+
 
     }
 
@@ -244,7 +324,128 @@
 }
 
 @media(max-width:375px) {
+
+
     .neon-ball {
         zoom: .65;
+
+
+        &__item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &_text-left {
+                flex-direction: row-reverse;
+            }
+
+            &_text-bottom {
+                flex-direction: column;
+            }
+
+            &_text-top {
+                flex-direction: column-reverse;
+                margin-bottom: 50px;
+            }
+
+            &_perf {
+                position: relative;
+                transform: translate(-28px, 50px);
+
+            }
+
+            &_per {
+                transform: translate(42px, 50px);
+            }
+
+            &_1 {
+                transform: translate(-55px, 30px);
+            }
+
+            &_3 {
+                transform: translate(70px, 36px);
+            }
+        }
+
+
+
+        &__icon-wrap {
+            position: relative;
+
+            &_1 {
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 100px;
+                    height: 2px;
+                    background-color: #fff;
+                    bottom: -15px;
+                    left: 0;
+                    transform: rotate(45deg);
+                }
+
+            }
+
+
+            &_2 {
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    height: 120px;
+                    width: 3px;
+                    background-color: #fff;
+                    bottom: -100px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+
+            }
+
+            &_3 {
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 80px;
+                    height: 2px;
+                    background-color: #fff;
+                    bottom: -12px;
+                    left: -12px;
+                    transform: translateX(-55%) rotate(-45deg);
+                }
+            }
+
+            &_4 {
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 120px;
+                    height: 2px;
+                    background-color: #fff;
+                    bottom: 50%;
+                    transform: translateY(-10px) rotate(-10deg);
+                    left: 10px;
+                }
+            }
+
+
+            &_5 {
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 160px;
+                    height: 2px;
+                    background-color: #fff;
+                    bottom: 50%;
+                    left: -145px;
+                    transform: translateY(-15px) rotate(10deg);
+                }
+            }
+        }
+
+
+
     }
 }

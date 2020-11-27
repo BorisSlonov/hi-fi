@@ -1,0 +1,17 @@
+.swiper-wrapper {
+    display: flex;
+    min-width: 0;
+    padding: 3rem 0;
+}
+
+.swiper-slide {
+    min-width: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    font-size: 0;
+    display: none;
+}

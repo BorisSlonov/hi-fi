@@ -86,6 +86,31 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/blocks/modules/clients/clients.js":
+/*!***********************************************!*\
+  !*** ./src/blocks/modules/clients/clients.js ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+if (window.innerWidth <= 425) {
+  var mySwiper = new Swiper('.swiper-container', {
+    speed: 1000,
+    slidesPerView: 2
+  });
+} else {
+  var mySwiper = new Swiper('.swiper-container', {
+    speed: 300,
+    autoplay: {
+      delay: 2000
+    },
+    loop: true,
+    slidesPerView: 6
+  });
+}
+
+/***/ }),
+
 /***/ "./src/blocks/modules/footer/footer.js":
 /*!*********************************************!*\
   !*** ./src/blocks/modules/footer/footer.js ***!
@@ -173,35 +198,12 @@ document.addEventListener("scroll", function (e) {
 
 /***/ }),
 
-/***/ "./src/blocks/modules/layout/sections/left-text/left-text.js":
-/*!*******************************************************************!*\
-  !*** ./src/blocks/modules/layout/sections/left-text/left-text.js ***!
-  \*******************************************************************/
+/***/ "./src/blocks/modules/header/scroll-out.js":
+/*!*************************************************!*\
+  !*** ./src/blocks/modules/header/scroll-out.js ***!
+  \*************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
-
-throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nError: ENOENT: no such file or directory, open '/Users/borisslonov/Documents/inWork/git/hi-fi/hi-fi/src/blocks/modules/layout/sections/left-text/left-text.js'");
-
-/***/ }),
-
-/***/ "./src/js/import/modules.js":
-/*!**********************************!*\
-  !*** ./src/js/import/modules.js ***!
-  \**********************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _modules_header_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! %modules%/header/header */ "./src/blocks/modules/header/header.js");
-/* harmony import */ var _modules_header_header__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_modules_header_header__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _modules_layout_sections_left_text_left_text__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! %modules%/layout/sections/left-text/left-text */ "./src/blocks/modules/layout/sections/left-text/left-text.js");
-/* harmony import */ var _modules_layout_sections_left_text_left_text__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_modules_layout_sections_left_text_left_text__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! %modules%/footer/footer */ "./src/blocks/modules/footer/footer.js");
-/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_modules_footer_footer__WEBPACK_IMPORTED_MODULE_2__);
-
-
-
 
 var ScrollOut = function () {
   "use strict";
@@ -358,6 +360,30 @@ var ScrollOut = function () {
     };
   };
 }();
+
+/***/ }),
+
+/***/ "./src/js/import/modules.js":
+/*!**********************************!*\
+  !*** ./src/js/import/modules.js ***!
+  \**********************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _modules_header_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! %modules%/header/header */ "./src/blocks/modules/header/header.js");
+/* harmony import */ var _modules_header_header__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_modules_header_header__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _modules_header_scroll_out__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! %modules%/header/scroll-out */ "./src/blocks/modules/header/scroll-out.js");
+/* harmony import */ var _modules_header_scroll_out__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_modules_header_scroll_out__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _modules_clients_clients__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! %modules%/clients/clients */ "./src/blocks/modules/clients/clients.js");
+/* harmony import */ var _modules_clients_clients__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_modules_clients_clients__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! %modules%/footer/footer */ "./src/blocks/modules/footer/footer.js");
+/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_modules_footer_footer__WEBPACK_IMPORTED_MODULE_3__);
+
+
+
+
 
 /***/ }),
 
