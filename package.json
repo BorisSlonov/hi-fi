@@ -71,8 +71,6 @@
         "yargs": "^15.4.1"
     },
     "dependencies": {
-        "animate": "^1.0.0",
-        "animate.css": "^4.1.1",
         "jquery": "^3.5.1",
         "sharp": "^0.26.3",
         "smart-grid": "^2.1.2"
