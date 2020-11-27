@@ -1,0 +1,40 @@
+.main-news {
+    padding: 5rem 0;
+    background-color: #ecebf5;
+}
+
+.news {
+    &__row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__row:not(:first-child) {
+        margin-top: 5rem;
+    }
+
+    &__item {
+        flex-basis: calc(50% - 20px);
+    }
+}
+
+@media(max-width:550px) {
+
+    .main-news {
+        padding: 2.5rem 0;
+    }
+
+
+    .news {
+        &__row {
+            flex-direction: column;
+        }
+        &__row:not(:first-child) {
+            margin-top: 0;
+        }
+
+        &__item {
+            margin-top: 2.5rem;
+        }
+    }
+}

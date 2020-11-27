@@ -4859,6 +4859,24 @@ body {
   transform: translate(-10px, -3px);
 }
 
+.main-news {
+  padding: 5rem 0;
+  background-color: #ecebf5;
+}
+
+.news__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.news__row:not(:first-child) {
+  margin-top: 5rem;
+}
+
+.news__item {
+  flex-basis: calc(50% - 20px);
+}
+
 .header {
   position: fixed;
   z-index: 50;
@@ -5035,6 +5053,35 @@ body {
   margin-top: 75px;
 }
 
+.main-btn_blue {
+  border: 2px solid #006993;
+  padding: 0.35rem 2.5rem;
+  color: #006993;
+  text-transform: uppercase;
+}
+
+.main-btn_blue::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: 1px solid #006993;
+  border-radius: 28px;
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.main-btn_blue:hover {
+  border-radius: 28px;
+  text-shadow: 1px 1px 2px #0069934b;
+}
+
+.main-btn_blue:hover::before {
+  transform: scale(1.5);
+  opacity: 0;
+}
+
 .main-btn:hover {
   border-radius: 28px;
 }
@@ -5074,6 +5121,22 @@ body {
 
 .first-page-bg_sectors {
   background-image: url(../img/bg/first-sectors-bg.png);
+}
+
+.first-page-bg_innovation {
+  background-image: url(../img/bg/first-innovation-bg.png);
+}
+
+.first-page-bg_values {
+  background-image: url(../img/bg/first-values-bg.png);
+}
+
+.first-page-bg_carriers {
+  background-image: url(../img/bg/first-carriers-bg.png);
+}
+
+.first-page-bg_news {
+  background-image: url(../img/bg/first-news-bg.png);
 }
 
 .first-page-bg_lines {
@@ -5244,6 +5307,29 @@ body {
 
 .right-text-content__text {
   margin-top: 2rem;
+}
+
+.single-news__date {
+  color: #bcbcbc;
+}
+
+.single-news__title {
+  text-transform: uppercase;
+  margin-top: .5rem;
+  padding-bottom: .75rem;
+  border-bottom: 2px solid #46edb9;
+}
+
+.single-news__text {
+  margin-top: 1rem;
+}
+
+.single-news__thumb-img {
+  margin-top: 1.5rem;
+}
+
+.single-news__btn {
+  margin-top: 1.5rem;
 }
 
 .footer {
@@ -5503,6 +5589,22 @@ body {
 
   .neon-ball__title-text {
     white-space: nowrap;
+  }
+
+  .main-news {
+    padding: 2.5rem 0;
+  }
+
+  .news__row {
+    flex-direction: column;
+  }
+
+  .news__row:not(:first-child) {
+    margin-top: 0;
+  }
+
+  .news__item {
+    margin-top: 2.5rem;
   }
 
   .header__logo img {
