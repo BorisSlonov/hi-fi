@@ -453,6 +453,11 @@ var ScrollOut = function () {
   }
 
   equalHeight($(".column-one-height"));
+  $(window).resize(function () {
+    if ($(window).width() <= '768') {
+      $('.commitment-hidden').removeClass('.column-one-height');
+    }
+  });
 });
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
 

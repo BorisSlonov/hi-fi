@@ -18,4 +18,13 @@ $(document).ready(function () {
     equalHeight($(".column-one-height"));
 
 
+    $(window).resize(function () {
+        if ($(window).width() <= '768') {
+            $('.commitment-hidden').removeClass('.column-one-height')
+        }
+      
+
+    });
+
+
 }); 
