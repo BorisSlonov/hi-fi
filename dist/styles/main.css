@@ -1210,6 +1210,66 @@ body {
   flex-basis: calc(50% - 20px);
 }
 
+.section-carriers {
+  background-image: url(../img/bg/carriers-bg.png);
+  background-size: cover;
+  background-position: 50% 50%;
+  width: 100%;
+  padding: 3rem 0;
+}
+
+.carriers-choise {
+  display: flex;
+  justify-content: center;
+}
+
+.carriers-choise__link {
+  text-decoration: none;
+  color: #00516b;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 0.5rem 1.5rem;
+  border: 2px solid transparent;
+  border-radius: 28px;
+}
+
+.carriers-choise__link_active {
+  border-color: #00516b;
+}
+
+.carriers {
+  margin-top: 3rem;
+}
+
+.carriers__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.carriers__row:not(:first-child) {
+  margin-top: 2rem;
+}
+
+.carriers__item {
+  flex-basis: calc(50% - 25px);
+}
+
+.carriers-item__title {
+  color: #0057a7;
+  text-transform: uppercase;
+  border-bottom: 2px solid #46edb9;
+  padding-bottom: .75rem;
+  margin-bottom: 1.5rem;
+}
+
+.carriers-item__text {
+  margin-top: .5rem;
+}
+
+.carriers-item__btn {
+  margin-top: 1.5rem;
+}
+
 .section-our-commitment {
   background-image: url(../img/bg/our-commitment-bg.png);
   background-position: 50% 50%;
@@ -1864,10 +1924,10 @@ body {
 
 .footer__link {
   color: #00516b;
+  text-decoration: none;
 }
 
 .rules {
-  color: #fff;
   text-align: center;
   border-top: 1px solid #fff;
   padding-top: 3rem;
@@ -1996,6 +2056,22 @@ body {
 
   .neon-ball__row:first-child {
     margin-top: 20px;
+  }
+
+  .carriers {
+    margin-top: 0;
+  }
+
+  .carriers__row {
+    flex-direction: column;
+  }
+
+  .carriers__row:not(:first-child) {
+    margin-top: 0;
+  }
+
+  .carriers__item {
+    margin-top: 3rem;
   }
 
   .our-commitment__row {
@@ -2197,6 +2273,11 @@ body {
     margin-top: 2.5rem;
   }
 
+  .carriers-choise__link {
+    font-size: 11px;
+    text-align: center;
+  }
+
   .header__logo img {
     max-width: 80px;
   }
@@ -2280,6 +2361,11 @@ body {
 
   .neon-ball__row:first-child {
     margin-top: 15%;
+  }
+
+  .carriers-choise__link {
+    font-size: 11px;
+    padding: 0.5rem .75rem;
   }
 
   .first-page__title {
