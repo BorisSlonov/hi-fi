@@ -10,6 +10,8 @@
     border-radius: 28px;
     text-decoration: none;
     color: #fff;
+    background-color: transparent;
+    cursor: pointer;
 
 
 }
@@ -33,7 +35,7 @@
 
     &_blue {
         border: 2px solid #006993;
-        padding: 0.35rem 2.5rem;
+        padding: 0.45rem 3rem;
         color: #006993;
         text-transform: uppercase;
 

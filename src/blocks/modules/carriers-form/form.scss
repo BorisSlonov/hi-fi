@@ -1,0 +1,29 @@
+.carriers-form-wrap {
+    padding: 5rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.carriers-form {
+    display: flex;
+    gap: 25px;
+    &__input {
+        border: none;
+        border-bottom: 2px solid #006993;
+        padding-bottom: 0.5rem;
+        outline: none;
+
+        &:focus {
+            border-bottom: 3px solid #006993;
+        }
+    }
+
+}
+
+@media(max-width:768px) {
+    .carriers-form {
+        flex-direction: column;
+        width: 100%;
+        max-width: 420px;
+    }
+}
