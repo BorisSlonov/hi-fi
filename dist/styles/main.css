@@ -1210,6 +1210,84 @@ body {
   flex-basis: calc(50% - 20px);
 }
 
+.section-our-commitment {
+  background-image: url(../img/bg/our-commitment-bg.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  padding: 4rem 0;
+}
+
+.our-commitment__row {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.our-commitment__title {
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+}
+
+.our-commmitment__item {
+  position: relative;
+  flex-basis: 25%;
+}
+
+.commitment-card {
+  position: relative;
+  background-color: #46edb9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+  transition: all .35s;
+}
+
+.commitment-card__title {
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  font-size: 22px;
+}
+
+.commitment-card:hover + {
+  transition: all .35s;
+}
+
+.commitment-card:hover + .commitment-hidden {
+  position: relative;
+  opacity: 1;
+  z-index: 2;
+  transform: translateY(-100%) scale(1);
+}
+
+.commitment-hidden {
+  position: absolute;
+  z-index: -1;
+  background-color: #006993;
+  color: #fff;
+  transform: translateY(-100%) scale(0);
+  opacity: 0;
+  transition: all .35s;
+}
+
+.commitment-hidden:hover {
+  position: relative;
+  opacity: 1;
+  z-index: 2;
+  transition: all .35s;
+  transform: translateY(-100%) scale(1);
+  opacity: 1;
+}
+
+.commitment-hidden__list {
+  list-style: none;
+  padding: 1.25rem 0.75rem;
+}
+
 .header {
   position: fixed;
   z-index: 50;
@@ -1707,6 +1785,7 @@ body {
 .run-num__text_num {
   font-size: 32px;
   font-weight: 100;
+  opacity: 0;
 }
 
 .swiper-wrapper {
@@ -1890,6 +1969,30 @@ body {
 
   .neon-ball__row:first-child {
     margin-top: 20px;
+  }
+
+  .our-commitment__row {
+    flex-direction: column;
+  }
+
+  .commitment-card:hover + {
+    transition: all .35s;
+  }
+
+  .commitment-card:hover + .commitment-hidden {
+    position: relative;
+    opacity: 1;
+    z-index: 2;
+    transform: translateY(10px) scale(1);
+  }
+
+  .commitment-hidden:hover {
+    position: relative;
+    opacity: 1;
+    z-index: 2;
+    transition: all .35s;
+    transform: translateY(10px) scale(1);
+    opacity: 1;
   }
 
   .header {

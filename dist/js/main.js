@@ -1,6 +1,66 @@
 /******/ (function(modules) { // webpackBootstrap
+/******/ 	// install a JSONP callback for chunk loading
+/******/ 	function webpackJsonpCallback(data) {
+/******/ 		var chunkIds = data[0];
+/******/ 		var moreModules = data[1];
+/******/ 		var executeModules = data[2];
+/******/
+/******/ 		// add "moreModules" to the modules object,
+/******/ 		// then flag all "chunkIds" as loaded and fire callback
+/******/ 		var moduleId, chunkId, i = 0, resolves = [];
+/******/ 		for(;i < chunkIds.length; i++) {
+/******/ 			chunkId = chunkIds[i];
+/******/ 			if(Object.prototype.hasOwnProperty.call(installedChunks, chunkId) && installedChunks[chunkId]) {
+/******/ 				resolves.push(installedChunks[chunkId][0]);
+/******/ 			}
+/******/ 			installedChunks[chunkId] = 0;
+/******/ 		}
+/******/ 		for(moduleId in moreModules) {
+/******/ 			if(Object.prototype.hasOwnProperty.call(moreModules, moduleId)) {
+/******/ 				modules[moduleId] = moreModules[moduleId];
+/******/ 			}
+/******/ 		}
+/******/ 		if(parentJsonpFunction) parentJsonpFunction(data);
+/******/
+/******/ 		while(resolves.length) {
+/******/ 			resolves.shift()();
+/******/ 		}
+/******/
+/******/ 		// add entry modules from loaded chunk to deferred list
+/******/ 		deferredModules.push.apply(deferredModules, executeModules || []);
+/******/
+/******/ 		// run deferred modules when all chunks ready
+/******/ 		return checkDeferredModules();
+/******/ 	};
+/******/ 	function checkDeferredModules() {
+/******/ 		var result;
+/******/ 		for(var i = 0; i < deferredModules.length; i++) {
+/******/ 			var deferredModule = deferredModules[i];
+/******/ 			var fulfilled = true;
+/******/ 			for(var j = 1; j < deferredModule.length; j++) {
+/******/ 				var depId = deferredModule[j];
+/******/ 				if(installedChunks[depId] !== 0) fulfilled = false;
+/******/ 			}
+/******/ 			if(fulfilled) {
+/******/ 				deferredModules.splice(i--, 1);
+/******/ 				result = __webpack_require__(__webpack_require__.s = deferredModule[0]);
+/******/ 			}
+/******/ 		}
+/******/
+/******/ 		return result;
+/******/ 	}
+/******/
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
+/******/
+/******/ 	// object to store loaded and loading chunks
+/******/ 	// undefined = chunk not loaded, null = chunk preloaded/prefetched
+/******/ 	// Promise = chunk loading, 0 = chunk loaded
+/******/ 	var installedChunks = {
+/******/ 		"main": 0
+/******/ 	};
+/******/
+/******/ 	var deferredModules = [];
 /******/
 /******/ 	// The require function
 /******/ 	function __webpack_require__(moduleId) {
@@ -79,9 +139,18 @@
 /******/ 	// __webpack_public_path__
 /******/ 	__webpack_require__.p = "/";
 /******/
+/******/ 	var jsonpArray = window["webpackJsonp"] = window["webpackJsonp"] || [];
+/******/ 	var oldJsonpFunction = jsonpArray.push.bind(jsonpArray);
+/******/ 	jsonpArray.push = webpackJsonpCallback;
+/******/ 	jsonpArray = jsonpArray.slice();
+/******/ 	for(var i = 0; i < jsonpArray.length; i++) webpackJsonpCallback(jsonpArray[i]);
+/******/ 	var parentJsonpFunction = oldJsonpFunction;
 /******/
-/******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/js/index.js");
+/******/
+/******/ 	// add entry module to deferred list
+/******/ 	deferredModules.push(["./src/js/index.js","vendor"]);
+/******/ 	// run deferred modules when ready
+/******/ 	return checkDeferredModules();
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -363,6 +432,195 @@ var ScrollOut = function () {
 
 /***/ }),
 
+/***/ "./src/blocks/modules/our-commitment/our-commitment.js":
+/*!*************************************************************!*\
+  !*** ./src/blocks/modules/our-commitment/our-commitment.js ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function($) {$(document).ready(function () {
+  function equalHeight(group) {
+    var tallest = 0;
+    group.each(function () {
+      thisHeight = $(this).height();
+
+      if (thisHeight > tallest) {
+        tallest = thisHeight;
+      }
+    });
+    group.height(tallest);
+  }
+
+  equalHeight($(".column-one-height"));
+});
+window.addEventListener('resize', addRemoveOnResize);
+
+function addRemoveOnResize() {
+  var hiddenCard = document.querySelectorAll(".commitment-hidden");
+
+  if (window.innerWidth <= 768) {
+    hiddenCard.classList.remove('column-one-height');
+  } else {
+    hiddenCard.classList.add('column-one-height');
+  }
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
+
+/***/ }),
+
+/***/ "./src/blocks/modules/run-num/run-num.js":
+/*!***********************************************!*\
+  !*** ./src/blocks/modules/run-num/run-num.js ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(jQuery, $) {(function ($) {
+  // Custom easing function
+  $.extend($.easing, {
+    // This is ripped directly from the jQuery easing plugin (easeOutExpo), from: http://gsgd.co.uk/sandbox/jquery/easing/
+    spincrementEasing: function spincrementEasing(x, t, b, c, d) {
+      return t === d ? b + c : c * (-Math.pow(2, -10 * t / d) + 1) + b;
+    }
+  }); // Spincrement function
+
+  $.fn.spincrement = function (opts) {
+    // Default values
+    var defaults = {
+      from: 0,
+      to: null,
+      decimalPlaces: null,
+      decimalPoint: '.',
+      thousandSeparator: ',',
+      duration: 1000,
+      // ms; TOTAL length animation
+      leeway: 50,
+      // percent of duraion
+      easing: 'spincrementEasing',
+      fade: true,
+      complete: null
+    };
+    var options = $.extend(defaults, opts); // Function for formatting number
+
+    var re_thouSep = new RegExp(/^(-?[0-9]+)([0-9]{3})/);
+
+    function format(num, dp) {
+      num = num.toFixed(dp); // converts to string!
+      // Non "." decimal point
+
+      if (dp > 0 && options.decimalPoint !== '.') {
+        num = num.replace('.', options.decimalPoint);
+      } // Thousands separator
+
+
+      if (options.thousandSeparator) {
+        while (re_thouSep.test(num)) {
+          num = num.replace(re_thouSep, '$1' + options.thousandSeparator + '$2');
+        }
+      }
+
+      return num;
+    } // Apply to each matching item
+
+
+    return this.each(function () {
+      // Get handle on current obj
+      var obj = $(this); // Set params FOR THIS ELEM
+
+      var from = options.from;
+
+      if (obj.attr('data-from')) {
+        from = parseFloat(obj.attr('data-from'));
+      }
+
+      var to;
+
+      if (obj.attr('data-to')) {
+        to = parseFloat(obj.attr('data-to'));
+      } else if (options.to !== null) {
+        to = options.to;
+      } else {
+        var ts = $.inArray(options.thousandSeparator, ['\\', '^', '$', '*', '+', '?', '.']) > -1 ? '\\' + options.thousandSeparator : options.thousandSeparator;
+        var re = new RegExp(ts, 'g');
+        to = parseFloat(obj.text().replace(re, ''));
+      }
+
+      var duration = options.duration;
+
+      if (options.leeway) {
+        // If leeway is set, randomise duration a little
+        duration += Math.round(options.duration * (Math.random() * 2 - 1) * options.leeway / 100);
+      }
+
+      var dp;
+
+      if (obj.attr('data-dp')) {
+        dp = parseInt(obj.attr('data-dp'), 10);
+      } else if (options.decimalPlaces !== null) {
+        dp = options.decimalPlaces;
+      } else {
+        var ix = obj.text().indexOf(options.decimalPoint);
+        dp = ix > -1 ? obj.text().length - (ix + 1) : 0;
+      } // Start
+
+
+      obj.css('counter', from);
+      if (options.fade) obj.css('opacity', 0);
+      obj.animate({
+        counter: to,
+        opacity: 1
+      }, {
+        easing: options.easing,
+        duration: duration,
+        // Invoke the callback for each step.
+        step: function step(progress) {
+          obj.html(format(progress * to, dp));
+        },
+        complete: function complete() {
+          // Cleanup
+          obj.css('counter', null);
+          obj.html(format(to, dp)); // user's callback
+
+          if (options.complete) {
+            options.complete(obj);
+          }
+        }
+      });
+    });
+  };
+})(jQuery);
+
+$(document).ready(function () {
+  var show = true;
+  var countbox = ".run-num__item";
+  $(window).on("scroll load resize", function () {
+    if (!show) return false; // Отменяем показ анимации, если она уже была выполнена
+
+    var w_top = $(window).scrollTop(); // Количество пикселей на которое была прокручена страница
+
+    var e_top = $(countbox).offset().top; // Расстояние от блока со счетчиками до верха всего документа
+
+    var w_height = $(window).height(); // Высота окна браузера
+
+    var d_height = $(document).height(); // Высота всего документа
+
+    var e_height = $(countbox).outerHeight(); // Полная высота блока со счетчиками
+
+    if (w_top + 400 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height) {
+      $('.run-num__text_num').css('opacity', '1');
+      $('.run-num__text_num').spincrement({
+        thousandSeparator: "",
+        duration: 5000
+      });
+      show = false;
+    }
+  });
+});
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js"), __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
+
+/***/ }),
+
 /***/ "./src/js/import/modules.js":
 /*!**********************************!*\
   !*** ./src/js/import/modules.js ***!
@@ -378,8 +636,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_header_scroll_out__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_modules_header_scroll_out__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _modules_clients_clients__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! %modules%/clients/clients */ "./src/blocks/modules/clients/clients.js");
 /* harmony import */ var _modules_clients_clients__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_modules_clients_clients__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! %modules%/footer/footer */ "./src/blocks/modules/footer/footer.js");
-/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_modules_footer_footer__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _modules_our_commitment_our_commitment__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! %modules%/our-commitment/our-commitment */ "./src/blocks/modules/our-commitment/our-commitment.js");
+/* harmony import */ var _modules_our_commitment_our_commitment__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_modules_our_commitment_our_commitment__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _modules_run_num_run_num__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! %modules%/run-num/run-num */ "./src/blocks/modules/run-num/run-num.js");
+/* harmony import */ var _modules_run_num_run_num__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_modules_run_num_run_num__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! %modules%/footer/footer */ "./src/blocks/modules/footer/footer.js");
+/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_modules_footer_footer__WEBPACK_IMPORTED_MODULE_5__);
+
+
 
 
 
