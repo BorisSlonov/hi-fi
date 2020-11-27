@@ -1210,6 +1210,47 @@ body {
   flex-basis: calc(50% - 20px);
 }
 
+.section-our-commitment {
+  background-image: url(../img/bg/our-commitment-bg.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  padding: 3rem 0;
+}
+
+.our-commitment__row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.commitment-card {
+  position: relative;
+  background-color: #46edb9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  flex-basis: 25%;
+  cursor: pointer;
+}
+
+.commitment-card:hover .commitment-hidden {
+  opacity: 1;
+  visibility: visible;
+}
+
+.commitment-hidden {
+  position: relative;
+  background-color: #006993;
+  color: #fff;
+  padding: 0.75rem;
+  opacity: 0.2;
+}
+
+.commitment-hidden__list {
+  list-style: none;
+}
+
 .header {
   position: fixed;
   z-index: 50;
