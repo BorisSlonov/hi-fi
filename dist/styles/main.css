@@ -5622,6 +5622,27 @@ body {
   padding: 1.25rem 0.75rem;
 }
 
+.about-animation {
+  position: absolute;
+}
+
+.about-animation_1 {
+  max-width: 65%;
+  bottom: -100px;
+  right: -200px;
+}
+
+.about-animation_2 {
+  max-width: 55%;
+  left: -300px;
+  bottom: -20px;
+}
+
+.about-animation_3 {
+  bottom: -75px;
+  left: 25%;
+}
+
 .header {
   position: fixed;
   z-index: 50;
@@ -6671,6 +6692,30 @@ body {
 
   .rules {
     color: #fff;
+  }
+}
+
+@media (max-width: 650px) {
+  .about-animation {
+    position: absolute;
+  }
+
+  .about-animation_1 {
+    max-width: 55%;
+    bottom: -50px;
+    right: -40px;
+  }
+
+  .about-animation_2 {
+    max-width: 65%;
+    left: -120px;
+    bottom: 50px;
+  }
+
+  .about-animation_3 {
+    max-width: 50%;
+    top: 0;
+    left: 25%;
   }
 }
 

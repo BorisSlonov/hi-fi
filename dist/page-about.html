@@ -113,7 +113,7 @@
         <main class="main">
 
     <div class="container-fluid">
-    <div class="first-page-bg first-page-bg_sectors first-page-bg_lines">
+    <div class="first-page-bg first-page-bg_about first-page-bg_lines">
         <div class="container">
 
             <!-- first-page -->
@@ -126,9 +126,9 @@
                     <!-- item -->
                     <div class="first-page__item">
                         <!-- title -->
-                        <h1 class="first-page__title  first-page__title_sectors">
-                            Secteurs d’activités 
-                            et pôles d’intervention
+                        <h1 class="first-page__title first-page__title_about">
+                            Découvrez le Groupe <br>
+                            HIGHFI
                         </h1>
                         <!-- btn -->
                         <a class="btn main-btn main-btn_page-main-bt" href="#">
@@ -141,9 +141,18 @@
                     </div>
                     <!-- item -->
                 </div>
-
+            </div>
 
         </div>
+        <!-- container -->
+
+
+        <img class="about-animation about-animation_1" src="img/animation-about/balls-right.png" alt="">
+
+        <img class="about-animation about-animation_2" src="img/animation-about/balls-left.png" alt="">
+
+        <img class="about-animation about-animation_3" src="img/animation-about/single-ball.png" alt="">
+
     </div>
 </div>
 
@@ -151,9 +160,9 @@
     <div class="left-text">
         <div class="container">
             <!-- row -->
-            <div class="left-text__row">
+            <div class="left-text__row" style="position: relative; z-index: 10;">
                 <!-- item -->
-                <div class="left-text__item left-text-content">
+                <div class="left-text__item left-text-content js-offsetTopLeft">
                     <!-- title -->
                     <h2 class="left-text-content__title">
                         <span class="left-text-content__title-span">
@@ -179,7 +188,7 @@
                     </p>
                 </div>
                 <!-- item -->
-                <div class="left-text__item left-text-img">
+                <div class="left-text__item left-text-img  js-offsetTopRight">
                     <img class="left-text__img" src="img/mission.png" alt="">
                 </div>
             </div>
@@ -611,6 +620,20 @@
         <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.0.2/dist/simpleParallax.min.js"></script>
+ 
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+            integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+            crossorigin="anonymous"></script>
+    
+        <script>
+            new WOW().init();
+    
+        </script>
+
+        
         <script src="js/main.js"></script>
         <script src="js/vendor.js"></script>
     </body>

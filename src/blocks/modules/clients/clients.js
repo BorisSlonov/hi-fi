@@ -1,9 +1,11 @@
 
-
-
 if (window.innerWidth <= 425) {
     var mySwiper = new Swiper('.swiper-container', {
-        speed: 1000,
+        speed: 300,
+        autoplay: {
+            delay: 2000,
+        },
+        loop: true,
         slidesPerView: 2
 
     })

@@ -5,6 +5,8 @@ import "%modules%/parallax/parallax"
 
 import "%modules%/parallax/parallax-footer"
 
+import "%modules%/parallax/parallax-about"
+
 
 
 //blocks

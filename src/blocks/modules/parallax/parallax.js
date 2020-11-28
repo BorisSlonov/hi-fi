@@ -135,4 +135,5 @@ function parallaxInit() {
 }
 
 
-setTimeout(parallaxInit(), 500)
+parallaxInit()
+setTimeout(parallaxInit(), 1000)

@@ -1,0 +1,45 @@
+.about-animation {
+    position: absolute;
+
+    &_1 {
+        max-width: 65%;
+        bottom: -100px;
+        right: -200px;
+    }
+
+    &_2 {
+        max-width: 55%;
+        left: -300px;
+        bottom: -20px;
+    }
+
+    &_3 {
+        bottom: -75px;
+        left: 25%;
+    }
+}
+
+
+@media(max-width:650px) {
+    .about-animation {
+        position: absolute;
+
+        &_1 {
+            max-width: 55%;
+            bottom: -50px;
+            right: -40px;
+        }
+
+        &_2 {
+            max-width: 65%;
+            left: -120px;
+            bottom: 50px;
+        }
+
+        &_3 {
+            max-width: 50%;
+            top: 0;
+            left: 25%;
+        }
+    }
+}
