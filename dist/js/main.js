@@ -707,6 +707,7 @@ function parallaxInit() {
   });
 }
 
+parallaxInit();
 setTimeout(dispatch, 1000);
 
 function dispatch() {

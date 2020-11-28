@@ -138,6 +138,7 @@ function parallaxInit() {
 }
 
 
+parallaxInit();
 
 
 setTimeout(dispatch, 1000)
