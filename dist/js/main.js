@@ -471,10 +471,34 @@ function parallaxNewsInit() {
   });
   var newsPageAnimation_7 = document.querySelector(".news-page__animation_7");
   new simpleParallax(newsPageAnimation_7, {
-    orientation: 'left',
+    orientation: 'down left',
     overflow: true,
     delay: .6,
     scale: 1.3,
+    transition: 'cubic-bezier(.39,.64,.47,.57)'
+  });
+  var newsPageAnimation_8 = document.querySelector(".news-page__animation_8");
+  new simpleParallax(newsPageAnimation_8, {
+    orientation: 'down',
+    overflow: true,
+    delay: .6,
+    scale: 1.8,
+    transition: 'cubic-bezier(.39,.64,.47,.57)'
+  });
+  var newsPageAnimation_9 = document.querySelector(".news-page__animation_9");
+  new simpleParallax(newsPageAnimation_9, {
+    orientation: 'down',
+    overflow: true,
+    delay: .6,
+    scale: 1.8,
+    transition: 'cubic-bezier(.39,.64,.47,.57)'
+  });
+  var newsPageAnimation_10 = document.querySelector(".news-page__animation_10");
+  new simpleParallax(newsPageAnimation_10, {
+    orientation: 'down right',
+    overflow: true,
+    delay: .6,
+    scale: 1.8,
     transition: 'cubic-bezier(.39,.64,.47,.57)'
   });
 }
