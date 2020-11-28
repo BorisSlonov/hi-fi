@@ -5601,7 +5601,6 @@ body {
   margin-top: 2rem;
   display: flex;
   justify-content: space-between;
-  gap: 20px;
 }
 
 .our-commitment__title {
@@ -5611,7 +5610,7 @@ body {
 
 .our-commmitment__item {
   position: relative;
-  flex-basis: 25%;
+  flex-basis: calc(25% - 25px);
 }
 
 .commitment-card {
@@ -6973,6 +6972,10 @@ body {
 
   .our-commitment__row {
     flex-direction: column;
+  }
+
+  .our-commmitment__item:not(:first-child) {
+    margin-top: 2rem;
   }
 
   .commitment-card:hover + {
