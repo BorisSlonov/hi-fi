@@ -1,4 +1,5 @@
 .footer {
+  
     background-image: url(../img/bg/footer-bg.png);
     background-size: cover;
     background-position: 50% 50%;
@@ -13,6 +14,8 @@
     }
 
     &__row {
+        position: relative;
+        z-index: 20;
         display: flex;
         margin-top: 3rem;
         justify-content: space-between;
@@ -49,5 +52,46 @@
         &__item:last-child {
             margin-top: 3rem;
         }
+    }
+}
+
+
+
+
+//animate
+
+[data-scroll] {
+	transition: opacity 2s ease;
+}
+[data-scroll="in"] {
+	opacity: 1;
+}
+[data-scroll="out"] {
+	opacity: 0;
+}
+
+.footer-animate {
+    display: none;
+    justify-content: space-between;
+
+    &__item {
+        position: absolute;
+        z-index: 1;
+    }
+
+    &__item:nth-child(1) {
+        left: -70px;
+    }
+
+    &__item:nth-child(3) {
+        right: -100px;
+    }
+    &__item:nth-child(2) {
+        right: 25%;
+    }
+
+    &__img {
+        width: 100%;
+        max-width:200px;
     }
 }

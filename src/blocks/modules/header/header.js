@@ -44,11 +44,29 @@ document.addEventListener("scroll", (e) => {
     let scrolled = document.scrollingElement.scrollTop;
     let position = content.offsetTop;
     let header = document.querySelector("header");
+    let leftTextWow = document.querySelector(".js-offsetTopLeft");
+    let rightTextWow = document.querySelector(".js-offsetTopRight");
 
-    if (scrolled > position + 50) {
+
+    if (scrolled > position + 350) {
         content.classList.add('header-bgc');
+
     } else {
         content.classList.remove('header-bgc');
         content.classList.add('header-none-bgc');
+
     }
+
+
+    //delay animation in 1 screen
+    if (scrolled > position + 350) {
+
+        
+        leftTextWow.classList.add('visible', 'wow', 'animate__animated', 'animate__fadeInLeft')
+        rightTextWow.classList.add('visible', 'wow', 'animate__animated', 'animate__fadeIn', 'animate__delay-1s')
+
+    } 
+    
+   
 });
+
