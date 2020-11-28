@@ -412,6 +412,78 @@ setTimeout(parallaxFooterInit(), 1000);
 
 /***/ }),
 
+/***/ "./src/blocks/modules/parallax/parallax-sectors.js":
+/*!*********************************************************!*\
+  !*** ./src/blocks/modules/parallax/parallax-sectors.js ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+//custom 
+function parallaxsectorsInit() {
+  var sectorsAnimation_1 = document.querySelector(".sectors-animation_1");
+  new simpleParallax(sectorsAnimation_1, {
+    orientation: 'down',
+    overflow: true,
+    delay: .6,
+    scale: 1.5,
+    transition: 'cubic-bezier(.39,.64,.47,.57)'
+  });
+  var sectorsAnimation_2 = document.querySelector(".sectors-animation_2");
+  new simpleParallax(sectorsAnimation_2, {
+    orientation: 'left',
+    overflow: true,
+    delay: .6,
+    scale: 1.3,
+    transition: 'cubic-bezier(.39,.64,.47,.57)'
+  });
+  var sectorsAnimation_3 = document.querySelector(".sectors-animation_3");
+  new simpleParallax(sectorsAnimation_3, {
+    orientation: 'down right',
+    overflow: true,
+    delay: .6,
+    scale: 1.3,
+    transition: 'cubic-bezier(.39,.64,.47,.57)'
+  });
+  var sectorsAnimation_4 = document.querySelector(".sectors-animation_4");
+  new simpleParallax(sectorsAnimation_4, {
+    orientation: 'down left',
+    overflow: true,
+    delay: .6,
+    scale: 1.3,
+    transition: 'cubic-bezier(.39,.64,.47,.57)'
+  });
+  var sectorsAnimation_5 = document.querySelector(".sectors-animation_5");
+  new simpleParallax(sectorsAnimation_5, {
+    orientation: 'down left',
+    overflow: true,
+    delay: .6,
+    scale: 1.3,
+    transition: 'cubic-bezier(.39,.64,.47,.57)'
+  });
+  var sectorsAnimation_6 = document.querySelector(".sectors-animation_6");
+  new simpleParallax(sectorsAnimation_6, {
+    orientation: 'down left',
+    overflow: true,
+    delay: .6,
+    scale: 1.3,
+    transition: 'cubic-bezier(.39,.64,.47,.57)'
+  });
+  var sectorsAnimation_7 = document.querySelector(".sectors-animation_7");
+  new simpleParallax(sectorsAnimation_7, {
+    orientation: 'down right',
+    overflow: true,
+    delay: .6,
+    scale: 1.3,
+    transition: 'cubic-bezier(.39,.64,.47,.57)'
+  });
+}
+
+parallaxsectorsInit();
+setTimeout(parallaxsectorsInit(), 1000);
+
+/***/ }),
+
 /***/ "./src/blocks/modules/parallax/parallax.js":
 /*!*************************************************!*\
   !*** ./src/blocks/modules/parallax/parallax.js ***!
@@ -420,115 +492,116 @@ setTimeout(parallaxFooterInit(), 1000);
 /***/ (function(module, exports) {
 
 //custom 
-function parallaxInit() {
-  var FirstPageAnimation_1 = document.querySelector(".first-page__animation_1");
-  new simpleParallax(FirstPageAnimation_1, {
-    orientation: 'down',
-    overflow: true,
-    delay: .6,
-    scale: 1.3,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
-  });
-  var FirstPageAnimation_2 = document.querySelector(".first-page__animation_2");
-  new simpleParallax(FirstPageAnimation_2, {
-    orientation: 'down left',
-    overflow: true,
-    delay: .6,
-    scale: 1.8,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
-  });
-  var FirstPageAnimation_3 = document.querySelector(".first-page__animation_3");
-  new simpleParallax(FirstPageAnimation_3, {
-    orientation: 'down left',
-    overflow: true,
-    delay: .6,
-    scale: 1.3,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
-  });
-  var FirstPageAnimation_4 = document.querySelector(".first-page__animation_4");
-  new simpleParallax(FirstPageAnimation_4, {
-    orientation: 'up',
-    overflow: true,
-    delay: .6,
-    scale: 1.3,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
-  });
-  var FirstPageAnimation_5 = document.querySelector(".first-page__animation_5");
-  new simpleParallax(FirstPageAnimation_5, {
-    orientation: 'down left',
-    overflow: true,
-    delay: .6,
-    scale: 1.3,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
-  });
-  var FirstPageAnimation_6 = document.querySelector(".first-page__animation_6");
-  new simpleParallax(FirstPageAnimation_6, {
-    orientation: 'right',
-    overflow: true,
-    delay: .6,
-    scale: 1.3,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
-  });
-  var FirstPageAnimation_7 = document.querySelector(".first-page__animation_7");
-  new simpleParallax(FirstPageAnimation_7, {
-    orientation: 'up right',
-    overflow: true,
-    delay: .6,
-    scale: 1.3,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
-  });
-  var FirstPageAnimation_8 = document.querySelector(".first-page__animation_8");
-  new simpleParallax(FirstPageAnimation_8, {
-    orientation: 'right',
-    overflow: true,
-    delay: .6,
-    scale: 1.3,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
-  });
-  var FirstPageAnimation_9 = document.querySelector(".first-page__animation_9");
-  new simpleParallax(FirstPageAnimation_9, {
-    orientation: 'down right',
-    overflow: true,
-    delay: .6,
-    scale: 1.3,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
-  });
-  var FirstPageAnimation_10 = document.querySelector(".first-page__animation_10");
-  new simpleParallax(FirstPageAnimation_10, {
-    orientation: 'down right',
-    overflow: true,
-    delay: .6,
-    scale: 1.3,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
-  });
-  var FirstPageAnimation_11 = document.querySelector(".first-page__animation_11");
-  new simpleParallax(FirstPageAnimation_11, {
-    orientation: 'down right',
-    overflow: true,
-    delay: .6,
-    scale: 1.3,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
-  });
-  var FirstPageAnimation_12 = document.querySelector(".first-page__animation_12");
-  new simpleParallax(FirstPageAnimation_12, {
-    orientation: 'down left',
-    overflow: true,
-    delay: 2.6,
-    scale: 1.6,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
-  });
-  var FirstPageAnimation_expertise = document.querySelector(".first-page__animation_expertise");
-  new simpleParallax(FirstPageAnimation_expertise, {
-    orientation: 'down',
-    overflow: true,
-    delay: 2.6,
-    scale: 1.8,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
-  });
-}
+document.addEventListener("DOMContentLoaded", function (event) {
+  function parallaxInit() {
+    var FirstPageAnimation_1 = document.querySelector(".first-page__animation_1");
+    new simpleParallax(FirstPageAnimation_1, {
+      orientation: 'down',
+      overflow: true,
+      delay: .6,
+      scale: 1.3,
+      transition: 'cubic-bezier(.39,.64,.47,.57)'
+    });
+    var FirstPageAnimation_2 = document.querySelector(".first-page__animation_2");
+    new simpleParallax(FirstPageAnimation_2, {
+      orientation: 'down left',
+      overflow: true,
+      delay: .6,
+      scale: 1.8,
+      transition: 'cubic-bezier(.39,.64,.47,.57)'
+    });
+    var FirstPageAnimation_3 = document.querySelector(".first-page__animation_3");
+    new simpleParallax(FirstPageAnimation_3, {
+      orientation: 'down left',
+      overflow: true,
+      delay: .6,
+      scale: 1.3,
+      transition: 'cubic-bezier(.39,.64,.47,.57)'
+    });
+    var FirstPageAnimation_4 = document.querySelector(".first-page__animation_4");
+    new simpleParallax(FirstPageAnimation_4, {
+      orientation: 'up',
+      overflow: true,
+      delay: .6,
+      scale: 1.3,
+      transition: 'cubic-bezier(.39,.64,.47,.57)'
+    });
+    var FirstPageAnimation_5 = document.querySelector(".first-page__animation_5");
+    new simpleParallax(FirstPageAnimation_5, {
+      orientation: 'down left',
+      overflow: true,
+      delay: .6,
+      scale: 1.3,
+      transition: 'cubic-bezier(.39,.64,.47,.57)'
+    });
+    var FirstPageAnimation_6 = document.querySelector(".first-page__animation_6");
+    new simpleParallax(FirstPageAnimation_6, {
+      orientation: 'right',
+      overflow: true,
+      delay: .6,
+      scale: 1.3,
+      transition: 'cubic-bezier(.39,.64,.47,.57)'
+    });
+    var FirstPageAnimation_7 = document.querySelector(".first-page__animation_7");
+    new simpleParallax(FirstPageAnimation_7, {
+      orientation: 'up right',
+      overflow: true,
+      delay: .6,
+      scale: 1.3,
+      transition: 'cubic-bezier(.39,.64,.47,.57)'
+    });
+    var FirstPageAnimation_8 = document.querySelector(".first-page__animation_8");
+    new simpleParallax(FirstPageAnimation_8, {
+      orientation: 'right',
+      overflow: true,
+      delay: .6,
+      scale: 1.3,
+      transition: 'cubic-bezier(.39,.64,.47,.57)'
+    });
+    var FirstPageAnimation_9 = document.querySelector(".first-page__animation_9");
+    new simpleParallax(FirstPageAnimation_9, {
+      orientation: 'down right',
+      overflow: true,
+      delay: .6,
+      scale: 1.3,
+      transition: 'cubic-bezier(.39,.64,.47,.57)'
+    });
+    var FirstPageAnimation_10 = document.querySelector(".first-page__animation_10");
+    new simpleParallax(FirstPageAnimation_10, {
+      orientation: 'down right',
+      overflow: true,
+      delay: .6,
+      scale: 1.3,
+      transition: 'cubic-bezier(.39,.64,.47,.57)'
+    });
+    var FirstPageAnimation_11 = document.querySelector(".first-page__animation_11");
+    new simpleParallax(FirstPageAnimation_11, {
+      orientation: 'down right',
+      overflow: true,
+      delay: .6,
+      scale: 1.3,
+      transition: 'cubic-bezier(.39,.64,.47,.57)'
+    });
+    var FirstPageAnimation_12 = document.querySelector(".first-page__animation_12");
+    new simpleParallax(FirstPageAnimation_12, {
+      orientation: 'down left',
+      overflow: true,
+      delay: 2.6,
+      scale: 1.6,
+      transition: 'cubic-bezier(.39,.64,.47,.57)'
+    });
+    var FirstPageAnimation_expertise = document.querySelector(".first-page__animation_expertise");
+    new simpleParallax(FirstPageAnimation_expertise, {
+      orientation: 'down',
+      overflow: true,
+      delay: 2.6,
+      scale: 1.8,
+      transition: 'cubic-bezier(.39,.64,.47,.57)'
+    });
+  }
 
-parallaxInit();
-setTimeout(parallaxInit(), 1000);
+  setTimeout(parallaxInit(), 1000);
+});
 
 /***/ }),
 
@@ -699,17 +772,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_parallax_parallax_footer__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_modules_parallax_parallax_footer__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _modules_parallax_parallax_about__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! %modules%/parallax/parallax-about */ "./src/blocks/modules/parallax/parallax-about.js");
 /* harmony import */ var _modules_parallax_parallax_about__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_modules_parallax_parallax_about__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _modules_header_header__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! %modules%/header/header */ "./src/blocks/modules/header/header.js");
-/* harmony import */ var _modules_header_header__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_modules_header_header__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _modules_clients_clients__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! %modules%/clients/clients */ "./src/blocks/modules/clients/clients.js");
-/* harmony import */ var _modules_clients_clients__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_modules_clients_clients__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _modules_our_commitment_our_commitment__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! %modules%/our-commitment/our-commitment */ "./src/blocks/modules/our-commitment/our-commitment.js");
-/* harmony import */ var _modules_our_commitment_our_commitment__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_modules_our_commitment_our_commitment__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _modules_run_num_run_num__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! %modules%/run-num/run-num */ "./src/blocks/modules/run-num/run-num.js");
-/* harmony import */ var _modules_run_num_run_num__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_modules_run_num_run_num__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! %modules%/footer/footer */ "./src/blocks/modules/footer/footer.js");
-/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_modules_footer_footer__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _modules_parallax_parallax_sectors__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! %modules%/parallax/parallax-sectors */ "./src/blocks/modules/parallax/parallax-sectors.js");
+/* harmony import */ var _modules_parallax_parallax_sectors__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_modules_parallax_parallax_sectors__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _modules_header_header__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! %modules%/header/header */ "./src/blocks/modules/header/header.js");
+/* harmony import */ var _modules_header_header__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_modules_header_header__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _modules_clients_clients__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! %modules%/clients/clients */ "./src/blocks/modules/clients/clients.js");
+/* harmony import */ var _modules_clients_clients__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_modules_clients_clients__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _modules_our_commitment_our_commitment__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! %modules%/our-commitment/our-commitment */ "./src/blocks/modules/our-commitment/our-commitment.js");
+/* harmony import */ var _modules_our_commitment_our_commitment__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_modules_our_commitment_our_commitment__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _modules_run_num_run_num__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! %modules%/run-num/run-num */ "./src/blocks/modules/run-num/run-num.js");
+/* harmony import */ var _modules_run_num_run_num__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_modules_run_num_run_num__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! %modules%/footer/footer */ "./src/blocks/modules/footer/footer.js");
+/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_modules_footer_footer__WEBPACK_IMPORTED_MODULE_8__);
 //parallax
+
 
 
  //blocks

@@ -111,6 +111,7 @@
 .first-page__animation {
     position: absolute;
 
+
     &_1 {
         bottom: 0;
     }
@@ -192,6 +193,8 @@
 @media(max-width:950px) {
     .first-page__animation img {
         max-width: 65%;
+        width: 100%;
+
     }
 
     .first-page__animation {
@@ -287,6 +290,10 @@
         &_about {
             background-image: url(../img/bg/first-about-bg-mob.png);
         }
+
+        &_sectors {
+            background-image: url(../img/bg/first-sectors-bg-mob.png);
+        }
     }
 
     .first-page__animation {
@@ -327,6 +334,8 @@
 
             img {
                 transform: rotate(180deg);
+                max-width: 100px;
+
             }
 
         }
@@ -351,7 +360,7 @@
             justify-content: flex-end;
             right: 0;
             bottom: 0;
-            max-width: 200px;
+            max-width: 150px;
         }
 
         &_9 {

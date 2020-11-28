@@ -7,6 +7,8 @@ import "%modules%/parallax/parallax-footer"
 
 import "%modules%/parallax/parallax-about"
 
+import "%modules%/parallax/parallax-sectors"
+
 
 
 //blocks
