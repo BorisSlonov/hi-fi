@@ -1,4 +1,6 @@
 .carriers-form-wrap {
+    position: relative;
+    z-index: 20;
     padding: 5rem 0;
     display: flex;
     justify-content: center;
@@ -15,6 +17,7 @@
         padding-left: 0.75rem;
         padding-right: 0.25rem;
         outline: none;
+        background-color: transparent;
 
         &:focus {
             border-bottom: 3px solid #006993;

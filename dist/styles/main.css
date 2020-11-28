@@ -5881,6 +5881,45 @@ body {
   display: none;
 }
 
+.carriers-page__animation {
+  position: absolute;
+}
+
+.carriers-page__animation_1 {
+  max-width: 65%;
+  right: -10%;
+  top: -10%;
+}
+
+.carriers-page__animation_2 {
+  top: 10%;
+  right: -5%;
+  z-index: 2;
+}
+
+.carriers-page__animation_3-carriers {
+  right: -5%;
+  bottom: -10%;
+}
+
+.carriers-page__animation_4 {
+  left: -10%;
+  top: 10%;
+}
+
+.carriers-page__animation_5 {
+  left: -20%;
+  bottom: -20%;
+}
+
+.carriers-page__animation_6 {
+  display: none;
+}
+
+.carriers-page__animation_7 {
+  display: none;
+}
+
 .header {
   position: fixed;
   z-index: 50;
@@ -6056,6 +6095,8 @@ body {
 }
 
 .carriers-form-wrap {
+  position: relative;
+  z-index: 20;
   padding: 5rem 0;
   display: flex;
   justify-content: center;
@@ -6074,6 +6115,7 @@ body {
   padding-left: 0.75rem;
   padding-right: 0.25rem;
   outline: none;
+  background-color: transparent;
 }
 
 .carriers-form__input:focus {
@@ -6230,6 +6272,8 @@ body {
 }
 
 .first-page {
+  position: relative;
+  z-index: 20;
   height: 100%;
   min-height: 95vh;
   padding: 10rem 0;
@@ -6809,6 +6853,19 @@ body {
     right: 25%;
     bottom: -5%;
   }
+
+  .carriers-page__animation {
+    position: absolute;
+    display: flex;
+  }
+
+  .carriers-page__animation img {
+    max-width: 55%;
+  }
+
+  .carriers-page__animation_2 {
+    justify-content: flex-end;
+  }
 }
 
 @media (max-width: 991px) {
@@ -7132,6 +7189,52 @@ body {
   }
 }
 
+@media (max-width: 680px) {
+  .first-page__animation_carriers {
+    display: none;
+  }
+
+  .carriers-page__animation {
+    position: absolute;
+  }
+
+  .carriers-page__animation img {
+    max-width: 100%;
+  }
+
+  .carriers-page__animation_1 {
+    display: none;
+  }
+
+  .carriers-page__animation_2 {
+    display: none;
+  }
+
+  .carriers-page__animation_3-carriers {
+    display: none;
+  }
+
+  .carriers-page__animation_4 {
+    display: none;
+  }
+
+  .carriers-page__animation_5 {
+    display: none;
+  }
+
+  .carriers-page__animation_6 {
+    display: block;
+    right: 0;
+    bottom: 0;
+  }
+
+  .carriers-page__animation_7 {
+    display: block;
+    left: 0;
+    bottom: -10px;
+  }
+}
+
 @media (max-width: 650px) {
   .about-animation {
     position: absolute;
@@ -7208,6 +7311,10 @@ body {
   }
 
   .first-page-bg_news {
+    background-image: url(../img/bg/first-sectors-bg-mob.png);
+  }
+
+  .first-page-bg_carriers {
     background-image: url(../img/bg/first-sectors-bg-mob.png);
   }
 

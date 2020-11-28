@@ -11,7 +11,7 @@ import "%modules%/parallax/parallax-sectors"
 
 import "%modules%/parallax/parallax-news"
 
-// import "%modules%/parallax/parallax-carrier"
+import "%modules%/parallax/parallax-carriers"
 
 
 //blocks
