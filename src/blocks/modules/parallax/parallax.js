@@ -134,4 +134,5 @@ function parallaxInit() {
   });
 }
 
-parallaxInit();
+
+setTimeout(parallaxInit(), 500)

@@ -1,12 +1,14 @@
 .footer {
-  
     background-image: url(../img/bg/footer-bg.png);
     background-size: cover;
     background-position: 50% 50%;
-    padding: 3rem 0;
+    padding: 4rem 0;
     color: #00516b;
 
+
     &__title {
+        position: relative;
+        z-index: 10;
         color: #fff;
         font-family: $textFont;
         font-size: 28px;
@@ -38,10 +40,74 @@
 
 
 .rules {
+    position: relative;
+    z-index: 10;
     text-align: center;
     border-top: 1px solid #fff;
     padding-top: 3rem;
     margin-top: 1.5rem;
+}
+
+
+
+
+
+
+.footer-animate {
+    position: relative;
+
+    &__img {
+        max-width: 300px;
+        position: absolute;
+        z-index: 1;
+
+        &_1 {
+            left: -150px;
+            top: -100px;
+        }
+
+        &_2 {
+            right: 20%;
+            top: 30px;
+        }
+
+        &_3 {
+            top: 0;
+            right: -150px;
+            transform: rotate(-50deg);
+            max-width: 200px;
+        }
+
+        &_4 {
+            bottom: 40%;
+            left: 15px;
+        }
+
+        &_5 {
+            right: 10px;
+            bottom: 0;
+        }
+    }
+
+
+}
+
+@media(max-width:768px) {
+    .footer-animate {
+        &__img {
+
+            &_1 {
+                top: 0;
+            }
+            &_4 {
+                left: 50%;
+            }
+        }
+    }
+
+    .rules {
+        color: #fff;
+    }
 }
 
 @media(max-width:550px) {
@@ -49,49 +115,9 @@
         &__row {
             flex-direction: column;
         }
+
         &__item:last-child {
             margin-top: 3rem;
         }
-    }
-}
-
-
-
-
-//animate
-
-[data-scroll] {
-	transition: opacity 2s ease;
-}
-[data-scroll="in"] {
-	opacity: 1;
-}
-[data-scroll="out"] {
-	opacity: 0;
-}
-
-.footer-animate {
-    display: none;
-    justify-content: space-between;
-
-    &__item {
-        position: absolute;
-        z-index: 1;
-    }
-
-    &__item:nth-child(1) {
-        left: -70px;
-    }
-
-    &__item:nth-child(3) {
-        right: -100px;
-    }
-    &__item:nth-child(2) {
-        right: 25%;
-    }
-
-    &__img {
-        width: 100%;
-        max-width:200px;
     }
 }

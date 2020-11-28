@@ -5661,6 +5661,10 @@ body {
   text-decoration: none;
 }
 
+.header__logo img {
+  max-width: 115px;
+}
+
 .header__list {
   display: inline-flex;
   flex-basis: 100%;
@@ -5676,6 +5680,21 @@ body {
   color: #fff;
   font-family: "Montserrat", sans-serif;
   font-size: 1.25rem;
+}
+
+.header__link_active {
+  position: relative;
+  margin-left: 20px;
+}
+
+.header__link_active::before {
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: 70vw;
+  right: 0;
+  bottom: -10px;
+  background-color: #fff;
 }
 
 .header__link:hover {
@@ -6257,11 +6276,13 @@ body {
   background-image: url(../img/bg/footer-bg.png);
   background-size: cover;
   background-position: 50% 50%;
-  padding: 3rem 0;
+  padding: 4rem 0;
   color: #00516b;
 }
 
 .footer__title {
+  position: relative;
+  z-index: 10;
   color: #fff;
   font-family: "Montserrat", sans-serif;
   font-size: 28px;
@@ -6290,49 +6311,49 @@ body {
 }
 
 .rules {
+  position: relative;
+  z-index: 10;
   text-align: center;
   border-top: 1px solid #fff;
   padding-top: 3rem;
   margin-top: 1.5rem;
 }
 
-[data-scroll] {
-  transition: opacity 2s ease;
-}
-
-[data-scroll="in"] {
-  opacity: 1;
-}
-
-[data-scroll="out"] {
-  opacity: 0;
-}
-
 .footer-animate {
-  display: none;
-  justify-content: space-between;
+  position: relative;
 }
 
-.footer-animate__item {
+.footer-animate__img {
+  max-width: 300px;
   position: absolute;
   z-index: 1;
 }
 
-.footer-animate__item:nth-child(1) {
-  left: -70px;
+.footer-animate__img_1 {
+  left: -150px;
+  top: -100px;
 }
 
-.footer-animate__item:nth-child(3) {
-  right: -100px;
+.footer-animate__img_2 {
+  right: 20%;
+  top: 30px;
 }
 
-.footer-animate__item:nth-child(2) {
-  right: 25%;
-}
-
-.footer-animate__img {
-  width: 100%;
+.footer-animate__img_3 {
+  top: 0;
+  right: -150px;
+  transform: rotate(-50deg);
   max-width: 200px;
+}
+
+.footer-animate__img_4 {
+  bottom: 40%;
+  left: 15px;
+}
+
+.footer-animate__img_5 {
+  right: 10px;
+  bottom: 0;
 }
 
 body {
@@ -6638,6 +6659,18 @@ body {
     margin-top: -100px;
     margin-right: 7px;
     margin-bottom: 5px;
+  }
+
+  .footer-animate__img_1 {
+    top: 0;
+  }
+
+  .footer-animate__img_4 {
+    left: 50%;
+  }
+
+  .rules {
+    color: #fff;
   }
 }
 
