@@ -6314,6 +6314,9 @@ body {
 
 .first-page__animation {
   position: absolute;
+}
+
+.first-page__animation img {
   object-fit: contain;
 }
 

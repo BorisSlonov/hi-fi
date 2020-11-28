@@ -114,7 +114,10 @@
 
 .first-page__animation {
     position: absolute;
-    object-fit: contain;
+    
+    img {
+        object-fit: contain;
+    }
 
     &_1 {
         bottom: 0;
