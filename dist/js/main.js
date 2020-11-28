@@ -200,9 +200,92 @@ if (window.innerWidth <= 425) {
   !*** ./src/blocks/modules/header/header.js ***!
   \*********************************************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: /Users/borisslonov/Documents/inWork/git/hi-fi/hi-fi/src/blocks/modules/header/header.js: Unexpected token, expected \",\" (88:0)\n\n\u001b[0m \u001b[90m 86 | \u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 87 | \u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 88 | \u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    | \u001b[39m\u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n    at Parser._raise (/Users/borisslonov/Documents/inWork/git/hi-fi/hi-fi/node_modules/@babel/parser/src/parser/error.js:60:45)\n    at Parser.raiseWithData (/Users/borisslonov/Documents/inWork/git/hi-fi/hi-fi/node_modules/@babel/parser/src/parser/error.js:55:17)\n    at Parser.raise (/Users/borisslonov/Documents/inWork/git/hi-fi/hi-fi/node_modules/@babel/parser/src/parser/error.js:39:17)\n    at Parser.unexpected (/Users/borisslonov/Documents/inWork/git/hi-fi/hi-fi/node_modules/@babel/parser/src/parser/util.js:139:16)\n    at Parser.expect (/Users/borisslonov/Documents/inWork/git/hi-fi/hi-fi/node_modules/@babel/parser/src/parser/util.js:116:28)\n    at Parser.parseCallExpressionArguments (/Users/borisslonov/Documents/inWork/git/hi-fi/hi-fi/node_modules/@babel/parser/src/parser/expression.js:853:14)\n    at Parser.parseCoverCallAndAsyncArrowHead (/Users/borisslonov/Documents/inWork/git/hi-fi/hi-fi/node_modules/@babel/parser/src/parser/expression.js:733:29)\n    at Parser.parseSubscript (/Users/borisslonov/Documents/inWork/git/hi-fi/hi-fi/node_modules/@babel/parser/src/parser/expression.js:631:19)\n    at Parser.parseSubscripts (/Users/borisslonov/Documents/inWork/git/hi-fi/hi-fi/node_modules/@babel/parser/src/parser/expression.js:589:19)\n    at Parser.parseExprSubscripts (/Users/borisslonov/Documents/inWork/git/hi-fi/hi-fi/node_modules/@babel/parser/src/parser/expression.js:574:17)");
+"use strict";
+/* WEBPACK VAR INJECTION */(function($) { //burger
+
+function _createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+window.addEventListener('DOMContentLoaded', function () {
+  var menu = document.querySelector('.header__list'),
+      menuItem = document.querySelectorAll('.header__link'),
+      hamburger = document.querySelector('.header__burger');
+  hamburger.addEventListener('click', function () {
+    hamburger.classList.toggle('burger_active');
+    menu.classList.toggle('menu_active');
+  });
+  menuItem.forEach(function (item) {
+    item.addEventListener('click', function () {
+      hamburger.classList.toggle('burger_active');
+      menu.classList.toggle('menu_active');
+    });
+  });
+}); // slowScroll
+
+var anchors = document.querySelectorAll('a[href*="#"]');
+
+var _iterator = _createForOfIteratorHelper(anchors),
+    _step;
+
+try {
+  var _loop = function _loop() {
+    var anchor = _step.value;
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      var blockID = anchor.getAttribute('href').substr(1);
+      document.getElementById(blockID).scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    });
+  };
+
+  for (_iterator.s(); !(_step = _iterator.n()).done;) {
+    _loop();
+  } //add class on scroll
+
+} catch (err) {
+  _iterator.e(err);
+} finally {
+  _iterator.f();
+}
+
+document.addEventListener("scroll", function (e) {
+  var content = document.querySelector("body");
+  var scrolled = document.scrollingElement.scrollTop;
+  var position = content.offsetTop;
+  var header = document.querySelector("header");
+  var leftTextWow = document.querySelector(".js-offsetTopLeft");
+  var rightTextWow = document.querySelector(".js-offsetTopRight");
+
+  if (scrolled > position + 350) {
+    content.classList.add('header-bgc');
+  } else {
+    content.classList.remove('header-bgc');
+    content.classList.add('header-none-bgc');
+  } //delay animation in 1 screen
+
+
+  if (scrolled > position + 350) {
+    leftTextWow.classList.add('visible', 'wow', 'animate__animated', 'animate__fadeInLeft');
+    rightTextWow.classList.add('visible', 'wow', 'animate__animated', 'animate__fadeIn', 'animate__delay-1s');
+  }
+});
+$(document).ready(function () {
+  var href = window.location;
+
+  if (href == '/hi-fi/dist/index.html') {
+    $('.header__link_main').addClass('header__link_active');
+  }
+
+  console.log(href);
+});
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
 
 /***/ }),
 
