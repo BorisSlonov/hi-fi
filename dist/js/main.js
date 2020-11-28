@@ -412,6 +412,82 @@ setTimeout(parallaxFooterInit(), 1000);
 
 /***/ }),
 
+/***/ "./src/blocks/modules/parallax/parallax-news.js":
+/*!******************************************************!*\
+  !*** ./src/blocks/modules/parallax/parallax-news.js ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+//custom 
+function parallaxNewsInit() {
+  var newsPageAnimation_1 = document.querySelector(".news-page__animation_1");
+  new simpleParallax(newsPageAnimation_1, {
+    orientation: 'down',
+    overflow: true,
+    delay: .6,
+    scale: 1.3,
+    transition: 'cubic-bezier(.39,.64,.47,.57)'
+  });
+  var newsPageAnimation_2 = document.querySelector(".news-page__animation_2");
+  new simpleParallax(newsPageAnimation_2, {
+    orientation: 'down right',
+    overflow: true,
+    delay: .6,
+    scale: 1.8,
+    transition: 'cubic-bezier(.39,.64,.47,.57)'
+  });
+  var newsPageAnimation_3 = document.querySelector(".news-page__animation_3");
+  new simpleParallax(newsPageAnimation_3, {
+    orientation: 'down',
+    overflow: true,
+    delay: .6,
+    scale: 1.3,
+    transition: 'cubic-bezier(.39,.64,.47,.57)'
+  });
+  var newsPageAnimation_4 = document.querySelector(".news-page__animation_4");
+  new simpleParallax(newsPageAnimation_4, {
+    orientation: 'down left',
+    overflow: true,
+    delay: .6,
+    scale: 1.3,
+    transition: 'cubic-bezier(.39,.64,.47,.57)'
+  });
+  var newsPageAnimation_5 = document.querySelector(".news-page__animation_5");
+  new simpleParallax(newsPageAnimation_5, {
+    orientation: 'down right',
+    overflow: true,
+    delay: .6,
+    scale: 1.3,
+    transition: 'cubic-bezier(.39,.64,.47,.57)'
+  });
+  var newsPageAnimation_6 = document.querySelector(".news-page__animation_6");
+  new simpleParallax(newsPageAnimation_6, {
+    orientation: 'down left',
+    overflow: true,
+    delay: .6,
+    scale: 1.3,
+    transition: 'cubic-bezier(.39,.64,.47,.57)'
+  });
+  var newsPageAnimation_7 = document.querySelector(".news-page__animation_7");
+  new simpleParallax(newsPageAnimation_7, {
+    orientation: 'left',
+    overflow: true,
+    delay: .6,
+    scale: 1.3,
+    transition: 'cubic-bezier(.39,.64,.47,.57)'
+  });
+}
+
+parallaxNewsInit();
+setTimeout(dispatch, 1000);
+
+function dispatch() {
+  console.log(window.dispatchEvent(new CustomEvent('resize')));
+}
+
+/***/ }),
+
 /***/ "./src/blocks/modules/parallax/parallax-sectors.js":
 /*!*********************************************************!*\
   !*** ./src/blocks/modules/parallax/parallax-sectors.js ***!
@@ -472,6 +548,14 @@ function parallaxsectorsInit() {
   var sectorsAnimation_7 = document.querySelector(".sectors-animation_7");
   new simpleParallax(sectorsAnimation_7, {
     orientation: 'down right',
+    overflow: true,
+    delay: .6,
+    scale: 1.3,
+    transition: 'cubic-bezier(.39,.64,.47,.57)'
+  });
+  var sectorsAnimation_8 = document.querySelector(".sectors-animation_8");
+  new simpleParallax(sectorsAnimation_8, {
+    orientation: 'down',
     overflow: true,
     delay: .6,
     scale: 1.3,
@@ -776,21 +860,25 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_parallax_parallax_about__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_modules_parallax_parallax_about__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _modules_parallax_parallax_sectors__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! %modules%/parallax/parallax-sectors */ "./src/blocks/modules/parallax/parallax-sectors.js");
 /* harmony import */ var _modules_parallax_parallax_sectors__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_modules_parallax_parallax_sectors__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _modules_header_header__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! %modules%/header/header */ "./src/blocks/modules/header/header.js");
-/* harmony import */ var _modules_header_header__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_modules_header_header__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _modules_clients_clients__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! %modules%/clients/clients */ "./src/blocks/modules/clients/clients.js");
-/* harmony import */ var _modules_clients_clients__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_modules_clients_clients__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _modules_our_commitment_our_commitment__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! %modules%/our-commitment/our-commitment */ "./src/blocks/modules/our-commitment/our-commitment.js");
-/* harmony import */ var _modules_our_commitment_our_commitment__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_modules_our_commitment_our_commitment__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _modules_run_num_run_num__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! %modules%/run-num/run-num */ "./src/blocks/modules/run-num/run-num.js");
-/* harmony import */ var _modules_run_num_run_num__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_modules_run_num_run_num__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! %modules%/footer/footer */ "./src/blocks/modules/footer/footer.js");
-/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_modules_footer_footer__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _modules_parallax_parallax_news__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! %modules%/parallax/parallax-news */ "./src/blocks/modules/parallax/parallax-news.js");
+/* harmony import */ var _modules_parallax_parallax_news__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_modules_parallax_parallax_news__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _modules_header_header__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! %modules%/header/header */ "./src/blocks/modules/header/header.js");
+/* harmony import */ var _modules_header_header__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_modules_header_header__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _modules_clients_clients__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! %modules%/clients/clients */ "./src/blocks/modules/clients/clients.js");
+/* harmony import */ var _modules_clients_clients__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_modules_clients_clients__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _modules_our_commitment_our_commitment__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! %modules%/our-commitment/our-commitment */ "./src/blocks/modules/our-commitment/our-commitment.js");
+/* harmony import */ var _modules_our_commitment_our_commitment__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_modules_our_commitment_our_commitment__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _modules_run_num_run_num__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! %modules%/run-num/run-num */ "./src/blocks/modules/run-num/run-num.js");
+/* harmony import */ var _modules_run_num_run_num__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_modules_run_num_run_num__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! %modules%/footer/footer */ "./src/blocks/modules/footer/footer.js");
+/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_modules_footer_footer__WEBPACK_IMPORTED_MODULE_9__);
 //parallax
 
 
 
- //blocks
+
+ // import "%modules%/parallax/parallax-carrier"
+//blocks
 
 
 

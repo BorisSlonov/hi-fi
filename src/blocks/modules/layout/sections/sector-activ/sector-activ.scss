@@ -1,0 +1,111 @@
+.sector {
+    position: relative;
+    background-image: url("../img/bg/sector-active-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sector__inner {
+    padding: 80px 0;
+}
+
+.sector__list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    padding: 0;
+}
+
+.sector__title {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 34px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.sector__bac-img {
+    position: absolute;
+    left: 0;
+    top: -60px;
+    width: 10%;
+    height: 10%;
+}
+
+.sector-card__header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 60px 0 30px 0;
+    background-color: #45edbb;
+}
+
+.sector-card__content {
+    background-color: #ecebf5;
+    height: 0;
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
+    overflow: hidden;
+    margin-top: 1px;
+}
+
+.sector-card:hover .sector-card__content {
+    height: 430px;
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
+    padding: 30px 25px;
+}
+
+.sector-card__title {
+    color: #fff;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.sector-card__text {
+    font-size: 14px;
+    color: #00516b;
+    line-height: 1.2;
+    padding-bottom: 1rem;
+}
+
+.sector-card__text p {
+    margin-bottom: 15px;
+}
+
+@media (max-width: 991px) {
+    .sector__list {
+        -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .sector__list {
+        -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 15px;
+    }
+
+    .sector-card:hover .sector-card__content {
+        height: -webkit-max-content;
+        height: -moz-max-content;
+        height: max-content;
+    }
+}

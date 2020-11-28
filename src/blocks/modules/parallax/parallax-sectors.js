@@ -78,6 +78,16 @@ function parallaxsectorsInit() {
         transition: 'cubic-bezier(.39,.64,.47,.57)'
     });
 
+    let sectorsAnimation_8 = document.querySelector(".sectors-animation_8");
+
+    new simpleParallax(sectorsAnimation_8, {
+        orientation: 'down',
+        overflow: true,
+        delay: .6,
+        scale: 1.3,
+        transition: 'cubic-bezier(.39,.64,.47,.57)'
+    });
+
 }
 
 parallaxsectorsInit();

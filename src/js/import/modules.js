@@ -9,6 +9,9 @@ import "%modules%/parallax/parallax-about"
 
 import "%modules%/parallax/parallax-sectors"
 
+import "%modules%/parallax/parallax-news"
+
+// import "%modules%/parallax/parallax-carrier"
 
 
 //blocks
