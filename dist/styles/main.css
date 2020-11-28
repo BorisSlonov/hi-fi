@@ -5989,7 +5989,7 @@ body {
   content: '';
   position: absolute;
   height: 1px;
-  width: 70vw;
+  width: 100vw;
   right: 0;
   bottom: -10px;
   background-color: #fff;
@@ -6314,6 +6314,7 @@ body {
 
 .first-page__animation {
   position: absolute;
+  object-fit: contain;
 }
 
 .first-page__animation_1 {
@@ -7092,6 +7093,10 @@ body {
     max-width: 420px;
   }
 
+  __input:nth-child(2) {
+    margin-top: 1.5rem 0;
+  }
+
   .first-page__title {
     font-size: 52px;
   }
@@ -7375,6 +7380,10 @@ body {
     right: 0;
     bottom: 0;
     max-width: 150px;
+  }
+
+  .first-page__animation_8 img {
+    flex-shrink: 0;
   }
 
   .first-page__animation_9 {

@@ -61,12 +61,27 @@ document.addEventListener("scroll", (e) => {
     //delay animation in 1 screen
     if (scrolled > position + 350) {
 
-        
+
         leftTextWow.classList.add('visible', 'wow', 'animate__animated', 'animate__fadeInLeft')
         rightTextWow.classList.add('visible', 'wow', 'animate__animated', 'animate__fadeIn', 'animate__delay-1s')
 
-    } 
-    
-   
+    }
+
+
 });
+
+
+
+$(document).ready(function () {
+    let href = window.location
+
+    if (href == '/hi-fi/dist/index.html') {
+        $('.header__link_main').addClass('header__link_active');
+    }
+
+    console.log(href)
+
+
+}
+
 
