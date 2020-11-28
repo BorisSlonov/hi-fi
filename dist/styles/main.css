@@ -6714,14 +6714,18 @@ body {
 
   .about-animation_3 {
     max-width: 50%;
-    top: 0;
-    left: 25%;
+    top: 10%;
+    right: 0;
   }
 }
 
 @media (max-width: 600px) {
   .first-page-bg_main {
     background-image: url(../img/bg/main-bg-mob.png);
+  }
+
+  .first-page-bg_about {
+    background-image: url(../img/bg/first-about-bg-mob.png);
   }
 
   .first-page__animation_1 {
