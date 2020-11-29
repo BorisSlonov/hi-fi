@@ -6566,7 +6566,7 @@ body {
 }
 
 .first-page__animation img {
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .first-page__animation_1 {
@@ -7795,6 +7795,10 @@ body {
     right: -45%;
   }
 
+  .first-page {
+    min-height: 70vh;
+  }
+
   .first-page-bg_main {
     background-image: url(../img/bg/main-bg-mob.png);
   }
@@ -7836,6 +7840,7 @@ body {
   .first-page__animation_3 {
     display: flex;
     align-items: flex-end;
+    justify-content: flex-end;
     left: -50px;
     bottom: -50px;
   }

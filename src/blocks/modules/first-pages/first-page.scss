@@ -117,7 +117,7 @@
     position: absolute;
     
     img {
-        object-fit: cover;
+        object-fit: contain;
     }
 
     &_1 {
@@ -290,6 +290,10 @@
 
 
 @media(max-width:600px) {
+    .first-page {
+        min-height: 70vh;
+    }
+
     .first-page-bg {
         &_main {
             background-image: url(../img/bg/main-bg-mob.png);
@@ -335,6 +339,7 @@
         &_3 {
             display: flex;
             align-items: flex-end;
+            justify-content: flex-end;
             left: -50px;
             bottom: -50px;
 
