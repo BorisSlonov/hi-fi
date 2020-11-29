@@ -6566,7 +6566,7 @@ body {
 }
 
 .first-page__animation img {
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .first-page__animation_1 {
