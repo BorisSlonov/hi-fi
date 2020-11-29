@@ -7853,7 +7853,7 @@ body {
   .first-page__animation_4 {
     display: flex;
     justify-content: flex-end;
-    right: 0;
+    right: -25px;
     top: 35%;
   }
 
@@ -7867,16 +7867,13 @@ body {
     top: 25%;
   }
 
-  .first-page__animation_6 {
-    display: none;
-  }
-
   .first-page__animation_7 {
-    display: none;
+    right: 0;
+    bottom: 0;
   }
 
   .first-page__animation_8 {
-    display: flex;
+    display: none;
     justify-content: flex-end;
     right: 0;
     bottom: 0;

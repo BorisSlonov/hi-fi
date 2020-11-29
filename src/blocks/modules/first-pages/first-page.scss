@@ -354,7 +354,7 @@
         &_4 {
             display: flex;
             justify-content: flex-end;
-            right: 0;
+            right: -25px;
             top: 35%;
 
             img {
@@ -372,16 +372,16 @@
         }
 
         &_6 {
-            display: none;
 
         }
 
         &_7 {
-            display: none;
+            right: 0;
+            bottom: 0;
         }
 
         &_8 {
-            display: flex;
+            display: none;
             justify-content: flex-end;
             right: 0;
             bottom: 0;
