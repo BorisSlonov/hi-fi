@@ -1,5 +1,6 @@
 .first-page-bg {
     position: relative;
+    background-attachment: fixed;
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -307,6 +308,10 @@
         }
 
         &_carriers {
+            background-image: url(../img/bg/first-sectors-bg-mob.png);
+        }
+
+        &_values {
             background-image: url(../img/bg/first-sectors-bg-mob.png);
         }
     }

@@ -96,7 +96,7 @@ $(document).ready(function () {
     }
 
 
-    if (href == '#') {
+    if (href == 'https://borisslonov.github.io/hi-fi/dist/page-values.html') {
         $('.header__link_5').addClass('header__link_active');
     }
 

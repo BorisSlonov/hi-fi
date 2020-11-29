@@ -1,0 +1,156 @@
+.value-page__animation {
+    position: absolute;
+
+    &_1 {
+        left: -80px;
+        bottom: -60px;
+    }
+
+    &_2 {
+        left: 0;
+        bottom: 10px;
+        z-index: 2;
+
+        img {
+            max-width: 85%;
+        }
+
+    }
+
+    &_3 {
+        bottom: 0;
+        right: -150px;
+
+        img {
+            max-width: 70%;
+        }
+    }
+
+    &_4 {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        bottom: -40%;
+        right: -20%;
+
+        img {
+            margin-left: auto;
+            margin-top: auto;
+        }
+    }
+
+    //mob
+
+    &_5 {
+        bottom: -30px;
+        left: 30%;
+    }
+
+
+}
+
+@media(max-width:1120px) {
+    .value-page__animation {
+        position: absolute;
+
+        &_1 {
+            max-width: 45%;
+
+        }
+
+        &_2 {
+
+            img {
+                max-width: 55%;
+
+            }
+        }
+
+        &_3 {
+            display: flex;
+            justify-content: flex-end;
+            right: 0;
+            bottom: 25%;
+
+            img {
+                max-width: 55%;
+
+            }
+
+        }
+
+        &_4 {
+            img {
+                max-width: 65%;
+            }
+        }
+
+        &_5 {}
+
+    }
+}
+
+@media(max-width:992px) {
+    .value-page__animation  {
+
+        &_1 {
+            max-width: 35%;
+        }
+
+        &_2 {
+            max-width: 55%;
+            bottom: 20%;
+            left: -50px;
+        }
+
+        &_3 {
+            max-width: 55%;
+        }
+
+        &_4 {
+            max-width: 35%;
+        }
+
+        &_5 {
+            max-width: 35%;
+        }
+
+
+    }
+}
+
+@media(max-width:600px) {
+    .value-page__animation {
+        position: absolute;
+
+        &_1 {
+            max-width: 45%;
+        }
+
+        &_2 {
+            max-width: 75%;
+            bottom: 15%;
+            left: -50px;
+            img {
+                max-width: 75%;
+            }
+        }
+
+        &_3 {
+          display: none;
+        }
+
+        &_4 {
+            max-width: 35%;
+        }
+
+        &_5 {
+            max-width: 35%;
+        }
+
+        &_6 {
+            bottom: 0;
+            right: -45%;
+        }
+    }
+}
