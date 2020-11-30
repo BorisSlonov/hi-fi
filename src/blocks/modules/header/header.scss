@@ -70,9 +70,9 @@
                 content: '';
                 position: absolute;
                 height: 1px;
-                width: 100vw;
-                right: 0;
-                bottom: -10px;
+                width: 700px;
+                bottom: 50%;
+                transform: translate(-50%, -50%);
                 background-color: #fff;
             }
         }
