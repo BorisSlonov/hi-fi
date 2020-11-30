@@ -266,6 +266,10 @@
 
         &:hover {
             letter-spacing: normal;
+
+            &::after {
+                display: none;
+            }
         }
     }
 }

@@ -8409,6 +8409,10 @@ body {
     letter-spacing: normal;
   }
 
+  .header__link:hover::after {
+    display: none;
+  }
+
   .carriers-form {
     flex-direction: column;
     width: 100%;
