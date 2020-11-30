@@ -333,7 +333,6 @@ $(document).ready(function () {
 
   equalHeight($(".column-one-height"));
 });
-window.addEventListener('resize', addRemoveOnResize);
 
 function addRemoveOnResize() {
   var hiddenCard = document.querySelectorAll(".commitment-hidden");
@@ -344,6 +343,8 @@ function addRemoveOnResize() {
     hiddenCard.classList.add('column-one-height');
   }
 }
+
+addRemoveOnResize();
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
 
 /***/ }),

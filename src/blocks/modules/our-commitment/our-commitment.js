@@ -21,7 +21,6 @@ $(document).ready(function () {
 
 });
 
-window.addEventListener('resize', addRemoveOnResize);
 
 function addRemoveOnResize() {
 
@@ -34,3 +33,5 @@ function addRemoveOnResize() {
     }
 
 }
+
+addRemoveOnResize() 
