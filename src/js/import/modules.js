@@ -16,6 +16,11 @@ import "%modules%/parallax/parallax-carriers";
 import "%modules%/parallax/parallax-values";
 
 
+//sections
+
+import "%modules%/sections/sections";
+
+
 //blocks
 
 import "%modules%/header/header";

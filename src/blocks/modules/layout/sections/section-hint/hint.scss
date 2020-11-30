@@ -1,0 +1,186 @@
+.hint {
+    background-color: rgb(72, 82, 188);
+    position: relative;
+
+    &__inner {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 120px 0;
+
+
+    }
+
+    &__text {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 70px;
+
+        P {
+            font-size: 16px;
+            color: rgb(255, 255, 255);
+            line-height: 1.2;
+            text-align: left;
+        }
+    }
+
+    &__title {
+        position: relative;
+        display: inline-block;
+        font-size: 36px;
+        color: rgb(70, 237, 185);
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.2;
+        text-align: left;
+        margin-right: 100px;
+
+        &:before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 99999px;
+            height: 1px;
+            background-color: rgba($color: rgb(14, 255, 237), $alpha: 0.5);
+
+        }
+
+        &-img {}
+    }
+
+    &__list {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        justify-content: space-between;
+        align-items: stretch;
+        grid-column-gap: 15px;
+        grid-row-gap: 15px;
+        padding: 0;
+
+    }
+
+}
+
+.hint__list-title {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.hint-card {
+    height: 270px;
+    width: 270px;
+    border: 3px solid rgb(14, 255, 237);
+    border-radius: 50%;
+    box-sizing: border-box;
+    box-shadow:
+        inset 1px -20px 50px 10px rgba(70, 206, 186, 1),
+        inset 2px 11px 30px 0px rgba(70, 206, 186, 1),
+        inset 2px 11px 30px 8px rgba(70, 206, 186, 1),
+        inset 0px 1px 0px 0px rgba(70, 206, 186, 1);
+    animation: box-color 3s linear infinite;
+
+    &__inner {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 25px;
+        border-radius: 50%;
+    }
+
+    &__title {
+        font-size: 26px;
+        color: rgb(255, 255, 255);
+        font-weight: 500;
+        line-height: 1.2;
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 60px;
+    }
+}
+
+@keyframes box-color {
+    0% {
+        box-shadow:
+            inset 1px 0px 20px 5px rgba(70, 206, 186, 1),
+            inset 2px 5px 20px 0px rgba(70, 206, 186, 1),
+            inset 2px 5px 20px 4px rgba(70, 206, 186, 1),
+            inset 0px 1px 0px 0px rgba(70, 206, 186, 1);
+    }
+
+    50% {
+        box-shadow:
+            inset 1px 0px 20px 5px rgba(70, 206, 186, 0.1),
+            inset 2px 5px 20px 0px rgba(70, 206, 186, 0.1),
+            inset 2px 5px 20px 4px rgba(70, 206, 186, 0.1),
+            inset 0px 1px 0px 0px rgba(70, 206, 186, 0.1);
+    }
+
+    100% {
+        box-shadow:
+            inset 1px 0px 20px 5px rgba(70, 206, 186, 1),
+            inset 2px 5px 20px 0px rgba(70, 206, 186, 1),
+            inset 2px 5px 20px 8px rgba(70, 206, 186, 1),
+            inset 0px 1px 0px 0px rgba(70, 206, 186, 1);
+    }
+}
+
+@media (max-width: 1199px) {
+    .hint__list {
+        max-width: 500px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 991px) {}
+
+@media (max-width: 767px) {
+    .hint__text {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
+        text-align: center;
+
+        & p {
+            font-size: 14px;
+        }
+    }
+
+    .hint__title {
+        font-size: 16px;
+        margin-bottom: 40px;
+        margin-right: 0;
+
+        &:before {
+            content: none;
+
+        }
+    }
+
+    .hint__list {
+        max-width: 270px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    .hint-card__title {
+        font-size: 14px;
+
+    }
+
+    .hint__list-title {
+        font-size: 16px;
+    }
+}
