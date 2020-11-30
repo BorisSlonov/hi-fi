@@ -1,0 +1,280 @@
+.digitall{
+    position: relative;
+    background-image: url("../img/bg/bac-33.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__inner{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 90px 0;
+
+
+    }
+    &__title{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 46px;
+        color: rgb(0, 87, 167);
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.2;
+        text-align: center;
+
+&-img{
+    
+}
+    }
+    &__list{
+        height: 600px;
+        max-width: 830px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 225px);
+        grid-template-rows: repeat(2, 225px);
+        justify-content: space-between;
+        align-items: stretch;
+        grid-column-gap: 15px  ;
+        grid-row-gap:  148px;
+        padding: 0;
+
+    }
+    &__img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 3px 17.46px 0.54px rgba(72, 83, 188, 0.29);
+  transition: 1s;
+  &:hover{
+    background-color: rgb(0, 87, 167);
+    box-shadow: 0px 3px 17.46px 0.54px rgba(72, 83, 188, 0.29);
+    transition: 1s;
+  }
+  &:hover .digitall__icon {
+    &::before{
+       
+     
+    background-color: rgb(0, 252, 245);
+    transition: 0.9s;
+
+    }
+    &::after{
+        
+        background-color: rgb(0, 252, 245);
+        transition: 0.9s;
+        
+
+
+    }
+  }
+    }
+    &__icon{
+        position: relative;
+        display: block;
+        width: 17px;
+        height: 17px;
+        &::before{
+            position: absolute;
+            content: "";
+            left: 50%;
+            top: 50%;
+            width: 100%;
+            height: 3px;
+            background-color: rgb(0, 87, 167);
+            transform: translate(-50%,-50%);
+            transition: 0.9s;
+
+        }
+        &::after{
+            position: absolute;
+            content: "";
+            left: 50%;
+            top: 50%;
+            width: 3px;
+            height: 100%;
+            background-color: rgb(0, 87, 167);
+            transform: translate(-50%,-50%);
+            transition: 0.9s;
+
+        }
+
+    }
+
+
+}
+.digitall-card{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 225px;
+    height: 225px;
+    background-image: url("../img/bg/color-ball.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    padding: 10px;
+    &_1{
+
+
+       & .digitall-card__img{
+        left: 10px;
+        bottom: 10px;
+       }
+    }
+    &_2{
+         & .digitall-card__img{
+            right: 10px;
+            bottom: 10px;
+       }
+    }
+    &_3{
+  
+        & .digitall-card__img{
+            
+            left: 10px;
+            bottom: 10px;
+        }
+    }
+    &_4{
+        & .digitall-card__img{
+            right: 10px;
+            bottom: 10px;
+        }
+    }
+&__img{
+    position: absolute;
+}
+&__title{
+    font-size: 20px;
+    color: rgb(0, 81, 107);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+}
+}
+@media (max-width: 767px) {
+    .digitall{
+        position: relative;
+        background-color: rgb(236, 235, 245);
+        background-image:none;
+        &::before{
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 90%;
+            max-height: 700px;
+           
+            background-image: url("../img/bg/bec-33-mobile.png");
+            background-position:0 52%;
+            background-repeat: no-repeat;
+            background-size: cover;
+       
+          
+            
+        }
+    }
+    .digitall__inner{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        z-index: 2;
+    }
+    .digitall__title{
+        margin-top: 150px;
+        position: relative;
+    }
+    .digitall__list{
+        height: auto;
+        width: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 225px);
+        grid-template-rows: repeat(4, 225px);
+        justify-content: center;
+        grid-row-gap:  20px;
+        padding-top: 60px;
+    }
+    .digitall-card{
+        &_1{
+
+
+            & .digitall-card__img{
+             left: 50%;
+             bottom: 0px;
+             right: inherit;
+             transform: translate(-50%);
+            }
+         }
+         &_2{
+              & .digitall-card__img{
+                left: 50%;
+                bottom: 0px;
+                right: inherit;
+                transform: translate(-50%);
+            }
+         }
+         &_3{
+       
+             & .digitall-card__img{
+                left: 50%;
+                bottom: 0px;
+                right: inherit;
+                transform: translate(-50%);
+             }
+         }
+         &_4{
+             & .digitall-card__img{
+                left: 50%;
+                bottom: 0px;
+                right: inherit;
+                transform: translate(-50%);
+             }
+         }
+}}
+@media (max-width: 579px) {
+    .digitall{
+        &::before{
+         
+            background-position:0 55%;
+       
+          
+            
+        }
+    }
+}
+@media (max-width: 479px) {
+    .digitall{
+        &::before{
+         
+            background-position:0 60%;
+       
+          
+            
+        }
+    }
+}
+@media (max-width: 379px) {
+    .digitall{
+        &::before{
+         
+            background-position:0 65%;
+       
+          
+            
+        }
+    }
+}
