@@ -5981,11 +5981,13 @@ body {
 }
 
 .composition__inner {
+  position: relative;
+  z-index: 10;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 90px 0 85px 0;
+  padding: 140px 0 85px 0;
 }
 
 .composition__img {
