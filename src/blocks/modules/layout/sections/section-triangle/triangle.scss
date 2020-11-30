@@ -1,0 +1,475 @@
+.composition {
+    position: relative;
+    background-image: url("../img/bg/section-triangle-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &::before {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("../img/fff-bg.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 90px 0 85px 0;
+
+    }
+
+    &__img {
+        max-width: 400px;
+        max-height: 405px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+
+        & img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+
+
+        }
+    }
+
+    &__title {
+        font-size: 34px;
+        color: rgb(0, 105, 147);
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.2;
+        margin-bottom: 100px;
+    }
+
+    &__list {}
+}
+
+.composition-card {
+    position: absolute;
+
+    &__inner {
+        position: relative;
+    }
+
+    &__img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        border-width: 3px;
+        border-color: rgb(183, 183, 183);
+        border-style: solid;
+        border-radius: 50%;
+        animation: border_2 4s linear infinite;
+        animation-delay: 1s;
+
+        &:hover~.composition-card__text {
+            display: block;
+            // &:before{
+            //     content: "";
+            //     position: absolute;
+            //     width: 240px;
+            //     height: 2px;
+            //     background-color: red;
+            //     transition: 2s;
+
+            // }
+        }
+
+        & span {
+            width: 25px;
+            height: 25px;
+            border-width: 3px;
+            border-color: rgb(183, 183, 183);
+            border-style: solid;
+            border-radius: 50%;
+            animation: border_2 3s linear infinite;
+            animation-delay: 2s;
+        }
+
+
+    }
+
+    &__text {
+        display: none;
+        position: absolute;
+        height: 80px;
+        width: 200px;
+        font-size: 16px;
+        color: rgb(0, 0, 0);
+        line-height: 1.2;
+        text-align: left;
+
+        &:before {
+            content: "";
+            position: absolute;
+            width: 3px;
+            height: 120px;
+            background-color: rgb(183, 183, 183);
+            transition: 2s;
+
+
+        }
+    }
+
+    &__title {
+        position: absolute;
+        font-size: 24px;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.2;
+    }
+
+    &_1 {
+        left: 50%;
+        top: -18px;
+        transform: translate(-50%);
+
+        & .composition-card__text {
+            left: 100px;
+            bottom: 35px;
+
+            &:before {
+                content: "";
+                position: absolute;
+                width: 120%;
+                height: 3px;
+                top: inherit;
+                bottom: -10px;
+                right: inherit;
+                left: -53px;
+                transition: 2s;
+
+            }
+
+        }
+
+        .composition-card__title {
+            top: -50px;
+            left: -10px;
+        }
+    }
+
+    &_2 {
+        right: -19px;
+        bottom: -13px;
+
+        & .composition-card__text {
+            left: 40px;
+            bottom: 50px;
+            top: inherit;
+
+            &:before {
+                content: "";
+                position: absolute;
+                width: 3px;
+                height: 130px;
+                top: -50px;
+                right: inherit;
+                left: -18px;
+                transition: 2s;
+
+            }
+        }
+
+        .composition-card__title {
+            top: 60px;
+            left: -30px;
+
+        }
+
+    }
+
+    &_3 {
+        left: -19px;
+        bottom: -17px;
+
+        & .composition-card__text {
+            left: -180px;
+            bottom: 50px;
+            top: inherit;
+
+            &:before {
+                content: "";
+                position: absolute;
+                width: 3px;
+                height: 130px;
+                background-color: #b7b7b7;
+                bottom: -1px;
+                right: -7px;
+                transition: 2s;
+
+            }
+        }
+
+        .composition-card__title {
+            top: 60px;
+            left: -30px;
+        }
+    }
+
+}
+
+.composition-card .composition-card--active {
+    display: flex;
+    align-items: flex-end;
+}
+
+@keyframes border_2 {
+    0% {
+        border-color: rgba($color: rgb(183, 183, 183), $alpha: 1.0);
+    }
+
+    50% {
+        border-color: rgba($color: rgb(183, 183, 183), $alpha: 0.10);
+    }
+
+    100% {
+        border-color: rgba($color: rgb(183, 183, 183), $alpha: 1.0);
+    }
+}
+
+@media (max-width: 991px) {
+    .composition-card__text {
+        width: 150px;
+    }
+
+    .composition-card_3 .composition-card__text {
+        left: inherit;
+        bottom: 50px;
+        top: inherit;
+        right: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .composition-card {
+        position: absolute;
+
+        &__inner {
+            position: relative;
+        }
+
+        &__img {
+
+            width: 30px;
+            height: 30px;
+
+            &:hover~.composition-card__text {
+                display: flex;
+                align-items: flex-end;
+
+                // &:before{
+                //     content: "";
+                //     position: absolute;
+                //     width: 240px;
+                //     height: 2px;
+                //     background-color: red;
+                //     transition: 2s;
+
+                // }
+            }
+
+            & span {
+                width: 15px;
+                height: 15px;
+
+            }
+
+
+        }
+
+        &__text {
+            display: none;
+            position: absolute;
+            height: 80px;
+            width: 30vw;
+            max-width: 140px;
+            font-size: 11px;
+
+            &:before {
+                content: "";
+                position: absolute;
+                width: 3px;
+                height: 0px;
+                background-color: rgb(183, 183, 183);
+                transition: 2s;
+
+
+            }
+        }
+
+        &__title {
+
+            font-size: 14px;
+
+
+        }
+
+        &_1 {
+            left: 50%;
+            top: -17px;
+            transform: translate(-50%);
+
+            & .composition-card__text {
+                left: 55px;
+                bottom: 25px;
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    width: 120%;
+                    height: 3px;
+                    top: inherit;
+                    bottom: -10px;
+                    right: inherit;
+                    left: -25px;
+                    transition: 2s;
+
+                }
+
+            }
+
+            .composition-card__title {
+                top: -30px;
+                left: -10px;
+            }
+        }
+
+        &_2 {
+            right: -19px;
+            bottom: -13px;
+
+            & .composition-card__text {
+                left: -105px;
+                bottom: 250px;
+                top: inherit;
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    width: 3px;
+                    height: 130px;
+                    top: 172px;
+                    right: inherit;
+                    left: 119px;
+                    transition: 2s;
+
+                }
+            }
+
+            .composition-card__title {
+                top: 40px;
+                left: -35px;
+
+            }
+
+        }
+
+        &_3 {
+            left: -19px;
+            bottom: -17px;
+
+            & .composition-card__text {
+                left: 37px;
+                bottom: 250px;
+                top: inherit;
+                padding-right: 15px;
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    width: 3px;
+                    height: 130px;
+                    background-color: #b7b7b7;
+                    bottom: -222px;
+                    left: inherit;
+                    right: 205px;
+                    transition: 2s;
+
+                }
+            }
+
+            .composition-card__title {
+                top: 40px;
+                left: -10px;
+            }
+        }
+
+    }
+
+
+    .composition-card_1 {
+        top: -10px;
+        left: 50.4%;
+    }
+
+    .composition-card_2 {
+        right: -11px;
+        bottom: -8px;
+    }
+
+    .composition-card_3 {
+        left: -11px;
+        bottom: -11px;
+    }
+
+    .composition__img {
+        margin: 0 20px;
+    }
+
+    .composition__title {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 479px) {
+    .composition-card_2 .composition-card__text {
+        left: -54px;
+        bottom: 140px;
+
+        &:before {
+            content: "";
+            position: absolute;
+            width: 3px;
+            height: 100px;
+            top: 91px;
+            right: inherit;
+            left: 68px;
+            -webkit-transition: 2s;
+            transition: 2s;
+        }
+    }
+
+    .composition-card_3 .composition-card__text {
+        left: inherit;
+        left: 4px;
+        bottom: 173px;
+
+        &:before {
+            content: "";
+            position: absolute;
+            width: 3px;
+            height: 100px;
+            bottom: -197px;
+            left: inherit;
+            right: 205px;
+
+            -webkit-transition: 2s;
+            transition: 2s;
+        }
+    }
+}
