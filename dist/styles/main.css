@@ -7794,6 +7794,7 @@ body {
 
   .menu_active {
     left: 0;
+    z-index: 1000;
   }
 
   .header__logo {
