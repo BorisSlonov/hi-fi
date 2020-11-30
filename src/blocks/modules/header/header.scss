@@ -64,15 +64,16 @@
 
         &_active {
             position: relative;
-            margin-left: 20px;
+            margin-left: 15%;
 
             &::before {
                 content: '';
                 position: absolute;
                 height: 1px;
-                width: 700px;
+                width: 990px;
                 bottom: 50%;
-                transform: translate(-50%, -50%);
+                left: 0;
+                transform: translate(-105%, -50%);
                 background-color: #fff;
             }
         }
