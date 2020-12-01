@@ -5986,13 +5986,11 @@ body {
 }
 
 .composition__inner {
-  position: relative;
-  z-index: 10;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 140px 0 85px 0;
+  padding: 90px 0 85px 0;
 }
 
 .composition__img {
@@ -6010,6 +6008,8 @@ body {
 }
 
 .composition__title {
+  position: relative;
+  z-index: 10;
   font-size: 34px;
   color: #006993;
   font-weight: bold;
@@ -6085,8 +6085,8 @@ body {
 }
 
 .composition-card_1 {
-  left: 50%;
-  top: -18px;
+  left: 50.3%;
+  top: -19px;
   transform: translate(-50%);
 }
 
@@ -6338,7 +6338,7 @@ body {
 
 .lab {
   position: relative;
-  background-image: url("../img/bg/bac-42.png");
+  background-image: url("../img/bg/lab-bg.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -6900,7 +6900,7 @@ body {
 
 .header {
   position: fixed;
-  z-index: 50;
+  z-index: 150;
   top: 0;
   left: 0;
   width: 100%;
@@ -7781,15 +7781,14 @@ body {
     flex-direction: column;
     justify-content: space-around;
     position: fixed;
-    z-index: 1000;
+    z-index: 1100;
     top: 0;
     bottom: 0;
     left: -100%;
     width: 100%;
     height: 100%;
     min-height: 100vh;
-    overflow: auto;
-    padding: 85px 15px 50px;
+    padding: 85px 15px 100px;
     transition: all .5s;
     background-image: url(../img/bg/menu-bg.jpg);
     background-color: #00516b;
@@ -8668,8 +8667,7 @@ body {
     height: 130px;
     background-color: #b7b7b7;
     bottom: -222px;
-    left: inherit;
-    right: 205px;
+    left: -25px;
     transition: 2s;
   }
 
@@ -8685,12 +8683,12 @@ body {
 
   .composition-card_2 {
     right: -11px;
-    bottom: -8px;
+    bottom: -3px;
   }
 
   .composition-card_3 {
-    left: -11px;
-    bottom: -11px;
+    left: -9px;
+    bottom: -10px;
   }
 
   .composition__img {
@@ -9317,11 +9315,24 @@ body {
     position: absolute;
     width: 3px;
     height: 100px;
-    bottom: -197px;
-    left: inherit;
-    right: 205px;
+    bottom: -146px;
+    left: 9px;
     -webkit-transition: 2s;
     transition: 2s;
+  }
+
+  .composition-card_2 {
+    right: -11px;
+    bottom: -8px;
+  }
+
+  .composition-card_3 {
+    left: -11px;
+    bottom: -11px;
+  }
+
+  .composition-card__text {
+    width: 23vw;
   }
 
   .digitall::before {

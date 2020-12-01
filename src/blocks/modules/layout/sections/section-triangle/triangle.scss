@@ -19,14 +19,11 @@
     }
 
     &__inner {
-        position: relative;
-        z-index: 10;
-
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 140px 0 85px 0;
+        padding: 90px 0 85px 0;
 
     }
 
@@ -47,6 +44,9 @@
     }
 
     &__title {
+        position: relative;
+        z-index: 10;
+
         font-size: 34px;
         color: rgb(0, 105, 147);
         font-weight: bold;
@@ -137,8 +137,8 @@
     }
 
     &_1 {
-        left: 50%;
-        top: -18px;
+        left: 50.3%;
+        top: -19px;
         transform: translate(-50%);
 
         & .composition-card__text {
@@ -399,8 +399,7 @@
                     height: 130px;
                     background-color: #b7b7b7;
                     bottom: -222px;
-                    left: inherit;
-                    right: 205px;
+                    left: -25px;
                     transition: 2s;
 
                 }
@@ -422,12 +421,13 @@
 
     .composition-card_2 {
         right: -11px;
-        bottom: -8px;
+        bottom: -3px;
     }
 
     .composition-card_3 {
-        left: -11px;
-        bottom: -11px;
+        left: -9px;
+        bottom: -10px;
+
     }
 
     .composition__img {
@@ -467,12 +467,26 @@
             position: absolute;
             width: 3px;
             height: 100px;
-            bottom: -197px;
-            left: inherit;
-            right: 205px;
+            bottom: -146px;
+            left: 9px;
+
 
             -webkit-transition: 2s;
             transition: 2s;
         }
+    }
+
+    .composition-card_2 {
+        right: -11px;
+        bottom: -8px;
+    }
+
+    .composition-card_3 {
+        left: -11px;
+        bottom: -11px;
+    }
+
+    .composition-card__text {
+        width: 23vw;
     }
 }
