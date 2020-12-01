@@ -5258,6 +5258,11 @@ button.swiper-pagination-bullet {
   backface-visibility: hidden;
 }
 
+:root {
+  --animate-duration: 800ms;
+  --animate-delay: 0.9s;
+}
+
 *,
 ::before,
 ::after {
@@ -7776,11 +7781,12 @@ body {
     flex-direction: column;
     justify-content: space-around;
     position: fixed;
-    z-index: 900;
+    z-index: 1000;
     top: 0;
     left: -100%;
     width: 100%;
-    height: 100vh;
+    height: 100%;
+    min-height: 100vh;
     overflow: auto;
     padding: 85px 15px 50px;
     transition: all .5s;
@@ -7800,8 +7806,6 @@ body {
 
   .menu_active {
     left: 0;
-    right: 0;
-    bottom: 0;
     z-index: 1000;
   }
 
