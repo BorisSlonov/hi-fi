@@ -147,7 +147,6 @@
         flex-direction: column;
         justify-content: space-around;
         position: fixed;
-        z-index: 1100;
         top: 0;
         bottom: 0;
         left: -100%;
@@ -160,7 +159,6 @@
         background-color: $sec-color;
         background-size: cover;
         background-position: 50% 50%;
-        background-color: #fff;
         text-align: left;
 
         li {
@@ -226,41 +224,6 @@
 }
 
 
-.contacts-mobile-menu {
-    margin-top: 1rem;
-    padding-top: 1rem;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    border-top: 2px dashed #ccc;
-    align-self: center;
-
-    .header-contacts {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-self: center;
-        justify-content: center;
-
-        &__link-wrap {
-            display: flex;
-            justify-content: space-around;
-        }
-    }
-
-    .header-callback {
-        display: inline-flex;
-        text-align: center;
-        max-width: 200px;
-        justify-content: center;
-        align-self: center;
-        margin-top: 1.5rem;
-
-        &__num {
-            background-color: #fff;
-        }
-    }
-}
 
 @media(max-width:768px) {
     .header__link {
