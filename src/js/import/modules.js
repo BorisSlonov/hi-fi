@@ -15,6 +15,8 @@ import "%modules%/parallax/parallax-carriers";
 
 import "%modules%/parallax/parallax-values";
 
+import "%modules%/parallax/parallax-innovation";
+
 
 //sections
 

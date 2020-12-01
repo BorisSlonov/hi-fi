@@ -554,6 +554,53 @@ setTimeout(parallaxFooterInit(), 1000);
 
 /***/ }),
 
+/***/ "./src/blocks/modules/parallax/parallax-innovation.js":
+/*!************************************************************!*\
+  !*** ./src/blocks/modules/parallax/parallax-innovation.js ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+//custom 
+function parallaxInnovationInit() {
+  var innovationPageAnimation_1 = document.querySelector(".innovation-page__animation_1");
+  new simpleParallax(innovationPageAnimation_1, {
+    orientation: 'up',
+    overflow: true,
+    delay: .6,
+    scale: 2,
+    transition: 'cubic-bezier(.39,.64,.47,.57)'
+  });
+  var innovationPageAnimation_2 = document.querySelector(".innovation-page__animation_2");
+  new simpleParallax(innovationPageAnimation_2, {
+    orientation: 'top right',
+    overflow: true,
+    delay: .6,
+    scale: 1.8,
+    transition: 'cubic-bezier(.39,.64,.47,.57)'
+  });
+  var innovationPageAnimation_3 = document.querySelector(".innovation-page__animation_3");
+  new simpleParallax(innovationPageAnimation_3, {
+    orientation: 'down left',
+    overflow: true,
+    delay: .6,
+    scale: 1.25,
+    transition: 'cubic-bezier(.39,.64,.47,.57)'
+  });
+  var innovationPageAnimation_4 = document.querySelector(".innovation-page__animation_4");
+  new simpleParallax(innovationPageAnimation_4, {
+    orientation: 'down',
+    overflow: true,
+    delay: .6,
+    scale: 1.8,
+    transition: 'cubic-bezier(.39,.64,.47,.57)'
+  });
+}
+
+parallaxInnovationInit();
+
+/***/ }),
+
 /***/ "./src/blocks/modules/parallax/parallax-news.js":
 /*!******************************************************!*\
   !*** ./src/blocks/modules/parallax/parallax-news.js ***!
@@ -1118,19 +1165,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_parallax_parallax_carriers__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_modules_parallax_parallax_carriers__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var _modules_parallax_parallax_values__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! %modules%/parallax/parallax-values */ "./src/blocks/modules/parallax/parallax-values.js");
 /* harmony import */ var _modules_parallax_parallax_values__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_modules_parallax_parallax_values__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _modules_sections_sections__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! %modules%/sections/sections */ "./src/blocks/modules/sections/sections.js");
-/* harmony import */ var _modules_sections_sections__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_modules_sections_sections__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _modules_header_header__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! %modules%/header/header */ "./src/blocks/modules/header/header.js");
-/* harmony import */ var _modules_header_header__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_modules_header_header__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _modules_clients_clients__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! %modules%/clients/clients */ "./src/blocks/modules/clients/clients.js");
-/* harmony import */ var _modules_clients_clients__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_modules_clients_clients__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var _modules_our_commitment_our_commitment__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! %modules%/our-commitment/our-commitment */ "./src/blocks/modules/our-commitment/our-commitment.js");
-/* harmony import */ var _modules_our_commitment_our_commitment__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_modules_our_commitment_our_commitment__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var _modules_run_num_run_num__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! %modules%/run-num/run-num */ "./src/blocks/modules/run-num/run-num.js");
-/* harmony import */ var _modules_run_num_run_num__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_modules_run_num_run_num__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! %modules%/footer/footer */ "./src/blocks/modules/footer/footer.js");
-/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_modules_footer_footer__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _modules_parallax_parallax_innovation__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! %modules%/parallax/parallax-innovation */ "./src/blocks/modules/parallax/parallax-innovation.js");
+/* harmony import */ var _modules_parallax_parallax_innovation__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_modules_parallax_parallax_innovation__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _modules_sections_sections__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! %modules%/sections/sections */ "./src/blocks/modules/sections/sections.js");
+/* harmony import */ var _modules_sections_sections__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_modules_sections_sections__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _modules_header_header__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! %modules%/header/header */ "./src/blocks/modules/header/header.js");
+/* harmony import */ var _modules_header_header__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_modules_header_header__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _modules_clients_clients__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! %modules%/clients/clients */ "./src/blocks/modules/clients/clients.js");
+/* harmony import */ var _modules_clients_clients__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_modules_clients_clients__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _modules_our_commitment_our_commitment__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! %modules%/our-commitment/our-commitment */ "./src/blocks/modules/our-commitment/our-commitment.js");
+/* harmony import */ var _modules_our_commitment_our_commitment__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_modules_our_commitment_our_commitment__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _modules_run_num_run_num__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! %modules%/run-num/run-num */ "./src/blocks/modules/run-num/run-num.js");
+/* harmony import */ var _modules_run_num_run_num__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_modules_run_num_run_num__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! %modules%/footer/footer */ "./src/blocks/modules/footer/footer.js");
+/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_modules_footer_footer__WEBPACK_IMPORTED_MODULE_13__);
 //parallax
+
 
 
 

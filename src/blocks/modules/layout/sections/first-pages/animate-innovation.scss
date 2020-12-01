@@ -1,0 +1,160 @@
+.innovation-page__animation {
+    position: absolute;
+
+    &_1 {
+        left: -215px;
+        bottom: -60px;
+    }
+
+    &_2 {
+        left: -25%;
+        bottom: 10px;
+        z-index: 2;
+
+        img {
+            max-width: 85%;
+        }
+
+    }
+
+    &_3 {
+        bottom: 0;
+        right: -50%;
+
+        img {
+            max-width: 70%;
+        }
+    }
+
+    &_4 {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        bottom: -40%;
+        right: -40%;
+
+        img {
+            margin-left: auto;
+            margin-top: auto;
+        }
+    }
+
+    //mob
+
+    &_5 {
+        bottom: -30px;
+        left: 30%;
+    }
+
+
+}
+
+@media(max-width:1024px) {
+    .innovation-page__animation {
+        position: absolute;
+
+        &_1 {
+            max-width: 45%;
+            left: -10%;
+
+        }
+
+        &_2 {
+
+            left: -10%;
+
+            img {
+                max-width: 55%;
+
+            }
+        }
+
+        &_3 {
+            display: flex;
+            justify-content: flex-end;
+            right: 0;
+            bottom: -5%;
+
+            img {
+                max-width: 55%;
+
+            }
+
+        }
+
+        &_4 {
+            img {
+                max-width: 65%;
+            }
+        }
+
+        &_5 {}
+
+    }
+}
+
+@media(max-width:992px) {
+    .value-page__animation  {
+
+        &_1 {
+            max-width: 35%;
+        }
+
+        &_2 {
+            max-width: 55%;
+            bottom: 20%;
+            left: -50px;
+        }
+
+        &_3 {
+            max-width: 55%;
+        }
+
+        &_4 {
+            max-width: 35%;
+        }
+
+        &_5 {
+            max-width: 35%;
+        }
+
+
+    }
+}
+
+@media(max-width:600px) {
+    .innovation-page__animation {
+        position: absolute;
+
+        &_1 {
+            max-width: 45%;
+        }
+
+        &_2 {
+            max-width: 75%;
+            bottom: 20%;
+            img {
+                max-width: 75%;
+            }
+        }
+
+        &_3 {
+            bottom: 10%;
+        }
+
+        &_4 {
+            max-width: 35%;
+        }
+
+        &_5 {
+            max-width: 35%;
+        }
+
+        &_6 {
+            bottom: 0;
+            right: -45%;
+        }
+    }
+}
+
+

@@ -6898,6 +6898,52 @@ body {
   left: 30%;
 }
 
+.innovation-page__animation {
+  position: absolute;
+}
+
+.innovation-page__animation_1 {
+  left: -215px;
+  bottom: -60px;
+}
+
+.innovation-page__animation_2 {
+  left: -25%;
+  bottom: 10px;
+  z-index: 2;
+}
+
+.innovation-page__animation_2 img {
+  max-width: 85%;
+}
+
+.innovation-page__animation_3 {
+  bottom: 0;
+  right: -50%;
+}
+
+.innovation-page__animation_3 img {
+  max-width: 70%;
+}
+
+.innovation-page__animation_4 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  bottom: -40%;
+  right: -40%;
+}
+
+.innovation-page__animation_4 img {
+  margin-left: auto;
+  margin-top: auto;
+}
+
+.innovation-page__animation_5 {
+  bottom: -30px;
+  left: 30%;
+}
+
 .header {
   position: fixed;
   z-index: 150;
@@ -7306,7 +7352,7 @@ body {
 
 .first-page__row {
   position: relative;
-  z-index: 2;
+  z-index: 10;
   display: flex;
   align-items: center;
 }
@@ -8117,7 +8163,63 @@ body {
   }
 }
 
+@media (max-width: 1024px) {
+  .innovation-page__animation {
+    position: absolute;
+  }
+
+  .innovation-page__animation_1 {
+    max-width: 45%;
+    left: -10%;
+  }
+
+  .innovation-page__animation_2 {
+    left: -10%;
+  }
+
+  .innovation-page__animation_2 img {
+    max-width: 55%;
+  }
+
+  .innovation-page__animation_3 {
+    display: flex;
+    justify-content: flex-end;
+    right: 0;
+    bottom: -5%;
+  }
+
+  .innovation-page__animation_3 img {
+    max-width: 55%;
+  }
+
+  .innovation-page__animation_4 img {
+    max-width: 65%;
+  }
+}
+
 @media (max-width: 992px) {
+  .value-page__animation_1 {
+    max-width: 35%;
+  }
+
+  .value-page__animation_2 {
+    max-width: 55%;
+    bottom: 20%;
+    left: -50px;
+  }
+
+  .value-page__animation_3 {
+    max-width: 55%;
+  }
+
+  .value-page__animation_4 {
+    max-width: 35%;
+  }
+
+  .value-page__animation_5 {
+    max-width: 35%;
+  }
+
   .value-page__animation_1 {
     max-width: 35%;
   }
@@ -8991,6 +9093,40 @@ body {
   }
 
   .value-page__animation_6 {
+    bottom: 0;
+    right: -45%;
+  }
+
+  .innovation-page__animation {
+    position: absolute;
+  }
+
+  .innovation-page__animation_1 {
+    max-width: 45%;
+  }
+
+  .innovation-page__animation_2 {
+    max-width: 75%;
+    bottom: 20%;
+  }
+
+  .innovation-page__animation_2 img {
+    max-width: 75%;
+  }
+
+  .innovation-page__animation_3 {
+    bottom: 10%;
+  }
+
+  .innovation-page__animation_4 {
+    max-width: 35%;
+  }
+
+  .innovation-page__animation_5 {
+    max-width: 35%;
+  }
+
+  .innovation-page__animation_6 {
     bottom: 0;
     right: -45%;
   }
