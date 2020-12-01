@@ -81,7 +81,7 @@
     align-items: center;
     justify-content: center;
 
-    
+
 
     &__row {
         position: relative;
@@ -115,7 +115,7 @@
 
 .first-page__animation {
     position: absolute;
-    
+
     img {
         object-fit: contain;
     }
@@ -199,6 +199,10 @@
 }
 
 @media(max-width:950px) {
+    .first-page-bg {
+        background-attachment: scroll;
+    }
+
     .first-page__animation img {
         max-width: 65%;
         width: 100%;
@@ -371,9 +375,7 @@
 
         }
 
-        &_6 {
-
-        }
+        &_6 {}
 
         &_7 {
             right: 0;
@@ -423,4 +425,3 @@
         }
     }
 }
-

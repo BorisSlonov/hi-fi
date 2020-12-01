@@ -111,8 +111,3 @@ function parallaxNewsInit() {
 
 parallaxNewsInit();
 
-setTimeout(dispatch, 1000)
-
-function dispatch() {
-    console.log(window.dispatchEvent(new CustomEvent('resize')))
-}
