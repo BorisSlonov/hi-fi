@@ -1,6 +1,7 @@
 :root {
     --animate-duration: 800ms;
     --animate-delay: 0.9s;
+
 }
 
 *,
@@ -33,6 +34,15 @@ body {
     color: $sec-color;
     line-height: 1.5;
     overflow-x: hidden;
+}
+
+body {
+    cursor: url('../img/cursor.png'), auto !important;
+    cursor: url('../img/cursor.png'), n-resize !important;
+    cursor: url('../img/cursor.png'), ne-resize !important;
+    cursor: url('../img/cursor.png'), e-resize !important;
+    cursor: url('../img/cursor.png'), se-resize !important;
+    cursor: url('../img/cursor.png'), s-resize !important;
 }
 
 @media(max-width: 768px) {
