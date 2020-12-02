@@ -203,7 +203,7 @@ if (window.innerWidth <= 425) {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
- //burger
+/* WEBPACK VAR INJECTION */(function($) { //burger
 
 function _createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
 
@@ -276,6 +276,38 @@ document.addEventListener("scroll", function (e) {
     rightTextWow.classList.add('visible', 'wow', 'animate__animated', 'animate__fadeIn', 'animate__delay-1s');
   }
 });
+$(document).ready(function () {
+  var href = window.location;
+
+  if (href == 'https://borisslonov.github.io/hi-fi/dist/index.html') {
+    $('.header__link_main').addClass('header__link_active');
+  }
+
+  if (href == 'https://borisslonov.github.io/hi-fi/dist/page-about.html') {
+    $('.header__link_2').addClass('header__link_active');
+  }
+
+  if (href == 'https://borisslonov.github.io/hi-fi/dist/page-sectors.html') {
+    $('.header__link_3').addClass('header__link_active');
+  }
+
+  if (href == 'https://borisslonov.github.io/hi-fi/dist/page-innovation.html') {
+    $('.header__link_4').addClass('header__link_active');
+  }
+
+  if (href == 'https://borisslonov.github.io/hi-fi/dist/page-values.html') {
+    $('.header__link_5').addClass('header__link_active');
+  }
+
+  if (href == 'https://borisslonov.github.io/hi-fi/dist/page-carriers.html') {
+    $('.header__link_6').addClass('header__link_active');
+  }
+
+  if (href == 'https://borisslonov.github.io/hi-fi/dist/page-news.html') {
+    $('.header__link_7').addClass('header__link_active');
+  }
+});
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
 
 /***/ }),
 
