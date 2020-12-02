@@ -21,17 +21,3 @@ $(document).ready(function () {
 
 });
 
-
-// function addRemoveOnResize() {
-
-//     let hiddenCard = document.querySelectorAll(".commitment-hidden")
-
-//     if (window.innerWidth <= 768) {
-//         hiddenCard.classList.remove('column-one-height')
-//     } else {
-//         hiddenCard.classList.add('column-one-height')
-//     }
-
-// }
-
-// addRemoveOnResize() 

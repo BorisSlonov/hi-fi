@@ -205,12 +205,6 @@ if (window.innerWidth <= 425) {
 "use strict";
 /* WEBPACK VAR INJECTION */(function($) { //burger
 
-function _createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
 window.addEventListener('DOMContentLoaded', function () {
   var menu = document.querySelector('.header__list'),
       menuItem = document.querySelectorAll('.header__link'),
@@ -225,35 +219,7 @@ window.addEventListener('DOMContentLoaded', function () {
       menu.classList.toggle('menu_active');
     });
   });
-}); // slowScroll
-
-var anchors = document.querySelectorAll('a[href*="#"]');
-
-var _iterator = _createForOfIteratorHelper(anchors),
-    _step;
-
-try {
-  var _loop = function _loop() {
-    var anchor = _step.value;
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-      var blockID = anchor.getAttribute('href').substr(1);
-      document.getElementById(blockID).scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-      });
-    });
-  };
-
-  for (_iterator.s(); !(_step = _iterator.n()).done;) {
-    _loop();
-  } //add class on scroll
-
-} catch (err) {
-  _iterator.e(err);
-} finally {
-  _iterator.f();
-}
+}); //add class on scroll
 
 document.addEventListener("scroll", function (e) {
   var content = document.querySelector("body");
@@ -332,15 +298,7 @@ $(document).ready(function () {
   }
 
   equalHeight($(".column-one-height"));
-}); // function addRemoveOnResize() {
-//     let hiddenCard = document.querySelectorAll(".commitment-hidden")
-//     if (window.innerWidth <= 768) {
-//         hiddenCard.classList.remove('column-one-height')
-//     } else {
-//         hiddenCard.classList.add('column-one-height')
-//     }
-// }
-// addRemoveOnResize()
+});
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
 
 /***/ }),
@@ -1060,49 +1018,43 @@ function dispatch() {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-// window.onload = function () {
-//     let compositionCard_1 = document.querySelector(".composition-card_1");
-//     let compositionCardText_1 = document.querySelector(
-//         ".composition-card__text_1"
-//     );
-//     compositionCard_1.addEventListener("click", function () {
-//         compositionCardText_1.classList.toggle("composition-card--active");
-//     });
-//     let compositionCard_2 = document.querySelector(".composition-card_2");
-//     let compositionCardText_2 = document.querySelector(
-//         ".composition-card__text_2"
-//     );
-//     compositionCard_2.addEventListener("click", function () {
-//         compositionCardText_2.classList.toggle("composition-card--active");
-//     });
-//     let compositionCard_3 = document.querySelector(".composition-card_3");
-//     let compositionCardText_3 = document.querySelector(
-//         ".composition-card__text_3"
-//     );
-//     compositionCard_3.addEventListener("click", function () {
-//         compositionCardText_3.classList.toggle("composition-card--active");
-//     });
-//     let labCard_1 = document.querySelector(".lab-card_1");
-//     let labCardContent_1 = document.querySelector(".lab-card__content_1");
-//     labCard_1.addEventListener("click", function () {
-//         labCardContent_1.classList.toggle("lab-card--active_1");
-//     });
-//     let labCard_2 = document.querySelector(".lab-card_2");
-//     let labCardContent_2 = document.querySelector(".lab-card__content_2");
-//     labCard_2.addEventListener("click", function () {
-//         labCardContent_2.classList.toggle("lab-card--active_2");
-//     });
-//     let labCard_3 = document.querySelector(".lab-card_3");
-//     let labCardContent_3 = document.querySelector(".lab-card__content_3");
-//     labCard_3.addEventListener("click", function () {
-//         labCardContent_3.classList.toggle("lab-card--active_1");
-//     });
-//     let labCard_4 = document.querySelector(".lab-card_4");
-//     let labCardContent_4 = document.querySelector(".lab-card__content_4");
-//     labCard_4.addEventListener("click", function () {
-//         labCardContent_4.classList.toggle("lab-card--active_2");
-//     });
-// };
+window.onload = function () {
+  var compositionCard_1 = document.querySelector(".composition-card_1");
+  var compositionCardText_1 = document.querySelector(".composition-card__text_1");
+  compositionCard_1.addEventListener("click", function () {
+    compositionCardText_1.classList.toggle("composition-card--active");
+  });
+  var compositionCard_2 = document.querySelector(".composition-card_2");
+  var compositionCardText_2 = document.querySelector(".composition-card__text_2");
+  compositionCard_2.addEventListener("click", function () {
+    compositionCardText_2.classList.toggle("composition-card--active");
+  });
+  var compositionCard_3 = document.querySelector(".composition-card_3");
+  var compositionCardText_3 = document.querySelector(".composition-card__text_3");
+  compositionCard_3.addEventListener("click", function () {
+    compositionCardText_3.classList.toggle("composition-card--active");
+  });
+  var labCard_1 = document.querySelector(".lab-card_1");
+  var labCardContent_1 = document.querySelector(".lab-card__content_1");
+  labCard_1.addEventListener("click", function () {
+    labCardContent_1.classList.toggle("lab-card--active_1");
+  });
+  var labCard_2 = document.querySelector(".lab-card_2");
+  var labCardContent_2 = document.querySelector(".lab-card__content_2");
+  labCard_2.addEventListener("click", function () {
+    labCardContent_2.classList.toggle("lab-card--active_2");
+  });
+  var labCard_3 = document.querySelector(".lab-card_3");
+  var labCardContent_3 = document.querySelector(".lab-card__content_3");
+  labCard_3.addEventListener("click", function () {
+    labCardContent_3.classList.toggle("lab-card--active_1");
+  });
+  var labCard_4 = document.querySelector(".lab-card_4");
+  var labCardContent_4 = document.querySelector(".lab-card__content_4");
+  labCard_4.addEventListener("click", function () {
+    labCardContent_4.classList.toggle("lab-card--active_2");
+  });
+};
 
 /***/ }),
 
