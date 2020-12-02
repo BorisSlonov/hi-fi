@@ -25,6 +25,7 @@
     }
 }
 
+.modal_1-inner {}
 
 #modal__hint-card_3 {
     & .modal_1__content {
@@ -44,4 +45,44 @@
 
     }
 
+}
+
+.modal__digitall {
+    .modal_1__text {
+        font-size: 20px;
+        line-height: 1.2;
+
+    }
+
+    & .modal_1-btn {
+        padding: .5rem 1rem;
+        font-size: 1.25rem;
+        line-height: 1.5;
+        border-radius: .3rem;
+        background-color: #007bff;
+        border-color: #007bff;
+        text-align: center;
+        color: #fff;
+    }
+
+    & .modal_1-list {
+        & .modal_1__item {
+            list-style-type: none;
+
+            & .modal_1-list__title {
+                width: 100%;
+                background-color: #46edb9;
+                color: #fff;
+                text-align: center;
+                margin: 20px 0;
+
+            }
+
+            & li {
+                margin-left: 30px;
+                padding: 10px 0;
+            }
+        }
+
+    }
 }
