@@ -7619,6 +7619,47 @@ body {
   display: none;
 }
 
+.modal_1 {
+  display: none;
+  width: 70%;
+  background-color: #eceaf5;
+}
+
+.modal_1__header {
+  height: 40px;
+  font-size: 15px;
+  text-align: left;
+  color: #00516b;
+  text-transform: uppercase;
+  border-bottom: 1px solid grey;
+}
+
+.modal_1__title {
+  padding-bottom: 20px;
+}
+
+.modal_1__content {
+  padding: 20px;
+}
+
+.modal_1__footer {
+  padding: 20px 0;
+}
+
+#modal__hint-card_3 .modal_1__content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+#modal__hint-card_3 .modal_1__list {
+  width: 50%;
+}
+
+#modal__hint-card_3 .modal_1__img {
+  width: 50%;
+}
+
 .footer {
   background-image: url(../img/bg/footer-bg.png);
   background-size: cover;

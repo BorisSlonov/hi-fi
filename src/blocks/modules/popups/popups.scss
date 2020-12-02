@@ -1,0 +1,47 @@
+.modal_1 {
+    display: none;
+    width: 70%;
+    background-color: #eceaf5;
+
+    &__header {
+        height: 40px;
+        font-size: 15px;
+        text-align: left;
+        color: #00516b;
+        text-transform: uppercase;
+        border-bottom: 1px solid grey;
+    }
+
+    &__title {
+        padding-bottom: 20px;
+    }
+
+    &__content {
+        padding: 20px;
+    }
+
+    &__footer {
+        padding: 20px 0;
+    }
+}
+
+
+#modal__hint-card_3 {
+    & .modal_1__content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    & .modal_1__list {
+        width: 50%;
+
+    }
+
+    & .modal_1__img {
+
+        width: 50%;
+
+    }
+
+}

@@ -25,11 +25,17 @@
     <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
     <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="styles/main.css">
 </head>
 
 <body>
-    <!-- burger -->
+
+    
+    
+
+
+<!-- burger -->
 <div class="header">
     <div class="container">
         <div class='header__body'>
@@ -293,7 +299,7 @@
             <div class="hint-card__inner">
               <div class="hint-card__title">Forfait de développement</div>
               <div class="hint-card__img">
-                <a href=""><img src="img/icons/arrows-white.png" alt=""></a>
+                <a data-fancybox data-touch="false" href="#modal__hint-card_1"><img src="img/icons/arrows-white.png" alt=""></a>
               </div>
             </div>
 
@@ -302,7 +308,7 @@
             <div class="hint-card__inner">
               <div class="hint-card__title">TMA</div>
               <div class="hint-card__img">
-                <a href=""><img src="img/icons/arrows-white.png" alt=""></a>
+                <a data-fancybox data-touch="false" href="#modal__hint-card_2"><img src="img/icons/arrows-white.png" alt=""></a>
               </div>
             </div>
 
@@ -311,7 +317,7 @@
             <div class="hint-card__inner">
               <div class="hint-card__title">CDS</div>
               <div class="hint-card__img">
-                <a href=""><img src="img/icons/arrows-white.png" alt=""></a>
+                <a data-fancybox data-touch="false" href="#modal__hint-card_3"><img src="img/icons/arrows-white.png" alt=""></a>
               </div>
             </div>
 
@@ -320,7 +326,7 @@
             <div class="hint-card__inner">
               <div class="hint-card__title">ATM</div>
               <div class="hint-card__img">
-                <a href=""><img src="img/icons/arrows-white.png" alt=""></a>
+                <a data-fancybox data-touch="false" href="#modal__hint-card_4"><img src="img/icons/arrows-white.png" alt=""></a>
 
               </div>
             </div>
@@ -388,8 +394,117 @@
 
 
 
+
+
+
+<article class="modal_1" id="modal__hint-card_1">
+
+    <div class="modal_1-inner">
+  
+      <div class="modal_1__header">
+        EXEMPLES OF ATM
+      </div>
+      <div class="modal_1__content">
+  
+  
+        <h3 class="modal_1__title"> TODO </h3>
+  
+  
+  
+      </div>
+    </div>
+  
+  </article>
+  
+  <article class="modal_1" id="modal__hint-card_2">
+  
+    <div class="modal_1-inner">
+      <div class="modal_1__header">
+        EXEMPLES OF ATM
+      </div>
+      <div class="modal_1__content">
+  
+        <div class="modal_1__img">
+          <img src="image/tma-1.png" alt="">
+        </div>
+        <div class="modal_1__img">
+          <img src="image/tma-2.png" alt="">
+        </div>
+  
+  
+  
+  
+      </div>
+  
+    </div>
+  
+  </article>
+  <article class="modal_1" id="modal__hint-card_3">
+  
+    <div class="modal_1-inner">
+      <div class="modal_1__header">
+  
+        EXEMPLES OF CDS
+  
+      </div>
+      <div class="modal_1__content">
+  
+        <div class="modal_1__title"> Service Center (Groupama Gan Vie ) Responsible for day-to-day management activities
+          and steering of IT systems ensuring the back office in the fields of health, provident and retirement:
+        </div>
+  
+        <div class="modal_1__list">
+          <li>Contractualization</li>
+          <li>Call for contributions</li>
+          <li>Receipt</li>
+          <li>Calculation of benefits</li>
+          <li>Disbursement</li>
+          <li>Provisions</li>
+          <li>Accounting events</li>
+        </div>
+        <div class="modal_1__img">
+          <img src="image/groupama.jpg" alt="">
+        </div>
+      </div>
+  
+  
+      <div class="modal_1__footer">
+        <p>One-stop shop for traders, MOA, MOE and IT production Team of 6 Engineers located on customer premises
+          Multi-year contract based on purchases of work units</p>
+      </div>
+    </div>
+  
+  </article>
+  <article class="modal_1" id="modal__hint-card_4">
+  
+    <div class="modal_1-inner">
+      <div class="modal_1__content">
+        <div class="modal_1__header">
+  
+          EXEMPLES OF CDS
+  
+        </div>
+        <div class="modal_1__content">
+  
+        </div>
+  
+  
+        <div class="modal_1__footer">
+  
+        </div>
+      </div>
+    </div>
+  
+  </article>
+
+
+
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"
     integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
 
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
@@ -409,7 +524,6 @@
 <div class="js-offsetTopLeft commitment-hidden"></div>
 
 <div class="js-offsetTopRight"></div>
-
 
 
 
