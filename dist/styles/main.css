@@ -8198,6 +8198,7 @@ body {
 
   .innovation-page__animation_3 img {
     max-width: 55%;
+    flex-shrink: 0;
   }
 
   .innovation-page__animation_4 img {
