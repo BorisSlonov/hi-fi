@@ -7008,7 +7008,6 @@ body {
   color: rgba(255, 255, 255, 0.911);
   font-family: "Montserrat", sans-serif;
   font-size: 1.25rem;
-  overflow: hidden;
 }
 
 .header__link:hover {
