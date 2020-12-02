@@ -21,6 +21,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
 
+
 //add class on scroll
 document.addEventListener("scroll", (e) => {
 
