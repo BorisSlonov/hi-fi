@@ -9136,6 +9136,10 @@ body {
     right: -20%;
   }
 
+  .innovation-page__animation_3 img {
+    object-fit: contain;
+  }
+
   .innovation-page__animation_4 {
     max-width: 35%;
   }
