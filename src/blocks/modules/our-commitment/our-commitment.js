@@ -22,16 +22,16 @@ $(document).ready(function () {
 });
 
 
-function addRemoveOnResize() {
+// function addRemoveOnResize() {
 
-    let hiddenCard = document.querySelectorAll(".commitment-hidden")
+//     let hiddenCard = document.querySelectorAll(".commitment-hidden")
 
-    if (window.innerWidth <= 768) {
-        hiddenCard.classList.remove('column-one-height')
-    } else {
-        hiddenCard.classList.add('column-one-height')
-    }
+//     if (window.innerWidth <= 768) {
+//         hiddenCard.classList.remove('column-one-height')
+//     } else {
+//         hiddenCard.classList.add('column-one-height')
+//     }
 
-}
+// }
 
-addRemoveOnResize() 
+// addRemoveOnResize() 
