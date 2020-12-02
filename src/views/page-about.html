@@ -1,40 +1,188 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Page About</title>
-        <meta name="theme-color" content="#c9e0e04d">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
-        <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
-        <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
-        <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
-        <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
-        <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
-        <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
-        <link rel="stylesheet" href="styles/main.css">
-    </head>
-    <body>
-        @@include("../blocks/modules/header/header.html")
 
-        @@include("../blocks/modules/layout/page-about/page-about.html")
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page About</title>
+    <meta name="theme-color" content="#c9e0e04d">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
 
-        @@include("../blocks/modules/footer/footer.html")
+<body>
+    @@include("../blocks/modules/header/header.html")
 
-       
-        
-        <script src="js/main.js"></script>
-        <script src="js/vendor.js"></script>
-    </body>
+    @@include("../blocks/modules/layout/page-about/page-about.html")
+
+    @@include("../blocks/modules/footer/footer.html")
+
+
+
+    <script>
+
+        (function ($) {
+            // Custom easing function
+            $.extend($.easing, {
+                // This is ripped directly from the jQuery easing plugin (easeOutExpo), from: http://gsgd.co.uk/sandbox/jquery/easing/
+                spincrementEasing: function (x, t, b, c, d) {
+                    return (t === d) ? b + c : c * (-Math.pow(2, -10 * t / d) + 1) + b
+                }
+            })
+
+            // Spincrement function
+            $.fn.spincrement = function (opts) {
+                // Default values
+                var defaults = {
+                    from: 0,
+                    to: null,
+                    decimalPlaces: null,
+                    decimalPoint: '.',
+                    thousandSeparator: ',',
+                    duration: 1000, // ms; TOTAL length animation
+                    leeway: 50, // percent of duraion
+                    easing: 'spincrementEasing',
+                    fade: true,
+                    complete: null
+                }
+                var options = $.extend(defaults, opts)
+
+                // Function for formatting number
+                var re_thouSep = new RegExp(/^(-?[0-9]+)([0-9]{3})/)
+                function format(num, dp) {
+                    num = num.toFixed(dp) // converts to string!
+
+                    // Non "." decimal point
+                    if ((dp > 0) && (options.decimalPoint !== '.')) {
+                        num = num.replace('.', options.decimalPoint)
+                    }
+
+                    // Thousands separator
+                    if (options.thousandSeparator) {
+                        while (re_thouSep.test(num)) {
+                            num = num.replace(re_thouSep, '$1' + options.thousandSeparator + '$2')
+                        }
+                    }
+                    return num
+                }
+
+                // Apply to each matching item
+                return this.each(function () {
+                    // Get handle on current obj
+                    var obj = $(this)
+
+                    // Set params FOR THIS ELEM
+                    var from = options.from
+                    if (obj.attr('data-from')) {
+                        from = parseFloat(obj.attr('data-from'))
+                    }
+
+                    var to
+                    if (obj.attr('data-to')) {
+                        to = parseFloat(obj.attr('data-to'))
+                    } else if (options.to !== null) {
+                        to = options.to
+                    } else {
+                        var ts = $.inArray(options.thousandSeparator, ['\\', '^', '$', '*', '+', '?', '.']) > -1 ? '\\' + options.thousandSeparator : options.thousandSeparator
+                        var re = new RegExp(ts, 'g')
+                        to = parseFloat(obj.text().replace(re, ''))
+                    }
+
+                    var duration = options.duration
+                    if (options.leeway) {
+                        // If leeway is set, randomise duration a little
+                        duration += Math.round(options.duration * ((Math.random() * 2) - 1) * options.leeway / 100)
+                    }
+
+                    var dp
+                    if (obj.attr('data-dp')) {
+                        dp = parseInt(obj.attr('data-dp'), 10)
+                    } else if (options.decimalPlaces !== null) {
+                        dp = options.decimalPlaces
+                    } else {
+                        var ix = obj.text().indexOf(options.decimalPoint)
+                        dp = (ix > -1) ? obj.text().length - (ix + 1) : 0
+                    }
+
+                    // Start
+                    obj.css('counter', from)
+                    if (options.fade) obj.css('opacity', 0)
+                    obj.animate(
+                        {
+                            counter: to,
+                            opacity: 1
+                        },
+                        {
+                            easing: options.easing,
+                            duration: duration,
+
+                            // Invoke the callback for each step.
+                            step: function (progress) {
+                                obj.html(format(progress * to, dp))
+                            },
+                            complete: function () {
+                                // Cleanup
+                                obj.css('counter', null)
+                                obj.html(format(to, dp))
+
+                                // user's callback
+                                if (options.complete) {
+                                    options.complete(obj)
+                                }
+                            }
+                        }
+                    )
+                })
+            }
+        })($)
+
+        $(document).ready(function () {
+
+            var show = true;
+            var countbox = ".run-num__item";
+            $(window).on("scroll load resize", function () {
+                if (!show) return false; // Отменяем показ анимации, если она уже была выполнена
+                var w_top = $(window).scrollTop(); // Количество пикселей на которое была прокручена страница
+                var e_top = $(countbox).offset().top; // Расстояние от блока со счетчиками до верха всего документа
+                var w_height = $(window).height(); // Высота окна браузера
+                var d_height = $(document).height(); // Высота всего документа
+                var e_height = $(countbox).outerHeight(); // Полная высота блока со счетчиками
+                if (w_top + 600 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height) {
+                    $('.run-num__text_num').css('opacity', '1');
+                    $('.run-num__text_num').spincrement({
+                        thousandSeparator: "",
+                        duration: 4200
+                    });
+
+                    show = false;
+                }
+            });
+
+        });
+
+
+    </script>
+
+    <script src="js/main.js"></script>
+    <script src="js/vendor.js"></script>
+</body>
+
 </html>
