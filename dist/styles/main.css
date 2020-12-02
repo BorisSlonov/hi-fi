@@ -5260,7 +5260,7 @@ button.swiper-pagination-bullet {
 
 :root {
   --animate-duration: 800ms;
-  --animate-delay: 0.9s;
+  --animate-delay: 1.2s;
 }
 
 *,
@@ -7363,7 +7363,7 @@ body {
 }
 
 .first-page__animation_4 {
-  left: 0;
+  left: -5%;
   top: 50%;
 }
 
