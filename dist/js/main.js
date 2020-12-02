@@ -155,6 +155,27 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/blocks/modules/btn/btn.js":
+/*!***************************************!*\
+  !*** ./src/blocks/modules/btn/btn.js ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+var test = getComputedStyle(document.querySelector('.main-btn'), ':before');
+test.addEventListener("mouseenter", function (event) {
+  setTimeout(function () {
+    event.target.style.display = "none";
+  }, 700);
+}, false);
+test.addEventListener("mouseover", function (event) {
+  setTimeout(function () {
+    event.target.style.display = "block";
+  }, 700);
+}, false);
+
+/***/ }),
+
 /***/ "./src/blocks/modules/clients/clients.js":
 /*!***********************************************!*\
   !*** ./src/blocks/modules/clients/clients.js ***!
@@ -768,10 +789,10 @@ parallaxValuesInit();
 function parallaxInit() {
   var FirstPageAnimation_1 = document.querySelector(".first-page__animation_1");
   new simpleParallax(FirstPageAnimation_1, {
-    orientation: 'down',
+    orientation: 'up',
     overflow: true,
     delay: .6,
-    scale: 1.3,
+    scale: 2.3,
     transition: 'cubic-bezier(.39,.64,.47,.57)'
   });
   var FirstPageAnimation_2 = document.querySelector(".first-page__animation_2");
@@ -787,7 +808,7 @@ function parallaxInit() {
     orientation: 'down left',
     overflow: true,
     delay: .6,
-    scale: 1.3,
+    scale: 1.6,
     transition: 'cubic-bezier(.39,.64,.47,.57)'
   });
   var FirstPageAnimation_4 = document.querySelector(".first-page__animation_4");
@@ -795,7 +816,7 @@ function parallaxInit() {
     orientation: 'up',
     overflow: true,
     delay: .6,
-    scale: 1.3,
+    scale: 1.6,
     transition: 'cubic-bezier(.39,.64,.47,.57)'
   });
   var FirstPageAnimation_5 = document.querySelector(".first-page__animation_5");
@@ -803,7 +824,7 @@ function parallaxInit() {
     orientation: 'down left',
     overflow: true,
     delay: .6,
-    scale: 1.3,
+    scale: 1.6,
     transition: 'cubic-bezier(.39,.64,.47,.57)'
   });
   var FirstPageAnimation_6 = document.querySelector(".first-page__animation_6");
@@ -811,7 +832,7 @@ function parallaxInit() {
     orientation: 'right',
     overflow: true,
     delay: .6,
-    scale: 1.3,
+    scale: 1.6,
     transition: 'cubic-bezier(.39,.64,.47,.57)'
   });
   var FirstPageAnimation_7 = document.querySelector(".first-page__animation_7");
@@ -819,7 +840,7 @@ function parallaxInit() {
     orientation: 'up right',
     overflow: true,
     delay: .6,
-    scale: 1.3,
+    scale: 2.6,
     transition: 'cubic-bezier(.39,.64,.47,.57)'
   });
   var FirstPageAnimation_8 = document.querySelector(".first-page__animation_8");
@@ -827,7 +848,7 @@ function parallaxInit() {
     orientation: 'right',
     overflow: true,
     delay: .6,
-    scale: 1.3,
+    scale: 1.6,
     transition: 'cubic-bezier(.39,.64,.47,.57)'
   });
   var FirstPageAnimation_9 = document.querySelector(".first-page__animation_9");
@@ -835,15 +856,15 @@ function parallaxInit() {
     orientation: 'down right',
     overflow: true,
     delay: .6,
-    scale: 1.3,
+    scale: 1.6,
     transition: 'cubic-bezier(.39,.64,.47,.57)'
   });
   var FirstPageAnimation_10 = document.querySelector(".first-page__animation_10");
   new simpleParallax(FirstPageAnimation_10, {
-    orientation: 'down right',
+    orientation: 'right',
     overflow: true,
     delay: .6,
-    scale: 1.3,
+    scale: 2,
     transition: 'cubic-bezier(.39,.64,.47,.57)'
   });
   var FirstPageAnimation_11 = document.querySelector(".first-page__animation_11");
@@ -851,7 +872,7 @@ function parallaxInit() {
     orientation: 'down right',
     overflow: true,
     delay: .6,
-    scale: 1.3,
+    scale: 1.6,
     transition: 'cubic-bezier(.39,.64,.47,.57)'
   });
   var FirstPageAnimation_12 = document.querySelector(".first-page__animation_12");
@@ -865,6 +886,14 @@ function parallaxInit() {
   var FirstPageAnimation_expertise = document.querySelector(".first-page__animation_expertise");
   new simpleParallax(FirstPageAnimation_expertise, {
     orientation: 'down',
+    overflow: true,
+    delay: 2.6,
+    scale: 2.4,
+    transition: 'cubic-bezier(.39,.64,.47,.57)'
+  });
+  var FirstPageAnimation_expertise_2 = document.querySelector(".first-page__animation_expertise-2");
+  new simpleParallax(FirstPageAnimation_expertise_2, {
+    orientation: 'down right',
     overflow: true,
     delay: 2.6,
     scale: 1.8,
@@ -932,14 +961,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_sections_sections__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_modules_sections_sections__WEBPACK_IMPORTED_MODULE_8__);
 /* harmony import */ var _modules_header_header__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! %modules%/header/header */ "./src/blocks/modules/header/header.js");
 /* harmony import */ var _modules_header_header__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_modules_header_header__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var _modules_clients_clients__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! %modules%/clients/clients */ "./src/blocks/modules/clients/clients.js");
-/* harmony import */ var _modules_clients_clients__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_modules_clients_clients__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var _modules_our_commitment_our_commitment__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! %modules%/our-commitment/our-commitment */ "./src/blocks/modules/our-commitment/our-commitment.js");
-/* harmony import */ var _modules_our_commitment_our_commitment__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_modules_our_commitment_our_commitment__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var _modules_run_num_run_num__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! %modules%/run-num/run-num */ "./src/blocks/modules/run-num/run-num.js");
-/* harmony import */ var _modules_run_num_run_num__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_modules_run_num_run_num__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! %modules%/footer/footer */ "./src/blocks/modules/footer/footer.js");
-/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_modules_footer_footer__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var _modules_btn_btn__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! %modules%/btn/btn */ "./src/blocks/modules/btn/btn.js");
+/* harmony import */ var _modules_btn_btn__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_modules_btn_btn__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _modules_clients_clients__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! %modules%/clients/clients */ "./src/blocks/modules/clients/clients.js");
+/* harmony import */ var _modules_clients_clients__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_modules_clients_clients__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _modules_our_commitment_our_commitment__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! %modules%/our-commitment/our-commitment */ "./src/blocks/modules/our-commitment/our-commitment.js");
+/* harmony import */ var _modules_our_commitment_our_commitment__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_modules_our_commitment_our_commitment__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _modules_run_num_run_num__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! %modules%/run-num/run-num */ "./src/blocks/modules/run-num/run-num.js");
+/* harmony import */ var _modules_run_num_run_num__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_modules_run_num_run_num__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! %modules%/footer/footer */ "./src/blocks/modules/footer/footer.js");
+/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_modules_footer_footer__WEBPACK_IMPORTED_MODULE_14__);
 //parallax
 
 
@@ -951,6 +982,7 @@ __webpack_require__.r(__webpack_exports__);
  //sections
 
  //blocks
+
 
 
 

@@ -140,8 +140,6 @@
     &_4 {
         left: -5%;
         top: 50%;
-
-
     }
 
     &_5 {
@@ -190,6 +188,16 @@
     &_expertise {
         left: 0;
         bottom: 10%;
+
+        img {
+            width: 120px;
+
+        }
+    }
+
+    &_expertise-2 {
+        right: 10%;
+        top: 10%;
 
         img {
             width: 120px;

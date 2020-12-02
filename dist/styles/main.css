@@ -7157,7 +7157,7 @@ body {
   outline-offset: 0px;
   text-shadow: none;
   border-radius: 28px;
-  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 750ms cubic-bezier(0.19, 1, 0.22, 1);
   border-radius: 28px;
   text-decoration: none;
   color: #fff;
@@ -7176,7 +7176,7 @@ body {
   padding: 10px 50px;
   font-size: 18px;
   text-transform: uppercase;
-  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 750ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .main-btn_page-main-bt {
@@ -7199,7 +7199,7 @@ body {
   left: 0;
   border: 1px solid #006993;
   border-radius: 28px;
-  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 750ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .main-btn_blue:hover {
@@ -7208,8 +7208,9 @@ body {
 }
 
 .main-btn_blue:hover::before {
-  transform: scale(1.5);
+  transform: scale(2.5);
   opacity: 0;
+  z-index: -1;
 }
 
 .main-btn:hover {
@@ -7217,8 +7218,9 @@ body {
 }
 
 .main-btn:hover::before {
-  transform: scale(1.5);
+  transform: scale(2.5);
   opacity: 0;
+  z-index: -1;
 }
 
 .main-btn::before {
@@ -7230,7 +7232,7 @@ body {
   left: 0;
   border: 1px solid #ffffff;
   border-radius: 28px;
-  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 750ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .first-page-bg {
@@ -7413,6 +7415,15 @@ body {
 }
 
 .first-page__animation_expertise img {
+  width: 120px;
+}
+
+.first-page__animation_expertise-2 {
+  right: 10%;
+  top: 10%;
+}
+
+.first-page__animation_expertise-2 img {
   width: 120px;
 }
 

@@ -27,6 +27,8 @@ import "%modules%/sections/sections";
 
 import "%modules%/header/header";
 
+import "%modules%/btn/btn";
+
 import "%modules%/clients/clients";
 
 import "%modules%/our-commitment/our-commitment";
