@@ -353,16 +353,16 @@ function parallaxAboutInit() {
   new simpleParallax(aboutAnimation_4, {
     orientation: 'down right',
     overflow: true,
-    delay: 1.6,
-    scale: 1.8,
+    delay: .6,
+    scale: 1.6,
     transition: 'cubic-bezier(.39,.64,.47,.57)'
   });
   var aboutAnimation_5 = document.querySelector(".about-animation_5");
   new simpleParallax(aboutAnimation_5, {
     orientation: 'down right',
     overflow: true,
-    delay: 1.6,
-    scale: 1.8,
+    delay: .6,
+    scale: 1.6,
     transition: 'cubic-bezier(.39,.64,.47,.57)'
   });
   var aboutAnimation_6 = document.querySelector(".about-animation_6");

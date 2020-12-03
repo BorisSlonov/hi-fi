@@ -9044,7 +9044,7 @@ body {
   }
 
   .lab {
-    padding-bottom: 200px;
+    padding-bottom: 50px;
   }
 
   .lab__title {
@@ -9103,7 +9103,7 @@ body {
   }
 
   .hint__title {
-    font-size: 16px;
+    font-size: 32px;
     margin-bottom: 40px;
     margin-right: 0;
   }
