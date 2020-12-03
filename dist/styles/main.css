@@ -9243,8 +9243,7 @@ body {
   }
 
   .sectors-animation-tr_1 {
-    right: -30%;
-    top: 0;
+    display: none;
   }
 
   .sectors-animation-tr_2 {

@@ -191,10 +191,9 @@
 
     .sectors-animation-tr {
 
-    &_1 {
-        right: -30%;
-        top: 0;
-    }
+        &_1 {
+           display: none;
+        }
 
         &_2 {
             right: -30%;
