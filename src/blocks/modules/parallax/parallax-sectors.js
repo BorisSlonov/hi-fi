@@ -25,10 +25,10 @@ function parallaxsectorsInit() {
     let sectorsAnimation_3 = document.querySelector(".sectors-animation_3");
 
     new simpleParallax(sectorsAnimation_3, {
-        orientation: 'down right',
+        orientation: 'right',
         overflow: true,
         delay: .6,
-        scale: 1.3,
+        scale: 1.6,
         transition: 'cubic-bezier(.39,.64,.47,.57)'
     });
 

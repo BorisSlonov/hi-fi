@@ -18,7 +18,7 @@
     }
 
     &_3 {
-        bottom: 0;
+        bottom: 30%;
         right: -150px;
 
         img {
@@ -44,6 +44,10 @@
     &_5 {
         bottom: -30px;
         left: 30%;
+    }
+
+    &_6 {
+        display: none;
     }
 
 
@@ -85,7 +89,9 @@
             }
         }
 
-        &_5 {}
+        &_6 {
+            display: block;
+        }
 
     }
 }
@@ -99,7 +105,7 @@
 
         &_2 {
             max-width: 55%;
-            bottom: 20%;
+     
             left: -50px;
         }
 

@@ -15,6 +15,7 @@ module.exports = {
     
     entry: {
         main: "./src/js/index.js",
+        about: "./src/js/import/page-about/page-about.js"
     },
 
     output: {

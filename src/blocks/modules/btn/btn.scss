@@ -48,7 +48,7 @@
             left: 0;
             border: 1px solid #006993;
             border-radius: 28px;
-            transition: all 750ms cubic-bezier(0.19, 1, 0.22, 1);
+            transition: all 950ms cubic-bezier(0.19, 1, 0.22, 1);
 
 
         }
@@ -91,3 +91,21 @@
 
     }
 }
+
+@keyframes btnWave {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(2.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+
