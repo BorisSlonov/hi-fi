@@ -25,7 +25,9 @@
     <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
     <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="styles/main.css">
+
 </head>
 
 <body>
@@ -954,9 +956,11 @@
             }
 
         }
-        addRemoveOnResize() 
+        document.addEventListener('resize', function () {
+            addRemoveOnResize()
+        })
 
-        
+
     </script>
     <script src="js/main.js"></script>
     <script src="js/vendor.js"></script>

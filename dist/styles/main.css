@@ -8606,6 +8606,10 @@ body {
     display: none;
   }
 
+  .first-page__animation_expertise-2 {
+    display: none;
+  }
+
   .left-text__title {
     width: 40%;
   }

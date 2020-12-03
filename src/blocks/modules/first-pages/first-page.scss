@@ -206,6 +206,8 @@
     }
 }
 
+
+
 @media(max-width:950px) {
     .first-page-bg {
         background-attachment: scroll;
@@ -295,6 +297,10 @@
 
     .first-page__animation {
         &_expertise {
+            display: none;
+        }
+
+        &_expertise-2 {
             display: none;
         }
     }
@@ -432,3 +438,6 @@
         }
     }
 }
+
+
+
