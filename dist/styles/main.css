@@ -5259,8 +5259,8 @@ button.swiper-pagination-bullet {
 }
 
 :root {
-  --animate-duration: 1.2s;
-  --animate-delay: 1.2s;
+  --animate-duration: 1.5s;
+  --animate-delay: 1.3s;
 }
 
 *,
