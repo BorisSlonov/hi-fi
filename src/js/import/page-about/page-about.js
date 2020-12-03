@@ -1,1 +1,1 @@
-import "%modules%/run-num";
+import "../../../blocks/modules/run-num/run-num";
