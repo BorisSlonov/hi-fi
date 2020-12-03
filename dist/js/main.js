@@ -727,7 +727,7 @@ function parallaxsectorsInit() {
     orientation: 'down',
     overflow: true,
     delay: .6,
-    scale: 3.4,
+    scale: 1.8,
     transition: 'cubic-bezier(.39,.64,.47,.57)'
   });
   var sectorsAnimation_9 = document.querySelector(".sectors-animation-tr_2");
@@ -735,7 +735,7 @@ function parallaxsectorsInit() {
     orientation: 'down',
     overflow: true,
     delay: .6,
-    scale: 3.4,
+    scale: 1.6,
     transition: 'cubic-bezier(.39,.64,.47,.57)'
   });
   var sectorsAnimation_10 = document.querySelector(".sectors-animation-tr_1");

@@ -5,6 +5,7 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	border-bottom: 1px solid transparent;
+
 	&__inner {
 		position: relative;
 		z-index: 10;
@@ -14,6 +15,7 @@
 		align-items: center;
 		padding: 80px 0;
 	}
+
 	&__list {
 		width: 100%;
 		height: 100%;
@@ -26,16 +28,18 @@
 		grid-row-gap: 15px;
 		padding: 0;
 	}
+
 	&__title {
-        font-size: 34px;
-        color: rgb(0, 105, 147);
-        font-weight: bold;
-        text-transform: uppercase;
-        line-height: 1.2;
-        text-align: center;
-        margin-bottom: 80px;
-        
+		font-size: 42px;
+		color: rgb(0, 105, 147);
+		font-weight: bold;
+		text-transform: uppercase;
+		line-height: 1.2;
+		text-align: center;
+		margin-bottom: 80px;
+
 	}
+
 	&__bac-img {
 		position: absolute;
 		left: 0;
@@ -48,76 +52,56 @@
 .lab-card {
 	position: relative;
 	max-width: 263px;
-	
-		&__inner {
-			height: 100%;
-		}
-		&__header {
-			height: 100%;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			background-color: rgb(69, 237, 187);
-			padding: 35% 20px;
-			max-height: 263px;
-			box-sizing: border-box;
-		}
-		&__content {
-			position: absolute;
-			left: 0;
-			top: 0;
-			background-color: rgb(255, 255, 255);
-			height: 0;
-			transition: 0.8s;
-			overflow: hidden;
-            margin-top: 1px;
-           
-		}
-	
+
+	&__inner {
+		height: 100%;
+	}
+
+	&__header {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		background-color: rgb(69, 237, 187);
+		padding: 35% 20px;
+		max-height: 263px;
+		box-sizing: border-box;
+	}
+
+	&__content {
+		position: absolute;
+		left: 0;
+		top: 0;
+		background-color: rgb(255, 255, 255);
+		height: 0;
+		transition: 0.8s;
+		overflow: hidden;
+		margin-top: 1px;
+
+	}
+
 
 	&__title {
-        font-size: 30px;
-        color: rgb(0, 105, 147);
-        font-weight: bold;
-        text-transform: uppercase;
-        line-height: 1.2;
-        text-align: center;
+		font-size: 30px;
+		color: rgb(0, 105, 147);
+		font-weight: bold;
+		text-transform: uppercase;
+		line-height: 1.2;
+		text-align: center;
 		margin-bottom: 50px;
 	}
+
 	&__text {
 		font-size: 16px;
 		color: rgb(0, 81, 107);
-        line-height: 1.2;
-       
-        
-    }
-    &_1 {
-        & .lab-card__content {
-            position: absolute;
-			left: 0;
-			top: 0;
-			background-color: rgb(255, 255, 255);
-			height: 0;
-			transition: 0.8s;
-			overflow: hidden;
-            margin-top: 1px;
-            max-width:273px;
-        }
-		&:hover .lab-card__content {
-			position: absolute;
-			height: 263px;
-			left: -263px;
-			width: 100%;
-			padding: 30px 20px;
-			box-sizing: border-box;
-			top: 0;
-            transition: 0.8s;
-            max-width:273px;
-		}
+		line-height: 1.2;
+
+
 	}
-	&_2 {
-       & .lab-card__content {
-            position: absolute;
+
+	&_1 {
+		& .lab-card__content {
+			position: absolute;
 			left: 0;
 			top: 0;
 			background-color: rgb(255, 255, 255);
@@ -125,128 +109,9 @@
 			transition: 0.8s;
 			overflow: hidden;
 			margin-top: 1px;
-        }
-		& .lab-card__header {
-			background-color: transparent;
-			background-image: url("../img/bg/card_2.png");
-			background-position: center;
-			background-repeat: no-repeat;
-			background-size: cover;
-        }
-        
-		&:hover .lab-card__content {
-			position: absolute;
-			height: 263px;
-			left: 263px;
-            width: 100%;
-            max-width:273px;
-			padding: 30px 20px;
-			box-sizing: border-box;
-			top: 0;
-			transition: 0.8s;
-        }
-    }
-		&_3 {
-            & .lab-card__content {
-                position: absolute;
-                left: 0;
-                top: 0;
-                background-color: rgb(255, 255, 255);
-                height: 0;
-                transition: 0.8s;
-                overflow: hidden;
-                margin-top: 1px;
-                max-width:273px;
-            }
-			& .lab-card__header {
-				background-color: transparent;
-				background-image: url("../img/bg/card_2.png");
-				background-position: center;
-				background-repeat: no-repeat;
-				background-size: cover;
-			}
-			&:hover .lab-card__content {
-				position: absolute;
-				height: 263px;
-				left: -263px;
-				width: 100%;
-				padding: 30px 20px;
-				box-sizing: border-box;
-				top: 0;
-                transition: 0.8s;
-                max-width:273px;
-			}
+			max-width: 273px;
 		}
-		&_4 {
-            & .lab-card__content {
-                position: absolute;
-                left: 0;
-                top: 0;
-                background-color: rgb(255, 255, 255);
-                height: 0;
-                transition: 0.8s;
-                overflow: hidden;
-                margin-top: 1px;
-                max-width:273px;
-            }
-			&:hover .lab-card__content {
-				position: absolute;
-				height: 263px;
-				left: 263px;
-				width: 100%;
-				padding: 30px 20px;
-				box-sizing: border-box;
-				top: 0;
-                transition: 0.8s;
-                max-width:273px;
-			}
-        }
-       
-       
-}
-.lab-card {
-    .lab-card__inner{
-       & .lab-card__content {
-			position: absolute;
-			left: 0;
-			top: 0;
-			background-color: rgb(255, 255, 255);
-			height: 0;
-			transition: 0.8s;
-			overflow: hidden;
-            margin-top: 1px;
-            &.lab-card--active_2{
-                position: absolute;
-                height: 263px;
-                left: 263px;
-                width: 100%;
-                max-width:273px;
-                padding: 30px 20px;
-                box-sizing: border-box;
-                top: 0;
-                transition: 0.8s;
 
-            }
-            &.lab-card--active_1{
-                position: absolute;
-                height: 263px;
-                left: -263px;
-                width: 100%;
-                padding: 30px 20px;
-                box-sizing: border-box;
-                top: 0;
-                transition: 0.8s;
-                max-width:273px;
-
-            }
-		}
-    }
-}
-
-@media (min-width: 992px) {
-    .lab-card {
-    &_1 {
-       
 		&:hover .lab-card__content {
 			position: absolute;
 			height: 263px;
@@ -255,28 +120,152 @@
 			padding: 30px 20px;
 			box-sizing: border-box;
 			top: 0;
-            transition: 0.8s;
-            max-width:273px;
+			transition: 0.8s;
+			max-width: 273px;
 		}
 	}
+
 	&_2 {
-      
-        
+		& .lab-card__content {
+			position: absolute;
+			left: 0;
+			top: 0;
+			background-color: rgb(255, 255, 255);
+			height: 0;
+			transition: 0.8s;
+			overflow: hidden;
+			margin-top: 1px;
+		}
+
+		& .lab-card__header {
+			background-color: transparent;
+			background-image: url("../img/bg/card_2.png");
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
 		&:hover .lab-card__content {
 			position: absolute;
 			height: 263px;
 			left: 263px;
-            width: 100%;
-            max-width:273px;
+			width: 100%;
+			max-width: 273px;
 			padding: 30px 20px;
 			box-sizing: border-box;
 			top: 0;
 			transition: 0.8s;
-        }
-    }
-		&_3 {
-            
-			
+		}
+	}
+
+	&_3 {
+		& .lab-card__content {
+			position: absolute;
+			left: 0;
+			top: 0;
+			background-color: rgb(255, 255, 255);
+			height: 0;
+			transition: 0.8s;
+			overflow: hidden;
+			margin-top: 1px;
+			max-width: 273px;
+		}
+
+		& .lab-card__header {
+			background-color: transparent;
+			background-image: url("../img/bg/card_2.png");
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		&:hover .lab-card__content {
+			position: absolute;
+			height: 263px;
+			left: -263px;
+			width: 100%;
+			padding: 30px 20px;
+			box-sizing: border-box;
+			top: 0;
+			transition: 0.8s;
+			max-width: 273px;
+		}
+	}
+
+	&_4 {
+		& .lab-card__content {
+			position: absolute;
+			left: 0;
+			top: 0;
+			background-color: rgb(255, 255, 255);
+			height: 0;
+			transition: 0.8s;
+			overflow: hidden;
+			margin-top: 1px;
+			max-width: 273px;
+		}
+
+		&:hover .lab-card__content {
+			position: absolute;
+			height: 263px;
+			left: 263px;
+			width: 100%;
+			padding: 30px 20px;
+			box-sizing: border-box;
+			top: 0;
+			transition: 0.8s;
+			max-width: 273px;
+		}
+	}
+
+
+}
+
+.lab-card {
+	.lab-card__inner {
+		& .lab-card__content {
+			position: absolute;
+			left: 0;
+			top: 0;
+			background-color: rgb(255, 255, 255);
+			height: 0;
+			transition: 0.8s;
+			overflow: hidden;
+			margin-top: 1px;
+
+			&.lab-card--active_2 {
+				position: absolute;
+				height: 263px;
+				left: 263px;
+				width: 100%;
+				max-width: 273px;
+				padding: 30px 20px;
+				box-sizing: border-box;
+				top: 0;
+				transition: 0.8s;
+
+			}
+
+			&.lab-card--active_1 {
+				position: absolute;
+				height: 263px;
+				left: -263px;
+				width: 100%;
+				padding: 30px 20px;
+				box-sizing: border-box;
+				top: 0;
+				transition: 0.8s;
+				max-width: 273px;
+
+			}
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.lab-card {
+		&_1 {
+
 			&:hover .lab-card__content {
 				position: absolute;
 				height: 263px;
@@ -285,12 +274,45 @@
 				padding: 30px 20px;
 				box-sizing: border-box;
 				top: 0;
-                transition: 0.8s;
-                max-width:273px;
+				transition: 0.8s;
+				max-width: 273px;
 			}
 		}
+
+		&_2 {
+
+
+			&:hover .lab-card__content {
+				position: absolute;
+				height: 263px;
+				left: 263px;
+				width: 100%;
+				max-width: 273px;
+				padding: 30px 20px;
+				box-sizing: border-box;
+				top: 0;
+				transition: 0.8s;
+			}
+		}
+
+		&_3 {
+
+
+			&:hover .lab-card__content {
+				position: absolute;
+				height: 263px;
+				left: -263px;
+				width: 100%;
+				padding: 30px 20px;
+				box-sizing: border-box;
+				top: 0;
+				transition: 0.8s;
+				max-width: 273px;
+			}
+		}
+
 		&_4 {
-           
+
 			&:hover .lab-card__content {
 				position: absolute;
 				height: 263px;
@@ -299,110 +321,120 @@
 				padding: 30px 20px;
 				box-sizing: border-box;
 				top: 0;
-                transition: 0.8s;
-                max-width:273px;
+				transition: 0.8s;
+				max-width: 273px;
 			}
-        }
-    }
+		}
+	}
 }
 
 @media (max-width: 1199px) {}
 
 @media (max-width: 991px) {
-    .lab-card{
-        & .lab-card__inner
-        
-        {
-            & .lab-card__content{
-                // position: relative;
-                display: block !important;
-                height: 0px;
-                &.lab-card--active_2{
-                    display: block;
-                    left: 0;
-                    height: 263px;
-                    transition: 0.8s;
-    
-                }
-                &.lab-card--active_1{
-                    left: 0;
-                    display: block;
-                    height: 263px;
-                    transition: 0.8s;
-                }
-            }}
-        & .lab-card__content{
-            // position: relative;
-            display: block !important;
-            height: 0px;
-            &.lab-card--active_2{
-                
-                height: 263px;
-                transition: 0.8s;
+	.lab-card {
+		& .lab-card__inner {
+			& .lab-card__content {
+				// position: relative;
+				display: block !important;
+				height: 0px;
 
-            }
-            &.lab-card--active_1{
-                
-                height: 263px;
-                transition: 0.8s;
-            }
-        }
-        
-        &:hover  .lab-card__content{
-             
-                height: 263px;
-                transition: 0.8s;
-                
-                }
-    }
+				&.lab-card--active_2 {
+					display: block;
+					left: 0;
+					height: 263px;
+					transition: 0.8s;
+
+				}
+
+				&.lab-card--active_1 {
+					left: 0;
+					display: block;
+					height: 263px;
+					transition: 0.8s;
+				}
+			}
+		}
+
+		& .lab-card__content {
+			// position: relative;
+			display: block !important;
+			height: 0px;
+
+			&.lab-card--active_2 {
+
+				height: 263px;
+				transition: 0.8s;
+
+			}
+
+			&.lab-card--active_1 {
+
+				height: 263px;
+				transition: 0.8s;
+			}
+		}
+
+		&:hover .lab-card__content {
+
+			height: 263px;
+			transition: 0.8s;
+
+		}
+	}
 }
 
 @media (max-width: 767px) {
-   .lab__title{
-       font-size: 16px;
-   }
-   .lab-card__title{
-    font-size: 16px;
-   }
-   .lab-card__text {
-       font-size: 11px;
-     
-   }
-   .lab-card{
-    &  .lab-card__inner{
-        & .lab-card__content{
-        // position: relative;
-        height: 0px;
-        padding: 0px;
-        box-sizing: border-box;
-        &.lab-card--active_2{
-            box-sizing: border-box;
-            padding: 5px;
-            height: 263px;
-            transition: 0.8s;
-            max-height: 100%;
+	.lab__title {
+		font-size: 32px;
+	}
 
-        }
-        &.lab-card--active_1{
-            box-sizing: border-box;
-            padding: 5px;
-            height: 263px;
-            transition: 0.8s;
-            max-height: 100%;
-            .Rectangle_4_copy_3 {
-                background-color: rgb(72, 82, 188);
-                position: absolute;
-                left: 0px;
-                top: 1561px;
-                width: 1925px;
-                height: 768px;
-                z-index: 2;
-              }
-              
-        }
-    }
-    }
-    
-  
-}
+	.lab-card__title {
+		font-size: 16px;
+	}
+
+	.lab-card__text {
+		font-size: 11px;
+
+	}
+
+	.lab-card {
+		& .lab-card__inner {
+			& .lab-card__content {
+				// position: relative;
+				height: 0px;
+				padding: 0px;
+				box-sizing: border-box;
+
+				&.lab-card--active_2 {
+					box-sizing: border-box;
+					padding: 5px;
+					height: 263px;
+					transition: 0.8s;
+					max-height: 100%;
+
+				}
+
+				&.lab-card--active_1 {
+					box-sizing: border-box;
+					padding: 5px;
+					height: 263px;
+					transition: 0.8s;
+					max-height: 100%;
+
+					.Rectangle_4_copy_3 {
+						background-color: rgb(72, 82, 188);
+						position: absolute;
+						left: 0px;
+						top: 1561px;
+						width: 1925px;
+						height: 768px;
+						z-index: 2;
+					}
+
+				}
+			}
+		}
+
+
+	}
 }

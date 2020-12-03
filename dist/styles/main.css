@@ -5985,6 +5985,7 @@ body {
 
 .composition {
   position: relative;
+  z-index: 25;
   background-image: url("../img/bg/section-triangle-bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -6388,7 +6389,7 @@ body {
 }
 
 .lab__title {
-  font-size: 34px;
+  font-size: 42px;
   color: #006993;
   font-weight: bold;
   text-transform: uppercase;
@@ -7731,7 +7732,7 @@ body {
   width: 70%;
   background-color: #eceaf5;
   border-radius: 25px;
-  box-shadow: 0 0 8px 2px #000;
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.5);
 }
 
 .modal_1__header {
@@ -9040,7 +9041,7 @@ body {
   }
 
   .lab__title {
-    font-size: 16px;
+    font-size: 32px;
   }
 
   .lab-card__title {
