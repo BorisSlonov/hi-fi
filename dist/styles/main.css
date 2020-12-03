@@ -6094,7 +6094,7 @@ body {
 }
 
 .composition-card_1 {
-  left: 50.3%;
+  left: 50.4%;
   top: -19px;
   transform: translate(-50%);
 }
@@ -6149,8 +6149,8 @@ body {
 }
 
 .composition-card_3 {
-  left: -19px;
-  bottom: -17px;
+  left: -20px;
+  bottom: -19px;
 }
 
 .composition-card_3 .composition-card__text {
@@ -6351,6 +6351,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-bottom: 5px;
 }
 
 .lab__inner {
