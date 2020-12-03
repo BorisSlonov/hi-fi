@@ -331,7 +331,7 @@ function parallaxAboutInit() {
     overflow: true,
     delay: .9,
     scale: 1.8,
-    transition: 'cubic-bezier(.39,.94,.47,.57)'
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
   });
   var aboutAnimation_2 = document.querySelector(".about-animation_2");
   new simpleParallax(aboutAnimation_2, {
@@ -339,7 +339,7 @@ function parallaxAboutInit() {
     overflow: true,
     delay: .9,
     scale: 1.8,
-    transition: 'cubic-bezier(.39,.94,.47,.57)'
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
   });
   var aboutAnimation_3 = document.querySelector(".about-animation_3");
   new simpleParallax(aboutAnimation_3, {
@@ -347,7 +347,7 @@ function parallaxAboutInit() {
     overflow: true,
     delay: .9,
     scale: 1.3,
-    transition: 'cubic-bezier(.39,.94,.47,.57)'
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
   });
   var aboutAnimation_4 = document.querySelector(".about-animation_4");
   new simpleParallax(aboutAnimation_4, {
@@ -355,7 +355,7 @@ function parallaxAboutInit() {
     overflow: true,
     delay: .9,
     scale: 1.9,
-    transition: 'cubic-bezier(.39,.94,.47,.57)'
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
   });
   var aboutAnimation_5 = document.querySelector(".about-animation_5");
   new simpleParallax(aboutAnimation_5, {
@@ -363,7 +363,7 @@ function parallaxAboutInit() {
     overflow: true,
     delay: .9,
     scale: 1.9,
-    transition: 'cubic-bezier(.39,.94,.47,.57)'
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
   });
   var aboutAnimation_6 = document.querySelector(".about-animation_6");
   new simpleParallax(aboutAnimation_6, {
@@ -371,7 +371,7 @@ function parallaxAboutInit() {
     overflow: true,
     delay: 2.9,
     scale: 1.8,
-    transition: 'cubic-bezier(.39,.94,.47,.57)'
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
   });
 }
 
@@ -395,7 +395,7 @@ function parallaxInitCarriers() {
     overflow: true,
     delay: .9,
     scale: 1.3,
-    transition: 'cubic-bezier(.39,.94,.47,.57)'
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
   });
   var carriersPageAnimation_2 = document.querySelector(".carriers-page__animation_2");
   new simpleParallax(carriersPageAnimation_2, {
@@ -403,7 +403,7 @@ function parallaxInitCarriers() {
     overflow: true,
     delay: .9,
     scale: 1.2,
-    transition: 'cubic-bezier(.39,.94,.47,.57)'
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
   });
   var carriersPageAnimation_3 = document.querySelector(".carriers-page__animation_3");
   new simpleParallax(carriersPageAnimation_3, {
@@ -411,7 +411,7 @@ function parallaxInitCarriers() {
     overflow: true,
     delay: .9,
     scale: 1.3,
-    transition: 'cubic-bezier(.39,.94,.47,.57)'
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
   });
   var carriersPageAnimation_4 = document.querySelector(".carriers-page__animation_4");
   new simpleParallax(carriersPageAnimation_4, {
@@ -419,7 +419,7 @@ function parallaxInitCarriers() {
     overflow: true,
     delay: .9,
     scale: 1.3,
-    transition: 'cubic-bezier(.39,.94,.47,.57)'
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
   });
   var carriersPageAnimation_5 = document.querySelector(".carriers-page__animation_5");
   new simpleParallax(carriersPageAnimation_5, {
@@ -427,7 +427,7 @@ function parallaxInitCarriers() {
     overflow: true,
     delay: .9,
     scale: 1.5,
-    transition: 'cubic-bezier(.39,.94,.47,.57)'
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
   });
   var carriersPageAnimation_6 = document.querySelector(".carriers-page__animation_6");
   new simpleParallax(carriersPageAnimation_6, {
@@ -435,7 +435,7 @@ function parallaxInitCarriers() {
     overflow: true,
     delay: .9,
     scale: 1.2,
-    transition: 'cubic-bezier(.39,.94,.47,.57)'
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
   });
   var carriersPageAnimation_7 = document.querySelector(".carriers-page__animation_7");
   new simpleParallax(carriersPageAnimation_7, {
@@ -443,7 +443,7 @@ function parallaxInitCarriers() {
     overflow: true,
     delay: .9,
     scale: 1.3,
-    transition: 'cubic-bezier(.39,.94,.47,.57)'
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
   });
   var carriersPageAnimation_carriers = document.querySelector(".carriers-page__animation_carriers");
   new simpleParallax(carriersPageAnimation_carriers, {
@@ -451,7 +451,7 @@ function parallaxInitCarriers() {
     overflow: true,
     delay: .9,
     scale: 1.8,
-    transition: 'cubic-bezier(.39,.94,.47,.57)'
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
   });
 }
 
@@ -474,7 +474,7 @@ function parallaxFooterInit() {
     overflow: true,
     delay: .9,
     scale: 1.8,
-    transition: 'cubic-bezier(.39,.94,.47,.57)'
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
   });
   var footerAnimation_2 = document.querySelector(".footer-animate__img_2");
   new simpleParallax(footerAnimation_2, {
@@ -482,7 +482,7 @@ function parallaxFooterInit() {
     overflow: true,
     delay: .9,
     scale: 1.3,
-    transition: 'cubic-bezier(.39,.94,.47,.57)'
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
   });
   var footerAnimation_3 = document.querySelector(".footer-animate__img_3");
   new simpleParallax(footerAnimation_3, {
@@ -490,7 +490,7 @@ function parallaxFooterInit() {
     overflow: true,
     delay: .9,
     scale: 1.3,
-    transition: 'cubic-bezier(.39,.94,.47,.57)'
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
   });
   var footerAnimation_4 = document.querySelector(".footer-animate__img_4");
   new simpleParallax(footerAnimation_4, {
@@ -498,7 +498,7 @@ function parallaxFooterInit() {
     overflow: true,
     delay: .9,
     scale: 1.3,
-    transition: 'cubic-bezier(.39,.94,.47,.57)'
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
   });
   var footerAnimation_5 = document.querySelector(".footer-animate__img_5");
   new simpleParallax(footerAnimation_5, {
@@ -506,7 +506,7 @@ function parallaxFooterInit() {
     overflow: true,
     delay: .9,
     scale: 1.9,
-    transition: 'cubic-bezier(.39,.94,.47,.57)'
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
   });
 }
 
@@ -530,7 +530,7 @@ function parallaxInnovationInit() {
     overflow: true,
     delay: .9,
     scale: 1.8,
-    transition: 'cubic-bezier(.39,.94,.47,.57)'
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
   });
   var innovationPageAnimation_2 = document.querySelector(".innovation-page__animation_2");
   new simpleParallax(innovationPageAnimation_2, {
@@ -538,7 +538,7 @@ function parallaxInnovationInit() {
     overflow: true,
     delay: .9,
     scale: 1.8,
-    transition: 'cubic-bezier(.39,.94,.47,.57)'
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
   });
   var innovationPageAnimation_3 = document.querySelector(".innovation-page__animation_3");
   new simpleParallax(innovationPageAnimation_3, {
@@ -546,7 +546,7 @@ function parallaxInnovationInit() {
     overflow: true,
     delay: .9,
     scale: 1.25,
-    transition: 'cubic-bezier(.39,.94,.47,.57)'
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
   });
   var innovationPageAnimation_4 = document.querySelector(".innovation-page__animation_4");
   new simpleParallax(innovationPageAnimation_4, {
@@ -554,7 +554,7 @@ function parallaxInnovationInit() {
     overflow: true,
     delay: .9,
     scale: 1.8,
-    transition: 'cubic-bezier(.39,.94,.47,.57)'
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
   });
 }
 
@@ -577,7 +577,7 @@ function parallaxNewsInit() {
     overflow: true,
     delay: .9,
     scale: 1.3,
-    transition: 'cubic-bezier(.39,.94,.47,.57)'
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
   });
   var newsPageAnimation_2 = document.querySelector(".news-page__animation_2");
   new simpleParallax(newsPageAnimation_2, {
@@ -585,7 +585,7 @@ function parallaxNewsInit() {
     overflow: true,
     delay: .9,
     scale: 1.8,
-    transition: 'cubic-bezier(.39,.94,.47,.57)'
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
   });
   var newsPageAnimation_3 = document.querySelector(".news-page__animation_3");
   new simpleParallax(newsPageAnimation_3, {
@@ -593,7 +593,7 @@ function parallaxNewsInit() {
     overflow: true,
     delay: .9,
     scale: 1.3,
-    transition: 'cubic-bezier(.39,.94,.47,.57)'
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
   });
   var newsPageAnimation_4 = document.querySelector(".news-page__animation_4");
   new simpleParallax(newsPageAnimation_4, {
@@ -601,7 +601,7 @@ function parallaxNewsInit() {
     overflow: true,
     delay: .9,
     scale: 1.3,
-    transition: 'cubic-bezier(.39,.94,.47,.57)'
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
   });
   var newsPageAnimation_5 = document.querySelector(".news-page__animation_5");
   new simpleParallax(newsPageAnimation_5, {
@@ -609,7 +609,7 @@ function parallaxNewsInit() {
     overflow: true,
     delay: .9,
     scale: 1.3,
-    transition: 'cubic-bezier(.39,.94,.47,.57)'
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
   });
   var newsPageAnimation_6 = document.querySelector(".news-page__animation_6");
   new simpleParallax(newsPageAnimation_6, {
@@ -617,7 +617,7 @@ function parallaxNewsInit() {
     overflow: true,
     delay: .9,
     scale: 1.3,
-    transition: 'cubic-bezier(.39,.94,.47,.57)'
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
   });
   var newsPageAnimation_7 = document.querySelector(".news-page__animation_7");
   new simpleParallax(newsPageAnimation_7, {
@@ -625,7 +625,7 @@ function parallaxNewsInit() {
     overflow: true,
     delay: .9,
     scale: 1.3,
-    transition: 'cubic-bezier(.39,.94,.47,.57)'
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
   });
   var newsPageAnimation_8 = document.querySelector(".news-page__animation_8");
   new simpleParallax(newsPageAnimation_8, {
@@ -633,7 +633,7 @@ function parallaxNewsInit() {
     overflow: true,
     delay: .9,
     scale: 1.8,
-    transition: 'cubic-bezier(.39,.94,.47,.57)'
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
   });
   var newsPageAnimation_9 = document.querySelector(".news-page__animation_9");
   new simpleParallax(newsPageAnimation_9, {
@@ -641,7 +641,7 @@ function parallaxNewsInit() {
     overflow: true,
     delay: .9,
     scale: 1.8,
-    transition: 'cubic-bezier(.39,.94,.47,.57)'
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
   });
   var newsPageAnimation_10 = document.querySelector(".news-page__animation_10");
   new simpleParallax(newsPageAnimation_10, {
@@ -649,7 +649,7 @@ function parallaxNewsInit() {
     overflow: true,
     delay: .9,
     scale: 1.8,
-    transition: 'cubic-bezier(.39,.94,.47,.57)'
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
   });
 }
 
@@ -672,7 +672,7 @@ function parallaxsectorsInit() {
     overflow: true,
     delay: .9,
     scale: 1.5,
-    transition: 'cubic-bezier(.39,.94,.47,.57)'
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
   });
   var sectorsAnimation_2 = document.querySelector(".sectors-animation_2");
   new simpleParallax(sectorsAnimation_2, {
@@ -680,7 +680,7 @@ function parallaxsectorsInit() {
     overflow: true,
     delay: .9,
     scale: 1.3,
-    transition: 'cubic-bezier(.39,.94,.47,.57)'
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
   });
   var sectorsAnimation_3 = document.querySelector(".sectors-animation_3");
   new simpleParallax(sectorsAnimation_3, {
@@ -688,7 +688,7 @@ function parallaxsectorsInit() {
     overflow: true,
     delay: .9,
     scale: 1.9,
-    transition: 'cubic-bezier(.39,.94,.47,.57)'
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
   });
   var sectorsAnimation_4 = document.querySelector(".sectors-animation_4");
   new simpleParallax(sectorsAnimation_4, {
@@ -696,7 +696,7 @@ function parallaxsectorsInit() {
     overflow: true,
     delay: .9,
     scale: 1.3,
-    transition: 'cubic-bezier(.39,.94,.47,.57)'
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
   });
   var sectorsAnimation_5 = document.querySelector(".sectors-animation_5");
   new simpleParallax(sectorsAnimation_5, {
@@ -704,7 +704,7 @@ function parallaxsectorsInit() {
     overflow: true,
     delay: .9,
     scale: 1.3,
-    transition: 'cubic-bezier(.39,.94,.47,.57)'
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
   });
   var sectorsAnimation_6 = document.querySelector(".sectors-animation_6");
   new simpleParallax(sectorsAnimation_6, {
@@ -712,7 +712,7 @@ function parallaxsectorsInit() {
     overflow: true,
     delay: .9,
     scale: 1.3,
-    transition: 'cubic-bezier(.39,.94,.47,.57)'
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
   });
   var sectorsAnimation_7 = document.querySelector(".sectors-animation_7");
   new simpleParallax(sectorsAnimation_7, {
@@ -720,7 +720,7 @@ function parallaxsectorsInit() {
     overflow: true,
     delay: .9,
     scale: 1.3,
-    transition: 'cubic-bezier(.39,.94,.47,.57)'
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
   });
   var sectorsAnimation_8 = document.querySelector(".sectors-animation_8");
   new simpleParallax(sectorsAnimation_8, {
@@ -728,7 +728,7 @@ function parallaxsectorsInit() {
     overflow: true,
     delay: .9,
     scale: 1.8,
-    transition: 'cubic-bezier(.39,.94,.47,.57)'
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
   });
   var sectorsAnimation_9 = document.querySelector(".sectors-animation-tr_2");
   new simpleParallax(sectorsAnimation_9, {
@@ -736,7 +736,7 @@ function parallaxsectorsInit() {
     overflow: true,
     delay: .9,
     scale: 1.9,
-    transition: 'cubic-bezier(.39,.94,.47,.57)'
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
   });
   var sectorsAnimation_10 = document.querySelector(".sectors-animation-tr_1");
   new simpleParallax(sectorsAnimation_10, {
@@ -744,7 +744,7 @@ function parallaxsectorsInit() {
     overflow: true,
     delay: 1.9,
     scale: 2,
-    transition: 'cubic-bezier(.39,.94,.47,.57)'
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
   });
 }
 
@@ -768,7 +768,7 @@ function parallaxValuesInit() {
     overflow: true,
     delay: .9,
     scale: 2,
-    transition: 'cubic-bezier(.39,.94,.47,.57)'
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
   });
   var valuesPageAnimation_2 = document.querySelector(".value-page__animation_2");
   new simpleParallax(valuesPageAnimation_2, {
@@ -776,7 +776,7 @@ function parallaxValuesInit() {
     overflow: true,
     delay: .9,
     scale: 1.8,
-    transition: 'cubic-bezier(.39,.94,.47,.57)'
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
   });
   var valuesPageAnimation_3 = document.querySelector(".value-page__animation_3");
   new simpleParallax(valuesPageAnimation_3, {
@@ -784,7 +784,7 @@ function parallaxValuesInit() {
     overflow: true,
     delay: .9,
     scale: 1.3,
-    transition: 'cubic-bezier(.39,.94,.47,.57)'
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
   });
   var valuesPageAnimation_4 = document.querySelector(".value-page__animation_4");
   new simpleParallax(valuesPageAnimation_4, {
@@ -792,7 +792,7 @@ function parallaxValuesInit() {
     overflow: true,
     delay: .9,
     scale: 1.8,
-    transition: 'cubic-bezier(.39,.94,.47,.57)'
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
   });
   var valuesPageAnimation_5 = document.querySelector(".value-page__animation_5");
   new simpleParallax(valuesPageAnimation_5, {
@@ -800,7 +800,7 @@ function parallaxValuesInit() {
     overflow: true,
     delay: .9,
     scale: 1.8,
-    transition: 'cubic-bezier(.39,.94,.47,.57)'
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
   });
   var valuesPageAnimation_6 = document.querySelector(".value-page__animation_6");
   new simpleParallax(valuesPageAnimation_6, {
@@ -808,7 +808,7 @@ function parallaxValuesInit() {
     overflow: true,
     delay: .9,
     scale: 1.9,
-    transition: 'cubic-bezier(.39,.94,.47,.57)'
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
   });
 }
 
@@ -831,7 +831,7 @@ function parallaxInit() {
     overflow: true,
     delay: .9,
     scale: 1.8,
-    transition: 'cubic-bezier(.39,.94,.47,.57)'
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
   });
   var FirstPageAnimation_3 = document.querySelector(".first-page__animation_3");
   new simpleParallax(FirstPageAnimation_3, {
@@ -839,7 +839,7 @@ function parallaxInit() {
     overflow: true,
     delay: .9,
     scale: 1.5,
-    transition: 'cubic-bezier(.39,.94,.47,.57)'
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
   });
   var FirstPageAnimation_4 = document.querySelector(".first-page__animation_4");
   new simpleParallax(FirstPageAnimation_4, {
@@ -847,7 +847,7 @@ function parallaxInit() {
     overflow: true,
     delay: .9,
     scale: 1.8,
-    transition: 'cubic-bezier(.39,.94,.47,.57)'
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
   });
   var FirstPageAnimation_5 = document.querySelector(".first-page__animation_5");
   new simpleParallax(FirstPageAnimation_5, {
@@ -855,7 +855,7 @@ function parallaxInit() {
     overflow: true,
     delay: .9,
     scale: 1.8,
-    transition: 'cubic-bezier(.39,.94,.47,.57)'
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
   });
   var FirstPageAnimation_6 = document.querySelector(".first-page__animation_6");
   new simpleParallax(FirstPageAnimation_6, {
@@ -863,7 +863,7 @@ function parallaxInit() {
     overflow: true,
     delay: .9,
     scale: 1.8,
-    transition: 'cubic-bezier(.39,.94,.47,.57)'
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
   });
   var FirstPageAnimation_7 = document.querySelector(".first-page__animation_7");
   new simpleParallax(FirstPageAnimation_7, {
@@ -871,7 +871,7 @@ function parallaxInit() {
     overflow: true,
     delay: .9,
     scale: .9,
-    transition: 'cubic-bezier(.39,.94,.47,.57)'
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
   });
   var FirstPageAnimation_8 = document.querySelector(".first-page__animation_8");
   new simpleParallax(FirstPageAnimation_8, {
@@ -879,7 +879,7 @@ function parallaxInit() {
     overflow: true,
     delay: .9,
     scale: 1.8,
-    transition: 'cubic-bezier(.39,.94,.47,.57)'
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
   });
   var FirstPageAnimation_9 = document.querySelector(".first-page__animation_9");
   new simpleParallax(FirstPageAnimation_9, {
@@ -887,7 +887,7 @@ function parallaxInit() {
     overflow: true,
     delay: .9,
     scale: 1.8,
-    transition: 'cubic-bezier(.39,.94,.47,.57)'
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
   });
   var FirstPageAnimation_10 = document.querySelector(".first-page__animation_10");
   new simpleParallax(FirstPageAnimation_10, {
@@ -895,7 +895,7 @@ function parallaxInit() {
     overflow: true,
     delay: .9,
     scale: 1.8,
-    transition: 'cubic-bezier(.39,.94,.47,.57)'
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
   });
   var FirstPageAnimation_11 = document.querySelector(".first-page__animation_11");
   new simpleParallax(FirstPageAnimation_11, {
@@ -903,7 +903,7 @@ function parallaxInit() {
     overflow: true,
     delay: .9,
     scale: 1.8,
-    transition: 'cubic-bezier(.39,.94,.47,.57)'
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
   });
   var FirstPageAnimation_expertise = document.querySelector(".first-page__animation_expertise");
   new simpleParallax(FirstPageAnimation_expertise, {
@@ -911,7 +911,7 @@ function parallaxInit() {
     overflow: true,
     delay: .9,
     scale: 1.8,
-    transition: 'cubic-bezier(.39,.94,.47,.57)'
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
   });
   var FirstPageAnimation_expertise_1 = document.querySelector(".first-page__animation_expertise-1");
   new simpleParallax(FirstPageAnimation_expertise_1, {
@@ -919,7 +919,15 @@ function parallaxInit() {
     overflow: true,
     delay: .9,
     scale: 1.8,
-    transition: 'cubic-bezier(.39,.94,.47,.57)'
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
+  });
+  var FirstPageAnimation_expertise_2 = document.querySelector(".first-page__animation_expertise-2");
+  new simpleParallax(FirstPageAnimation_expertise_2, {
+    orientation: 'down right',
+    overflow: true,
+    delay: .9,
+    scale: 1.8,
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
   });
 }
 

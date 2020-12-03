@@ -9,7 +9,7 @@ function parallaxsectorsInit() {
         overflow: true,
         delay: .9,
         scale: 1.5,
-        transition: 'cubic-bezier(.39,.94,.47,.57)'
+        transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
     });
 
     let sectorsAnimation_2 = document.querySelector(".sectors-animation_2");
@@ -19,7 +19,7 @@ function parallaxsectorsInit() {
         overflow: true,
         delay: .9,
         scale: 1.3,
-        transition: 'cubic-bezier(.39,.94,.47,.57)'
+        transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
     });
 
     let sectorsAnimation_3 = document.querySelector(".sectors-animation_3");
@@ -29,7 +29,7 @@ function parallaxsectorsInit() {
         overflow: true,
         delay: .9,
         scale: 1.9,
-        transition: 'cubic-bezier(.39,.94,.47,.57)'
+        transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
     });
 
 
@@ -40,7 +40,7 @@ function parallaxsectorsInit() {
         overflow: true,
         delay: .9,
         scale: 1.3,
-        transition: 'cubic-bezier(.39,.94,.47,.57)'
+        transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
     });
 
 
@@ -53,7 +53,7 @@ function parallaxsectorsInit() {
         overflow: true,
         delay: .9,
         scale: 1.3,
-        transition: 'cubic-bezier(.39,.94,.47,.57)'
+        transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
     });
 
 
@@ -64,7 +64,7 @@ function parallaxsectorsInit() {
         overflow: true,
         delay: .9,
         scale: 1.3,
-        transition: 'cubic-bezier(.39,.94,.47,.57)'
+        transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
     });
 
 
@@ -75,7 +75,7 @@ function parallaxsectorsInit() {
         overflow: true,
         delay: .9,
         scale: 1.3,
-        transition: 'cubic-bezier(.39,.94,.47,.57)'
+        transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
     });
 
     let sectorsAnimation_8 = document.querySelector(".sectors-animation_8");
@@ -85,7 +85,7 @@ function parallaxsectorsInit() {
         overflow: true,
         delay: .9,
         scale: 1.8,
-        transition: 'cubic-bezier(.39,.94,.47,.57)'
+        transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
     });
 
 
@@ -96,7 +96,7 @@ function parallaxsectorsInit() {
         overflow: true,
         delay: .9,
         scale: 1.9,
-        transition: 'cubic-bezier(.39,.94,.47,.57)'
+        transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
     });
 
     let sectorsAnimation_10 = document.querySelector(".sectors-animation-tr_1");
@@ -106,7 +106,7 @@ function parallaxsectorsInit() {
         overflow: true,
         delay: 1.9,
         scale: 2,
-        transition: 'cubic-bezier(.39,.94,.47,.57)'
+        transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
     });
 }
 

@@ -13,7 +13,7 @@ function parallaxAboutInit() {
         overflow: true,
         delay: .9,
         scale: 1.8,
-        transition: 'cubic-bezier(.39,.94,.47,.57)'
+        transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
     });
 
     let aboutAnimation_2 = document.querySelector(".about-animation_2");
@@ -23,7 +23,7 @@ function parallaxAboutInit() {
         overflow: true,
         delay: .9,
         scale: 1.8,
-        transition: 'cubic-bezier(.39,.94,.47,.57)'
+        transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
     });
 
     let aboutAnimation_3 = document.querySelector(".about-animation_3");
@@ -33,7 +33,7 @@ function parallaxAboutInit() {
         overflow: true,
         delay: .9,
         scale: 1.3,
-        transition: 'cubic-bezier(.39,.94,.47,.57)'
+        transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
     });
 
 
@@ -44,7 +44,7 @@ function parallaxAboutInit() {
         overflow: true,
         delay: .9,
         scale: 1.9,
-        transition: 'cubic-bezier(.39,.94,.47,.57)'
+        transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
     });
 
     let aboutAnimation_5 = document.querySelector(".about-animation_5");
@@ -54,7 +54,7 @@ function parallaxAboutInit() {
         overflow: true,
         delay: .9,
         scale: 1.9,
-        transition: 'cubic-bezier(.39,.94,.47,.57)'
+        transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
     });
 
     let aboutAnimation_6 = document.querySelector(".about-animation_6");
@@ -64,7 +64,7 @@ function parallaxAboutInit() {
         overflow: true,
         delay: 2.9,
         scale: 1.8,
-        transition: 'cubic-bezier(.39,.94,.47,.57)'
+        transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
     });
 
 

@@ -10,7 +10,7 @@ function parallaxInnovationInit() {
         overflow: true,
         delay: .9,
         scale: 1.8,
-        transition: 'cubic-bezier(.39,.94,.47,.57)'
+        transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
     });
 
     let innovationPageAnimation_2 = document.querySelector(".innovation-page__animation_2");
@@ -20,7 +20,7 @@ function parallaxInnovationInit() {
         overflow: true,
         delay: .9,
         scale: 1.8,
-        transition: 'cubic-bezier(.39,.94,.47,.57)'
+        transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
     });
 
     let innovationPageAnimation_3 = document.querySelector(".innovation-page__animation_3");
@@ -30,7 +30,7 @@ function parallaxInnovationInit() {
         overflow: true,
         delay: .9,
         scale: 1.25,
-        transition: 'cubic-bezier(.39,.94,.47,.57)'
+        transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
     });
 
     let innovationPageAnimation_4 = document.querySelector(".innovation-page__animation_4");
@@ -40,7 +40,7 @@ function parallaxInnovationInit() {
         overflow: true,
         delay: .9,
         scale: 1.8,
-        transition: 'cubic-bezier(.39,.94,.47,.57)'
+        transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
     });
 
 }

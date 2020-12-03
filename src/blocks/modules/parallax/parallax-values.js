@@ -10,7 +10,7 @@ function parallaxValuesInit() {
         overflow: true,
         delay: .9,
         scale: 2,
-        transition: 'cubic-bezier(.39,.94,.47,.57)'
+        transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
     });
 
     let valuesPageAnimation_2 = document.querySelector(".value-page__animation_2");
@@ -20,7 +20,7 @@ function parallaxValuesInit() {
         overflow: true,
         delay: .9,
         scale: 1.8,
-        transition: 'cubic-bezier(.39,.94,.47,.57)'
+        transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
     });
 
     let valuesPageAnimation_3 = document.querySelector(".value-page__animation_3");
@@ -30,7 +30,7 @@ function parallaxValuesInit() {
         overflow: true,
         delay: .9,
         scale: 1.3,
-        transition: 'cubic-bezier(.39,.94,.47,.57)'
+        transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
     });
 
     let valuesPageAnimation_4 = document.querySelector(".value-page__animation_4");
@@ -40,7 +40,7 @@ function parallaxValuesInit() {
         overflow: true,
         delay: .9,
         scale: 1.8,
-        transition: 'cubic-bezier(.39,.94,.47,.57)'
+        transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
     });
 
     let valuesPageAnimation_5 = document.querySelector(".value-page__animation_5");
@@ -50,7 +50,7 @@ function parallaxValuesInit() {
         overflow: true,
         delay: .9,
         scale: 1.8,
-        transition: 'cubic-bezier(.39,.94,.47,.57)'
+        transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
     });
 
 
@@ -61,7 +61,7 @@ function parallaxValuesInit() {
         overflow: true,
         delay: .9,
         scale: 1.9,
-        transition: 'cubic-bezier(.39,.94,.47,.57)'
+        transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
     });
   
 }

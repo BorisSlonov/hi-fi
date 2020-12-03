@@ -13,7 +13,7 @@ function parallaxFooterInit() {
         overflow: true,
         delay: .9,
         scale: 1.8,
-        transition: 'cubic-bezier(.39,.94,.47,.57)'
+        transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
     });
 
     let footerAnimation_2 = document.querySelector(".footer-animate__img_2");
@@ -23,7 +23,7 @@ function parallaxFooterInit() {
         overflow: true,
         delay: .9,
         scale: 1.3,
-        transition: 'cubic-bezier(.39,.94,.47,.57)'
+        transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
     });
 
     let footerAnimation_3 = document.querySelector(".footer-animate__img_3");
@@ -33,7 +33,7 @@ function parallaxFooterInit() {
         overflow: true,
         delay: .9,
         scale: 1.3,
-        transition: 'cubic-bezier(.39,.94,.47,.57)'
+        transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
     });
 
     let footerAnimation_4 = document.querySelector(".footer-animate__img_4");
@@ -43,7 +43,7 @@ function parallaxFooterInit() {
         overflow: true,
         delay: .9,
         scale: 1.3,
-        transition: 'cubic-bezier(.39,.94,.47,.57)'
+        transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
     });
 
     let footerAnimation_5 = document.querySelector(".footer-animate__img_5");
@@ -53,7 +53,7 @@ function parallaxFooterInit() {
         overflow: true,
         delay: .9,
         scale: 1.9,
-        transition: 'cubic-bezier(.39,.94,.47,.57)'
+        transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
     });
 
 }
