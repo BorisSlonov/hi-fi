@@ -27,6 +27,7 @@
     }
 
     &_4 {
+        z-index: 25;
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
@@ -89,15 +90,13 @@
             }
         }
 
-        &_6 {
-            display: block;
-        }
+
 
     }
 }
 
 @media(max-width:992px) {
-    .value-page__animation  {
+    .value-page__animation {
 
         &_1 {
             max-width: 35%;
@@ -105,7 +104,7 @@
 
         &_2 {
             max-width: 55%;
-     
+
             left: -50px;
         }
 
@@ -137,13 +136,14 @@
             max-width: 75%;
             bottom: 15%;
             left: -50px;
+
             img {
                 max-width: 75%;
             }
         }
 
         &_3 {
-          display: none;
+            display: none;
         }
 
         &_4 {
@@ -155,10 +155,9 @@
         }
 
         &_6 {
+            display: block;
             bottom: 0;
             right: -45%;
         }
     }
 }
-
-

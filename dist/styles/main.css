@@ -5259,7 +5259,7 @@ button.swiper-pagination-bullet {
 }
 
 :root {
-  --animate-duration: 800ms;
+  --animate-duration: 1.2s;
   --animate-delay: 1.2s;
 }
 
@@ -5293,6 +5293,7 @@ body {
   color: #00516b;
   line-height: 1.5;
   overflow-x: hidden;
+  background-color: #00516b;
 }
 
 body {
@@ -5307,6 +5308,7 @@ body {
 .container-fluid {
   max-width: 1980px;
   margin: 0 auto;
+  background-color: #fff;
 }
 
 .container {
@@ -5316,6 +5318,7 @@ body {
 }
 
 .neon-ball-bg {
+  position: relative;
   padding-top: 200px;
   background-image: url(../img/bg/neon-bg.png);
   background-size: cover;
@@ -5324,6 +5327,8 @@ body {
 }
 
 .neon-ball {
+  position: relative;
+  z-index: 5;
   height: 300px;
   background-image: url(../img/bg/neon-ball.png);
   background-size: contain;
@@ -5545,6 +5550,7 @@ body {
 }
 
 .section-carriers {
+  position: relative;
   background-image: url(../img/bg/carriers-bg.png);
   background-size: cover;
   background-position: 50% 50%;
@@ -5973,6 +5979,10 @@ body {
   }
 }
 
+.section-triangle {
+  position: relative;
+}
+
 .composition {
   position: relative;
   background-image: url("../img/bg/section-triangle-bg.jpg");
@@ -6355,6 +6365,8 @@ body {
 }
 
 .lab__inner {
+  position: relative;
+  z-index: 10;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6592,6 +6604,8 @@ body {
 }
 
 .hint__inner {
+  position: relative;
+  z-index: 10;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -6724,6 +6738,29 @@ body {
   left: 25%;
 }
 
+.about-animation_4 {
+  top: -75px;
+  left: 5%;
+}
+
+.about-animation_4 img {
+  max-width: 60%;
+}
+
+.about-animation_5 {
+  bottom: 0;
+  right: -10%;
+}
+
+.about-animation_5 img {
+  max-width: 30%;
+}
+
+.about-animation_6 {
+  top: 0;
+  right: -150px;
+}
+
 .sectors-animation {
   position: absolute;
 }
@@ -6764,6 +6801,30 @@ body {
 
 .sectors-animation_7 {
   display: none;
+}
+
+.sectors-animation_8 {
+  top: 0;
+  left: 0;
+}
+
+.sectors-animation_9 {
+  bottom: 0;
+  right: 0;
+}
+
+.sectors-animation-tr {
+  position: absolute;
+}
+
+.sectors-animation-tr_1 {
+  right: -10%;
+  top: 0;
+}
+
+.sectors-animation-tr_2 {
+  right: -10%;
+  bottom: -50%;
 }
 
 .news-page__animation {
@@ -6859,11 +6920,11 @@ body {
 }
 
 .carriers-page__animation_6 {
-  display: none;
+  display: none !important;
 }
 
 .carriers-page__animation_7 {
-  display: none;
+  display: none !important;
 }
 
 .value-page__animation {
@@ -6895,6 +6956,7 @@ body {
 }
 
 .value-page__animation_4 {
+  z-index: 25;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -7229,7 +7291,7 @@ body {
   left: 0;
   border: 1px solid #006993;
   border-radius: 28px;
-  transition: all 950ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 450ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .main-btn_blue:hover {
@@ -7579,6 +7641,7 @@ body {
 
 .section-run-num {
   padding: 3rem;
+  background-color: #fff;
 }
 
 .run-num__row {
@@ -7620,6 +7683,10 @@ body {
   font-size: 32px;
   font-weight: 100;
   opacity: 0;
+}
+
+.section-clients {
+  background-color: #fff;
 }
 
 .swiper-wrapper {
@@ -7783,7 +7850,7 @@ body {
 
 .footer-animate__img_1 {
   left: -150px;
-  top: -100px;
+  top: -150px;
 }
 
 .footer-animate__img_2 {
@@ -8144,10 +8211,6 @@ body {
   .value-page__animation_4 img {
     max-width: 65%;
   }
-
-  .value-page__animation_6 {
-    display: block;
-  }
 }
 
 @media (max-width: 1100px) {
@@ -8507,6 +8570,10 @@ body {
     transition: all .35s;
     transform: translateY(10px) scale(1);
     opacity: 1;
+  }
+
+  .about-animation_6 {
+    display: none;
   }
 
   .sectors-animation {
@@ -9110,6 +9177,26 @@ body {
     top: 10%;
     right: 0;
   }
+
+  .about-animation_4 {
+    top: -20px;
+    left: 5%;
+  }
+
+  .about-animation_4 img {
+    max-width: 30%;
+  }
+
+  .about-animation_5 {
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .about-animation_5 img {
+    max-width: 15%;
+  }
 }
 
 @media (max-width: 600px) {
@@ -9155,6 +9242,16 @@ body {
     left: -15%;
   }
 
+  .sectors-animation-tr_1 {
+    right: -30%;
+    top: 0;
+  }
+
+  .sectors-animation-tr_2 {
+    right: -30%;
+    bottom: -40%;
+  }
+
   .value-page__animation {
     position: absolute;
   }
@@ -9186,6 +9283,7 @@ body {
   }
 
   .value-page__animation_6 {
+    display: block;
     bottom: 0;
     right: -45%;
   }

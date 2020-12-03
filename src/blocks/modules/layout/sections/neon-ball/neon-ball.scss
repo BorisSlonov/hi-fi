@@ -1,12 +1,17 @@
 .neon-ball-bg {
+    position: relative;
     padding-top: 200px;
     background-image: url(../img/bg/neon-bg.png);
     background-size: cover;
     background-position: 50% bottom;
     background-repeat: no-repeat;
+
+  
 }
 
 .neon-ball {
+    position: relative;
+    z-index: 5;
     height: 300px;
     background-image: url(../img/bg/neon-ball.png);
     background-size: contain;
@@ -363,7 +368,7 @@
 
             }
 
-          
+
 
 
 

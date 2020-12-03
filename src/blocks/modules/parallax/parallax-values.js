@@ -36,10 +36,10 @@ function parallaxValuesInit() {
     let valuesPageAnimation_4 = document.querySelector(".value-page__animation_4");
 
     new simpleParallax(valuesPageAnimation_4, {
-        orientation: 'up',
+        orientation: 'down',
         overflow: true,
         delay: .6,
-        scale: 1.3,
+        scale: 2.3,
         transition: 'cubic-bezier(.39,.64,.47,.57)'
     });
 
@@ -49,7 +49,7 @@ function parallaxValuesInit() {
         orientation: 'down right',
         overflow: true,
         delay: .6,
-        scale: 1.3,
+        scale: 2.3,
         transition: 'cubic-bezier(.39,.64,.47,.57)'
     });
 

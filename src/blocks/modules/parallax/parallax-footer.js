@@ -12,7 +12,7 @@ function parallaxFooterInit() {
         orientation: 'down',
         overflow: true,
         delay: .6,
-        scale: 1.5,
+        scale: 2.4,
         transition: 'cubic-bezier(.39,.64,.47,.57)'
     });
 

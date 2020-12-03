@@ -22,7 +22,7 @@ function parallaxInit() {
     orientation: 'down left',
     overflow: true,
     delay: .6,
-    scale: 1.8,
+    scale: 2.8,
     transition: 'cubic-bezier(.39,.64,.47,.57)'
   });
 
@@ -32,7 +32,7 @@ function parallaxInit() {
     orientation: 'down left',
     overflow: true,
     delay: .6,
-    scale: 1.6,
+    scale: 2.6,
     transition: 'cubic-bezier(.39,.64,.47,.57)'
   });
 
@@ -42,7 +42,7 @@ function parallaxInit() {
     orientation: 'up',
     overflow: true,
     delay: .6,
-    scale: 1.6,
+    scale: 2,
     transition: 'cubic-bezier(.39,.64,.47,.57)'
   });
 
@@ -52,7 +52,7 @@ function parallaxInit() {
     orientation: 'down left',
     overflow: true,
     delay: .6,
-    scale: 1.6,
+    scale: 2,
     transition: 'cubic-bezier(.39,.64,.47,.57)'
   });
 
@@ -62,7 +62,7 @@ function parallaxInit() {
     orientation: 'right',
     overflow: true,
     delay: .6,
-    scale: 1.6,
+    scale: 2,
     transition: 'cubic-bezier(.39,.64,.47,.57)'
   });
 
@@ -82,7 +82,7 @@ function parallaxInit() {
     orientation: 'right',
     overflow: true,
     delay: .6,
-    scale: 1.6,
+    scale: 2,
     transition: 'cubic-bezier(.39,.64,.47,.57)'
   });
 
@@ -92,7 +92,7 @@ function parallaxInit() {
     orientation: 'down right',
     overflow: true,
     delay: .6,
-    scale: 1.6,
+    scale: 2,
     transition: 'cubic-bezier(.39,.64,.47,.57)'
   });
 
@@ -112,7 +112,7 @@ function parallaxInit() {
     orientation: 'down right',
     overflow: true,
     delay: .6,
-    scale: 1.6,
+    scale: 2,
     transition: 'cubic-bezier(.39,.64,.47,.57)'
   });
 
@@ -122,7 +122,7 @@ function parallaxInit() {
     orientation: 'down left',
     overflow: true,
     delay: 2.6,
-    scale: 1.6,
+    scale: 2,
     transition: 'cubic-bezier(.39,.64,.47,.57)'
   });
 
@@ -132,7 +132,7 @@ function parallaxInit() {
     orientation: 'down',
     overflow: true,
     delay: 2.6,
-    scale: 2.4,
+    scale: 2.8,
     transition: 'cubic-bezier(.39,.64,.47,.57)'
   });
 

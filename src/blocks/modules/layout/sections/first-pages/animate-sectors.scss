@@ -42,6 +42,18 @@
     &_7 {
         display: none;
     }
+
+    //triangle
+
+    &_8 {
+        top: 0;
+        left: 0;
+    }
+
+    &_9 {
+        bottom: 0;
+        right: 0;
+    }
 }
 
 @media(max-width:1100px) {
@@ -154,6 +166,39 @@
             display: block;
             top: 35%;
             left: -15%;
+        }
+    }
+}
+
+
+
+
+.sectors-animation-tr {
+    position: absolute;
+
+    &_1 {
+        right: -10%;
+        top: 0;
+    }
+
+    &_2 {
+        right: -10%;
+        bottom: -50%;
+    }
+}
+
+@media(max-width:600px) {
+
+    .sectors-animation-tr {
+
+    &_1 {
+        right: -30%;
+        top: 0;
+    }
+
+        &_2 {
+            right: -30%;
+            bottom: -40%;
         }
     }
 }

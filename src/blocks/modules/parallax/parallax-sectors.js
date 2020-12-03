@@ -84,10 +84,30 @@ function parallaxsectorsInit() {
         orientation: 'down',
         overflow: true,
         delay: .6,
-        scale: 1.3,
+        scale: 3.4,
         transition: 'cubic-bezier(.39,.64,.47,.57)'
     });
 
+
+    let sectorsAnimation_9 = document.querySelector(".sectors-animation-tr_2");
+
+    new simpleParallax(sectorsAnimation_9, {
+        orientation: 'down',
+        overflow: true,
+        delay: .6,
+        scale: 3.4,
+        transition: 'cubic-bezier(.39,.64,.47,.57)'
+    });
+
+    let sectorsAnimation_10 = document.querySelector(".sectors-animation-tr_1");
+
+    new simpleParallax(sectorsAnimation_10, {
+        orientation: 'down',
+        overflow: true,
+        delay: .6,
+        scale: 3.4,
+        transition: 'cubic-bezier(.39,.64,.47,.57)'
+    });
 }
 
 parallaxsectorsInit();

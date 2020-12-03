@@ -335,10 +335,10 @@ function parallaxAboutInit() {
   });
   var aboutAnimation_2 = document.querySelector(".about-animation_2");
   new simpleParallax(aboutAnimation_2, {
-    orientation: 'left',
+    orientation: 'down left',
     overflow: true,
     delay: .6,
-    scale: 1.3,
+    scale: 2.3,
     transition: 'cubic-bezier(.39,.64,.47,.57)'
   });
   var aboutAnimation_3 = document.querySelector(".about-animation_3");
@@ -347,6 +347,30 @@ function parallaxAboutInit() {
     overflow: true,
     delay: .6,
     scale: 1.3,
+    transition: 'cubic-bezier(.39,.64,.47,.57)'
+  });
+  var aboutAnimation_4 = document.querySelector(".about-animation_4");
+  new simpleParallax(aboutAnimation_4, {
+    orientation: 'down right',
+    overflow: true,
+    delay: 1.6,
+    scale: 1.8,
+    transition: 'cubic-bezier(.39,.64,.47,.57)'
+  });
+  var aboutAnimation_5 = document.querySelector(".about-animation_5");
+  new simpleParallax(aboutAnimation_5, {
+    orientation: 'down right',
+    overflow: true,
+    delay: 1.6,
+    scale: 1.8,
+    transition: 'cubic-bezier(.39,.64,.47,.57)'
+  });
+  var aboutAnimation_6 = document.querySelector(".about-animation_6");
+  new simpleParallax(aboutAnimation_6, {
+    orientation: 'down',
+    overflow: true,
+    delay: 2.6,
+    scale: 2.4,
     transition: 'cubic-bezier(.39,.64,.47,.57)'
   });
 }
@@ -441,7 +465,7 @@ function parallaxFooterInit() {
     orientation: 'down',
     overflow: true,
     delay: .6,
-    scale: 1.5,
+    scale: 2.4,
     transition: 'cubic-bezier(.39,.64,.47,.57)'
   });
   var footerAnimation_2 = document.querySelector(".footer-animate__img_2");
@@ -695,7 +719,23 @@ function parallaxsectorsInit() {
     orientation: 'down',
     overflow: true,
     delay: .6,
-    scale: 1.3,
+    scale: 3.4,
+    transition: 'cubic-bezier(.39,.64,.47,.57)'
+  });
+  var sectorsAnimation_9 = document.querySelector(".sectors-animation-tr_2");
+  new simpleParallax(sectorsAnimation_9, {
+    orientation: 'down',
+    overflow: true,
+    delay: .6,
+    scale: 3.4,
+    transition: 'cubic-bezier(.39,.64,.47,.57)'
+  });
+  var sectorsAnimation_10 = document.querySelector(".sectors-animation-tr_1");
+  new simpleParallax(sectorsAnimation_10, {
+    orientation: 'down',
+    overflow: true,
+    delay: .6,
+    scale: 3.4,
     transition: 'cubic-bezier(.39,.64,.47,.57)'
   });
 }
@@ -740,10 +780,10 @@ function parallaxValuesInit() {
   });
   var valuesPageAnimation_4 = document.querySelector(".value-page__animation_4");
   new simpleParallax(valuesPageAnimation_4, {
-    orientation: 'up',
+    orientation: 'down',
     overflow: true,
     delay: .6,
-    scale: 1.3,
+    scale: 2.3,
     transition: 'cubic-bezier(.39,.64,.47,.57)'
   });
   var valuesPageAnimation_5 = document.querySelector(".value-page__animation_5");
@@ -751,7 +791,7 @@ function parallaxValuesInit() {
     orientation: 'down right',
     overflow: true,
     delay: .6,
-    scale: 1.3,
+    scale: 2.3,
     transition: 'cubic-bezier(.39,.64,.47,.57)'
   });
   var valuesPageAnimation_6 = document.querySelector(".value-page__animation_6");
@@ -790,7 +830,7 @@ function parallaxInit() {
     orientation: 'down left',
     overflow: true,
     delay: .6,
-    scale: 1.8,
+    scale: 2.8,
     transition: 'cubic-bezier(.39,.64,.47,.57)'
   });
   var FirstPageAnimation_3 = document.querySelector(".first-page__animation_3");
@@ -798,7 +838,7 @@ function parallaxInit() {
     orientation: 'down left',
     overflow: true,
     delay: .6,
-    scale: 1.6,
+    scale: 2.6,
     transition: 'cubic-bezier(.39,.64,.47,.57)'
   });
   var FirstPageAnimation_4 = document.querySelector(".first-page__animation_4");
@@ -806,7 +846,7 @@ function parallaxInit() {
     orientation: 'up',
     overflow: true,
     delay: .6,
-    scale: 1.6,
+    scale: 2,
     transition: 'cubic-bezier(.39,.64,.47,.57)'
   });
   var FirstPageAnimation_5 = document.querySelector(".first-page__animation_5");
@@ -814,7 +854,7 @@ function parallaxInit() {
     orientation: 'down left',
     overflow: true,
     delay: .6,
-    scale: 1.6,
+    scale: 2,
     transition: 'cubic-bezier(.39,.64,.47,.57)'
   });
   var FirstPageAnimation_6 = document.querySelector(".first-page__animation_6");
@@ -822,7 +862,7 @@ function parallaxInit() {
     orientation: 'right',
     overflow: true,
     delay: .6,
-    scale: 1.6,
+    scale: 2,
     transition: 'cubic-bezier(.39,.64,.47,.57)'
   });
   var FirstPageAnimation_7 = document.querySelector(".first-page__animation_7");
@@ -838,7 +878,7 @@ function parallaxInit() {
     orientation: 'right',
     overflow: true,
     delay: .6,
-    scale: 1.6,
+    scale: 2,
     transition: 'cubic-bezier(.39,.64,.47,.57)'
   });
   var FirstPageAnimation_9 = document.querySelector(".first-page__animation_9");
@@ -846,7 +886,7 @@ function parallaxInit() {
     orientation: 'down right',
     overflow: true,
     delay: .6,
-    scale: 1.6,
+    scale: 2,
     transition: 'cubic-bezier(.39,.64,.47,.57)'
   });
   var FirstPageAnimation_10 = document.querySelector(".first-page__animation_10");
@@ -862,7 +902,7 @@ function parallaxInit() {
     orientation: 'down right',
     overflow: true,
     delay: .6,
-    scale: 1.6,
+    scale: 2,
     transition: 'cubic-bezier(.39,.64,.47,.57)'
   });
   var FirstPageAnimation_12 = document.querySelector(".first-page__animation_12");
@@ -870,7 +910,7 @@ function parallaxInit() {
     orientation: 'down left',
     overflow: true,
     delay: 2.6,
-    scale: 1.6,
+    scale: 2,
     transition: 'cubic-bezier(.39,.64,.47,.57)'
   });
   var FirstPageAnimation_expertise = document.querySelector(".first-page__animation_expertise");
@@ -878,7 +918,7 @@ function parallaxInit() {
     orientation: 'down',
     overflow: true,
     delay: 2.6,
-    scale: 2.4,
+    scale: 2.8,
     transition: 'cubic-bezier(.39,.64,.47,.57)'
   });
   var FirstPageAnimation_expertise_2 = document.querySelector(".first-page__animation_expertise-2");
@@ -907,148 +947,152 @@ function dispatch() {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function($, jQuery) {$(document).ready(function () {
-  (function ($) {
-    // Custom easing function
-    $.extend($.easing, {
-      // This is ripped directly from the jQuery easing plugin (easeOutExpo), from: http://gsgd.co.uk/sandbox/jquery/easing/
-      spincrementEasing: function spincrementEasing(x, t, b, c, d) {
-        return t === d ? b + c : c * (-Math.pow(2, -10 * t / d) + 1) + b;
-      }
-    }); // Spincrement function
+/* WEBPACK VAR INJECTION */(function($) {var href = window.location;
 
-    $.fn.spincrement = function (opts) {
-      // Default values
-      var defaults = {
-        from: 0,
-        to: null,
-        decimalPlaces: null,
-        decimalPoint: '.',
-        thousandSeparator: ',',
-        duration: 1000,
-        // ms; TOTAL length animation
-        leeway: 50,
-        // percent of duraion
-        easing: 'spincrementEasing',
-        fade: true,
-        complete: null
-      };
-      var options = $.extend(defaults, opts); // Function for formatting number
-
-      var re_thouSep = new RegExp(/^(-?[0-9]+)([0-9]{3})/);
-
-      function format(num, dp) {
-        num = num.toFixed(dp); // converts to string!
-        // Non "." decimal point
-
-        if (dp > 0 && options.decimalPoint !== '.') {
-          num = num.replace('.', options.decimalPoint);
-        } // Thousands separator
-
-
-        if (options.thousandSeparator) {
-          while (re_thouSep.test(num)) {
-            num = num.replace(re_thouSep, '$1' + options.thousandSeparator + '$2');
-          }
+if (href == 'https://borisslonov.github.io/hi-fi/dist/page-about.html') {
+  $(document).ready(function () {
+    (function ($) {
+      // Custom easing function
+      $.extend($.easing, {
+        // This is ripped directly from the jQuery easing plugin (easeOutExpo), from: http://gsgd.co.uk/sandbox/jquery/easing/
+        spincrementEasing: function spincrementEasing(x, t, b, c, d) {
+          return t === d ? b + c : c * (-Math.pow(2, -10 * t / d) + 1) + b;
         }
+      }); // Spincrement function
 
-        return num;
-      } // Apply to each matching item
+      $.fn.spincrement = function (opts) {
+        // Default values
+        var defaults = {
+          from: 0,
+          to: null,
+          decimalPlaces: null,
+          decimalPoint: '.',
+          thousandSeparator: ',',
+          duration: 1000,
+          // ms; TOTAL length animation
+          leeway: 50,
+          // percent of duraion
+          easing: 'spincrementEasing',
+          fade: true,
+          complete: null
+        };
+        var options = $.extend(defaults, opts); // Function for formatting number
 
+        var re_thouSep = new RegExp(/^(-?[0-9]+)([0-9]{3})/);
 
-      return this.each(function () {
-        // Get handle on current obj
-        var obj = $(this); // Set params FOR THIS ELEM
+        function format(num, dp) {
+          num = num.toFixed(dp); // converts to string!
+          // Non "." decimal point
 
-        var from = options.from;
-
-        if (obj.attr('data-from')) {
-          from = parseFloat(obj.attr('data-from'));
-        }
-
-        var to;
-
-        if (obj.attr('data-to')) {
-          to = parseFloat(obj.attr('data-to'));
-        } else if (options.to !== null) {
-          to = options.to;
-        } else {
-          var ts = $.inArray(options.thousandSeparator, ['\\', '^', '$', '*', '+', '?', '.']) > -1 ? '\\' + options.thousandSeparator : options.thousandSeparator;
-          var re = new RegExp(ts, 'g');
-          to = parseFloat(obj.text().replace(re, ''));
-        }
-
-        var duration = options.duration;
-
-        if (options.leeway) {
-          // If leeway is set, randomise duration a little
-          duration += Math.round(options.duration * (Math.random() * 2 - 1) * options.leeway / 100);
-        }
-
-        var dp;
-
-        if (obj.attr('data-dp')) {
-          dp = parseInt(obj.attr('data-dp'), 10);
-        } else if (options.decimalPlaces !== null) {
-          dp = options.decimalPlaces;
-        } else {
-          var ix = obj.text().indexOf(options.decimalPoint);
-          dp = ix > -1 ? obj.text().length - (ix + 1) : 0;
-        } // Start
+          if (dp > 0 && options.decimalPoint !== '.') {
+            num = num.replace('.', options.decimalPoint);
+          } // Thousands separator
 
 
-        obj.css('counter', from);
-        if (options.fade) obj.css('opacity', 0);
-        obj.animate({
-          counter: to,
-          opacity: 1
-        }, {
-          easing: options.easing,
-          duration: duration,
-          // Invoke the callback for each step.
-          step: function step(progress) {
-            obj.html(format(progress * to, dp));
-          },
-          complete: function complete() {
-            // Cleanup
-            obj.css('counter', null);
-            obj.html(format(to, dp)); // user's callback
-
-            if (options.complete) {
-              options.complete(obj);
+          if (options.thousandSeparator) {
+            while (re_thouSep.test(num)) {
+              num = num.replace(re_thouSep, '$1' + options.thousandSeparator + '$2');
             }
           }
+
+          return num;
+        } // Apply to each matching item
+
+
+        return this.each(function () {
+          // Get handle on current obj
+          var obj = $(this); // Set params FOR THIS ELEM
+
+          var from = options.from;
+
+          if (obj.attr('data-from')) {
+            from = parseFloat(obj.attr('data-from'));
+          }
+
+          var to;
+
+          if (obj.attr('data-to')) {
+            to = parseFloat(obj.attr('data-to'));
+          } else if (options.to !== null) {
+            to = options.to;
+          } else {
+            var ts = $.inArray(options.thousandSeparator, ['\\', '^', '$', '*', '+', '?', '.']) > -1 ? '\\' + options.thousandSeparator : options.thousandSeparator;
+            var re = new RegExp(ts, 'g');
+            to = parseFloat(obj.text().replace(re, ''));
+          }
+
+          var duration = options.duration;
+
+          if (options.leeway) {
+            // If leeway is set, randomise duration a little
+            duration += Math.round(options.duration * (Math.random() * 2 - 1) * options.leeway / 100);
+          }
+
+          var dp;
+
+          if (obj.attr('data-dp')) {
+            dp = parseInt(obj.attr('data-dp'), 10);
+          } else if (options.decimalPlaces !== null) {
+            dp = options.decimalPlaces;
+          } else {
+            var ix = obj.text().indexOf(options.decimalPoint);
+            dp = ix > -1 ? obj.text().length - (ix + 1) : 0;
+          } // Start
+
+
+          obj.css('counter', from);
+          if (options.fade) obj.css('opacity', 0);
+          obj.animate({
+            counter: to,
+            opacity: 1
+          }, {
+            easing: options.easing,
+            duration: duration,
+            // Invoke the callback for each step.
+            step: function step(progress) {
+              obj.html(format(progress * to, dp));
+            },
+            complete: function complete() {
+              // Cleanup
+              obj.css('counter', null);
+              obj.html(format(to, dp)); // user's callback
+
+              if (options.complete) {
+                options.complete(obj);
+              }
+            }
+          });
         });
-      });
-    };
-  })(jQuery);
+      };
+    })($);
 
-  var show = true;
-  var countbox = ".run-num__item";
-  $(window).on("scroll load resize", function () {
-    if (!show) return false; // Отменяем показ анимации, если она уже была выполнена
+    var show = true;
+    var countbox = ".run-num__item";
+    $(window).on("scroll load resize", function () {
+      if (!show) return false; // Отменяем показ анимации, если она уже была выполнена
 
-    var w_top = $(window).scrollTop(); // Количество пикселей на которое была прокручена страница
+      var w_top = $(window).scrollTop(); // Количество пикселей на которое была прокручена страница
 
-    var e_top = $(countbox).offset().top; // Расстояние от блока со счетчиками до верха всего документа
+      var e_top = $(countbox).offset().top; // Расстояние от блока со счетчиками до верха всего документа
 
-    var w_height = $(window).height(); // Высота окна браузера
+      var w_height = $(window).height(); // Высота окна браузера
 
-    var d_height = $(document).height(); // Высота всего документа
+      var d_height = $(document).height(); // Высота всего документа
 
-    var e_height = $(countbox).outerHeight(); // Полная высота блока со счетчиками
+      var e_height = $(countbox).outerHeight(); // Полная высота блока со счетчиками
 
-    if (w_top + 600 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height) {
-      $('.run-num__text_num').css('opacity', '1');
-      $('.run-num__text_num').spincrement({
-        thousandSeparator: "",
-        duration: 4200
-      });
-      show = false;
-    }
+      if (w_top + 600 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height) {
+        $('.run-num__text_num').css('opacity', '1');
+        $('.run-num__text_num').spincrement({
+          thousandSeparator: "",
+          duration: 4200
+        });
+        show = false;
+      }
+    });
   });
-});
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js"), __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
 
 /***/ }),
 
