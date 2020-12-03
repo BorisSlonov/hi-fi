@@ -192,7 +192,13 @@
     .sectors-animation-tr {
 
         &_1 {
-           display: none;
+            top: 50%;
+           right: -150px; 
+           img {
+               width: 200px;
+               height: 200px;
+               object-fit: contain;
+           }
         }
 
         &_2 {

@@ -6361,7 +6361,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: 5px;
+  border-bottom: 1px solid transparent;
 }
 
 .lab__inner {
@@ -9243,7 +9243,14 @@ body {
   }
 
   .sectors-animation-tr_1 {
-    display: none;
+    top: 50%;
+    right: -150px;
+  }
+
+  .sectors-animation-tr_1 img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
   }
 
   .sectors-animation-tr_2 {

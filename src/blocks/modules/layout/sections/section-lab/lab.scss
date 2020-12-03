@@ -4,7 +4,7 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	margin-bottom: 5px;
+	border-bottom: 1px solid transparent;
 	&__inner {
 		position: relative;
 		z-index: 10;
@@ -73,11 +73,7 @@
             margin-top: 1px;
            
 		}
-		//    &:hover  .lab-card__content{
-		//     height: 263px;
-		//     transition: 0.8s;
-		//     padding: 30px 25px;
-		//     }
+	
 
 	&__title {
         font-size: 30px;

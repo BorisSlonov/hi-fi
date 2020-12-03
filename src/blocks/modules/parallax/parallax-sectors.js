@@ -104,8 +104,8 @@ function parallaxsectorsInit() {
     new simpleParallax(sectorsAnimation_10, {
         orientation: 'down',
         overflow: true,
-        delay: .6,
-        scale: 3.4,
+        delay: 1.6,
+        scale: 2,
         transition: 'cubic-bezier(.39,.64,.47,.57)'
     });
 }
