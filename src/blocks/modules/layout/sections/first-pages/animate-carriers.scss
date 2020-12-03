@@ -36,6 +36,11 @@
         display: none !important;
     }
 
+    &_carriers {
+        bottom: 0;
+        left: 0;
+    }
+
 }
 
 @media(max-width:1100px) {
@@ -102,13 +107,13 @@
         //mob
 
         &_6 {
-            display: block;
+            display: block !important;
             right: 0;
             bottom: 25%;
         }
 
         &_7 {
-            display: block;
+            display: block !important;
             left: -25%;
             bottom: 25%;
         }

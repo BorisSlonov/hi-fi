@@ -60,7 +60,7 @@ function parallaxInitCarriers() {
         orientation: 'down left',
         overflow: true,
         delay: .6,
-        scale: 1.3,
+        scale: 1.2,
         transition: 'cubic-bezier(.39,.64,.47,.57)'
     });
 
@@ -71,6 +71,17 @@ function parallaxInitCarriers() {
         overflow: true,
         delay: .6,
         scale: 1.3,
+        transition: 'cubic-bezier(.39,.64,.47,.57)'
+    });
+
+
+    let carriersPageAnimation_carriers = document.querySelector(".carriers-page__animation_carriers");
+
+    new simpleParallax(carriersPageAnimation_carriers, {
+        orientation: 'down',
+        overflow: true,
+        delay: .6,
+        scale: 1.8,
         transition: 'cubic-bezier(.39,.64,.47,.57)'
     });
 

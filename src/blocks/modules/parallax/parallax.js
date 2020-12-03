@@ -12,7 +12,7 @@ function parallaxInit() {
     orientation: 'up',
     overflow: true,
     delay: .6,
-    scale: 2.3,
+    scale: 2,
     transition: 'cubic-bezier(.39,.64,.47,.57)'
   });
 
@@ -22,7 +22,7 @@ function parallaxInit() {
     orientation: 'down left',
     overflow: true,
     delay: .6,
-    scale: 2.8,
+    scale: 2,
     transition: 'cubic-bezier(.39,.64,.47,.57)'
   });
 
@@ -32,7 +32,7 @@ function parallaxInit() {
     orientation: 'down left',
     overflow: true,
     delay: .6,
-    scale: 2.6,
+    scale: 2,
     transition: 'cubic-bezier(.39,.64,.47,.57)'
   });
 

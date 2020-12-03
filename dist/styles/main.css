@@ -6927,6 +6927,11 @@ body {
   display: none !important;
 }
 
+.carriers-page__animation_carriers {
+  bottom: 0;
+  left: 0;
+}
+
 .value-page__animation {
   position: absolute;
 }
@@ -9143,13 +9148,13 @@ body {
   }
 
   .carriers-page__animation_6 {
-    display: block;
+    display: block !important;
     right: 0;
     bottom: 25%;
   }
 
   .carriers-page__animation_7 {
-    display: block;
+    display: block !important;
     left: -25%;
     bottom: 25%;
   }
