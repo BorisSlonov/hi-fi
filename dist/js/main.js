@@ -823,7 +823,112 @@ parallaxValuesInit();
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: /Users/borisslonov/Documents/inWork/git/hi-fi/hi-fi/src/blocks/modules/parallax/parallax.js: Identifier 'FirstPageAnimation_1' has already been declared (19:6)\n\n\u001b[0m \u001b[90m 17 | \u001b[39m  })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 18 | \u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 19 | \u001b[39m  let \u001b[33mFirstPageAnimation_1\u001b[39m\u001b[35m.8\u001b[39m \u001b[33m=\u001b[39m document\u001b[33m.\u001b[39mquerySelector(\u001b[32m\".first-page__animation_1.8\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    | \u001b[39m      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 20 | \u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 21 | \u001b[39m  \u001b[36mnew\u001b[39m simpleParallax(\u001b[33mFirstPageAnimation_1\u001b[39m\u001b[35m.8\u001b[39m\u001b[33m,\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m 22 | \u001b[39m    orientation\u001b[33m:\u001b[39m \u001b[32m'down left'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\n    at Parser._raise (/Users/borisslonov/Documents/inWork/git/hi-fi/hi-fi/node_modules/@babel/parser/src/parser/error.js:60:45)\n    at Parser.raiseWithData (/Users/borisslonov/Documents/inWork/git/hi-fi/hi-fi/node_modules/@babel/parser/src/parser/error.js:55:17)\n    at Parser.raise (/Users/borisslonov/Documents/inWork/git/hi-fi/hi-fi/node_modules/@babel/parser/src/parser/error.js:39:17)\n    at ScopeHandler.checkRedeclarationInScope (/Users/borisslonov/Documents/inWork/git/hi-fi/hi-fi/node_modules/@babel/parser/src/util/scope.js:137:12)\n    at ScopeHandler.declareName (/Users/borisslonov/Documents/inWork/git/hi-fi/hi-fi/node_modules/@babel/parser/src/util/scope.js:98:12)\n    at Parser.checkLVal (/Users/borisslonov/Documents/inWork/git/hi-fi/hi-fi/node_modules/@babel/parser/src/parser/lval.js:435:22)\n    at Parser.parseVarId (/Users/borisslonov/Documents/inWork/git/hi-fi/hi-fi/node_modules/@babel/parser/src/parser/statement.js:1051:10)\n    at Parser.parseVar (/Users/borisslonov/Documents/inWork/git/hi-fi/hi-fi/node_modules/@babel/parser/src/parser/statement.js:1012:12)\n    at Parser.parseVarStatement (/Users/borisslonov/Documents/inWork/git/hi-fi/hi-fi/node_modules/@babel/parser/src/parser/statement.js:700:10)\n    at Parser.parseStatementContent (/Users/borisslonov/Documents/inWork/git/hi-fi/hi-fi/node_modules/@babel/parser/src/parser/statement.js:217:21)");
+//custom 
+function parallaxInit() {
+  var FirstPageAnimation_1 = document.querySelector(".first-page__animation_1");
+  new simpleParallax(FirstPageAnimation_1, {
+    orientation: 'up',
+    overflow: true,
+    delay: .9,
+    scale: 1.8,
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
+  });
+  var FirstPageAnimation_3 = document.querySelector(".first-page__animation_3");
+  new simpleParallax(FirstPageAnimation_3, {
+    orientation: 'down left',
+    overflow: true,
+    delay: .9,
+    scale: 1.5,
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
+  });
+  var FirstPageAnimation_4 = document.querySelector(".first-page__animation_4");
+  new simpleParallax(FirstPageAnimation_4, {
+    orientation: 'up',
+    overflow: true,
+    delay: .9,
+    scale: 1.8,
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
+  });
+  var FirstPageAnimation_5 = document.querySelector(".first-page__animation_5");
+  new simpleParallax(FirstPageAnimation_5, {
+    orientation: 'down left',
+    overflow: true,
+    delay: .9,
+    scale: 1.8,
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
+  });
+  var FirstPageAnimation_6 = document.querySelector(".first-page__animation_6");
+  new simpleParallax(FirstPageAnimation_6, {
+    orientation: 'right',
+    overflow: true,
+    delay: .9,
+    scale: 1.8,
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
+  });
+  var FirstPageAnimation_7 = document.querySelector(".first-page__animation_7");
+  new simpleParallax(FirstPageAnimation_7, {
+    orientation: 'up right',
+    overflow: true,
+    delay: .9,
+    scale: .9,
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
+  });
+  var FirstPageAnimation_8 = document.querySelector(".first-page__animation_8");
+  new simpleParallax(FirstPageAnimation_8, {
+    orientation: 'right',
+    overflow: true,
+    delay: .9,
+    scale: 1.8,
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
+  });
+  var FirstPageAnimation_9 = document.querySelector(".first-page__animation_9");
+  new simpleParallax(FirstPageAnimation_9, {
+    orientation: 'down right',
+    overflow: true,
+    delay: .9,
+    scale: 1.8,
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
+  });
+  var FirstPageAnimation_10 = document.querySelector(".first-page__animation_10");
+  new simpleParallax(FirstPageAnimation_10, {
+    orientation: 'right',
+    overflow: true,
+    delay: .9,
+    scale: 1.8,
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
+  });
+  var FirstPageAnimation_11 = document.querySelector(".first-page__animation_11");
+  new simpleParallax(FirstPageAnimation_11, {
+    orientation: 'down right',
+    overflow: true,
+    delay: .9,
+    scale: 1.8,
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
+  });
+  var FirstPageAnimation_expertise = document.querySelector(".first-page__animation_expertise");
+  new simpleParallax(FirstPageAnimation_expertise, {
+    orientation: 'down',
+    overflow: true,
+    delay: .9,
+    scale: 1.8,
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
+  });
+  var FirstPageAnimation_expertise_1 = document.querySelector(".first-page__animation_expertise-1");
+  new simpleParallax(FirstPageAnimation_expertise_1, {
+    orientation: 'down right',
+    overflow: true,
+    delay: .9,
+    scale: 1.8,
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
+  });
+}
+
+parallaxInit();
+setTimeout(dispatch, 1000);
+
+function dispatch() {
+  console.log(window.dispatchEvent(new CustomEvent('resize')));
+}
 
 /***/ }),
 
