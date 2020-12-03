@@ -11,19 +11,19 @@ function parallaxInit() {
   new simpleParallax(FirstPageAnimation_1, {
     orientation: 'up',
     overflow: true,
-    delay: .6,
-    scale: 2,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
+    delay: .9,
+    scale: 1.8,
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
   });
 
-  let FirstPageAnimation_2 = document.querySelector(".first-page__animation_2");
+  let FirstPageAnimation_1.8 = document.querySelector(".first-page__animation_1.8");
 
-  new simpleParallax(FirstPageAnimation_2, {
+  new simpleParallax(FirstPageAnimation_1.8, {
     orientation: 'down left',
     overflow: true,
-    delay: .6,
-    scale: 2,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
+    delay: .9,
+    scale: 1.8,
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
   });
 
   let FirstPageAnimation_3 = document.querySelector(".first-page__animation_3");
@@ -31,9 +31,9 @@ function parallaxInit() {
   new simpleParallax(FirstPageAnimation_3, {
     orientation: 'down left',
     overflow: true,
-    delay: .6,
+    delay: .9,
     scale: 1.5,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
   });
 
   let FirstPageAnimation_4 = document.querySelector(".first-page__animation_4");
@@ -41,9 +41,9 @@ function parallaxInit() {
   new simpleParallax(FirstPageAnimation_4, {
     orientation: 'up',
     overflow: true,
-    delay: .6,
-    scale: 2,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
+    delay: .9,
+    scale: 1.8,
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
   });
 
   let FirstPageAnimation_5 = document.querySelector(".first-page__animation_5");
@@ -51,9 +51,9 @@ function parallaxInit() {
   new simpleParallax(FirstPageAnimation_5, {
     orientation: 'down left',
     overflow: true,
-    delay: .6,
-    scale: 2,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
+    delay: .9,
+    scale: 1.8,
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
   });
 
   let FirstPageAnimation_6 = document.querySelector(".first-page__animation_6");
@@ -61,9 +61,9 @@ function parallaxInit() {
   new simpleParallax(FirstPageAnimation_6, {
     orientation: 'right',
     overflow: true,
-    delay: .6,
-    scale: 2,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
+    delay: .9,
+    scale: 1.8,
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
   });
 
   let FirstPageAnimation_7 = document.querySelector(".first-page__animation_7");
@@ -71,9 +71,9 @@ function parallaxInit() {
   new simpleParallax(FirstPageAnimation_7, {
     orientation: 'up right',
     overflow: true,
-    delay: .6,
-    scale: 2.6,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
+    delay: .9,
+    scale: .9,
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
   });
 
   let FirstPageAnimation_8 = document.querySelector(".first-page__animation_8");
@@ -81,9 +81,9 @@ function parallaxInit() {
   new simpleParallax(FirstPageAnimation_8, {
     orientation: 'right',
     overflow: true,
-    delay: .6,
-    scale: 2,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
+    delay: .9,
+    scale: 1.8,
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
   });
 
   let FirstPageAnimation_9 = document.querySelector(".first-page__animation_9");
@@ -91,9 +91,9 @@ function parallaxInit() {
   new simpleParallax(FirstPageAnimation_9, {
     orientation: 'down right',
     overflow: true,
-    delay: .6,
-    scale: 2,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
+    delay: .9,
+    scale: 1.8,
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
   });
 
   let FirstPageAnimation_10 = document.querySelector(".first-page__animation_10");
@@ -101,9 +101,9 @@ function parallaxInit() {
   new simpleParallax(FirstPageAnimation_10, {
     orientation: 'right',
     overflow: true,
-    delay: .6,
-    scale: 2,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
+    delay: .9,
+    scale: 1.8,
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
   });
 
   let FirstPageAnimation_11 = document.querySelector(".first-page__animation_11");
@@ -111,19 +111,19 @@ function parallaxInit() {
   new simpleParallax(FirstPageAnimation_11, {
     orientation: 'down right',
     overflow: true,
-    delay: .6,
-    scale: 2,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
+    delay: .9,
+    scale: 1.8,
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
   });
 
-  let FirstPageAnimation_12 = document.querySelector(".first-page__animation_12");
+  let FirstPageAnimation_11.8 = document.querySelector(".first-page__animation_11.8");
 
-  new simpleParallax(FirstPageAnimation_12, {
+  new simpleParallax(FirstPageAnimation_11.8, {
     orientation: 'down left',
     overflow: true,
-    delay: 2.6,
-    scale: 2,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
+    delay: .9,
+    scale: 1.8,
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
   });
 
   let FirstPageAnimation_expertise = document.querySelector(".first-page__animation_expertise");
@@ -131,20 +131,20 @@ function parallaxInit() {
   new simpleParallax(FirstPageAnimation_expertise, {
     orientation: 'down',
     overflow: true,
-    delay: 2.6,
-    scale: 2.8,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
+    delay: .9,
+    scale: 1.8,
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
   });
 
 
-  let FirstPageAnimation_expertise_2 = document.querySelector(".first-page__animation_expertise-2");
+  let FirstPageAnimation_expertise_1.8 = document.querySelector(".first-page__animation_expertise-1.8");
 
-  new simpleParallax(FirstPageAnimation_expertise_2, {
+  new simpleParallax(FirstPageAnimation_expertise_1.8, {
     orientation: 'down right',
     overflow: true,
-    delay: 2.6,
+    delay: .9,
     scale: 1.8,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
   });
 
 

@@ -329,49 +329,49 @@ function parallaxAboutInit() {
   new simpleParallax(aboutAnimation_1, {
     orientation: 'down',
     overflow: true,
-    delay: .6,
-    scale: 1.5,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
+    delay: .9,
+    scale: 1.8,
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
   });
   var aboutAnimation_2 = document.querySelector(".about-animation_2");
   new simpleParallax(aboutAnimation_2, {
     orientation: 'down left',
     overflow: true,
-    delay: .6,
-    scale: 2,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
+    delay: .9,
+    scale: 1.8,
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
   });
   var aboutAnimation_3 = document.querySelector(".about-animation_3");
   new simpleParallax(aboutAnimation_3, {
     orientation: 'down right',
     overflow: true,
-    delay: .6,
+    delay: .9,
     scale: 1.3,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
   });
   var aboutAnimation_4 = document.querySelector(".about-animation_4");
   new simpleParallax(aboutAnimation_4, {
     orientation: 'down right',
     overflow: true,
-    delay: .6,
-    scale: 1.6,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
+    delay: .9,
+    scale: 1.9,
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
   });
   var aboutAnimation_5 = document.querySelector(".about-animation_5");
   new simpleParallax(aboutAnimation_5, {
     orientation: 'down right',
     overflow: true,
-    delay: .6,
-    scale: 1.6,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
+    delay: .9,
+    scale: 1.9,
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
   });
   var aboutAnimation_6 = document.querySelector(".about-animation_6");
   new simpleParallax(aboutAnimation_6, {
     orientation: 'down',
     overflow: true,
-    delay: 2.6,
-    scale: 2,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
+    delay: 2.9,
+    scale: 1.8,
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
   });
 }
 
@@ -393,65 +393,65 @@ function parallaxInitCarriers() {
   new simpleParallax(carriersPageAnimation_1, {
     orientation: 'down',
     overflow: true,
-    delay: .6,
+    delay: .9,
     scale: 1.3,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
   });
   var carriersPageAnimation_2 = document.querySelector(".carriers-page__animation_2");
   new simpleParallax(carriersPageAnimation_2, {
     orientation: 'down left',
     overflow: true,
-    delay: .6,
+    delay: .9,
     scale: 1.2,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
   });
   var carriersPageAnimation_3 = document.querySelector(".carriers-page__animation_3");
   new simpleParallax(carriersPageAnimation_3, {
     orientation: 'down',
     overflow: true,
-    delay: .6,
+    delay: .9,
     scale: 1.3,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
   });
   var carriersPageAnimation_4 = document.querySelector(".carriers-page__animation_4");
   new simpleParallax(carriersPageAnimation_4, {
     orientation: 'down right',
     overflow: true,
-    delay: .6,
+    delay: .9,
     scale: 1.3,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
   });
   var carriersPageAnimation_5 = document.querySelector(".carriers-page__animation_5");
   new simpleParallax(carriersPageAnimation_5, {
     orientation: 'down',
     overflow: true,
-    delay: .6,
+    delay: .9,
     scale: 1.5,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
   });
   var carriersPageAnimation_6 = document.querySelector(".carriers-page__animation_6");
   new simpleParallax(carriersPageAnimation_6, {
     orientation: 'down left',
     overflow: true,
-    delay: .6,
+    delay: .9,
     scale: 1.2,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
   });
   var carriersPageAnimation_7 = document.querySelector(".carriers-page__animation_7");
   new simpleParallax(carriersPageAnimation_7, {
     orientation: 'down right',
     overflow: true,
-    delay: .6,
+    delay: .9,
     scale: 1.3,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
   });
   var carriersPageAnimation_carriers = document.querySelector(".carriers-page__animation_carriers");
   new simpleParallax(carriersPageAnimation_carriers, {
     orientation: 'down',
     overflow: true,
-    delay: .6,
+    delay: .9,
     scale: 1.8,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
   });
 }
 
@@ -472,41 +472,41 @@ function parallaxFooterInit() {
   new simpleParallax(footerAnimation_1, {
     orientation: 'down',
     overflow: true,
-    delay: .6,
-    scale: 2,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
+    delay: .9,
+    scale: 1.8,
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
   });
   var footerAnimation_2 = document.querySelector(".footer-animate__img_2");
   new simpleParallax(footerAnimation_2, {
     orientation: 'left',
     overflow: true,
-    delay: .6,
+    delay: .9,
     scale: 1.3,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
   });
   var footerAnimation_3 = document.querySelector(".footer-animate__img_3");
   new simpleParallax(footerAnimation_3, {
     orientation: 'down left',
     overflow: true,
-    delay: .6,
+    delay: .9,
     scale: 1.3,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
   });
   var footerAnimation_4 = document.querySelector(".footer-animate__img_4");
   new simpleParallax(footerAnimation_4, {
     orientation: 'down right',
     overflow: true,
-    delay: .6,
+    delay: .9,
     scale: 1.3,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
   });
   var footerAnimation_5 = document.querySelector(".footer-animate__img_5");
   new simpleParallax(footerAnimation_5, {
     orientation: 'left',
     overflow: true,
-    delay: .6,
-    scale: 1.6,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
+    delay: .9,
+    scale: 1.9,
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
   });
 }
 
@@ -528,33 +528,33 @@ function parallaxInnovationInit() {
   new simpleParallax(innovationPageAnimation_1, {
     orientation: 'up',
     overflow: true,
-    delay: .6,
-    scale: 2,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
+    delay: .9,
+    scale: 1.8,
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
   });
   var innovationPageAnimation_2 = document.querySelector(".innovation-page__animation_2");
   new simpleParallax(innovationPageAnimation_2, {
     orientation: 'top right',
     overflow: true,
-    delay: .6,
+    delay: .9,
     scale: 1.8,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
   });
   var innovationPageAnimation_3 = document.querySelector(".innovation-page__animation_3");
   new simpleParallax(innovationPageAnimation_3, {
     orientation: 'down left',
     overflow: true,
-    delay: .6,
+    delay: .9,
     scale: 1.25,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
   });
   var innovationPageAnimation_4 = document.querySelector(".innovation-page__animation_4");
   new simpleParallax(innovationPageAnimation_4, {
     orientation: 'down',
     overflow: true,
-    delay: .6,
+    delay: .9,
     scale: 1.8,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
   });
 }
 
@@ -575,81 +575,81 @@ function parallaxNewsInit() {
   new simpleParallax(newsPageAnimation_1, {
     orientation: 'down',
     overflow: true,
-    delay: .6,
+    delay: .9,
     scale: 1.3,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
   });
   var newsPageAnimation_2 = document.querySelector(".news-page__animation_2");
   new simpleParallax(newsPageAnimation_2, {
     orientation: 'down right',
     overflow: true,
-    delay: .6,
+    delay: .9,
     scale: 1.8,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
   });
   var newsPageAnimation_3 = document.querySelector(".news-page__animation_3");
   new simpleParallax(newsPageAnimation_3, {
     orientation: 'down',
     overflow: true,
-    delay: .6,
+    delay: .9,
     scale: 1.3,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
   });
   var newsPageAnimation_4 = document.querySelector(".news-page__animation_4");
   new simpleParallax(newsPageAnimation_4, {
     orientation: 'down left',
     overflow: true,
-    delay: .6,
+    delay: .9,
     scale: 1.3,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
   });
   var newsPageAnimation_5 = document.querySelector(".news-page__animation_5");
   new simpleParallax(newsPageAnimation_5, {
     orientation: 'down right',
     overflow: true,
-    delay: .6,
+    delay: .9,
     scale: 1.3,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
   });
   var newsPageAnimation_6 = document.querySelector(".news-page__animation_6");
   new simpleParallax(newsPageAnimation_6, {
     orientation: 'down left',
     overflow: true,
-    delay: .6,
+    delay: .9,
     scale: 1.3,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
   });
   var newsPageAnimation_7 = document.querySelector(".news-page__animation_7");
   new simpleParallax(newsPageAnimation_7, {
     orientation: 'down left',
     overflow: true,
-    delay: .6,
+    delay: .9,
     scale: 1.3,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
   });
   var newsPageAnimation_8 = document.querySelector(".news-page__animation_8");
   new simpleParallax(newsPageAnimation_8, {
     orientation: 'down',
     overflow: true,
-    delay: .6,
+    delay: .9,
     scale: 1.8,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
   });
   var newsPageAnimation_9 = document.querySelector(".news-page__animation_9");
   new simpleParallax(newsPageAnimation_9, {
     orientation: 'down',
     overflow: true,
-    delay: .6,
+    delay: .9,
     scale: 1.8,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
   });
   var newsPageAnimation_10 = document.querySelector(".news-page__animation_10");
   new simpleParallax(newsPageAnimation_10, {
     orientation: 'down right',
     overflow: true,
-    delay: .6,
+    delay: .9,
     scale: 1.8,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
   });
 }
 
@@ -670,81 +670,81 @@ function parallaxsectorsInit() {
   new simpleParallax(sectorsAnimation_1, {
     orientation: 'down',
     overflow: true,
-    delay: .6,
+    delay: .9,
     scale: 1.5,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
   });
   var sectorsAnimation_2 = document.querySelector(".sectors-animation_2");
   new simpleParallax(sectorsAnimation_2, {
     orientation: 'left',
     overflow: true,
-    delay: .6,
+    delay: .9,
     scale: 1.3,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
   });
   var sectorsAnimation_3 = document.querySelector(".sectors-animation_3");
   new simpleParallax(sectorsAnimation_3, {
     orientation: 'right',
     overflow: true,
-    delay: .6,
-    scale: 1.6,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
+    delay: .9,
+    scale: 1.9,
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
   });
   var sectorsAnimation_4 = document.querySelector(".sectors-animation_4");
   new simpleParallax(sectorsAnimation_4, {
     orientation: 'down left',
     overflow: true,
-    delay: .6,
+    delay: .9,
     scale: 1.3,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
   });
   var sectorsAnimation_5 = document.querySelector(".sectors-animation_5");
   new simpleParallax(sectorsAnimation_5, {
     orientation: 'down left',
     overflow: true,
-    delay: .6,
+    delay: .9,
     scale: 1.3,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
   });
   var sectorsAnimation_6 = document.querySelector(".sectors-animation_6");
   new simpleParallax(sectorsAnimation_6, {
     orientation: 'down left',
     overflow: true,
-    delay: .6,
+    delay: .9,
     scale: 1.3,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
   });
   var sectorsAnimation_7 = document.querySelector(".sectors-animation_7");
   new simpleParallax(sectorsAnimation_7, {
     orientation: 'down right',
     overflow: true,
-    delay: .6,
+    delay: .9,
     scale: 1.3,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
   });
   var sectorsAnimation_8 = document.querySelector(".sectors-animation_8");
   new simpleParallax(sectorsAnimation_8, {
     orientation: 'down',
     overflow: true,
-    delay: .6,
+    delay: .9,
     scale: 1.8,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
   });
   var sectorsAnimation_9 = document.querySelector(".sectors-animation-tr_2");
   new simpleParallax(sectorsAnimation_9, {
     orientation: 'down',
     overflow: true,
-    delay: .6,
-    scale: 1.6,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
+    delay: .9,
+    scale: 1.9,
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
   });
   var sectorsAnimation_10 = document.querySelector(".sectors-animation-tr_1");
   new simpleParallax(sectorsAnimation_10, {
     orientation: 'down',
     overflow: true,
-    delay: 1.6,
+    delay: 1.9,
     scale: 2,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
   });
 }
 
@@ -766,49 +766,49 @@ function parallaxValuesInit() {
   new simpleParallax(valuesPageAnimation_1, {
     orientation: 'down',
     overflow: true,
-    delay: .6,
+    delay: .9,
     scale: 2,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
   });
   var valuesPageAnimation_2 = document.querySelector(".value-page__animation_2");
   new simpleParallax(valuesPageAnimation_2, {
     orientation: 'top right',
     overflow: true,
-    delay: .6,
+    delay: .9,
     scale: 1.8,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
   });
   var valuesPageAnimation_3 = document.querySelector(".value-page__animation_3");
   new simpleParallax(valuesPageAnimation_3, {
     orientation: 'down left',
     overflow: true,
-    delay: .6,
+    delay: .9,
     scale: 1.3,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
   });
   var valuesPageAnimation_4 = document.querySelector(".value-page__animation_4");
   new simpleParallax(valuesPageAnimation_4, {
     orientation: 'down',
     overflow: true,
-    delay: .6,
-    scale: 2.3,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
+    delay: .9,
+    scale: 1.8,
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
   });
   var valuesPageAnimation_5 = document.querySelector(".value-page__animation_5");
   new simpleParallax(valuesPageAnimation_5, {
     orientation: 'down right',
     overflow: true,
-    delay: .6,
-    scale: 2.3,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
+    delay: .9,
+    scale: 1.8,
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
   });
   var valuesPageAnimation_6 = document.querySelector(".value-page__animation_6");
   new simpleParallax(valuesPageAnimation_6, {
     orientation: 'down',
     overflow: true,
-    delay: .6,
-    scale: 1.6,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
+    delay: .9,
+    scale: 1.9,
+    transition: 'cubic-bezier(.39,.94,.47,.57)'
   });
 }
 
@@ -823,128 +823,7 @@ parallaxValuesInit();
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-//custom 
-function parallaxInit() {
-  var FirstPageAnimation_1 = document.querySelector(".first-page__animation_1");
-  new simpleParallax(FirstPageAnimation_1, {
-    orientation: 'up',
-    overflow: true,
-    delay: .6,
-    scale: 2,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
-  });
-  var FirstPageAnimation_2 = document.querySelector(".first-page__animation_2");
-  new simpleParallax(FirstPageAnimation_2, {
-    orientation: 'down left',
-    overflow: true,
-    delay: .6,
-    scale: 2,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
-  });
-  var FirstPageAnimation_3 = document.querySelector(".first-page__animation_3");
-  new simpleParallax(FirstPageAnimation_3, {
-    orientation: 'down left',
-    overflow: true,
-    delay: .6,
-    scale: 1.5,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
-  });
-  var FirstPageAnimation_4 = document.querySelector(".first-page__animation_4");
-  new simpleParallax(FirstPageAnimation_4, {
-    orientation: 'up',
-    overflow: true,
-    delay: .6,
-    scale: 2,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
-  });
-  var FirstPageAnimation_5 = document.querySelector(".first-page__animation_5");
-  new simpleParallax(FirstPageAnimation_5, {
-    orientation: 'down left',
-    overflow: true,
-    delay: .6,
-    scale: 2,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
-  });
-  var FirstPageAnimation_6 = document.querySelector(".first-page__animation_6");
-  new simpleParallax(FirstPageAnimation_6, {
-    orientation: 'right',
-    overflow: true,
-    delay: .6,
-    scale: 2,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
-  });
-  var FirstPageAnimation_7 = document.querySelector(".first-page__animation_7");
-  new simpleParallax(FirstPageAnimation_7, {
-    orientation: 'up right',
-    overflow: true,
-    delay: .6,
-    scale: 2.6,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
-  });
-  var FirstPageAnimation_8 = document.querySelector(".first-page__animation_8");
-  new simpleParallax(FirstPageAnimation_8, {
-    orientation: 'right',
-    overflow: true,
-    delay: .6,
-    scale: 2,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
-  });
-  var FirstPageAnimation_9 = document.querySelector(".first-page__animation_9");
-  new simpleParallax(FirstPageAnimation_9, {
-    orientation: 'down right',
-    overflow: true,
-    delay: .6,
-    scale: 2,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
-  });
-  var FirstPageAnimation_10 = document.querySelector(".first-page__animation_10");
-  new simpleParallax(FirstPageAnimation_10, {
-    orientation: 'right',
-    overflow: true,
-    delay: .6,
-    scale: 2,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
-  });
-  var FirstPageAnimation_11 = document.querySelector(".first-page__animation_11");
-  new simpleParallax(FirstPageAnimation_11, {
-    orientation: 'down right',
-    overflow: true,
-    delay: .6,
-    scale: 2,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
-  });
-  var FirstPageAnimation_12 = document.querySelector(".first-page__animation_12");
-  new simpleParallax(FirstPageAnimation_12, {
-    orientation: 'down left',
-    overflow: true,
-    delay: 2.6,
-    scale: 2,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
-  });
-  var FirstPageAnimation_expertise = document.querySelector(".first-page__animation_expertise");
-  new simpleParallax(FirstPageAnimation_expertise, {
-    orientation: 'down',
-    overflow: true,
-    delay: 2.6,
-    scale: 2.8,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
-  });
-  var FirstPageAnimation_expertise_2 = document.querySelector(".first-page__animation_expertise-2");
-  new simpleParallax(FirstPageAnimation_expertise_2, {
-    orientation: 'down right',
-    overflow: true,
-    delay: 2.6,
-    scale: 1.8,
-    transition: 'cubic-bezier(.39,.64,.47,.57)'
-  });
-}
-
-parallaxInit();
-setTimeout(dispatch, 1000);
-
-function dispatch() {
-  console.log(window.dispatchEvent(new CustomEvent('resize')));
-}
+throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: /Users/borisslonov/Documents/inWork/git/hi-fi/hi-fi/src/blocks/modules/parallax/parallax.js: Identifier 'FirstPageAnimation_1' has already been declared (19:6)\n\n\u001b[0m \u001b[90m 17 | \u001b[39m  })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 18 | \u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 19 | \u001b[39m  let \u001b[33mFirstPageAnimation_1\u001b[39m\u001b[35m.8\u001b[39m \u001b[33m=\u001b[39m document\u001b[33m.\u001b[39mquerySelector(\u001b[32m\".first-page__animation_1.8\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    | \u001b[39m      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 20 | \u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 21 | \u001b[39m  \u001b[36mnew\u001b[39m simpleParallax(\u001b[33mFirstPageAnimation_1\u001b[39m\u001b[35m.8\u001b[39m\u001b[33m,\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m 22 | \u001b[39m    orientation\u001b[33m:\u001b[39m \u001b[32m'down left'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\n    at Parser._raise (/Users/borisslonov/Documents/inWork/git/hi-fi/hi-fi/node_modules/@babel/parser/src/parser/error.js:60:45)\n    at Parser.raiseWithData (/Users/borisslonov/Documents/inWork/git/hi-fi/hi-fi/node_modules/@babel/parser/src/parser/error.js:55:17)\n    at Parser.raise (/Users/borisslonov/Documents/inWork/git/hi-fi/hi-fi/node_modules/@babel/parser/src/parser/error.js:39:17)\n    at ScopeHandler.checkRedeclarationInScope (/Users/borisslonov/Documents/inWork/git/hi-fi/hi-fi/node_modules/@babel/parser/src/util/scope.js:137:12)\n    at ScopeHandler.declareName (/Users/borisslonov/Documents/inWork/git/hi-fi/hi-fi/node_modules/@babel/parser/src/util/scope.js:98:12)\n    at Parser.checkLVal (/Users/borisslonov/Documents/inWork/git/hi-fi/hi-fi/node_modules/@babel/parser/src/parser/lval.js:435:22)\n    at Parser.parseVarId (/Users/borisslonov/Documents/inWork/git/hi-fi/hi-fi/node_modules/@babel/parser/src/parser/statement.js:1051:10)\n    at Parser.parseVar (/Users/borisslonov/Documents/inWork/git/hi-fi/hi-fi/node_modules/@babel/parser/src/parser/statement.js:1012:12)\n    at Parser.parseVarStatement (/Users/borisslonov/Documents/inWork/git/hi-fi/hi-fi/node_modules/@babel/parser/src/parser/statement.js:700:10)\n    at Parser.parseStatementContent (/Users/borisslonov/Documents/inWork/git/hi-fi/hi-fi/node_modules/@babel/parser/src/parser/statement.js:217:21)");
 
 /***/ }),
 

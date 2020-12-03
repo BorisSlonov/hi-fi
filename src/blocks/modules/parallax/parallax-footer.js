@@ -11,9 +11,9 @@ function parallaxFooterInit() {
     new simpleParallax(footerAnimation_1, {
         orientation: 'down',
         overflow: true,
-        delay: .6,
-        scale: 2,
-        transition: 'cubic-bezier(.39,.64,.47,.57)'
+        delay: .9,
+        scale: 1.8,
+        transition: 'cubic-bezier(.39,.94,.47,.57)'
     });
 
     let footerAnimation_2 = document.querySelector(".footer-animate__img_2");
@@ -21,9 +21,9 @@ function parallaxFooterInit() {
     new simpleParallax(footerAnimation_2, {
         orientation: 'left',
         overflow: true,
-        delay: .6,
+        delay: .9,
         scale: 1.3,
-        transition: 'cubic-bezier(.39,.64,.47,.57)'
+        transition: 'cubic-bezier(.39,.94,.47,.57)'
     });
 
     let footerAnimation_3 = document.querySelector(".footer-animate__img_3");
@@ -31,9 +31,9 @@ function parallaxFooterInit() {
     new simpleParallax(footerAnimation_3, {
         orientation: 'down left',
         overflow: true,
-        delay: .6,
+        delay: .9,
         scale: 1.3,
-        transition: 'cubic-bezier(.39,.64,.47,.57)'
+        transition: 'cubic-bezier(.39,.94,.47,.57)'
     });
 
     let footerAnimation_4 = document.querySelector(".footer-animate__img_4");
@@ -41,9 +41,9 @@ function parallaxFooterInit() {
     new simpleParallax(footerAnimation_4, {
         orientation: 'down right',
         overflow: true,
-        delay: .6,
+        delay: .9,
         scale: 1.3,
-        transition: 'cubic-bezier(.39,.64,.47,.57)'
+        transition: 'cubic-bezier(.39,.94,.47,.57)'
     });
 
     let footerAnimation_5 = document.querySelector(".footer-animate__img_5");
@@ -51,9 +51,9 @@ function parallaxFooterInit() {
     new simpleParallax(footerAnimation_5, {
         orientation: 'left',
         overflow: true,
-        delay: .6,
-        scale: 1.6,
-        transition: 'cubic-bezier(.39,.64,.47,.57)'
+        delay: .9,
+        scale: 1.9,
+        transition: 'cubic-bezier(.39,.94,.47,.57)'
     });
 
 }

@@ -7,9 +7,9 @@ function parallaxsectorsInit() {
     new simpleParallax(sectorsAnimation_1, {
         orientation: 'down',
         overflow: true,
-        delay: .6,
+        delay: .9,
         scale: 1.5,
-        transition: 'cubic-bezier(.39,.64,.47,.57)'
+        transition: 'cubic-bezier(.39,.94,.47,.57)'
     });
 
     let sectorsAnimation_2 = document.querySelector(".sectors-animation_2");
@@ -17,9 +17,9 @@ function parallaxsectorsInit() {
     new simpleParallax(sectorsAnimation_2, {
         orientation: 'left',
         overflow: true,
-        delay: .6,
+        delay: .9,
         scale: 1.3,
-        transition: 'cubic-bezier(.39,.64,.47,.57)'
+        transition: 'cubic-bezier(.39,.94,.47,.57)'
     });
 
     let sectorsAnimation_3 = document.querySelector(".sectors-animation_3");
@@ -27,9 +27,9 @@ function parallaxsectorsInit() {
     new simpleParallax(sectorsAnimation_3, {
         orientation: 'right',
         overflow: true,
-        delay: .6,
-        scale: 1.6,
-        transition: 'cubic-bezier(.39,.64,.47,.57)'
+        delay: .9,
+        scale: 1.9,
+        transition: 'cubic-bezier(.39,.94,.47,.57)'
     });
 
 
@@ -38,9 +38,9 @@ function parallaxsectorsInit() {
     new simpleParallax(sectorsAnimation_4, {
         orientation: 'down left',
         overflow: true,
-        delay: .6,
+        delay: .9,
         scale: 1.3,
-        transition: 'cubic-bezier(.39,.64,.47,.57)'
+        transition: 'cubic-bezier(.39,.94,.47,.57)'
     });
 
 
@@ -51,9 +51,9 @@ function parallaxsectorsInit() {
     new simpleParallax(sectorsAnimation_5, {
         orientation: 'down left',
         overflow: true,
-        delay: .6,
+        delay: .9,
         scale: 1.3,
-        transition: 'cubic-bezier(.39,.64,.47,.57)'
+        transition: 'cubic-bezier(.39,.94,.47,.57)'
     });
 
 
@@ -62,9 +62,9 @@ function parallaxsectorsInit() {
     new simpleParallax(sectorsAnimation_6, {
         orientation: 'down left',
         overflow: true,
-        delay: .6,
+        delay: .9,
         scale: 1.3,
-        transition: 'cubic-bezier(.39,.64,.47,.57)'
+        transition: 'cubic-bezier(.39,.94,.47,.57)'
     });
 
 
@@ -73,9 +73,9 @@ function parallaxsectorsInit() {
     new simpleParallax(sectorsAnimation_7, {
         orientation: 'down right',
         overflow: true,
-        delay: .6,
+        delay: .9,
         scale: 1.3,
-        transition: 'cubic-bezier(.39,.64,.47,.57)'
+        transition: 'cubic-bezier(.39,.94,.47,.57)'
     });
 
     let sectorsAnimation_8 = document.querySelector(".sectors-animation_8");
@@ -83,9 +83,9 @@ function parallaxsectorsInit() {
     new simpleParallax(sectorsAnimation_8, {
         orientation: 'down',
         overflow: true,
-        delay: .6,
+        delay: .9,
         scale: 1.8,
-        transition: 'cubic-bezier(.39,.64,.47,.57)'
+        transition: 'cubic-bezier(.39,.94,.47,.57)'
     });
 
 
@@ -94,9 +94,9 @@ function parallaxsectorsInit() {
     new simpleParallax(sectorsAnimation_9, {
         orientation: 'down',
         overflow: true,
-        delay: .6,
-        scale: 1.6,
-        transition: 'cubic-bezier(.39,.64,.47,.57)'
+        delay: .9,
+        scale: 1.9,
+        transition: 'cubic-bezier(.39,.94,.47,.57)'
     });
 
     let sectorsAnimation_10 = document.querySelector(".sectors-animation-tr_1");
@@ -104,9 +104,9 @@ function parallaxsectorsInit() {
     new simpleParallax(sectorsAnimation_10, {
         orientation: 'down',
         overflow: true,
-        delay: 1.6,
+        delay: 1.9,
         scale: 2,
-        transition: 'cubic-bezier(.39,.64,.47,.57)'
+        transition: 'cubic-bezier(.39,.94,.47,.57)'
     });
 }
 
