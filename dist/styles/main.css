@@ -7650,6 +7650,8 @@ body {
   display: none;
   width: 70%;
   background-color: #eceaf5;
+  border-radius: 25px;
+  box-shadow: 0 0 8px 2px #000;
 }
 
 .modal_1__header {
