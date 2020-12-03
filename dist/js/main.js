@@ -870,7 +870,7 @@ function parallaxInit() {
     orientation: 'up right',
     overflow: true,
     delay: .9,
-    scale: .9,
+    scale: 1.8,
     transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
   });
   var FirstPageAnimation_8 = document.querySelector(".first-page__animation_8");
@@ -899,6 +899,14 @@ function parallaxInit() {
   });
   var FirstPageAnimation_11 = document.querySelector(".first-page__animation_11");
   new simpleParallax(FirstPageAnimation_11, {
+    orientation: 'down right',
+    overflow: true,
+    delay: .9,
+    scale: 1.8,
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
+  });
+  var FirstPageAnimation_12 = document.querySelector(".first-page__animation_12");
+  new simpleParallax(FirstPageAnimation_12, {
     orientation: 'down right',
     overflow: true,
     delay: .9,

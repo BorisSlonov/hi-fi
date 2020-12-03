@@ -64,7 +64,7 @@ function parallaxInit() {
     orientation: 'up right',
     overflow: true,
     delay: .9,
-    scale: .9,
+    scale: 1.8,
     transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
   });
 
@@ -108,6 +108,16 @@ function parallaxInit() {
     transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
   });
 
+
+  let FirstPageAnimation_12 = document.querySelector(".first-page__animation_12");
+
+  new simpleParallax(FirstPageAnimation_12, {
+    orientation: 'down right',
+    overflow: true,
+    delay: .9,
+    scale: 1.8,
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
+  });
 
 
   let FirstPageAnimation_expertise = document.querySelector(".first-page__animation_expertise");
