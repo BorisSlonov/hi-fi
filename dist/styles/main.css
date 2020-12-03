@@ -6745,6 +6745,7 @@ body {
 
 .about-animation_4 img {
   max-width: 60%;
+  object-fit: contain;
 }
 
 .about-animation_5 {
@@ -6754,11 +6755,16 @@ body {
 
 .about-animation_5 img {
   max-width: 30%;
+  object-fit: contain;
 }
 
 .about-animation_6 {
   top: 0;
   right: -150px;
+}
+
+.about-animation_6 img {
+  object-fit: contain;
 }
 
 .sectors-animation {
