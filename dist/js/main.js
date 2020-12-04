@@ -495,6 +495,77 @@ function parallaxInitCarriers() {
 }
 
 parallaxInitCarriers();
+var carriersPageAnimation_carriers = document.querySelector(".carriers-page__animation_carriers");
+
+if (carriersPageAnimation_carriers) {
+  carriersPageAnimation_carriers.addEventListener('animationend', function () {
+    carriersPageAnimation_carriers.classList.remove('animate__animated', 'animate__zoomIn', 'animate__delay-2s');
+  });
+}
+
+var carriersPageAnimation_1 = document.querySelector(".carriers-page__animation_1");
+
+if (carriersPageAnimation_1) {
+  carriersPageAnimation_1.addEventListener('animationend', function () {
+    carriersPageAnimation_1.classList.remove('animate__animated', 'animate__zoomIn', 'animate__delay-2s');
+  });
+}
+
+var carriersPageAnimation_2 = document.querySelector(".carriers-page__animation_2");
+
+if (carriersPageAnimation_2) {
+  carriersPageAnimation_2.addEventListener('animationend', function () {
+    carriersPageAnimation_2.classList.remove('animate__animated', 'animate__backInRight', 'animate__delay-3s');
+  });
+}
+
+var carriersPageAnimation_3 = document.querySelector(".carriers-page__animation_3-carriers");
+
+if (carriersPageAnimation_3) {
+  carriersPageAnimation_3.addEventListener('animationend', function () {
+    carriersPageAnimation_3.classList.remove('animate__animated', 'animate__zoomIn', 'animate__delay-2s');
+  });
+}
+
+var carriersPageAnimation_4 = document.querySelector(".carriers-page__animation_4");
+
+if (carriersPageAnimation_4) {
+  carriersPageAnimation_4.addEventListener('animationend', function () {
+    carriersPageAnimation_4.classList.remove('animate__animated', 'animate__backInLeft', 'animate__delay-3s');
+  });
+}
+
+var carriersPageAnimation_5 = document.querySelector(".carriers-page__animation_5");
+
+if (carriersPageAnimation_5) {
+  carriersPageAnimation_5.addEventListener('animationend', function () {
+    carriersPageAnimation_5.classList.remove('animate__animated', 'animate__zoomIn', 'animate__delay-2s');
+  });
+}
+
+var carriersPageAnimation_6 = document.querySelector(".carriers-page__animation_6");
+
+if (carriersPageAnimation_6) {
+  carriersPageAnimation_6.addEventListener('animationend', function () {
+    carriersPageAnimation_6.classList.remove('animate__animated', 'animate__zoomInDown', 'animate__delay-2s');
+  });
+}
+
+var carriersPageAnimation_7 = document.querySelector(".carriers-page__animation_7");
+
+if (carriersPageAnimation_7) {
+  carriersPageAnimation_7.addEventListener('animationend', function () {
+    carriersPageAnimation_7.classList.remove('animate__animated', 'animate__zoomInDown', 'animate__delay-2s');
+  });
+}
+
+var carriersPageAnimation_8 = document.querySelector(".about-animation_6");
+
+if (carriersPageAnimation_8) {
+  carriersPageAnimation_8.addEventListener('animationend', function () {
+    carriersPageAnimation_8.classList.remove('animate__animated', 'animate__zoomInUp', 'animate__delay-1s');
+  });
+}
 
 /***/ }),
 
@@ -727,7 +798,95 @@ function parallaxNewsInit() {
   });
 }
 
-parallaxNewsInit();
+parallaxNewsInit(); //del animate
+
+var newsPageAnimation_1 = document.querySelector(".news-page__animation_1");
+
+if (newsPageAnimation_1) {
+  newsPageAnimation_1.addEventListener('animationend', function () {
+    newsPageAnimation_1.classList.remove('animate__animated', 'animate__zoomInDown');
+  });
+}
+
+var newsPageAnimation_2 = document.querySelector(".news-page__animation_2");
+
+if (newsPageAnimation_2) {
+  newsPageAnimation_2.addEventListener('animationend', function () {
+    newsPageAnimation_2.classList.remove('animate__animated', 'animate__zoomInDown', 'animate__delay-2s');
+  });
+}
+
+var newsPageAnimation_3 = document.querySelector(".news-page__animation_3");
+
+if (newsPageAnimation_3) {
+  newsPageAnimation_3.addEventListener('animationend', function () {
+    newsPageAnimation_3.classList.remove('animate__animated', 'animate__zoomInDown', 'animate__delay-2s');
+  });
+}
+
+var newsPageAnimation_4 = document.querySelector(".news-page__animation_4");
+
+if (newsPageAnimation_4) {
+  newsPageAnimation_4.addEventListener('animationend', function () {
+    newsPageAnimation_4.classList.remove('animate__animated', 'animate__zoomInDown', 'animate__delay-2s');
+  });
+}
+
+var newsPageAnimation_5 = document.querySelector(".news-page__animation_5");
+
+if (newsPageAnimation_5) {
+  newsPageAnimation_5.addEventListener('animationend', function () {
+    newsPageAnimation_5.classList.remove('animate__animated', 'animate__fadeInLeft', 'animate__delay-2s');
+  });
+}
+
+var newsPageAnimation_6 = document.querySelector(".news-page__animation_6");
+
+if (newsPageAnimation_6) {
+  newsPageAnimation_6.addEventListener('animationend', function () {
+    newsPageAnimation_6.classList.remove('animate__animated', 'animate__fadeInLeft', 'animate__delay-2s');
+  });
+}
+
+var newsPageAnimation_7 = document.querySelector(".news-page__animation_7");
+
+if (newsPageAnimation_7) {
+  newsPageAnimation_7.addEventListener('animationend', function () {
+    newsPageAnimation_7.classList.remove('animate__animated', 'animate__zoomInDown', 'animate__delay-2s');
+  });
+}
+
+var newsPageAnimation_8 = document.querySelector(".news-page__animation_8");
+
+if (newsPageAnimation_8) {
+  newsPageAnimation_8.addEventListener('animationend', function () {
+    newsPageAnimation_8.classList.remove('animate__animated', 'animate__zoomInLeft', 'animate__delay-2s');
+  });
+}
+
+var newsPageAnimation_9 = document.querySelector(".news-page__animation_9");
+
+if (newsPageAnimation_9) {
+  newsPageAnimation_9.addEventListener('animationend', function () {
+    newsPageAnimation_9.classList.remove('animate__animated', 'animate__zoomInRight', 'animate__delay-2s');
+  });
+}
+
+var newsPageAnimation_10 = document.querySelector(".news-page__animation_10");
+
+if (newsPageAnimation_10) {
+  newsPageAnimation_10.addEventListener('animationend', function () {
+    newsPageAnimation_10.classList.remove('animate__animated', 'animate__zoomInLeft', 'animate__delay-2s');
+  });
+}
+
+var newsPageAnimation_11 = document.querySelector(".news-page__animation_11");
+
+if (newsPageAnimation_11) {
+  newsPageAnimation_11.addEventListener('animationend', function () {
+    newsPageAnimation_11.classList.remove('animate__animated', 'animate__zoomInRight', 'animate__delay-2s');
+  });
+}
 
 /***/ }),
 
