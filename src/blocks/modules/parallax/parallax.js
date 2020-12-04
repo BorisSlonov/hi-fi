@@ -156,11 +156,6 @@ function parallaxInit() {
 parallaxInit();
 
 
-setTimeout(dispatch, 1000)
-
-function dispatch() {
-  console.log(window.dispatchEvent(new CustomEvent('resize')))
-}
 
 //del animate class
 let parallaxFirst = document.querySelector('.first-page__animation_1');
@@ -192,8 +187,8 @@ if (parallaxFirst2) {
 
 
 //del animate class
-let parallaxFirs3 = document.querySelector('.first-page__animation_4');
-if (parallaxFirs3) {
+let parallaxFirst3 = document.querySelector('.first-page__animation_4');
+if (parallaxFirst3) {
   parallaxFirst3.addEventListener('animationend', function () {
     parallaxFirst3.classList.remove('animate__animated', 'animate__zoomIn', 'animate__delay-3s')
   })
@@ -247,22 +242,11 @@ if (parallaxFirst8) {
 
 //del animate class
 let parallaxFirst9 = document.querySelector('.first-page__animation_12');
-
-
 if (parallaxFirst9) {
   parallaxFirst9.addEventListener('animationend', function () {
     parallaxFirst9.classList.remove('animate__animated', 'animate__zoomIn', 'animate__delay-3s')
   })
 }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -284,6 +268,11 @@ if (parallaxImg2) {
   })
 }
 
+setTimeout(dispatch, 1000)
+
+function dispatch() {
+  console.log(window.dispatchEvent(new CustomEvent('resize')))
+}
 
 
 
