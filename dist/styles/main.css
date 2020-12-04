@@ -8608,7 +8608,7 @@ body {
   }
 
   .news-page__animation_1 {
-    display: none;
+    opacity: 0;
   }
 
   .news-page__animation_2 {
