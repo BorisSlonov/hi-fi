@@ -75,7 +75,7 @@ if (valuesPageAnimation_1) {
     valuesPageAnimation_1.addEventListener('animationend', function () {
         valuesPageAnimation_1.classList.remove('animate__animated', 'animate__fadeIn', 'animate__delay-2s')
 
-        setTimeout('parallaxValuesInit', 2000)
+        setTimeout(parallaxValuesInit, 10)
 
     })
 }

@@ -109,7 +109,6 @@ function parallaxNewsInit() {
 
 }
 
-parallaxNewsInit();
 
 
 
@@ -119,6 +118,8 @@ let newsPageAnimation_1 = document.querySelector(".news-page__animation_1");
 if (newsPageAnimation_1) {
     newsPageAnimation_1.addEventListener('animationend', function () {
         newsPageAnimation_1.classList.remove('animate__animated', 'animate__zoomInDown')
+
+        setTimeout(parallaxNewsInit, 3000)
     })
 }
 

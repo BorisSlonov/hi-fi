@@ -46,8 +46,6 @@ function parallaxInnovationInit() {
 }
 
 
-parallaxInnovationInit();
-
 
 
 //del animate
@@ -55,6 +53,8 @@ let innovationPageAnimation_1 = document.querySelector(".innovation-page__animat
 if (innovationPageAnimation_1) {
     innovationPageAnimation_1.addEventListener('animationend', function () {
         innovationPageAnimation_1.classList.remove('animate__animated', 'animate__fadeInDown', 'animate__delay-3s')
+
+        setTimeout(parallaxInnovationInit, 100)
     })
 }
 

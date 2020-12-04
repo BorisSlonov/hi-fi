@@ -89,11 +89,12 @@ function parallaxInitCarriers() {
 }
 
 
-parallaxInitCarriers();
 let carriersPageAnimation_carriers = document.querySelector(".carriers-page__animation_carriers");
 if (carriersPageAnimation_carriers) {
     carriersPageAnimation_carriers.addEventListener('animationend', function () {
         carriersPageAnimation_carriers.classList.remove('animate__animated', 'animate__zoomIn', 'animate__delay-2s')
+
+        setTimeout(parallaxInitCarriers, 1500)
     })
 }
 

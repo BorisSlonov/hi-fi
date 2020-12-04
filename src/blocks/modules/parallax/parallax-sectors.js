@@ -110,13 +110,15 @@ function parallaxsectorsInit() {
     });
 }
 
-parallaxsectorsInit();
 
 //del animate
 let sectorsAnimation_1 = document.querySelector(".sectors-animation_1");
 if (sectorsAnimation_1) {
     sectorsAnimation_1.addEventListener('animationend', function () {
         sectorsAnimation_1.classList.remove('animate__animated', 'animate__fadeInDown', 'animate__delay-3s')
+
+
+        setTimeout(parallaxsectorsInit, 100)
     })
 }
 

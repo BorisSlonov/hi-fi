@@ -495,12 +495,12 @@ function parallaxInitCarriers() {
   });
 }
 
-parallaxInitCarriers();
 var carriersPageAnimation_carriers = document.querySelector(".carriers-page__animation_carriers");
 
 if (carriersPageAnimation_carriers) {
   carriersPageAnimation_carriers.addEventListener('animationend', function () {
     carriersPageAnimation_carriers.classList.remove('animate__animated', 'animate__zoomIn', 'animate__delay-2s');
+    setTimeout(parallaxInitCarriers, 1500);
   });
 }
 
@@ -667,15 +667,15 @@ function parallaxInnovationInit() {
     scale: 1.8,
     transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
   });
-}
+} //del animate
 
-parallaxInnovationInit(); //del animate
 
 var innovationPageAnimation_1 = document.querySelector(".innovation-page__animation_1");
 
 if (innovationPageAnimation_1) {
   innovationPageAnimation_1.addEventListener('animationend', function () {
     innovationPageAnimation_1.classList.remove('animate__animated', 'animate__fadeInDown', 'animate__delay-3s');
+    setTimeout(parallaxInnovationInit, 100);
   });
 } //del animate
 
@@ -797,15 +797,15 @@ function parallaxNewsInit() {
     scale: 1.8,
     transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
   });
-}
+} //del animate
 
-parallaxNewsInit(); //del animate
 
 var newsPageAnimation_1 = document.querySelector(".news-page__animation_1");
 
 if (newsPageAnimation_1) {
   newsPageAnimation_1.addEventListener('animationend', function () {
     newsPageAnimation_1.classList.remove('animate__animated', 'animate__zoomInDown');
+    setTimeout(parallaxNewsInit, 3000);
   });
 }
 
@@ -980,15 +980,15 @@ function parallaxsectorsInit() {
     scale: 2,
     transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
   });
-}
+} //del animate
 
-parallaxsectorsInit(); //del animate
 
 var sectorsAnimation_1 = document.querySelector(".sectors-animation_1");
 
 if (sectorsAnimation_1) {
   sectorsAnimation_1.addEventListener('animationend', function () {
     sectorsAnimation_1.classList.remove('animate__animated', 'animate__fadeInDown', 'animate__delay-3s');
+    setTimeout(parallaxsectorsInit, 100);
   });
 }
 
@@ -1123,7 +1123,7 @@ var valuesPageAnimation_1 = document.querySelector(".value-page__animation_1");
 if (valuesPageAnimation_1) {
   valuesPageAnimation_1.addEventListener('animationend', function () {
     valuesPageAnimation_1.classList.remove('animate__animated', 'animate__fadeIn', 'animate__delay-2s');
-    setTimeout('parallaxValuesInit', 2000);
+    setTimeout(parallaxValuesInit, 10);
   });
 }
 
