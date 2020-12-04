@@ -165,72 +165,96 @@ function dispatch() {
 //del animate class
 let parallaxFirst = document.querySelector('.first-page__animation_1');
 
-parallaxFirst.addEventListener('animationend', function () {
-  parallaxFirst.classList.remove('animate__animated', 'animate__rotateInDownLeft', 'animate__delay-2s')
-})
+if (parallaxFirst) {
+  parallaxFirst.addEventListener('animationend', function () {
+    parallaxFirst.classList.remove('animate__animated', 'animate__rotateInDownLeft', 'animate__delay-2s')
+  })
+}
+
 
 //del animate class
 let parallaxFirst1 = document.querySelector('.first-page__animation_2');
 
-parallaxFirst1.addEventListener('animationend', function () {
-  parallaxFirst1.classList.remove('animate__animated', 'animate__zoomIn', 'animate__delay-3s')
-})
+if (parallaxFirst1) {
+  parallaxFirst1.addEventListener('animationend', function () {
+    parallaxFirst1.classList.remove('animate__animated', 'animate__zoomIn', 'animate__delay-3s')
+  })
+}
+
 
 //del animate class
 let parallaxFirst2 = document.querySelector('.first-page__animation_3');
+if (parallaxFirst2) {
+  parallaxFirst2.addEventListener('animationend', function () {
+    parallaxFirst2.classList.remove('animate__animated', 'animate__zoomIn', 'animate__delay-3s')
+  })
+}
 
-parallaxFirst2.addEventListener('animationend', function () {
-  parallaxFirst2.classList.remove('animate__animated', 'animate__zoomIn', 'animate__delay-3s')
-})
 
 //del animate class
 let parallaxFirs3 = document.querySelector('.first-page__animation_4');
+if (parallaxFirs3) {
+  parallaxFirst3.addEventListener('animationend', function () {
+    parallaxFirst3.classList.remove('animate__animated', 'animate__zoomIn', 'animate__delay-3s')
+  })
 
-parallaxFirst3.addEventListener('animationend', function () {
-  parallaxFirst3.classList.remove('animate__animated', 'animate__zoomIn', 'animate__delay-3s')
-})
+}
 
 //del animate class
 let parallaxFirst4 = document.querySelector('.first-page__animation_5');
+if (parallaxFirst4) {
+  parallaxFirst4.addEventListener('animationend', function () {
+    parallaxFirst4.classList.remove('animate__animated', 'animate__zoomIn', 'animate__delay-3s')
+  })
+}
 
-parallaxFirst4.addEventListener('animationend', function () {
-  parallaxFirst4.classList.remove('animate__animated', 'animate__zoomIn', 'animate__delay-3s')
-})
 
 //del animate class
 let parallaxFirst5 = document.querySelector('.first-page__animation_7');
+if (parallaxFirst5) {
+  parallaxFirst5.addEventListener('animationend', function () {
+    parallaxFirst5.classList.remove('animate__animated', 'animate__zoomIn', 'animate__delay-3s')
+  })
+}
 
-parallaxFirst5.addEventListener('animationend', function () {
-  parallaxFirst5.classList.remove('animate__animated', 'animate__zoomIn', 'animate__delay-3s')
-})
 
 //del animate class
 let parallaxFirst6 = document.querySelector('.first-page__animation_9');
+if (parallaxFirst6) {
+  parallaxFirst6.addEventListener('animationend', function () {
+    parallaxFirst6.classList.remove('animate__animated', 'animate__zoomIn', 'animate__delay-3s')
+  })
+}
 
-parallaxFirst6.addEventListener('animationend', function () {
-  parallaxFirst6.classList.remove('animate__animated', 'animate__zoomIn', 'animate__delay-3s')
-})
 
 //del animate class
 let parallaxFirst7 = document.querySelector('.first-page__animation_10');
+if (parallaxFirst7) {
+  parallaxFirst7.addEventListener('animationend', function () {
+    parallaxFirst7.classList.remove('animate__animated', 'animate__zoomIn', 'animate__delay-3s')
+  })
+}
 
-parallaxFirst7.addEventListener('animationend', function () {
-  parallaxFirst7.classList.remove('animate__animated', 'animate__zoomIn', 'animate__delay-3s')
-})
 
 //del animate class
 let parallaxFirst8 = document.querySelector('.first-page__animation_11');
+if (parallaxFirst8) {
+  parallaxFirst8.addEventListener('animationend', function () {
+    parallaxFirst8.classList.remove('animate__animated', 'animate__zoomIn', 'animate__delay-3s')
+  })
+}
 
-parallaxFirst8.addEventListener('animationend', function () {
-  parallaxFirst8.classList.remove('animate__animated', 'animate__zoomIn', 'animate__delay-3s')
-})
 
 //del animate class
 let parallaxFirst9 = document.querySelector('.first-page__animation_12');
 
-parallaxFirst9.addEventListener('animationend', function () {
-  parallaxFirst9.classList.remove('animate__animated', 'animate__zoomIn', 'animate__delay-3s')
-})
+
+if (parallaxFirst9) {
+  parallaxFirst9.addEventListener('animationend', function () {
+    parallaxFirst9.classList.remove('animate__animated', 'animate__zoomIn', 'animate__delay-3s')
+  })
+}
+
 
 
 
@@ -245,17 +269,21 @@ parallaxFirst9.addEventListener('animationend', function () {
 
 //del animate class
 let parallaxImg1 = document.querySelector('.first-page__animation_expertise-2');
+if (parallaxImg1) {
+  parallaxImg1.addEventListener('animationend', function () {
+    parallaxImg1.classList.remove('animate__animated', 'animate__zoomInRight', 'animate__delay-2s')
+  })
+}
 
-parallaxImg1.addEventListener('animationend', function () {
-  parallaxImg1.classList.remove('animate__animated', 'animate__zoomInRight', 'animate__delay-2s')
-})
 
 //del animate class
 let parallaxImg2 = document.querySelector('.first-page__animation_expertise');
+if (parallaxImg2) {
+  parallaxImg2.addEventListener('animationend', function () {
+    parallaxImg2.classList.remove('animate__animated', 'animate__fadeInLeft')
+  })
+}
 
-parallaxImg2.addEventListener('animationend', function () {
-  parallaxImg2.classList.remove('animate__animated', 'animate__fadeInLeft')
-})
 
 
 
