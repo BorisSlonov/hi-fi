@@ -6745,29 +6745,20 @@ body {
 .about-animation_4 {
   top: -75px;
   left: 5%;
-}
-
-.about-animation_4 img {
-  max-width: 60%;
+  max-width: 15%;
   object-fit: contain;
 }
 
 .about-animation_5 {
   bottom: 0;
-  right: -10%;
-}
-
-.about-animation_5 img {
-  max-width: 30%;
+  right: -1%;
+  max-width: 8%;
   object-fit: contain;
 }
 
 .about-animation_6 {
   top: 0;
   right: -150px;
-}
-
-.about-animation_6 img {
   object-fit: contain;
 }
 

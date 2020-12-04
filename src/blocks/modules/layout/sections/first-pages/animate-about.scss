@@ -22,30 +22,24 @@
     &_4 {
         top: -75px;
         left: 5%;
-
-        img {
-            max-width: 60%;
-            object-fit: contain;
-        }
+        max-width: 15%;
+        object-fit: contain;
+     
     }
 
 
     &_5 {
         bottom: 0;
-        right: -10%;
-
-        img {
-            max-width: 30%;
-            object-fit: contain;
-        }
+        right: -1%;
+        max-width: 8%;
+        object-fit: contain;
+       
     }
 
     &_6 {
         top: 0;
         right: -150px;
-        img {
-            object-fit: contain;
-        }
+        object-fit: contain;
     }
 }
 

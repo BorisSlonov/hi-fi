@@ -12,8 +12,8 @@ function parallaxAboutInit() {
     new simpleParallax(aboutAnimation_1, {
         orientation: 'down',
         overflow: true,
-        delay: .9,
-        scale: 1.8,
+        delay: 1.2,
+        scale: 1.4,
         transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
     });
 
@@ -22,8 +22,8 @@ function parallaxAboutInit() {
     new simpleParallax(aboutAnimation_2, {
         orientation: 'down left',
         overflow: true,
-        delay: .9,
-        scale: 1.8,
+        delay: 1.2,
+        scale: 1.4,
         transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
     });
 
@@ -33,7 +33,7 @@ function parallaxAboutInit() {
         orientation: 'down right',
         overflow: true,
         delay: .9,
-        scale: 1.3,
+        scale: 1.6,
         transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
     });
 
@@ -98,5 +98,21 @@ let aboutAnimation_3 = document.querySelector(".about-animation_3");
 if (aboutAnimation_3) {
     aboutAnimation_3.addEventListener('animationend', function () {
         aboutAnimation_3.classList.remove('animate__animated', 'animate__zoomInUp', 'animate__delay-3s')
+    })
+}
+
+
+let aboutAnimation_4 = document.querySelector(".about-animation_4");
+if (aboutAnimation_4) {
+    aboutAnimation_4.addEventListener('animationend', function () {
+        aboutAnimation_4.classList.remove('animate__animated', 'animate__zoomInUp')
+    })
+}
+
+
+let aboutAnimation_5 = document.querySelector(".about-animation_5");
+if (aboutAnimation_5) {
+    aboutAnimation_5.addEventListener('animationend', function () {
+        aboutAnimation_5.classList.remove('animate__animated', 'animate__zoomInUp')
     })
 }
