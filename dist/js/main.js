@@ -959,6 +959,53 @@ function parallaxValuesInit() {
 }
 
 parallaxValuesInit();
+var valuesPageAnimation_1 = document.querySelector(".value-page__animation_1");
+
+if (valuesPageAnimation_1) {
+  valuesPageAnimation_1.addEventListener('animationend', function () {
+    valuesPageAnimation_1.classList.remove('animate__animated', 'animate__fadeIn', 'animate__delay-2s');
+  });
+}
+
+var valuesPageAnimation_2 = document.querySelector(".value-page__animation_2");
+
+if (valuesPageAnimation_2) {
+  valuesPageAnimation_2.addEventListener('animationend', function () {
+    valuesPageAnimation_2.classList.remove('animate__animated', 'animate__fadeIn', 'animate__delay-2s');
+  });
+}
+
+var valuesPageAnimation_3 = document.querySelector(".value-page__animation_3");
+
+if (valuesPageAnimation_3) {
+  valuesPageAnimation_3.addEventListener('animationend', function () {
+    valuesPageAnimation_3.classList.remove('animate__animated', 'animate__fadeIn', 'animate__delay-2s');
+  });
+}
+
+var valuesPageAnimation_4 = document.querySelector(".value-page__animation_4");
+
+if (valuesPageAnimation_4) {
+  valuesPageAnimation_4.addEventListener('animationend', function () {
+    valuesPageAnimation_4.classList.remove('animate__animated', 'animate__fadeIn', 'animate__delay-2s');
+  });
+}
+
+var valuesPageAnimation_5 = document.querySelector(".value-page__animation_5");
+
+if (valuesPageAnimation_5) {
+  valuesPageAnimation_5.addEventListener('animationend', function () {
+    valuesPageAnimation_5.classList.remove('animate__animated', 'animate__fadeIn', 'animate__delay-2s');
+  });
+}
+
+var valuesPageAnimation_6 = document.querySelector(".value-page__animation_6");
+
+if (valuesPageAnimation_6) {
+  valuesPageAnimation_6.addEventListener('animationend', function () {
+    valuesPageAnimation_6.classList.remove('animate__animated', 'animate__fadeIn', 'animate__delay-2s');
+  });
+}
 
 /***/ }),
 
