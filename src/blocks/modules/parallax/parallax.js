@@ -13,7 +13,7 @@ function parallaxInit() {
     overflow: true,
     delay: .9,
     scale: 1.8,
-    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
+    transition: 'cubic-bezier(.51,.52,.51,.52)'
   });
 
 
@@ -25,7 +25,7 @@ function parallaxInit() {
     overflow: true,
     delay: .9,
     scale: 1.5,
-    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
+    transition: 'cubic-bezier(.51,.52,.51,.52)'
   });
 
   let FirstPageAnimation_4 = document.querySelector(".first-page__animation_4");
@@ -35,7 +35,7 @@ function parallaxInit() {
     overflow: true,
     delay: .9,
     scale: 1.8,
-    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
+    transition: 'cubic-bezier(.51,.52,.51,.52)'
   });
 
   let FirstPageAnimation_5 = document.querySelector(".first-page__animation_5");
@@ -45,7 +45,7 @@ function parallaxInit() {
     overflow: true,
     delay: .9,
     scale: 1.8,
-    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
+    transition: 'cubic-bezier(.51,.52,.51,.52)'
   });
 
   let FirstPageAnimation_6 = document.querySelector(".first-page__animation_6");
@@ -55,7 +55,7 @@ function parallaxInit() {
     overflow: true,
     delay: .9,
     scale: 1.8,
-    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
+    transition: 'cubic-bezier(.51,.52,.51,.52)'
   });
 
   let FirstPageAnimation_7 = document.querySelector(".first-page__animation_7");
@@ -65,7 +65,7 @@ function parallaxInit() {
     overflow: true,
     delay: .9,
     scale: 1.8,
-    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
+    transition: 'cubic-bezier(.51,.52,.51,.52)'
   });
 
   let FirstPageAnimation_8 = document.querySelector(".first-page__animation_8");
@@ -75,7 +75,7 @@ function parallaxInit() {
     overflow: true,
     delay: .9,
     scale: 1.8,
-    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
+    transition: 'cubic-bezier(.51,.52,.51,.52)'
   });
 
   let FirstPageAnimation_9 = document.querySelector(".first-page__animation_9");
@@ -85,7 +85,7 @@ function parallaxInit() {
     overflow: true,
     delay: .9,
     scale: 1.8,
-    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
+    transition: 'cubic-bezier(.51,.52,.51,.52)'
   });
 
   let FirstPageAnimation_10 = document.querySelector(".first-page__animation_10");
@@ -95,7 +95,7 @@ function parallaxInit() {
     overflow: true,
     delay: .9,
     scale: 1.8,
-    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
+    transition: 'cubic-bezier(.51,.52,.51,.52)'
   });
 
   let FirstPageAnimation_11 = document.querySelector(".first-page__animation_11");
@@ -105,7 +105,7 @@ function parallaxInit() {
     overflow: true,
     delay: .9,
     scale: 1.8,
-    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
+    transition: 'cubic-bezier(.51,.52,.51,.52)'
   });
 
 
@@ -116,7 +116,7 @@ function parallaxInit() {
     overflow: true,
     delay: .9,
     scale: 1.8,
-    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
+    transition: 'cubic-bezier(.51,.52,.51,.52)'
   });
 
 
@@ -127,7 +127,7 @@ function parallaxInit() {
     overflow: true,
     delay: .9,
     scale: 1.8,
-    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
+    transition: 'cubic-bezier(.51,.52,.51,.52)'
   });
 
 
@@ -138,7 +138,7 @@ function parallaxInit() {
     overflow: true,
     delay: .9,
     scale: 1.8,
-    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
+    transition: 'cubic-bezier(.51,.52,.51,.52)'
   });
 
   let FirstPageAnimation_expertise_2 = document.querySelector(".first-page__animation_expertise-2");
@@ -146,15 +146,13 @@ function parallaxInit() {
   new simpleParallax(FirstPageAnimation_expertise_2, {
     orientation: 'down right',
     overflow: true,
-    delay: .9,
+    delay: 1.2,
     scale: 1.8,
-    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
+    transition: 'cubic-bezier(.51,.52,.51,.52)'
   });
 
 
 }
-
-
 parallaxInit();
 
 
@@ -163,3 +161,25 @@ setTimeout(dispatch, 1000)
 function dispatch() {
   console.log(window.dispatchEvent(new CustomEvent('resize')))
 }
+
+
+
+//del animate class
+let parallaxImg1 = document.querySelector('.first-page__animation_expertise-2');
+
+parallaxImg1.addEventListener('animationend', function () {
+  parallaxImg1.classList.remove('animate__animated', 'animate__zoomInRight', 'animate__delay-2s')
+})
+
+//del animate class
+let parallaxImg2 = document.querySelector('.first-page__animation_expertise');
+
+parallaxImg2.addEventListener('animationend', function () {
+  parallaxImg2.classList.remove('animate__animated', 'animate__fadeInLeft')
+})
+
+
+
+
+
+

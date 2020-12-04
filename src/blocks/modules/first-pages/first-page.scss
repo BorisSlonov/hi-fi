@@ -115,11 +115,9 @@
 
 .first-page__animation {
     position: absolute;
+    object-fit: contain;
 
-    img {
-        object-fit: contain;
-    }
-
+    
     &_1 {
         bottom: 0;
     }
@@ -198,11 +196,8 @@
     &_expertise-2 {
         right: 10%;
         top: 10%;
-
-        img {
-            width: 120px;
-
-        }
+        width: 120px;
+     
     }
 }
 
@@ -340,12 +335,10 @@
 
     .first-page__animation {
         &_1 {
-            top: 30%;
+            top: 80%;
             left: -10%;
-
-            img {
-                max-width: 150px;
-            }
+            max-width: 150px;
+          
         }
 
         &_2 {
@@ -360,11 +353,9 @@
             justify-content: flex-end;
             left: -50px;
             bottom: -50px;
-
-            img {
-                flex-shrink: 0;
-                max-width: 200px;
-            }
+            flex-shrink: 0;
+            max-width: 200px;
+        
 
 
         }
@@ -373,13 +364,10 @@
             display: flex;
             justify-content: flex-end;
             right: -25px;
-            top: 35%;
-
-            img {
-                transform: rotate(180deg);
-                max-width: 100px;
-
-            }
+            top: 45%;
+            transform: rotate(180deg);
+            max-width: 100px;
+           
 
         }
 
@@ -401,10 +389,8 @@
             right: 0;
             bottom: 0;
             max-width: 150px;
+            flex-shrink: 0;
 
-            img {
-                flex-shrink: 0;
-            }
         }
 
         &_9 {
