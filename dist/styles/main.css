@@ -6997,18 +6997,12 @@ body {
   left: -25%;
   bottom: 10px;
   z-index: 2;
-}
-
-.innovation-page__animation_2 img {
   max-width: 85%;
 }
 
 .innovation-page__animation_3 {
   bottom: 0;
   right: -50%;
-}
-
-.innovation-page__animation_3 img {
   max-width: 70%;
 }
 
@@ -8330,14 +8324,11 @@ body {
     justify-content: flex-end;
     right: 0;
     bottom: -5%;
-  }
-
-  .innovation-page__animation_3 img {
     max-width: 55%;
     flex-shrink: 0;
   }
 
-  .innovation-page__animation_4 img {
+  .innovation-page__animation_4 {
     max-width: 65%;
   }
 }

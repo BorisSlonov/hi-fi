@@ -50,3 +50,34 @@ parallaxInnovationInit();
 
 
 
+//del animate
+let innovationPageAnimation_1 = document.querySelector(".innovation-page__animation_1");
+if (innovationPageAnimation_1) {
+    innovationPageAnimation_1.addEventListener('animationend', function () {
+        innovationPageAnimation_1.classList.remove('animate__animated', 'animate__fadeInDown', 'animate__delay-3s')
+    })
+}
+
+//del animate
+let innovationPageAnimation_2 = document.querySelector(".innovation-page__animation_2");
+if (innovationPageAnimation_2) {
+    innovationPageAnimation_2.addEventListener('animationend', function () {
+        innovationPageAnimation_2.classList.remove('animate__animated', 'animate__fadeIn', 'animate__delay-2s')
+    })
+}
+
+//del animate
+let innovationPageAnimation_3 = document.querySelector(".innovation-page__animation_4");
+if (innovationPageAnimation_3) {
+    innovationPageAnimation_3.addEventListener('animationend', function () {
+        innovationPageAnimation_3.classList.remove('animate__animated', 'animate__fadeIn', 'animate__delay-2s')
+    })
+}
+
+//del animate
+let innovationPageAnimation_4 = document.querySelector(".innovation-page__animation_4");
+if (innovationPageAnimation_4) {
+    innovationPageAnimation_4.addEventListener('animationend', function () {
+        innovationPageAnimation_4.classList.remove('animate__animated', 'animate__fadeIn', 'animate__delay-3s')
+    })
+}

@@ -172,5 +172,11 @@ if (sectorsAnimation_9) {
     })
 }
 
+//del animate
 
 let sectorsAnimation_10 = document.querySelector(".sectors-animation-tr_1");
+if (sectorsAnimation_10) {
+    sectorsAnimation_10.addEventListener('animationend', function () {
+        sectorsAnimation_10.classList.remove('animate__animated', 'animate__zoomInUp', 'animate__delay-1s')
+    })
+}

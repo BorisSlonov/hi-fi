@@ -10,20 +10,18 @@
         left: -25%;
         bottom: 10px;
         z-index: 2;
+        max-width: 85%;
 
-        img {
-            max-width: 85%;
-        }
+
+        
 
     }
 
     &_3 {
         bottom: 0;
         right: -50%;
+        max-width: 70%;
 
-        img {
-            max-width: 70%;
-        }
     }
 
     &_4 {
@@ -71,21 +69,18 @@
             justify-content: flex-end;
             right: 0;
             bottom: -5%;
-
-            img {
-                max-width: 55%;
-                flex-shrink: 0;
-            }
+            max-width: 55%;
+            flex-shrink: 0;
+           
 
         }
 
         &_4 {
-            img {
-                max-width: 65%;
-            }
+            max-width: 65%;
+
+           
         }
 
-        &_5 {}
 
     }
 }
