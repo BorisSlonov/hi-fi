@@ -5259,7 +5259,7 @@ button.swiper-pagination-bullet {
 }
 
 :root {
-  --animate-duration: 1s;
+  --animate-duration: 1.45s;
   --animate-delay: 1.3s;
 }
 
