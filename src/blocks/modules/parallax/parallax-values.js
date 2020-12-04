@@ -63,11 +63,10 @@ function parallaxValuesInit() {
         scale: 1.9,
         transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
     });
-  
+
 }
 
 
-parallaxValuesInit();
 
 
 
@@ -75,6 +74,9 @@ let valuesPageAnimation_1 = document.querySelector(".value-page__animation_1");
 if (valuesPageAnimation_1) {
     valuesPageAnimation_1.addEventListener('animationend', function () {
         valuesPageAnimation_1.classList.remove('animate__animated', 'animate__fadeIn', 'animate__delay-2s')
+
+        setTimeout('parallaxValuesInit', 2000)
+
     })
 }
 

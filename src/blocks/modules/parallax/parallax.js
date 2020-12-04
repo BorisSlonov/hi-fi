@@ -153,8 +153,14 @@ function parallaxInit() {
 
 
 }
-parallaxInit();
 
+
+
+
+function dispatch() {
+  console.log(window.dispatchEvent(new CustomEvent('resize')))
+}
+dispatch()
 
 
 //del animate class
@@ -162,7 +168,9 @@ let parallaxFirst = document.querySelector('.first-page__animation_1');
 
 if (parallaxFirst) {
   parallaxFirst.addEventListener('animationend', function () {
-    parallaxFirst.classList.remove('animate__animated', 'animate__rotateInDownLeft', 'animate__delay-2s')
+    parallaxFirst.classList.remove('animate__rotateInDownLeft', 'animate__delay-2s')
+
+    setTimeout(parallaxInit, 2000);
   })
 }
 
@@ -172,7 +180,7 @@ let parallaxFirst1 = document.querySelector('.first-page__animation_2');
 
 if (parallaxFirst1) {
   parallaxFirst1.addEventListener('animationend', function () {
-    parallaxFirst1.classList.remove('animate__animated', 'animate__zoomIn', 'animate__delay-3s')
+    parallaxFirst1.classList.remove('animate__zoomIn', 'animate__delay-3s')
   })
 }
 
@@ -181,7 +189,7 @@ if (parallaxFirst1) {
 let parallaxFirst2 = document.querySelector('.first-page__animation_3');
 if (parallaxFirst2) {
   parallaxFirst2.addEventListener('animationend', function () {
-    parallaxFirst2.classList.remove('animate__animated', 'animate__zoomIn', 'animate__delay-3s')
+    parallaxFirst2.classList.remove('animate__zoomIn', 'animate__delay-3s')
   })
 }
 
@@ -190,7 +198,7 @@ if (parallaxFirst2) {
 let parallaxFirst3 = document.querySelector('.first-page__animation_4');
 if (parallaxFirst3) {
   parallaxFirst3.addEventListener('animationend', function () {
-    parallaxFirst3.classList.remove('animate__animated', 'animate__zoomIn', 'animate__delay-3s')
+    parallaxFirst3.classList.remove('animate__zoomIn', 'animate__delay-3s')
   })
 
 }
@@ -199,7 +207,15 @@ if (parallaxFirst3) {
 let parallaxFirst4 = document.querySelector('.first-page__animation_5');
 if (parallaxFirst4) {
   parallaxFirst4.addEventListener('animationend', function () {
-    parallaxFirst4.classList.remove('animate__animated', 'animate__zoomIn', 'animate__delay-3s')
+    parallaxFirst4.classList.remove('animate__zoomIn', 'animate__delay-3s')
+  })
+}
+
+//del animate class
+let parallaxFirst10 = document.querySelector('.first-page__animation_6');
+if (parallaxFirst10) {
+  parallaxFirst10.addEventListener('animationend', function () {
+    parallaxFirst10.classList.remove('animate__lightSpeedInRight', 'animate__delay-2s')
   })
 }
 
@@ -208,16 +224,23 @@ if (parallaxFirst4) {
 let parallaxFirst5 = document.querySelector('.first-page__animation_7');
 if (parallaxFirst5) {
   parallaxFirst5.addEventListener('animationend', function () {
-    parallaxFirst5.classList.remove('animate__animated', 'animate__zoomIn', 'animate__delay-3s')
+    parallaxFirst5.classList.remove('animate__zoomIn', 'animate__delay-3s')
   })
 }
 
+//del animate class
+let parallaxFirst11 = document.querySelector('.first-page__animation_8');
+if (parallaxFirst11) {
+  parallaxFirst11.addEventListener('animationend', function () {
+    parallaxFirst11.classList.remove('animate__lightSpeedInRight', 'animate__delay-2s')
+  })
+}
 
 //del animate class
 let parallaxFirst6 = document.querySelector('.first-page__animation_9');
 if (parallaxFirst6) {
   parallaxFirst6.addEventListener('animationend', function () {
-    parallaxFirst6.classList.remove('animate__animated', 'animate__zoomIn', 'animate__delay-3s')
+    parallaxFirst6.classList.remove('animate__zoomIn', 'animate__delay-3s')
   })
 }
 
@@ -226,7 +249,7 @@ if (parallaxFirst6) {
 let parallaxFirst7 = document.querySelector('.first-page__animation_10');
 if (parallaxFirst7) {
   parallaxFirst7.addEventListener('animationend', function () {
-    parallaxFirst7.classList.remove('animate__animated', 'animate__zoomIn', 'animate__delay-3s')
+    parallaxFirst7.classList.remove('animate__zoomIn', 'animate__delay-3s')
   })
 }
 
@@ -235,7 +258,7 @@ if (parallaxFirst7) {
 let parallaxFirst8 = document.querySelector('.first-page__animation_11');
 if (parallaxFirst8) {
   parallaxFirst8.addEventListener('animationend', function () {
-    parallaxFirst8.classList.remove('animate__animated', 'animate__zoomIn', 'animate__delay-3s')
+    parallaxFirst8.classList.remove('animate__zoomIn', 'animate__delay-3s')
   })
 }
 
@@ -244,7 +267,7 @@ if (parallaxFirst8) {
 let parallaxFirst9 = document.querySelector('.first-page__animation_12');
 if (parallaxFirst9) {
   parallaxFirst9.addEventListener('animationend', function () {
-    parallaxFirst9.classList.remove('animate__animated', 'animate__zoomIn', 'animate__delay-3s')
+    parallaxFirst9.classList.remove('animate__zoomIn', 'animate__delay-3s')
   })
 }
 
@@ -255,7 +278,7 @@ if (parallaxFirst9) {
 let parallaxImg1 = document.querySelector('.first-page__animation_expertise-2');
 if (parallaxImg1) {
   parallaxImg1.addEventListener('animationend', function () {
-    parallaxImg1.classList.remove('animate__animated', 'animate__zoomInRight', 'animate__delay-2s')
+    parallaxImg1.classList.remove('animate__zoomInRight', 'animate__delay-2s')
   })
 }
 
@@ -264,15 +287,10 @@ if (parallaxImg1) {
 let parallaxImg2 = document.querySelector('.first-page__animation_expertise');
 if (parallaxImg2) {
   parallaxImg2.addEventListener('animationend', function () {
-    parallaxImg2.classList.remove('animate__animated', 'animate__fadeInLeft')
+    parallaxImg2.classList.remove('animate__fadeInLeft')
   })
 }
 
-setTimeout(dispatch, 1000)
-
-function dispatch() {
-  console.log(window.dispatchEvent(new CustomEvent('resize')))
-}
 
 
 
