@@ -382,7 +382,7 @@ var aboutAnimation_1 = document.querySelector(".about-animation_1");
 if (aboutAnimation_1) {
   aboutAnimation_1.addEventListener('animationend', function () {
     aboutAnimation_1.classList.remove('animate__animated', 'animate__zoomInRight', 'animate__delay-2s');
-    setTimeout(parallaxAboutInit, 2500);
+    setTimeout(parallaxAboutInit, 1500);
   });
 }
 
@@ -988,7 +988,7 @@ var sectorsAnimation_1 = document.querySelector(".sectors-animation_1");
 if (sectorsAnimation_1) {
   sectorsAnimation_1.addEventListener('animationend', function () {
     sectorsAnimation_1.classList.remove('animate__animated', 'animate__fadeInDown', 'animate__delay-3s');
-    setTimeout(parallaxsectorsInit, 100);
+    setTimeout(parallaxsectorsInit, 500);
   });
 }
 
@@ -1118,12 +1118,12 @@ function parallaxValuesInit() {
   });
 }
 
+setTimeout(parallaxValuesInit, 3200);
 var valuesPageAnimation_1 = document.querySelector(".value-page__animation_1");
 
 if (valuesPageAnimation_1) {
   valuesPageAnimation_1.addEventListener('animationend', function () {
     valuesPageAnimation_1.classList.remove('animate__animated', 'animate__fadeIn', 'animate__delay-2s');
-    setTimeout(parallaxValuesInit, 10);
   });
 }
 
@@ -1303,7 +1303,7 @@ var parallaxFirst = document.querySelector('.first-page__animation_1');
 if (parallaxFirst) {
   parallaxFirst.addEventListener('animationend', function () {
     parallaxFirst.classList.remove('animate__rotateInDownLeft', 'animate__delay-2s');
-    setTimeout(parallaxInit, 1500);
+    setTimeout(parallaxInit, 2000);
   });
 } //del animate class
 

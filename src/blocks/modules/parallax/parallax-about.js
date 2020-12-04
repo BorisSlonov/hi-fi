@@ -83,7 +83,7 @@ if (aboutAnimation_1) {
     aboutAnimation_1.addEventListener('animationend', function () {
         aboutAnimation_1.classList.remove('animate__animated', 'animate__zoomInRight', 'animate__delay-2s')
 
-        setTimeout(parallaxAboutInit, 2500);
+        setTimeout(parallaxAboutInit, 1500);
     })
 }
 
