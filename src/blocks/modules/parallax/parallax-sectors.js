@@ -39,7 +39,7 @@ function parallaxsectorsInit() {
         orientation: 'down left',
         overflow: true,
         delay: 1.2,
-        scale: 1.6,
+        scale: 1.4,
         transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
     });
 
