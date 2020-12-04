@@ -162,6 +162,85 @@ function dispatch() {
   console.log(window.dispatchEvent(new CustomEvent('resize')))
 }
 
+//del animate class
+let parallaxFirst = document.querySelector('.first-page__animation_1');
+
+parallaxFirst.addEventListener('animationend', function () {
+  parallaxFirst.classList.remove('animate__animated', 'animate__rotateInDownLeft', 'animate__delay-2s')
+})
+
+//del animate class
+let parallaxFirst1 = document.querySelector('.first-page__animation_2');
+
+parallaxFirst1.addEventListener('animationend', function () {
+  parallaxFirst1.classList.remove('animate__animated', 'animate__zoomIn', 'animate__delay-3s')
+})
+
+//del animate class
+let parallaxFirst2 = document.querySelector('.first-page__animation_3');
+
+parallaxFirst2.addEventListener('animationend', function () {
+  parallaxFirst2.classList.remove('animate__animated', 'animate__zoomIn', 'animate__delay-3s')
+})
+
+//del animate class
+let parallaxFirs3 = document.querySelector('.first-page__animation_4');
+
+parallaxFirst3.addEventListener('animationend', function () {
+  parallaxFirst3.classList.remove('animate__animated', 'animate__zoomIn', 'animate__delay-3s')
+})
+
+//del animate class
+let parallaxFirst4 = document.querySelector('.first-page__animation_5');
+
+parallaxFirst4.addEventListener('animationend', function () {
+  parallaxFirst4.classList.remove('animate__animated', 'animate__zoomIn', 'animate__delay-3s')
+})
+
+//del animate class
+let parallaxFirst5 = document.querySelector('.first-page__animation_7');
+
+parallaxFirst5.addEventListener('animationend', function () {
+  parallaxFirst5.classList.remove('animate__animated', 'animate__zoomIn', 'animate__delay-3s')
+})
+
+//del animate class
+let parallaxFirst6 = document.querySelector('.first-page__animation_9');
+
+parallaxFirst6.addEventListener('animationend', function () {
+  parallaxFirst6.classList.remove('animate__animated', 'animate__zoomIn', 'animate__delay-3s')
+})
+
+//del animate class
+let parallaxFirst7 = document.querySelector('.first-page__animation_10');
+
+parallaxFirst7.addEventListener('animationend', function () {
+  parallaxFirst7.classList.remove('animate__animated', 'animate__zoomIn', 'animate__delay-3s')
+})
+
+//del animate class
+let parallaxFirst8 = document.querySelector('.first-page__animation_11');
+
+parallaxFirst8.addEventListener('animationend', function () {
+  parallaxFirst8.classList.remove('animate__animated', 'animate__zoomIn', 'animate__delay-3s')
+})
+
+//del animate class
+let parallaxFirst9 = document.querySelector('.first-page__animation_12');
+
+parallaxFirst9.addEventListener('animationend', function () {
+  parallaxFirst9.classList.remove('animate__animated', 'animate__zoomIn', 'animate__delay-3s')
+})
+
+
+
+
+
+
+
+
+
+
 
 
 //del animate class
