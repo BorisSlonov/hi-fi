@@ -6,6 +6,7 @@
 
 function parallaxAboutInit() {
 
+
     let aboutAnimation_1 = document.querySelector(".about-animation_1");
 
     new simpleParallax(aboutAnimation_1, {
@@ -72,6 +73,30 @@ function parallaxAboutInit() {
 
 parallaxAboutInit();
 
+//del animate class
 
 
-setTimeout(parallaxAboutInit(), 1000)
+
+
+let aboutAnimation_1 = document.querySelector(".about-animation_1");
+if (aboutAnimation_1) {
+    aboutAnimation_1.addEventListener('animationend', function () {
+        aboutAnimation_1.classList.remove('animate__animated', 'animate__zoomInRight', 'animate__delay-2s')
+    })
+}
+
+
+let aboutAnimation_2 = document.querySelector(".about-animation_2");
+if (aboutAnimation_2) {
+    aboutAnimation_2.addEventListener('animationend', function () {
+        aboutAnimation_2.classList.remove('animate__animated', 'animate__zoomInLeft', 'animate__delay-2s')
+    })
+}
+
+
+let aboutAnimation_3 = document.querySelector(".about-animation_3");
+if (aboutAnimation_3) {
+    aboutAnimation_3.addEventListener('animationend', function () {
+        aboutAnimation_3.classList.remove('animate__animated', 'animate__zoomInUp', 'animate__delay-3s')
+    })
+}
