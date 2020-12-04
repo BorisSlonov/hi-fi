@@ -170,7 +170,7 @@ if (parallaxFirst) {
   parallaxFirst.addEventListener('animationend', function () {
     parallaxFirst.classList.remove('animate__rotateInDownLeft', 'animate__delay-2s')
 
-    setTimeout(parallaxInit, 2000);
+    setTimeout(parallaxInit, 1500);
   })
 }
 

@@ -1303,7 +1303,7 @@ var parallaxFirst = document.querySelector('.first-page__animation_1');
 if (parallaxFirst) {
   parallaxFirst.addEventListener('animationend', function () {
     parallaxFirst.classList.remove('animate__rotateInDownLeft', 'animate__delay-2s');
-    setTimeout(parallaxInit, 2000);
+    setTimeout(parallaxInit, 1500);
   });
 } //del animate class
 
