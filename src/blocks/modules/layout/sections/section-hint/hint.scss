@@ -1,6 +1,7 @@
 .hint {
     background-color: rgb(72, 82, 188);
     position: relative;
+    overflow-x: hidden;
 
     &__inner {
         position: relative;

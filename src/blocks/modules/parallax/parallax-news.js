@@ -9,7 +9,7 @@ function parallaxNewsInit() {
     new simpleParallax(newsPageAnimation_1, {
         orientation: 'down',
         overflow: true,
-        delay: .9,
+        delay: 1.2,
         scale: 1.3,
         transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
     });
@@ -19,7 +19,7 @@ function parallaxNewsInit() {
     new simpleParallax(newsPageAnimation_2, {
         orientation: 'down right',
         overflow: true,
-        delay: .9,
+        delay: 1,
         scale: 1.8,
         transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
     });
@@ -39,7 +39,7 @@ function parallaxNewsInit() {
     new simpleParallax(newsPageAnimation_4, {
         orientation: 'down left',
         overflow: true,
-        delay: .9,
+        delay: .7,
         scale: 1.3,
         transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
     });
@@ -59,7 +59,7 @@ function parallaxNewsInit() {
     new simpleParallax(newsPageAnimation_6, {
         orientation: 'down left',
         overflow: true,
-        delay: .9,
+        delay: 1.2,
         scale: 1.3,
         transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
     });
@@ -80,7 +80,7 @@ function parallaxNewsInit() {
     new simpleParallax(newsPageAnimation_8, {
         orientation: 'down',
         overflow: true,
-        delay: .9,
+        delay: 1,
         scale: 1.8,
         transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
     });
@@ -91,7 +91,7 @@ function parallaxNewsInit() {
     new simpleParallax(newsPageAnimation_9, {
         orientation: 'down',
         overflow: true,
-        delay: .9,
+        delay: .6,
         scale: 1.8,
         transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
     });
@@ -101,7 +101,7 @@ function parallaxNewsInit() {
     new simpleParallax(newsPageAnimation_10, {
         orientation: 'down right',
         overflow: true,
-        delay: .9,
+        delay: 1.1,
         scale: 1.8,
         transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
     });

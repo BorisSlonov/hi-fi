@@ -44,11 +44,11 @@ document.addEventListener("scroll", (e) => {
 
 
     //delay animation in 1 screen
-    if (scrolled > position + 350) {
+    if (scrolled > position + 300) {
 
 
         leftTextWow.classList.add('visible', 'wow', 'animate__animated', 'animate__fadeInLeft')
-        rightTextWow.classList.add('visible', 'wow', 'animate__animated', 'animate__fadeIn', 'animate__delay-1s')
+        rightTextWow.classList.add('visible', 'wow', 'animate__animated', 'animate__fadeIn')
 
     }
 

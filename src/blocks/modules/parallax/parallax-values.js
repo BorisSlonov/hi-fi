@@ -18,7 +18,7 @@ function parallaxValuesInit() {
     new simpleParallax(valuesPageAnimation_2, {
         orientation: 'top right',
         overflow: true,
-        delay: .9,
+        delay: .8,
         scale: 1.8,
         transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
     });
@@ -28,7 +28,7 @@ function parallaxValuesInit() {
     new simpleParallax(valuesPageAnimation_3, {
         orientation: 'down left',
         overflow: true,
-        delay: .9,
+        delay: .7,
         scale: 1.3,
         transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
     });
@@ -38,7 +38,7 @@ function parallaxValuesInit() {
     new simpleParallax(valuesPageAnimation_4, {
         orientation: 'down',
         overflow: true,
-        delay: .9,
+        delay: .6,
         scale: 1.8,
         transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
     });
@@ -48,7 +48,7 @@ function parallaxValuesInit() {
     new simpleParallax(valuesPageAnimation_5, {
         orientation: 'down right',
         overflow: true,
-        delay: .9,
+        delay: 1,
         scale: 1.8,
         transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
     });
@@ -59,14 +59,13 @@ function parallaxValuesInit() {
     new simpleParallax(valuesPageAnimation_6, {
         orientation: 'down',
         overflow: true,
-        delay: .9,
+        delay: 1.2,
         scale: 1.9,
         transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
     });
 
 }
 
-setTimeout(parallaxValuesInit, 3200)
 
 
 
@@ -76,6 +75,8 @@ if (valuesPageAnimation_1) {
     valuesPageAnimation_1.addEventListener('animationend', function () {
         valuesPageAnimation_1.classList.remove('animate__animated', 'animate__fadeIn', 'animate__delay-2s')
 
+
+        setTimeout(parallaxValuesInit, 1000)
 
     })
 }
@@ -112,5 +113,7 @@ let valuesPageAnimation_6 = document.querySelector(".value-page__animation_6");
 if (valuesPageAnimation_6) {
     valuesPageAnimation_6.addEventListener('animationend', function () {
         valuesPageAnimation_6.classList.remove('animate__animated', 'animate__fadeIn', 'animate__delay-2s')
+        setTimeout(parallaxValuesInit, 1000)
+
     })
 }

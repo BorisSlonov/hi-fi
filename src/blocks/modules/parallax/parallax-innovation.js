@@ -8,7 +8,7 @@ function parallaxInnovationInit() {
     new simpleParallax(innovationPageAnimation_1, {
         orientation: 'up',
         overflow: true,
-        delay: .9,
+        delay: 1.9,
         scale: 1.8,
         transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
     });
@@ -18,7 +18,7 @@ function parallaxInnovationInit() {
     new simpleParallax(innovationPageAnimation_2, {
         orientation: 'top right',
         overflow: true,
-        delay: .9,
+        delay: 2.2,
         scale: 1.8,
         transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
     });
@@ -28,7 +28,7 @@ function parallaxInnovationInit() {
     new simpleParallax(innovationPageAnimation_3, {
         orientation: 'down left',
         overflow: true,
-        delay: .9,
+        delay: 1.8,
         scale: 1.25,
         transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
     });
@@ -38,7 +38,7 @@ function parallaxInnovationInit() {
     new simpleParallax(innovationPageAnimation_4, {
         orientation: 'down',
         overflow: true,
-        delay: .9,
+        delay: 1.2,
         scale: 1.8,
         transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
     });

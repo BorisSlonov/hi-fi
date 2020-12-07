@@ -23,7 +23,7 @@ function parallaxInit() {
   new simpleParallax(FirstPageAnimation_3, {
     orientation: 'down left',
     overflow: true,
-    delay: .9,
+    delay: .8,
     scale: 1.5,
     transition: 'cubic-bezier(.51,.52,.51,.52)'
   });
@@ -33,7 +33,7 @@ function parallaxInit() {
   new simpleParallax(FirstPageAnimation_4, {
     orientation: 'up',
     overflow: true,
-    delay: .9,
+    delay: .7,
     scale: 1.8,
     transition: 'cubic-bezier(.51,.52,.51,.52)'
   });
@@ -43,7 +43,7 @@ function parallaxInit() {
   new simpleParallax(FirstPageAnimation_5, {
     orientation: 'down left',
     overflow: true,
-    delay: .9,
+    delay: 1.2,
     scale: 1.8,
     transition: 'cubic-bezier(.51,.52,.51,.52)'
   });
@@ -63,7 +63,7 @@ function parallaxInit() {
   new simpleParallax(FirstPageAnimation_7, {
     orientation: 'up right',
     overflow: true,
-    delay: .9,
+    delay: .6,
     scale: 1.8,
     transition: 'cubic-bezier(.51,.52,.51,.52)'
   });
@@ -73,7 +73,7 @@ function parallaxInit() {
   new simpleParallax(FirstPageAnimation_8, {
     orientation: 'right',
     overflow: true,
-    delay: .9,
+    delay: .7,
     scale: 1.8,
     transition: 'cubic-bezier(.51,.52,.51,.52)'
   });
@@ -83,7 +83,7 @@ function parallaxInit() {
   new simpleParallax(FirstPageAnimation_9, {
     orientation: 'down right',
     overflow: true,
-    delay: .9,
+    delay: .8,
     scale: 1.8,
     transition: 'cubic-bezier(.51,.52,.51,.52)'
   });
@@ -93,7 +93,7 @@ function parallaxInit() {
   new simpleParallax(FirstPageAnimation_10, {
     orientation: 'right',
     overflow: true,
-    delay: .9,
+    delay: 1,
     scale: 1.8,
     transition: 'cubic-bezier(.51,.52,.51,.52)'
   });
@@ -103,7 +103,7 @@ function parallaxInit() {
   new simpleParallax(FirstPageAnimation_11, {
     orientation: 'down right',
     overflow: true,
-    delay: .9,
+    delay: 1.1,
     scale: 1.8,
     transition: 'cubic-bezier(.51,.52,.51,.52)'
   });
@@ -125,7 +125,7 @@ function parallaxInit() {
   new simpleParallax(FirstPageAnimation_expertise, {
     orientation: 'down',
     overflow: true,
-    delay: .9,
+    delay: .7,
     scale: 1.8,
     transition: 'cubic-bezier(.51,.52,.51,.52)'
   });
@@ -136,7 +136,7 @@ function parallaxInit() {
   new simpleParallax(FirstPageAnimation_expertise_1, {
     orientation: 'down right',
     overflow: true,
-    delay: .9,
+    delay: .6,
     scale: 1.8,
     transition: 'cubic-bezier(.51,.52,.51,.52)'
   });

@@ -6605,6 +6605,7 @@ body {
 .hint {
   background-color: #4852bc;
   position: relative;
+  overflow-x: hidden;
 }
 
 .hint__inner {
@@ -7001,15 +7002,12 @@ body {
 }
 
 .innovation-page__animation_3 {
-  bottom: 0;
+  bottom: 15%;
   right: -50%;
   max-width: 70%;
 }
 
 .innovation-page__animation_4 {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
   bottom: -40%;
   right: -40%;
 }

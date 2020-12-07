@@ -21,7 +21,7 @@ function parallaxFooterInit() {
     new simpleParallax(footerAnimation_2, {
         orientation: 'left',
         overflow: true,
-        delay: .9,
+        delay: 1.2,
         scale: 1.3,
         transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
     });
@@ -31,7 +31,7 @@ function parallaxFooterInit() {
     new simpleParallax(footerAnimation_3, {
         orientation: 'down left',
         overflow: true,
-        delay: .9,
+        delay: .7,
         scale: 1.3,
         transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
     });
@@ -41,7 +41,7 @@ function parallaxFooterInit() {
     new simpleParallax(footerAnimation_4, {
         orientation: 'down right',
         overflow: true,
-        delay: .9,
+        delay: 1,
         scale: 1.3,
         transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
     });
@@ -51,7 +51,7 @@ function parallaxFooterInit() {
     new simpleParallax(footerAnimation_5, {
         orientation: 'left',
         overflow: true,
-        delay: .9,
+        delay: 1.2,
         scale: 1.9,
         transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
     });
