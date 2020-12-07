@@ -22,7 +22,7 @@ function parallaxAboutInit() {
     new simpleParallax(aboutAnimation_2, {
         orientation: 'down left',
         overflow: true,
-        delay: 1.2,
+        delay: .7,
         scale: 1.4,
         transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
     });
@@ -43,7 +43,7 @@ function parallaxAboutInit() {
     new simpleParallax(aboutAnimation_4, {
         orientation: 'down right',
         overflow: true,
-        delay: .9,
+        delay: 1.2,
         scale: 1.9,
         transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
     });
@@ -63,7 +63,7 @@ function parallaxAboutInit() {
     new simpleParallax(aboutAnimation_6, {
         orientation: 'down',
         overflow: true,
-        delay: 2.9,
+        delay: 1.6,
         scale: 1.8,
         transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
     });
@@ -71,11 +71,8 @@ function parallaxAboutInit() {
 
 }
 
-parallaxAboutInit();
 
 //del animate class
-
-
 
 
 let aboutAnimation_1 = document.querySelector(".about-animation_1");

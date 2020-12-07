@@ -29,7 +29,7 @@ function parallaxInitCarriers() {
     new simpleParallax(carriersPageAnimation_3, {
         orientation: 'down',
         overflow: true,
-        delay: .9,
+        delay: 1.2,
         scale: 1.3,
         transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
     });
@@ -39,7 +39,7 @@ function parallaxInitCarriers() {
     new simpleParallax(carriersPageAnimation_4, {
         orientation: 'down right',
         overflow: true,
-        delay: .9,
+        delay: 1.1,
         scale: 1.3,
         transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
     });
@@ -59,7 +59,7 @@ function parallaxInitCarriers() {
     new simpleParallax(carriersPageAnimation_6, {
         orientation: 'down left',
         overflow: true,
-        delay: .9,
+        delay: .8,
         scale: 1.2,
         transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
     });
@@ -80,7 +80,7 @@ function parallaxInitCarriers() {
     new simpleParallax(carriersPageAnimation_carriers, {
         orientation: 'down',
         overflow: true,
-        delay: .9,
+        delay: 1.1,
         scale: 1.8,
         transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
     });

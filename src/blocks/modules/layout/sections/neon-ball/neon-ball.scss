@@ -6,7 +6,7 @@
     background-position: 50% bottom;
     background-repeat: no-repeat;
 
-  
+
 }
 
 .neon-ball {
@@ -62,7 +62,7 @@
         }
 
         &_per {
-            transform: translate(48px, 50px);
+            transform: translate(68px, 50px);
         }
 
         &_1 {
@@ -231,6 +231,33 @@
             margin-top: 20%;
         }
 
+        &__item {
+
+            &_2 {
+                transform: translateY(-25px);
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    height: 150px;
+                    width: 2px;
+                    background-color: #fff;
+                    bottom: -180px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+
+            }
+
+            &_perf {
+                transform: translate(-28px, 50px);
+            }
+
+            &_per {
+                transform: translate(42px, 50px);
+            }
+        }
+
         &__title {
             font-size: 18px;
         }
@@ -326,6 +353,23 @@
 
     .neon-ball {
         zoom: .75;
+
+        &__item {
+            &_2 {
+                transform: translateY(5px);
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    height: 150px;
+                    width: 2px;
+                    background-color: #fff;
+                    bottom: -180px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+        }
 
         &__row:first-child {
             margin-top: 10%;
