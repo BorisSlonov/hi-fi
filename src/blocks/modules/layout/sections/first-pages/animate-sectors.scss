@@ -131,8 +131,7 @@
     .sectors-animation {
         position: absolute;
 
-        &_1 {
-        }
+        &_1 {}
 
         &_2 {
             display: none;
@@ -182,7 +181,7 @@
 
     &_2 {
         right: -10%;
-        bottom: -50%;
+        top:40%;
     }
 }
 
@@ -190,19 +189,19 @@
 
     .sectors-animation-tr {
         overflow: hidden;
+
         &_1 {
             top: 50%;
-           right: -150px; 
-           img {
-               width: 200px;
-               height: 200px;
-               object-fit: contain;
-           }
+            right: -150px;
+            width: 150px;
+            height: 150px;
+            object-fit: contain;
+
         }
 
         &_2 {
             right: -30%;
-            bottom: -40%;
+            top:20%;
         }
     }
 }

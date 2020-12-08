@@ -6812,7 +6812,7 @@ body {
 
 .sectors-animation-tr_2 {
   right: -10%;
-  bottom: -50%;
+  top: 40%;
 }
 
 .news-page__animation {
@@ -9451,17 +9451,14 @@ body {
   .sectors-animation-tr_1 {
     top: 50%;
     right: -150px;
-  }
-
-  .sectors-animation-tr_1 img {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     object-fit: contain;
   }
 
   .sectors-animation-tr_2 {
     right: -30%;
-    bottom: -40%;
+    top: 20%;
   }
 
   .value-page__animation {
