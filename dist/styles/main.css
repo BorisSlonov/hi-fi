@@ -5736,12 +5736,12 @@ body {
   overflow: hidden;
   background-color: #ecebf5;
   margin-top: 1px;
-  transition: all 4s ease;
+  transition: all 2.5s ease;
   max-height: 0;
 }
 
 .sector-card:hover .sector-card__content {
-  max-height: 1000px;
+  max-height: 650px;
 }
 
 .sector-card__title {

@@ -50,12 +50,12 @@
         overflow: hidden;
         background-color: rgb(236, 235, 245);
         margin-top: 1px;
-        transition: all 4s ease;
+        transition: all 2.5s ease;
         max-height: 0;
     }
 
     &:hover .sector-card__content {
-        max-height: 1000px;
+        max-height: 650px;
     }
 
     &__title {
