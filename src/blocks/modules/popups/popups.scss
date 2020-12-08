@@ -6,6 +6,7 @@
     box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.5);
 
     &__header {
+        font-weight: 700;
         height: 40px;
         font-size: 15px;
         text-align: left;
@@ -22,12 +23,25 @@
         padding: 20px;
     }
 
-    &__footer {
-        padding: 20px 0;
+    &__img {
+        display: flex;
+        justify-content: center;
     }
+
+    &__img:not(:first-child) {
+        margin-top: 1.5rem;
+    }
+
+
 }
 
-.modal_1-inner {}
+.modal_1-btn {
+    margin-top: 2rem;
+}
+
+#modal__digitall-card_5 {
+    width: 85%;
+}
 
 #modal__hint-card_3 {
     & .modal_1__content {
@@ -87,4 +101,241 @@
         }
 
     }
+}
+
+#modal__hint-card_3 {
+    .modal_1__block {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+#modal__hint-card_1 {
+    .modal_1-btn {
+        display: flex;
+        justify-content: center;
+
+        & a {
+            display: block;
+            width: 50%;
+            color: #fff;
+            background-color: #007bff;
+            border-color: #007bff;
+            text-align: center;
+            display: inline-block;
+            font-weight: 400;
+            user-select: none;
+            padding: .375rem .75rem;
+            font-size: 1rem;
+            line-height: 1.5;
+            border-radius: .25rem;
+            text-decoration: none;
+
+            &:hover {
+                color: #fff;
+                background-color: #0069d9;
+                border-color: #0062cc;
+                width: 50%;
+            }
+
+            &:focus {
+                color: #fff;
+                background-color: #0069d9;
+                border-color: #0062cc;
+            }
+
+            &:active {
+                color: #fff;
+                background-color: #0069d9;
+                border-color: #0062cc;
+            }
+        }
+    }
+}
+
+
+
+
+.digitall-table {
+    display: flex;
+    justify-content: space-between;
+
+    &__col:first-child {
+        flex-basis: 50%;
+    }
+
+    &__col:last-child {
+        flex-basis: 40%;
+    }
+
+    &__h3 {
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+
+    &__h4 {
+        text-align: center;
+    }
+
+    &__list {
+        margin: 1rem 0;
+        border-top: 1px solid #ccc;
+        padding-top: 1rem;
+        list-style: none;
+    }
+}
+
+.popupSlider {
+    background-color: #fff;
+    box-shadow: 0 0 8px 1px rgba(204, 204, 204, 0.74);
+    border-radius: 25px;
+}
+
+@media(max-width:768px) {
+    .digitall-table {
+        flex-direction: column;
+    }
+}
+
+@media(max-width:550px) {
+    .digitall-table {
+        font-size: 0.9rem;
+    }
+
+
+#modal__hint-card_3 {
+    & .modal_1__block {
+        display: flex;
+        flex-direction: column;
+    }
+
+    & .modal_1__list {
+        width: 100%;
+
+    }
+
+    & .modal_1__img {
+
+        width: 100%;
+
+    }
+
+}
+}
+
+
+
+
+
+.borderspacing{
+    & th{
+        padding: 15px;
+    font-size: 10px;
+    border: 1px solid #fff;
+    text-align: center;
+    }
+    td{
+        padding: 15px;
+        font-size: 14px;
+        background-color: #f1fbff;
+        width: 25%;
+        font-size: 14px;
+        border: 1px solid #fff;
+        text-align: center;
+        & li{
+            text-align: left;
+    display: list-item;
+        }
+    }
+    & thead{
+        width: 100%;
+        & th{
+            background-color: #1828bb;
+            text-align: center;
+            color: #fff;
+
+            
+        }
+    }
+    & tbody{
+        &  th {
+            background-color: rgb(24, 116, 221);
+    color: #fff;
+        }
+    }
+}
+.borderspacing_1{
+    width: 100%;
+    font-size: 16px;
+    text-transform: uppercase;
+    & thead{
+        color: rgb(26, 108, 231);
+        font-weight: bold;
+        & th{
+            text-align: center;
+            list-style-type: none; 
+        }
+    }
+    
+    & .th-title{
+        color: #00516b;
+        text-align: center;
+        list-style-type: none; 
+    }
+}
+@media (max-width: 991px) {
+    .borderspacing{
+        & th{
+            padding: 12px;
+        font-size: 8px;
+    
+        }
+        td{
+            padding: 12px;
+            font-size: 10px;
+        
+        
+        
+          
+        }
+    }
+}
+
+.modal_1-slider{
+   & li{
+list-style-type: none;
+    }
+}
+
+
+
+
+@media (max-width: 767px) {
+    .borderspacing{
+        & th{
+            padding: 3px;
+        font-size: 7px;
+    
+        }
+        td{
+            padding: 3px;
+            font-size: 8px;
+        
+      
+            
+        
+          
+        }
+    }
+    #modal__hint-card_1-table {
+        width: 100%;
+    & .modal_1__content{
+        padding: 0;
+        margin: 0ж
+    }
+    & .modal_1__header{
+        border: none;
+    }
+ 
+}
 }

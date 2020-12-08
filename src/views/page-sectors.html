@@ -39,26 +39,10 @@
 
 
 
-    <script>
-        function addRemoveOnResize() {
-
-            let hiddenCard = document.querySelectorAll(".commitment-hidden")
-
-            if (window.innerWidth <= 768) {
-                hiddenCard.classList.remove('column-one-height')
-            } else {
-                hiddenCard.classList.add('column-one-height')
-            }
-
-        }
-        document.addEventListener('resize', function () {
-            addRemoveOnResize()
-        })
-
-
-    </script>
+  
     <script src="js/main.js"></script>
     <script src="js/vendor.js"></script>
+
 </body>
 
 </html>

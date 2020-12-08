@@ -3,9 +3,6 @@
 
 $(document).ready(function () {
 
-
-
-
     if (window.innerWidth >= 768) {
 
         function equalHeight(group) {
@@ -21,8 +18,6 @@ $(document).ready(function () {
         equalHeight($(".column-one-height"));
 
     }
-
-
 
 
 });

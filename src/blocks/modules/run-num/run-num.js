@@ -1,131 +1,125 @@
 
+$(document).ready(function () {
+  (function ($) {
+    // Custom easing function
+    $.extend($.easing, {
+      // This is ripped directly from the jQuery easing plugin (easeOutExpo), from: http://gsgd.co.uk/sandbox/jquery/easing/
+      spincrementEasing: function (x, t, b, c, d) {
+        return (t === d) ? b + c : c * (-Math.pow(2, -10 * t / d) + 1) + b
+      }
+    })
 
+    // Spincrement function
+    $.fn.spincrement = function (opts) {
+      // Default values
+      var defaults = {
+        from: 0,
+        to: null,
+        decimalPlaces: null,
+        decimalPoint: '.',
+        thousandSeparator: ',',
+        duration: 1000, // ms; TOTAL length animation
+        leeway: 50, // percent of duraion
+        easing: 'spincrementEasing',
+        fade: true,
+        complete: null
+      }
+      var options = $.extend(defaults, opts)
 
-let href = window.location
+      // Function for formatting number
+      var re_thouSep = new RegExp(/^(-?[0-9]+)([0-9]{3})/)
+      function format(num, dp) {
+        num = num.toFixed(dp) // converts to string!
 
-if (href == 'https://borisslonov.github.io/hi-fi/dist/page-about.html') {
-
-  $(document).ready(function () {
-    (function ($) {
-      // Custom easing function
-      $.extend($.easing, {
-        // This is ripped directly from the jQuery easing plugin (easeOutExpo), from: http://gsgd.co.uk/sandbox/jquery/easing/
-        spincrementEasing: function (x, t, b, c, d) {
-          return (t === d) ? b + c : c * (-Math.pow(2, -10 * t / d) + 1) + b
-        }
-      })
-
-      // Spincrement function
-      $.fn.spincrement = function (opts) {
-        // Default values
-        var defaults = {
-          from: 0,
-          to: null,
-          decimalPlaces: null,
-          decimalPoint: '.',
-          thousandSeparator: ',',
-          duration: 1000, // ms; TOTAL length animation
-          leeway: 50, // percent of duraion
-          easing: 'spincrementEasing',
-          fade: true,
-          complete: null
-        }
-        var options = $.extend(defaults, opts)
-
-        // Function for formatting number
-        var re_thouSep = new RegExp(/^(-?[0-9]+)([0-9]{3})/)
-        function format(num, dp) {
-          num = num.toFixed(dp) // converts to string!
-
-          // Non "." decimal point
-          if ((dp > 0) && (options.decimalPoint !== '.')) {
-            num = num.replace('.', options.decimalPoint)
-          }
-
-          // Thousands separator
-          if (options.thousandSeparator) {
-            while (re_thouSep.test(num)) {
-              num = num.replace(re_thouSep, '$1' + options.thousandSeparator + '$2')
-            }
-          }
-          return num
+        // Non "." decimal point
+        if ((dp > 0) && (options.decimalPoint !== '.')) {
+          num = num.replace('.', options.decimalPoint)
         }
 
-        // Apply to each matching item
-        return this.each(function () {
-          // Get handle on current obj
-          var obj = $(this)
-
-          // Set params FOR THIS ELEM
-          var from = options.from
-          if (obj.attr('data-from')) {
-            from = parseFloat(obj.attr('data-from'))
+        // Thousands separator
+        if (options.thousandSeparator) {
+          while (re_thouSep.test(num)) {
+            num = num.replace(re_thouSep, '$1' + options.thousandSeparator + '$2')
           }
+        }
+        return num
+      }
 
-          var to
-          if (obj.attr('data-to')) {
-            to = parseFloat(obj.attr('data-to'))
-          } else if (options.to !== null) {
-            to = options.to
-          } else {
-            var ts = $.inArray(options.thousandSeparator, ['\\', '^', '$', '*', '+', '?', '.']) > -1 ? '\\' + options.thousandSeparator : options.thousandSeparator
-            var re = new RegExp(ts, 'g')
-            to = parseFloat(obj.text().replace(re, ''))
-          }
+      // Apply to each matching item
+      return this.each(function () {
+        // Get handle on current obj
+        var obj = $(this)
 
-          var duration = options.duration
-          if (options.leeway) {
-            // If leeway is set, randomise duration a little
-            duration += Math.round(options.duration * ((Math.random() * 2) - 1) * options.leeway / 100)
-          }
+        // Set params FOR THIS ELEM
+        var from = options.from
+        if (obj.attr('data-from')) {
+          from = parseFloat(obj.attr('data-from'))
+        }
 
-          var dp
-          if (obj.attr('data-dp')) {
-            dp = parseInt(obj.attr('data-dp'), 10)
-          } else if (options.decimalPlaces !== null) {
-            dp = options.decimalPlaces
-          } else {
-            var ix = obj.text().indexOf(options.decimalPoint)
-            dp = (ix > -1) ? obj.text().length - (ix + 1) : 0
-          }
+        var to
+        if (obj.attr('data-to')) {
+          to = parseFloat(obj.attr('data-to'))
+        } else if (options.to !== null) {
+          to = options.to
+        } else {
+          var ts = $.inArray(options.thousandSeparator, ['\\', '^', '$', '*', '+', '?', '.']) > -1 ? '\\' + options.thousandSeparator : options.thousandSeparator
+          var re = new RegExp(ts, 'g')
+          to = parseFloat(obj.text().replace(re, ''))
+        }
 
-          // Start
-          obj.css('counter', from)
-          if (options.fade) obj.css('opacity', 0)
-          obj.animate(
-            {
-              counter: to,
-              opacity: 1
+        var duration = options.duration
+        if (options.leeway) {
+          // If leeway is set, randomise duration a little
+          duration += Math.round(options.duration * ((Math.random() * 2) - 1) * options.leeway / 100)
+        }
+
+        var dp
+        if (obj.attr('data-dp')) {
+          dp = parseInt(obj.attr('data-dp'), 10)
+        } else if (options.decimalPlaces !== null) {
+          dp = options.decimalPlaces
+        } else {
+          var ix = obj.text().indexOf(options.decimalPoint)
+          dp = (ix > -1) ? obj.text().length - (ix + 1) : 0
+        }
+
+        // Start
+        obj.css('counter', from)
+        if (options.fade) obj.css('opacity', 0)
+        obj.animate(
+          {
+            counter: to,
+            opacity: 1
+          },
+          {
+            easing: options.easing,
+            duration: duration,
+
+            // Invoke the callback for each step.
+            step: function (progress) {
+              obj.html(format(progress * to, dp))
             },
-            {
-              easing: options.easing,
-              duration: duration,
+            complete: function () {
+              // Cleanup
+              obj.css('counter', null)
+              obj.html(format(to, dp))
 
-              // Invoke the callback for each step.
-              step: function (progress) {
-                obj.html(format(progress * to, dp))
-              },
-              complete: function () {
-                // Cleanup
-                obj.css('counter', null)
-                obj.html(format(to, dp))
-
-                // user's callback
-                if (options.complete) {
-                  options.complete(obj)
-                }
+              // user's callback
+              if (options.complete) {
+                options.complete(obj)
               }
             }
-          )
-        })
-      }
-    })($)
+          }
+        )
+      })
+    }
+  })($)
 
 
 
-
+  var countbox = $(".run-num__item");
+  if (countbox != 0) {
     var show = true;
-    var countbox = ".run-num__item";
     $(window).on("scroll load resize", function () {
       if (!show) return false; // Отменяем показ анимации, если она уже была выполнена
       var w_top = $(window).scrollTop(); // Количество пикселей на которое была прокручена страница
@@ -143,8 +137,15 @@ if (href == 'https://borisslonov.github.io/hi-fi/dist/page-about.html') {
         show = false;
       }
     });
+  } else {
+    var e_top = false
+  }
 
-  });
-}
+});
+
+
+
+
+
 
 

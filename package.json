@@ -71,6 +71,7 @@
         "yargs": "^15.4.1"
     },
     "dependencies": {
+        "fancybox": "^3.0.1",
         "jquery": "^3.5.1",
         "node-sass": "^5.0.0",
         "scroll-out": "^2.2.12",

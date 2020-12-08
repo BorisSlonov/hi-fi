@@ -180,7 +180,20 @@ if (window.innerWidth <= 425) {
       delay: 2000
     },
     loop: true,
-    slidesPerView: 2
+    slidesPerView: 2,
+    observer: true,
+    observeParents: true
+  });
+} else if (window.innerWidth <= 550) {
+  var mySwiper = new Swiper('.swiper-container', {
+    speed: 300,
+    autoplay: {
+      delay: 2000
+    },
+    loop: true,
+    slidesPerView: 4,
+    observer: true,
+    observeParents: true
   });
 } else {
   var mySwiper = new Swiper('.swiper-container', {
@@ -189,7 +202,43 @@ if (window.innerWidth <= 425) {
       delay: 2000
     },
     loop: true,
-    slidesPerView: 6
+    slidesPerView: 6,
+    observer: true,
+    observeParents: true
+  });
+}
+
+if (window.innerWidth <= 425) {
+  var mySwiper = new Swiper('.swiper-container-popup', {
+    init: false,
+    speed: 300,
+    autoplay: {
+      delay: 2000
+    },
+    loop: true,
+    slidesPerView: 2,
+    observeParents: true
+  });
+} else if (window.innerWidth <= 550) {
+  var mySwiper = new Swiper('.swiper-container-popup', {
+    init: false,
+    speed: 300,
+    autoplay: {
+      delay: 2000
+    },
+    loop: true,
+    slidesPerView: 4,
+    observeParents: true
+  });
+} else {
+  var mySwiper = new Swiper('.swiper-container-popup', {
+    speed: 300,
+    autoplay: {
+      delay: 2000
+    },
+    loop: true,
+    slidesPerView: 6,
+    observeParents: true
   });
 }
 
@@ -256,31 +305,31 @@ document.addEventListener("scroll", function (e) {
 $(document).ready(function () {
   var href = window.location;
 
-  if (href == 'https://borisslonov.github.io/hi-fi/dist/index.html') {
+  if (href == '/index.html') {
     $('.header__link_main').addClass('header__link_active');
   }
 
-  if (href == 'https://borisslonov.github.io/hi-fi/dist/page-about.html') {
+  if (href == '/page-about.html') {
     $('.header__link_2').addClass('header__link_active');
   }
 
-  if (href == 'https://borisslonov.github.io/hi-fi/dist/page-sectors.html') {
+  if (href == '/page-sectors.html') {
     $('.header__link_3').addClass('header__link_active');
   }
 
-  if (href == 'https://borisslonov.github.io/hi-fi/dist/page-innovation.html') {
+  if (href == '/page-innovation.html') {
     $('.header__link_4').addClass('header__link_active');
   }
 
-  if (href == 'https://borisslonov.github.io/hi-fi/dist/page-values.html') {
+  if (href == '/page-values.html') {
     $('.header__link_5').addClass('header__link_active');
   }
 
-  if (href == 'https://borisslonov.github.io/hi-fi/dist/page-carriers.html') {
+  if (href == '/page-carriers.html') {
     $('.header__link_6').addClass('header__link_active');
   }
 
-  if (href == 'https://borisslonov.github.io/hi-fi/dist/page-news.html') {
+  if (href == '/page-news.html') {
     $('.header__link_7').addClass('header__link_active');
   }
 });
@@ -1417,162 +1466,6 @@ if (parallaxImg2) {
 
 /***/ }),
 
-/***/ "./src/blocks/modules/run-num/run-num.js":
-/*!***********************************************!*\
-  !*** ./src/blocks/modules/run-num/run-num.js ***!
-  \***********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function($) {var href = window.location;
-
-if (href == 'https://borisslonov.github.io/hi-fi/dist/page-about.html') {
-  $(document).ready(function () {
-    (function ($) {
-      // Custom easing function
-      $.extend($.easing, {
-        // This is ripped directly from the jQuery easing plugin (easeOutExpo), from: http://gsgd.co.uk/sandbox/jquery/easing/
-        spincrementEasing: function spincrementEasing(x, t, b, c, d) {
-          return t === d ? b + c : c * (-Math.pow(2, -10 * t / d) + 1) + b;
-        }
-      }); // Spincrement function
-
-      $.fn.spincrement = function (opts) {
-        // Default values
-        var defaults = {
-          from: 0,
-          to: null,
-          decimalPlaces: null,
-          decimalPoint: '.',
-          thousandSeparator: ',',
-          duration: 1000,
-          // ms; TOTAL length animation
-          leeway: 50,
-          // percent of duraion
-          easing: 'spincrementEasing',
-          fade: true,
-          complete: null
-        };
-        var options = $.extend(defaults, opts); // Function for formatting number
-
-        var re_thouSep = new RegExp(/^(-?[0-9]+)([0-9]{3})/);
-
-        function format(num, dp) {
-          num = num.toFixed(dp); // converts to string!
-          // Non "." decimal point
-
-          if (dp > 0 && options.decimalPoint !== '.') {
-            num = num.replace('.', options.decimalPoint);
-          } // Thousands separator
-
-
-          if (options.thousandSeparator) {
-            while (re_thouSep.test(num)) {
-              num = num.replace(re_thouSep, '$1' + options.thousandSeparator + '$2');
-            }
-          }
-
-          return num;
-        } // Apply to each matching item
-
-
-        return this.each(function () {
-          // Get handle on current obj
-          var obj = $(this); // Set params FOR THIS ELEM
-
-          var from = options.from;
-
-          if (obj.attr('data-from')) {
-            from = parseFloat(obj.attr('data-from'));
-          }
-
-          var to;
-
-          if (obj.attr('data-to')) {
-            to = parseFloat(obj.attr('data-to'));
-          } else if (options.to !== null) {
-            to = options.to;
-          } else {
-            var ts = $.inArray(options.thousandSeparator, ['\\', '^', '$', '*', '+', '?', '.']) > -1 ? '\\' + options.thousandSeparator : options.thousandSeparator;
-            var re = new RegExp(ts, 'g');
-            to = parseFloat(obj.text().replace(re, ''));
-          }
-
-          var duration = options.duration;
-
-          if (options.leeway) {
-            // If leeway is set, randomise duration a little
-            duration += Math.round(options.duration * (Math.random() * 2 - 1) * options.leeway / 100);
-          }
-
-          var dp;
-
-          if (obj.attr('data-dp')) {
-            dp = parseInt(obj.attr('data-dp'), 10);
-          } else if (options.decimalPlaces !== null) {
-            dp = options.decimalPlaces;
-          } else {
-            var ix = obj.text().indexOf(options.decimalPoint);
-            dp = ix > -1 ? obj.text().length - (ix + 1) : 0;
-          } // Start
-
-
-          obj.css('counter', from);
-          if (options.fade) obj.css('opacity', 0);
-          obj.animate({
-            counter: to,
-            opacity: 1
-          }, {
-            easing: options.easing,
-            duration: duration,
-            // Invoke the callback for each step.
-            step: function step(progress) {
-              obj.html(format(progress * to, dp));
-            },
-            complete: function complete() {
-              // Cleanup
-              obj.css('counter', null);
-              obj.html(format(to, dp)); // user's callback
-
-              if (options.complete) {
-                options.complete(obj);
-              }
-            }
-          });
-        });
-      };
-    })($);
-
-    var show = true;
-    var countbox = ".run-num__item";
-    $(window).on("scroll load resize", function () {
-      if (!show) return false; // Отменяем показ анимации, если она уже была выполнена
-
-      var w_top = $(window).scrollTop(); // Количество пикселей на которое была прокручена страница
-
-      var e_top = $(countbox).offset().top; // Расстояние от блока со счетчиками до верха всего документа
-
-      var w_height = $(window).height(); // Высота окна браузера
-
-      var d_height = $(document).height(); // Высота всего документа
-
-      var e_height = $(countbox).outerHeight(); // Полная высота блока со счетчиками
-
-      if (w_top + 600 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height) {
-        $('.run-num__text_num').css('opacity', '1');
-        $('.run-num__text_num').spincrement({
-          thousandSeparator: "",
-          duration: 4200
-        });
-        show = false;
-      }
-    });
-  });
-}
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
-
-/***/ }),
-
 /***/ "./src/blocks/modules/sections/sections.js":
 /*!*************************************************!*\
   !*** ./src/blocks/modules/sections/sections.js ***!
@@ -1580,7 +1473,21 @@ if (href == 'https://borisslonov.github.io/hi-fi/dist/page-about.html') {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
+var hiddenCard = document.querySelectorAll(".commitment-hidden");
 
+if (hiddenCard) {
+  var addRemoveOnResize = function addRemoveOnResize() {
+    if (window.innerWidth <= 768) {
+      hiddenCard.classList.remove('column-one-height');
+    } else {
+      hiddenCard.classList.add('column-one-height');
+    }
+  };
+
+  document.addEventListener('resize', function () {
+    addRemoveOnResize();
+  });
+}
 
 /***/ }),
 
@@ -1619,10 +1526,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_clients_clients__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_modules_clients_clients__WEBPACK_IMPORTED_MODULE_11__);
 /* harmony import */ var _modules_our_commitment_our_commitment__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! %modules%/our-commitment/our-commitment */ "./src/blocks/modules/our-commitment/our-commitment.js");
 /* harmony import */ var _modules_our_commitment_our_commitment__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_modules_our_commitment_our_commitment__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var _modules_run_num_run_num__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! %modules%/run-num/run-num */ "./src/blocks/modules/run-num/run-num.js");
-/* harmony import */ var _modules_run_num_run_num__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_modules_run_num_run_num__WEBPACK_IMPORTED_MODULE_13__);
-/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! %modules%/footer/footer */ "./src/blocks/modules/footer/footer.js");
-/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_modules_footer_footer__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! %modules%/footer/footer */ "./src/blocks/modules/footer/footer.js");
+/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_modules_footer_footer__WEBPACK_IMPORTED_MODULE_13__);
 //parallax
 
 
@@ -1634,7 +1539,6 @@ __webpack_require__.r(__webpack_exports__);
  //sections
 
  //blocks
-
 
 
 
