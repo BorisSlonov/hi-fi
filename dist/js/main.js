@@ -303,29 +303,29 @@ document.addEventListener("scroll", function (e) {
   }
 });
 $(document).ready(function () {
-  var href = window.location;
+  var href = location.pathname;
 
-  if (href == '/index.html') {
+  if (href == '/hi-fi-dist/index.html') {
     $('.header__link_main').addClass('header__link_active');
   }
 
-  if (href == '/page-about.html') {
+  if (href == '/hi-fi-dist/page-about.html') {
     $('.header__link_2').addClass('header__link_active');
   }
 
-  if (href == '/page-sectors.html') {
+  if (href == '/hi-fi-dist/page-sectors.html') {
     $('.header__link_3').addClass('header__link_active');
   }
 
-  if (href == '/page-innovation.html') {
+  if (href == '/hi-fi-dist/page-innovation.html') {
     $('.header__link_4').addClass('header__link_active');
   }
 
-  if (href == '/page-values.html') {
+  if (href == '/hi-fi-dist/page-values.html') {
     $('.header__link_5').addClass('header__link_active');
   }
 
-  if (href == '/page-carriers.html') {
+  if (href == '/hi-fi-dist/page-carriers.html') {
     $('.header__link_6').addClass('header__link_active');
   }
 
