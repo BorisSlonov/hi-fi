@@ -189,7 +189,7 @@
 @media(max-width:600px) {
 
     .sectors-animation-tr {
-
+        overflow: hidden;
         &_1 {
             top: 50%;
            right: -150px; 
