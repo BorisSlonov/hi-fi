@@ -26,6 +26,20 @@
             border-color: #00516b;
         }
     }
+
+    &__link-pagination {
+        text-decoration: none;
+        color: #00516b;
+        font-weight: 700;
+        font-size: 18px;
+        padding: 0.5rem 1.5rem;
+        border: 2px solid transparent;
+        border-radius: 28px;
+
+        &_active-pagination {
+            border-color: #00516b;
+        }
+    }
 }
 
 .carriers {
@@ -108,7 +122,6 @@
     transform: scale(0);
     transition: all .25s;
 
-
 }
 
 .carriers.active {
@@ -116,4 +129,10 @@
     transition: all .25s;
     opacity: 1;
     transform: scale(1);
+}
+
+
+.pagination {
+    margin-top: 2rem;
+    text-align: center;
 }

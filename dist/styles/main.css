@@ -5580,6 +5580,20 @@ body {
   border-color: #00516b;
 }
 
+.carriers-choise__link-pagination {
+  text-decoration: none;
+  color: #00516b;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 0.5rem 1.5rem;
+  border: 2px solid transparent;
+  border-radius: 28px;
+}
+
+.carriers-choise__link-pagination_active-pagination {
+  border-color: #00516b;
+}
+
 .carriers__row {
   display: flex;
   justify-content: space-between;
@@ -5622,6 +5636,11 @@ body {
   transition: all .25s;
   opacity: 1;
   transform: scale(1);
+}
+
+.pagination {
+  margin-top: 2rem;
+  text-align: center;
 }
 
 .section-our-commitment {
