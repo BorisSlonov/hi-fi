@@ -5631,6 +5631,10 @@ body {
   display: block;
 }
 
+.activePag {
+  border-bottom: 2px solid #00516b;
+}
+
 .pagination {
   margin-top: 2rem;
   text-align: center;
@@ -7782,6 +7786,8 @@ body {
 
 .modal_1-btn {
   margin-top: 2rem;
+  display: block;
+  width: 100%;
 }
 
 #modal__digitall-card_5 {
@@ -7982,6 +7988,33 @@ body {
 .modal_1-btn a {
   text-decoration: none;
   color: #fff;
+}
+
+#modal__digitall-card_1-details {
+  background-color: #fff;
+}
+
+#modal__digitall-card_1-details .modal_1__title {
+  text-align: center;
+  font-size: 32px;
+  text-transform: uppercase;
+  color: #00516b;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+#modal__digitall-card_1-details .modal_1__item {
+  display: flex;
+  justify-content: space-between;
+}
+
+#modal__digitall-card_1-details .modal_1__item-title {
+  color: #2879ca;
+  font-size: 24px;
+}
+
+.modal_1-slider li {
+  list-style-type: none;
 }
 
 .footer {
@@ -8641,6 +8674,34 @@ body {
   .borderspacing td {
     padding: 12px;
     font-size: 10px;
+  }
+
+  .borderspacing th {
+    padding: 12px;
+    font-size: 8px;
+  }
+
+  .borderspacing td {
+    padding: 12px;
+    font-size: 10px;
+  }
+
+  #modal__digitall-card_1-details .modal_1__title {
+    font-size: 22px;
+  }
+
+  #modal__digitall-card_1-details .modal_1__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+
+  #modal__digitall-card_1-details .modal_1__item-title {
+    color: #2879ca;
+    font-size: 16px;
+    text-align: center;
   }
 }
 
@@ -9334,6 +9395,41 @@ body {
 
   #modal__hint-card_1-table .modal_1__header {
     border: none;
+  }
+
+  .borderspacing th {
+    padding: 3px;
+    font-size: 7px;
+  }
+
+  .borderspacing td {
+    padding: 3px;
+    font-size: 8px;
+  }
+
+  #modal__hint-card_1-table {
+    width: 98%;
+  }
+
+  #modal__hint-card_1-table .modal_1__content {
+    padding: 0;
+    margin: 0 -40px;
+  }
+
+  #modal__hint-card_1-table .modal_1__header {
+    border: none;
+  }
+
+  #modal__digitall-card_1-details .modal_1__title {
+    font-size: 16px;
+  }
+
+  #modal__digitall-card_1-details .modal_1__item {
+    margin-bottom: 20px;
+  }
+
+  #modal__digitall-card_1-details .modal_1__item-title {
+    font-size: 14px;
   }
 }
 
