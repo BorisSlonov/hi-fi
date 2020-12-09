@@ -131,6 +131,12 @@
     transform: scale(1);
 }
 
+.carriers.activePag {
+    height: auto;
+    transition: all .25s;
+    opacity: 1;
+    transform: scale(1);
+}
 
 .pagination {
     margin-top: 2rem;

@@ -1523,6 +1523,37 @@ function Tabs() {
 }
 
 var connectTabs = new Tabs();
+
+function TabsPag() {
+  var bindAllPag = function bindAllPag() {
+    var menuElements = document.querySelectorAll('[data-tab]');
+
+    for (var i = 0; i < menuElements.length; i++) {
+      menuElements[i].addEventListener('click', change, false);
+    }
+  };
+
+  var clear = function clear() {
+    var menuElements = document.querySelectorAll('[data-tab]');
+
+    for (var i = 0; i < menuElements.length; i++) {
+      menuElements[i].classList.remove('activePag');
+      var id = menuElements[i].getAttribute('data-tab');
+      document.getElementById(id).classList.remove('activePag');
+    }
+  };
+
+  var change = function change(e) {
+    clear();
+    e.target.classList.add('activePag');
+    var id = e.currentTarget.getAttribute('data-tab');
+    document.getElementById(id).classList.add('activePag');
+  };
+
+  bindAllPag();
+}
+
+var connectTabs = new TabsPag();
 var tabLink = Array.from(document.querySelectorAll('.carriers-choise__link'));
 
 var handleClick = function handleClick(e) {
@@ -1535,6 +1566,19 @@ var handleClick = function handleClick(e) {
 
 tabLink.forEach(function (node) {
   node.addEventListener('click', handleClick);
+});
+var tabLinkPagination = Array.from(document.querySelectorAll('.carriers-choise__link-pagination'));
+
+var handleClickPagination = function handleClickPagination(e) {
+  e.preventDefault();
+  tabLinkPagination.forEach(function (node) {
+    node.classList.remove('carriers-choise__link_active-pagination');
+  });
+  e.currentTarget.classList.add('carriers-choise__link_active-pagination');
+};
+
+tabLinkPagination.forEach(function (node) {
+  node.addEventListener('click', handleClickPagination);
 });
 
 /***/ }),
