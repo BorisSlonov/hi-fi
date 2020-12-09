@@ -116,27 +116,22 @@
 
 
 .carriers {
-    height: 0;
-    opacity: 0;
-    margin-top: 0;
-    transform: scale(0);
-    transition: all .25s;
+    // height: 0;
+    // opacity: 0;
+    // margin-top: 0;
+    // transition: all .25s;
 
+    display: none;
 }
 
 .carriers.active {
-    height: auto;
-    transition: all .25s;
-    opacity: 1;
-    transform: scale(1);
+    // height: auto;
+    // transition: all .25s;
+    // opacity: 1;
+    display: block;
 }
 
-.carriers.activePag {
-    height: auto;
-    transition: all .25s;
-    opacity: 1;
-    transform: scale(1);
-}
+
 
 .pagination {
     margin-top: 2rem;
