@@ -303,29 +303,33 @@ document.addEventListener("scroll", function (e) {
   }
 });
 $(document).ready(function () {
-  var href = location.pathname;
+  var href = location.href;
 
-  if (href == '/hi-fi-dist/index.html') {
+  if (href == 'https://borisslonov.github.io/hi-fi-dist/index.html') {
     $('.header__link_main').addClass('header__link_active');
   }
 
-  if (href == '/hi-fi-dist/page-about.html') {
+  if (href == 'https://borisslonov.github.io/hi-fi-dist') {
+    $('.header__link_main').addClass('header__link_active');
+  }
+
+  if (href == 'https://borisslonov.github.io/hi-fi-dist/page-about.html') {
     $('.header__link_2').addClass('header__link_active');
   }
 
-  if (href == '/hi-fi-dist/page-sectors.html') {
+  if (href == 'https://borisslonov.github.io/hi-fi-dist/page-sectors.html') {
     $('.header__link_3').addClass('header__link_active');
   }
 
-  if (href == '/hi-fi-dist/page-innovation.html') {
+  if (href == 'https://borisslonov.github.io/hi-fi-dist/page-innovation.html') {
     $('.header__link_4').addClass('header__link_active');
   }
 
-  if (href == '/hi-fi-dist/page-values.html') {
+  if (href == 'https://borisslonov.github.io/hi-fi-dist/page-values.html') {
     $('.header__link_5').addClass('header__link_active');
   }
 
-  if (href == '/hi-fi-dist/page-carriers.html') {
+  if (href == 'https://borisslonov.github.io/hi-fi-dist/page-carriers.html') {
     $('.header__link_6').addClass('header__link_active');
   }
 
