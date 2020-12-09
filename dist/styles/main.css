@@ -5631,13 +5631,13 @@ body {
   display: block;
 }
 
-.activePag {
-  border-bottom: 2px solid #00516b;
-}
-
 .pagination {
   margin-top: 2rem;
   text-align: center;
+}
+
+.carriers-choise__link-pagination.active {
+  border: 1px solid #00516b;
 }
 
 .section-our-commitment {
