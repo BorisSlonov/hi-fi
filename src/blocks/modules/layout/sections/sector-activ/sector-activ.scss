@@ -76,6 +76,14 @@
             margin-bottom: 15px;
         }
     }
+
+    &__list {
+        list-style: none;
+
+        li:not(:first-child) {
+            margin-top: 0.75rem;
+        }
+    }
 }
 
 

@@ -11,6 +11,7 @@
 .carriers-choise {
     display: flex;
     justify-content: center;
+    margin-bottom: 3rem;
 
     &__link {
         text-decoration: none;
@@ -28,7 +29,6 @@
 }
 
 .carriers {
-    margin-top: 3rem;
 
     &__row {
         display: flex;
@@ -98,4 +98,19 @@
         padding: 0.5rem .75rem;
        }
     }
+}
+
+
+.carriers {
+    height: 0;
+    opacity: 0;
+    margin-top: 0;
+    transform: scale(0);
+
+}
+
+.carriers.active {
+    height: auto;
+    opacity: 1;
+    transform: scale(1);
 }

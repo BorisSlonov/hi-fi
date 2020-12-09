@@ -1493,6 +1493,50 @@ if (hiddenCard) {
   });
 }
 
+function Tabs() {
+  var bindAll = function bindAll() {
+    var menuElements = document.querySelectorAll('[data-tab]');
+
+    for (var i = 0; i < menuElements.length; i++) {
+      menuElements[i].addEventListener('click', change, false);
+    }
+  };
+
+  var clear = function clear() {
+    var menuElements = document.querySelectorAll('[data-tab]');
+
+    for (var i = 0; i < menuElements.length; i++) {
+      menuElements[i].classList.remove('active');
+      var id = menuElements[i].getAttribute('data-tab');
+      document.getElementById(id).classList.remove('active');
+    }
+  };
+
+  var change = function change(e) {
+    clear();
+    e.target.classList.add('active');
+    var id = e.currentTarget.getAttribute('data-tab');
+    document.getElementById(id).classList.add('active');
+  };
+
+  bindAll();
+}
+
+var connectTabs = new Tabs();
+var tabLink = Array.from(document.querySelectorAll('.carriers-choise__link'));
+
+var handleClick = function handleClick(e) {
+  e.preventDefault();
+  tabLink.forEach(function (node) {
+    node.classList.remove('carriers-choise__link_active');
+  });
+  e.currentTarget.classList.add('carriers-choise__link_active');
+};
+
+tabLink.forEach(function (node) {
+  node.addEventListener('click', handleClick);
+});
+
 /***/ }),
 
 /***/ "./src/js/import/modules.js":
