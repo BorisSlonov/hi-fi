@@ -113,6 +113,7 @@
 
 .carriers.active {
     height: auto;
+    transition: all .3s;
     opacity: 1;
     transform: scale(1);
 }
