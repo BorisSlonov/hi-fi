@@ -1566,20 +1566,17 @@ var handleClick = function handleClick(e) {
 
 tabLink.forEach(function (node) {
   node.addEventListener('click', handleClick);
-});
-var tabLinkPagination = Array.from(document.querySelectorAll('.carriers-choise__link-pagination'));
-
-var handleClickPagination = function handleClickPagination(e) {
-  e.preventDefault();
-  tabLinkPagination.forEach(function (node) {
-    node.classList.remove('carriers-choise__link_active-pagination');
-  });
-  e.currentTarget.classList.add('carriers-choise__link_active-pagination');
-};
-
-tabLinkPagination.forEach(function (node) {
-  node.addEventListener('click', handleClickPagination);
-});
+}); // let tabLinkPagination = Array.from(document.querySelectorAll('.carriers-choise__link-pagination'));
+// const handleClickPagination = (e) => {
+//     e.preventDefault();
+//     tabLinkPagination.forEach(node => {
+//         node.classList.remove('carriers-choise__link_active-pagination');
+//     });
+//     e.currentTarget.classList.add('carriers-choise__link_active-pagination');
+// }
+// tabLinkPagination.forEach(node => {
+//     node.addEventListener('click', handleClickPagination)
+// });
 
 /***/ }),
 

@@ -125,17 +125,17 @@ tabLink.forEach(node => {
 
 
 
-let tabLinkPagination = Array.from(document.querySelectorAll('.carriers-choise__link-pagination'));
+// let tabLinkPagination = Array.from(document.querySelectorAll('.carriers-choise__link-pagination'));
 
-const handleClickPagination = (e) => {
-    e.preventDefault();
-    tabLinkPagination.forEach(node => {
-        node.classList.remove('carriers-choise__link_active-pagination');
-    });
-    e.currentTarget.classList.add('carriers-choise__link_active-pagination');
+// const handleClickPagination = (e) => {
+//     e.preventDefault();
+//     tabLinkPagination.forEach(node => {
+//         node.classList.remove('carriers-choise__link_active-pagination');
+//     });
+//     e.currentTarget.classList.add('carriers-choise__link_active-pagination');
 
-}
+// }
 
-tabLinkPagination.forEach(node => {
-    node.addEventListener('click', handleClickPagination)
-});
+// tabLinkPagination.forEach(node => {
+//     node.addEventListener('click', handleClickPagination)
+// });
