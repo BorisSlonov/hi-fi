@@ -5614,6 +5614,7 @@ body {
   opacity: 0;
   margin-top: 0;
   transform: scale(0);
+  transition: all .3s;
 }
 
 .carriers.active {
