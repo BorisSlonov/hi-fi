@@ -305,46 +305,35 @@ document.addEventListener("scroll", function (e) {
 $(document).ready(function () {
   var href = location.href;
 
-  if (href == 'https://borisslonov.github.io/hi-fi/dist/fr/index.html') {
+  if (href == 'https://borisslonov.github.io/hi-fi/dist/index.html') {
     $('.header__link_main').addClass('header__link_active');
   }
 
-  if (href == 'https://borisslonov.github.io/hi-fi/dist/fr/page-about.html') {
+  if (href == 'https://borisslonov.github.io/hi-fi/dist/page-about.html') {
     $('.header__link_2').addClass('header__link_active');
   }
 
-  if (href == 'https://borisslonov.github.io/hi-fi/dist/fr/page-sectors.html') {
+  if (href == 'https://borisslonov.github.io/hi-fi/dist/page-sectors.html') {
     $('.header__link_3').addClass('header__link_active');
   }
 
-  if (href == 'https://borisslonov.github.io/hi-fi/dist/fr/page-innovation.html') {
+  if (href == 'https://borisslonov.github.io/hi-fi/dist/page-innovation.html') {
     $('.header__link_4').addClass('header__link_active');
   }
 
-  if (href == 'https://borisslonov.github.io/hi-fi/dist/fr/page-values.html') {
+  if (href == 'https://borisslonov.github.io/hi-fi/dist/page-values.html') {
     $('.header__link_5').addClass('header__link_active');
   }
 
-  if (href == 'https://borisslonov.github.io/hi-fi/dist/fr/page-carriers.html') {
+  if (href == 'https://borisslonov.github.io/hi-fi/dist/page-carriers.html') {
     $('.header__link_6').addClass('header__link_active');
   }
 
-  if (href == 'https://borisslonov.github.io/hi-fi/dist/fr/page-news.html') {
+  if (href == 'https://borisslonov.github.io/hi-fi/dist/page-news.html') {
     $('.header__link_7').addClass('header__link_active');
   }
 });
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
-
-/***/ }),
-
-/***/ "./src/blocks/modules/lang/lang.js":
-/*!*****************************************!*\
-  !*** ./src/blocks/modules/lang/lang.js ***!
-  \*****************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nError: ENOENT: no such file or directory, open '/Users/borisslonov/Documents/inWork/git/hi-fi/hi-fi/src/blocks/modules/lang/lang.js'");
 
 /***/ }),
 
@@ -1588,16 +1577,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_sections_sections__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_modules_sections_sections__WEBPACK_IMPORTED_MODULE_8__);
 /* harmony import */ var _modules_header_header__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! %modules%/header/header */ "./src/blocks/modules/header/header.js");
 /* harmony import */ var _modules_header_header__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_modules_header_header__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var _modules_lang_lang__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! %modules%/lang/lang */ "./src/blocks/modules/lang/lang.js");
-/* harmony import */ var _modules_lang_lang__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_modules_lang_lang__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var _modules_btn_btn__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! %modules%/btn/btn */ "./src/blocks/modules/btn/btn.js");
-/* harmony import */ var _modules_btn_btn__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_modules_btn_btn__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var _modules_clients_clients__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! %modules%/clients/clients */ "./src/blocks/modules/clients/clients.js");
-/* harmony import */ var _modules_clients_clients__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_modules_clients_clients__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var _modules_our_commitment_our_commitment__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! %modules%/our-commitment/our-commitment */ "./src/blocks/modules/our-commitment/our-commitment.js");
-/* harmony import */ var _modules_our_commitment_our_commitment__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_modules_our_commitment_our_commitment__WEBPACK_IMPORTED_MODULE_13__);
-/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! %modules%/footer/footer */ "./src/blocks/modules/footer/footer.js");
-/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_modules_footer_footer__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var _modules_btn_btn__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! %modules%/btn/btn */ "./src/blocks/modules/btn/btn.js");
+/* harmony import */ var _modules_btn_btn__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_modules_btn_btn__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _modules_clients_clients__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! %modules%/clients/clients */ "./src/blocks/modules/clients/clients.js");
+/* harmony import */ var _modules_clients_clients__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_modules_clients_clients__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _modules_our_commitment_our_commitment__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! %modules%/our-commitment/our-commitment */ "./src/blocks/modules/our-commitment/our-commitment.js");
+/* harmony import */ var _modules_our_commitment_our_commitment__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_modules_our_commitment_our_commitment__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! %modules%/footer/footer */ "./src/blocks/modules/footer/footer.js");
+/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_modules_footer_footer__WEBPACK_IMPORTED_MODULE_13__);
 //parallax
 
 
@@ -1609,7 +1596,6 @@ __webpack_require__.r(__webpack_exports__);
  //sections
 
  //blocks
-
 
 
 
