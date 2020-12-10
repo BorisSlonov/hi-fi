@@ -454,12 +454,11 @@
 @media (max-width: 479px) {
 
     .composition__title {
-        margin-bottom: 15rem
+        margin-bottom: 10rem
     }
     .composition-card_2 .composition-card__text {
-        left: -54px;
+        left: -64px;
         bottom: 90px;
-        padding-right: 10px;
 
         &:before {
             content: "";
@@ -468,7 +467,7 @@
             height: 50px;
             bottom: 80px;
             right: inherit;
-            left: 68px;
+            left: 78px;
             -webkit-transition: 2s;
             transition: 2s;
         }
