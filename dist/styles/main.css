@@ -6105,6 +6105,7 @@ body {
 .composition-card__text {
   display: none;
   position: absolute;
+  z-index: 10;
   width: 200px;
   font-size: 16px;
   color: black;
