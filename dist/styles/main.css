@@ -6063,7 +6063,7 @@ body {
   font-weight: bold;
   text-transform: uppercase;
   line-height: 1.2;
-  margin-bottom: 10rem;
+  margin-bottom: 12rem;
 }
 
 .composition-card {
@@ -9690,8 +9690,6 @@ body {
   .composition-card__text {
     display: none;
     position: absolute;
-    height: 80px;
-    width: 30vw;
     max-width: 140px;
     font-size: 11px;
   }
@@ -10655,17 +10653,22 @@ body {
 }
 
 @media (max-width: 479px) {
+  .composition__title {
+    margin-bottom: 15rem;
+  }
+
   .composition-card_2 .composition-card__text {
     left: -54px;
-    bottom: 140px;
+    bottom: 90px;
+    padding-right: 10px;
   }
 
   .composition-card_2 .composition-card__text:before {
     content: "";
     position: absolute;
     width: 3px;
-    height: 100px;
-    top: 91px;
+    height: 50px;
+    bottom: 80px;
     right: inherit;
     left: 68px;
     -webkit-transition: 2s;

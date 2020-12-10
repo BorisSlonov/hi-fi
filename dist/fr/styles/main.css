@@ -6007,6 +6007,7 @@ body {
 
 .section-triangle {
   position: relative;
+  padding: 75px 0;
 }
 
 .composition {
@@ -6062,7 +6063,7 @@ body {
   font-weight: bold;
   text-transform: uppercase;
   line-height: 1.2;
-  margin-bottom: 100px;
+  margin-bottom: 12rem;
 }
 
 .composition-card {
@@ -6105,12 +6106,16 @@ body {
 .composition-card__text {
   display: none;
   position: absolute;
-  height: 80px;
+  font-size: 0.7rem;
+  z-index: 10;
+  width: 100%;
   width: 200px;
   font-size: 16px;
   color: black;
   line-height: 1.2;
   text-align: left;
+  padding: 0.5rem;
+  border-radius: 5px;
 }
 
 .composition-card__text:before {
@@ -6175,7 +6180,7 @@ body {
   position: absolute;
   width: 3px;
   height: 130px;
-  top: -50px;
+  top: -10px;
   right: inherit;
   left: -18px;
   transition: 2s;
@@ -6211,6 +6216,10 @@ body {
 .composition-card_3 .composition-card__title {
   top: 60px;
   left: -30px;
+}
+
+.composition-card__text {
+  font-size: 0.75rem;
 }
 
 .composition-card .composition-card--active {
@@ -7777,8 +7786,6 @@ body {
 .lang-choise__link:last-child {
   margin-left: 1.5rem;
 }
-
-
 
 .js-offsetTopLeft,
 .js-offsetTopRight {
@@ -9683,8 +9690,6 @@ body {
   .composition-card__text {
     display: none;
     position: absolute;
-    height: 80px;
-    width: 30vw;
     max-width: 140px;
     font-size: 11px;
   }
@@ -10648,17 +10653,22 @@ body {
 }
 
 @media (max-width: 479px) {
+  .composition__title {
+    margin-bottom: 15rem;
+  }
+
   .composition-card_2 .composition-card__text {
     left: -54px;
-    bottom: 140px;
+    bottom: 90px;
+    padding-right: 10px;
   }
 
   .composition-card_2 .composition-card__text:before {
     content: "";
     position: absolute;
     width: 3px;
-    height: 100px;
-    top: 91px;
+    height: 50px;
+    bottom: 80px;
     right: inherit;
     left: 68px;
     -webkit-transition: 2s;
@@ -10690,10 +10700,6 @@ body {
   .composition-card_3 {
     left: -11px;
     bottom: -11px;
-  }
-
-  .composition-card__text {
-    width: 23vw;
   }
 
   .digitall::before {
