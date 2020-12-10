@@ -27,7 +27,11 @@ import "%modules%/sections/sections";
 
 //blocks
 
+
 import "%modules%/header/header";
+
+import "%modules%/lang/lang";
+
 
 import "%modules%/btn/btn";
 
