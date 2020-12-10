@@ -1,5 +1,6 @@
 .section-triangle {
     position: relative;
+    padding: 75px 0;
 }
 
 
@@ -26,7 +27,6 @@
     &__inner {
         position: relative;
         z-index: 25;
-
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -54,13 +54,12 @@
     &__title {
         position: relative;
         z-index: 10;
-
         font-size: 34px;
         color: rgb(0, 105, 147);
         font-weight: bold;
         text-transform: uppercase;
         line-height: 1.2;
-        margin-bottom: 100px;
+        margin-bottom: 10rem;
     }
 
     &__list {}
@@ -116,16 +115,16 @@
     &__text {
         display: none;
         position: absolute;
+        font-size: 0.7rem;
         z-index: 10;
+        width: 100%;
         width: 200px;
         font-size: 16px;
         color: rgb(0, 0, 0);
         line-height: 1.2;
         text-align: left;
-        background-color: rgb(219, 219, 219);
         padding: 0.5rem;
         border-radius: 5px;
-        box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.562);
 
         &:before {
             content: "";
@@ -192,7 +191,7 @@
                 position: absolute;
                 width: 3px;
                 height: 130px;
-                top: -50px;
+                top: -10px;
                 right: inherit;
                 left: -18px;
                 transition: 2s;
@@ -237,7 +236,10 @@
     }
 
 }
+.composition-card__text {
+    font-size: 0.75rem;
 
+}
 .composition-card .composition-card--active {
     display: flex;
     align-items: flex-end;
@@ -498,7 +500,4 @@
         bottom: -11px;
     }
 
-    .composition-card__text {
-        width: 23vw;
-    }
 }

@@ -6007,6 +6007,7 @@ body {
 
 .section-triangle {
   position: relative;
+  padding: 75px 0;
 }
 
 .composition {
@@ -6062,7 +6063,7 @@ body {
   font-weight: bold;
   text-transform: uppercase;
   line-height: 1.2;
-  margin-bottom: 100px;
+  margin-bottom: 10rem;
 }
 
 .composition-card {
@@ -6105,16 +6106,16 @@ body {
 .composition-card__text {
   display: none;
   position: absolute;
+  font-size: 0.7rem;
   z-index: 10;
+  width: 100%;
   width: 200px;
   font-size: 16px;
   color: black;
   line-height: 1.2;
   text-align: left;
-  background-color: #dbdbdb;
   padding: 0.5rem;
   border-radius: 5px;
-  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.562);
 }
 
 .composition-card__text:before {
@@ -6179,7 +6180,7 @@ body {
   position: absolute;
   width: 3px;
   height: 130px;
-  top: -50px;
+  top: -10px;
   right: inherit;
   left: -18px;
   transition: 2s;
@@ -6215,6 +6216,10 @@ body {
 .composition-card_3 .composition-card__title {
   top: 60px;
   left: -30px;
+}
+
+.composition-card__text {
+  font-size: 0.75rem;
 }
 
 .composition-card .composition-card--active {
@@ -10692,10 +10697,6 @@ body {
   .composition-card_3 {
     left: -11px;
     bottom: -11px;
-  }
-
-  .composition-card__text {
-    width: 23vw;
   }
 
   .digitall::before {
