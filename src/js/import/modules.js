@@ -30,7 +30,6 @@ import "%modules%/sections/sections";
 
 import "%modules%/header/header";
 
-import "%modules%/lang/lang";
 
 
 import "%modules%/btn/btn";
