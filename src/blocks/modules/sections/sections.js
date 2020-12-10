@@ -19,49 +19,45 @@ if (hiddenCard) {
 
 
 
-function Tabs() {
-    var bindAll = function () {
-        var menuElements = document.querySelectorAll('[data-tab]');
-        for (var i = 0; i < menuElements.length; i++) {
-            menuElements[i].addEventListener('click', change, false);
+
+
+
+
+
+
+if (document.querySelectorAll('[data-tab]')) {
+
+    function Tabs() {
+        var bindAll = function () {
+            var menuElements = document.querySelectorAll('[data-tab]');
+            for (var i = 0; i < menuElements.length; i++) {
+                menuElements[i].addEventListener('click', change, false);
+            }
         }
-    }
 
-    var clear = function () {
-        var menuElements = document.querySelectorAll('[data-tab]');
-        for (var i = 0; i < menuElements.length; i++) {
-            menuElements[i].classList.remove('active');
-            var id = menuElements[i].getAttribute('data-tab');
-            document.getElementById(id).classList.remove('active');
+        var clear = function () {
+            var menuElements = document.querySelectorAll('[data-tab]');
+            for (var i = 0; i < menuElements.length; i++) {
+                menuElements[i].classList.remove('active');
+                var id = menuElements[i].getAttribute('data-tab');
+                document.getElementById(id).classList.remove('active');
+            }
         }
+
+        var change = function (e) {
+            clear();
+            e.target.classList.add('active');
+            var id = e.currentTarget.getAttribute('data-tab');
+            document.getElementById(id).classList.add('active');
+        }
+
+        bindAll();
     }
 
-    var change = function (e) {
-        clear();
-        e.target.classList.add('active');
-        var id = e.currentTarget.getAttribute('data-tab');
-        document.getElementById(id).classList.add('active');
-    }
+    var connectTabs = new Tabs();
 
-    bindAll();
+
 }
-
-var connectTabs = new Tabs();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -84,17 +80,6 @@ const handleClick = (e) => {
 tabLink.forEach(node => {
     node.addEventListener('click', handleClick)
 });
-
-
-
-
-
-
-
-
-
-
-
 
 
 // let tabLinkPagination = Array.from(document.querySelectorAll('.carriers-choise__link-pagination'));
