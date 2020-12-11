@@ -5778,9 +5778,11 @@ body {
 
 .sector-card__title {
   color: #fff;
-  font-size: 22px;
+  font-size: 17px;
   text-align: center;
   margin-bottom: 50px;
+  text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .sector-card__text {
