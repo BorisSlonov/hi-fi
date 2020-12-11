@@ -44,7 +44,7 @@ document.addEventListener("scroll", (e) => {
 
 
     //delay animation in 1 screen
-    if (scrolled > position + 300) {
+    if (scrolled > position + 200) {
 
 
         leftTextWow.classList.add('visible', 'wow', 'animate__animated', 'animate__fadeInLeft')

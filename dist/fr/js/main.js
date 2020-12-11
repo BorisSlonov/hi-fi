@@ -297,7 +297,7 @@ document.addEventListener("scroll", function (e) {
   } //delay animation in 1 screen
 
 
-  if (scrolled > position + 300) {
+  if (scrolled > position + 200) {
     leftTextWow.classList.add('visible', 'wow', 'animate__animated', 'animate__fadeInLeft');
     rightTextWow.classList.add('visible', 'wow', 'animate__animated', 'animate__fadeIn');
   }
@@ -305,31 +305,31 @@ document.addEventListener("scroll", function (e) {
 $(document).ready(function () {
   var href = location.href;
 
-  if (href == 'https://borisslonov.github.io/hi-fi/dist/fr/index.html') {
+  if (href == 'https://borisslonov.github.io/hi-fi/dist/index.html') {
     $('.header__link_main').addClass('header__link_active');
   }
 
-  if (href == 'https://borisslonov.github.io/hi-fi/dist/fr/page-about.html') {
+  if (href == 'https://borisslonov.github.io/hi-fi/dist/page-about.html') {
     $('.header__link_2').addClass('header__link_active');
   }
 
-  if (href == 'https://borisslonov.github.io/hi-fi/dist/fr/page-sectors.html') {
+  if (href == 'https://borisslonov.github.io/hi-fi/dist/page-sectors.html') {
     $('.header__link_3').addClass('header__link_active');
   }
 
-  if (href == 'https://borisslonov.github.io/hi-fi/dist/fr/page-innovation.html') {
+  if (href == 'https://borisslonov.github.io/hi-fi/dist/page-innovation.html') {
     $('.header__link_4').addClass('header__link_active');
   }
 
-  if (href == 'https://borisslonov.github.io/hi-fi/dist/fr/page-values.html') {
+  if (href == 'https://borisslonov.github.io/hi-fi/dist/page-values.html') {
     $('.header__link_5').addClass('header__link_active');
   }
 
-  if (href == 'https://borisslonov.github.io/hi-fi/dist/fr/page-carriers.html') {
+  if (href == 'https://borisslonov.github.io/hi-fi/dist/page-carriers.html') {
     $('.header__link_6').addClass('header__link_active');
   }
 
-  if (href == 'https://borisslonov.github.io/hi-fi/dist/fr/page-news.html') {
+  if (href == 'https://borisslonov.github.io/hi-fi/dist/page-news.html') {
     $('.header__link_7').addClass('header__link_active');
   }
 });
