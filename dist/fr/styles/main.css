@@ -6450,7 +6450,16 @@ body {
 }
 
 .lab-card__inner {
+  position: relative;
+  z-index: 10;
   height: 100%;
+  transition: all .25s;
+}
+
+.lab-card__inner:hover {
+  z-index: 20;
+  transform: scale(1.15);
+  box-shadow: 0 0 16px 0px rgba(19, 78, 61, 0.664);
 }
 
 .lab-card__header {
@@ -10658,18 +10667,19 @@ body {
   }
 
   .composition-card_2 .composition-card__text {
-    left: -64px;
-    bottom: 90px;
+    left: -82px;
+    bottom: 140px;
   }
 
   .composition-card_2 .composition-card__text:before {
     content: "";
     position: absolute;
     width: 3px;
-    height: 50px;
-    bottom: 80px;
+    height: 70px;
+    bottom: 20px;
+    transform: translateY(-20px);
     right: inherit;
-    left: 78px;
+    left: 95px;
     -webkit-transition: 2s;
     transition: 2s;
   }
