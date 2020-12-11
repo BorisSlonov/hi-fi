@@ -346,15 +346,3 @@
 
 
 
-
-//animation
-
-.js-offsetTopLeft,
-.js-offsetTopRight {
-    visibility: hidden;
-}
-
-.js-offsetTopLeft.visible,
-.js-offsetTopRight.visible {
-    visibility: visible;
-}

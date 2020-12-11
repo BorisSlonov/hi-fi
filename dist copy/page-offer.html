@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page About</title>
+    <title>Page Carriers</title>
     <meta name="theme-color" content="#c9e0e04d">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport"
@@ -26,10 +26,15 @@
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
     <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
     <!-- preload-img -->
-    <link rel="preload" href="img/animation-about/balls-right.png" as="image" media="(max-width: 2600px)">
-    <link rel="preload" href="img/animation-about/balls-left.png" as="image" media="(max-width: 2600px)">
-    <link rel="preload" href="img/animation-about/single-ball.png" as="image" media="(max-width: 2600px)">
+    <link rel="preload" href="img/animation-1/first-page_3.png" as="image" media="(max-width: 2600px)">
+    <link rel="preload" href="img/animation-1/first-page_9.png" as="image" media="(max-width: 2600px)">
+    <link rel="preload" href="img/animation-carriers/right-balls.png" as="image" media="(max-width: 2600px)">
+    <link rel="preload" href="img/animation-carriers/right-balls-sm.png" as="image" media="(max-width: 2600px)">
+    <link rel="preload" href="img/animation-carriers/left-balls.png" as="image" media="(max-width: 2600px)">
+    <link rel="preload" href="img/animation-carriers/balls-left-mob.png" as="image" media="(max-width: 2600px)">
+    <link rel="preload" href="img/animation-carriers/balls-right-mob.png" as="image" media="(max-width: 2600px)">
     <!-- preload-img -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="styles/main.css">
 </head>
 
@@ -114,10 +119,10 @@
                 </div>
 
                 <div class="header__lang-choise lang-choise">
-                    <a class="lang-choise__link lang-choise__link_active" href="#">
+                    <a class="lang-choise__link" href="https://borisslonov.github.io/hi-fi/dist/page-news.html">
                         FR
                     </a>
-                    <a class="lang-choise__link" href="#">
+                    <a class="lang-choise__link lang-choise__link_active" href="https://borisslonov.github.io/hi-fi/dist/page-news.html">
                         EN
                     </a>
                 </div>
@@ -132,9 +137,8 @@
 <!-- burger -->
 
     <main class="main">
-
     <div class="container-fluid">
-    <div class="first-page-bg first-page-bg_about first-page-bg_lines">
+    <div class="first-page-bg first-page-bg_carriers first-page-bg_lines">
         <div class="container">
 
             <!-- first-page -->
@@ -148,14 +152,12 @@
                     <div class="first-page__item">
                         <!-- title -->
                         <h1
-                            class="first-page__title first-page__title_about  animate__animated animate__fadeInUp animate__delay-1s">
-                                Découvrez le Groupe  <br>
-                                HIGHFI
-                           
+                            class="first-page__title first-page__title_about animate__animated animate__fadeInUp animate__delay-1s">
+                            Carrières
                         </h1>
                         <!-- btn -->
                         <a class="btn main-btn main-btn_page-main-bt animate__animated animate__fadeIn  animate__delay-1s"
-                            href="https://borisslonov.github.io/hi-fi-dist/page-news.html">
+                            href="https://borisslonov.github.io/hi-fi/dist/page-news.html">
                             nos actualités
                         </a>
                     </div>
@@ -166,19 +168,37 @@
                     <!-- item -->
                 </div>
             </div>
-
         </div>
-        <!-- container -->
 
-        <img class="about-animation about-animation_1 animate__animated animate__zoomInRight animate__delay-2s"
-            src="img/animation-about/balls-right.png" alt="">
 
-        <img class="about-animation about-animation_2 animate__animated animate__zoomInLeft animate__delay-2s"
-            src="img/animation-about/balls-left.png" alt="">
 
-        <img class="about-animation about-animation_3  animate__animated animate__zoomInUp animate__delay-3s"
-            src="img/animation-about/single-ball.png" alt="">
+        <img class="carriers-page__animation carriers-page__animation_carriers animate__animated animate__zoomIn   animate__delay-2s"
+            src="img/animation-1/first-page_3.png" alt="">
 
+        <img class="carriers-page__animation carriers-page__animation_1 animate__animated animate__zoomIn  animate__delay-2s"
+            src="img/animation-1/first-page_9.png" alt="">
+
+        <img class="carriers-page__animation carriers-page__animation_2 animate__animated animate__backInRight  animate__delay-3s"
+            src="img/animation-carriers/right-balls.png" alt="">
+
+        <img class="carriers-page__animation carriers-page__animation_3-carriers animate__animated animate__zoomIn  animate__delay-2s"
+            src="img/animation-carriers/right-balls-sm.png" alt="">
+
+        <img class="carriers-page__animation carriers-page__animation_4 animate__animated animate__backInLeft  animate__delay-3s"
+            src="img/animation-carriers/left-balls.png" alt="">
+
+        <img class="carriers-page__animation carriers-page__animation_5 animate__animated animate__zoomIn  animate__delay-2s"
+            src="img/animation-1/first-page_3.png" alt="">
+
+        <!-- mob -->
+
+
+        <img class="carriers-page__animation carriers-page__animation_6 animate__animated animate__zoomInDown  animate__delay-2s"
+            src="img/animation-carriers/balls-left-mob.png" alt="">
+
+
+        <img class="carriers-page__animation carriers-page__animation_7 animate__animated animate__zoomInDown  animate__delay-2s"
+            src="img/animation-carriers/balls-right-mob.png" alt="">
 
 
 
@@ -187,526 +207,240 @@
     </div>
 </div>
 
-    <div class="container-fluid">
-    <div class="left-text">
+    <section class="amoa">
         <div class="container">
-            <!-- row -->
-            <div class="left-text__row" style="position: relative; z-index: 10;">
-                <!-- item -->
-                <div class="left-text__item left-text-content js-offsetTopLeft">
-                    <!-- title -->
-                    <h2 class="left-text-content__title">
-                        <span class="left-text-content__title-span">
-                            Notre mission:
-                        </span>
-                    </h2>
-                    <!-- text -->
-                    <p class="left-text-content__text">
-                        <img class="left-text__img left-text__img_mission" src="img/mission.png" alt="">
-                        Depuis près de 20 ans le groupe HIGHFI accompagne ses
-                        clients dans la réalisation de leurs défis technologiques, métiers stratégiques et
-                        méthodologiques.
-
-                        Nous favorisons jour après jours l’innovation, fruit de
-                        l’expertise de ses collaborateurs et d’une organisation managériale agile et tourné vers
-                        l’avenir.
-                        <br><br>
-                        Porté par ses 5 pôles d’expertises : l’IT, la business
-                        analysis, la BI & data engineering, l’infrastructure et la production et le digit-all, le Groupe
-                        à travers 3 structures dédiées par pôles et secteurs d’activités accompagne les grands acteurs
-                        de la banque, de la finance et de l’assurance avec efficience et transparence.
-
-                    </p>
-                </div>
-                <!-- item -->
-                <div class="left-text__item left-text-img  js-offsetTopRight">
-                    <img class="left-text__img" src="img/mission.png" alt="">
-                </div>
+            <div class="amoa__title">AMOA ORIENTED CASH MANAGEMENT
             </div>
-            <!-- row -->
-        </div>
-    </div>
-</div>
-
-    <div class="container-fluid">
-    <div class="neon-ball-bg">
-        <div class="container" style="display: flex; justify-content: center;">
-            <div class="neon-ball">
-                <!-- row -->
-                <div class="neon-ball__row">
-                    <!-- item -->
-                    <div class="neon-ball__item   neon-ball__item_1  neon-ball__item_text-left">
-                        <div class="neon-ball__icon-wrap neon-ball__icon-wrap_1">
-                            <img class="neon-ball__icon" src="img/neon-dot.png" alt="">
-                        </div>
-                        <span class="neon-ball__text neon-ball__text_1">EQUITE</span>
-                    </div>
-                    <!-- item -->
-                    <!-- item -->
-                    <div class="neon-ball__item  neon-ball__item_2   neon-ball__item_text-top">
-                        <div class="neon-ball__icon-wrap neon-ball__icon-wrap_2">
-                            <img class="neon-ball__icon" src="img/neon-dot.png" alt="">
-
-                        </div>
-                        <span class="neon-ball__text">TRANSPARENCE</span>
-                    </div>
-                    <!-- item -->
-                    <!-- item -->
-                    <div class="neon-ball__item  neon-ball__item_3   neon-ball__item_text-right">
-                        <div class="neon-ball__icon-wrap neon-ball__icon-wrap_3">
-                            <img class="neon-ball__icon" src="img/neon-dot.png" alt="">
-                        </div>
-
-                        <span class="neon-ball__text">QUALITE</span>
-                    </div>
-                    <!-- item -->
+            <div class="amoa__subtitle">
+                Paris - La Défense</div>
+            <div class="amoa__inner">
+                <div class="amoa__text">
+                    Thrive on beautiful and long projects within GRANDES BANQUES ?! TOP Vendor at Société Générale,
+                    listed in list 1 at BNP… That's good, we're recruiting! Here's how you can have a blast 🤪
+                    (non-exhaustive list) :
                 </div>
-                <!-- row -->
+                <ul class="amoa__list amoa__functional">
+                    <li class="amoa__item-title amoa__item">Functional analysis :</li>
+                    <li class="amoa__item">Perform detailed functional analyzes and impact estimates
+                    </li>
+                    <li class="amoa__item">Analyze, understand and document needs, deliverables
+                    </li>
+                    <li class="amoa__item">Analyze development requests
+                    </li>
 
-                <!-- row -->
-                <div class="neon-ball__row">
-                    <!-- item -->
-                    <div class="neon-ball__item  neon-ball__item_perf  neon-ball__item_text-bottom">
-                        <div class="neon-ball__icon-wrap neon-ball__icon-wrap_4">
-                            <img class="neon-ball__icon" src="img/neon-dot.png" alt="">
 
-                        </div>
-                        <span class="neon-ball__text">PERFORMANCE</span>
-                    </div>
-                    <!-- item -->
-                    <!-- item -->
-                    <div class="neon-ball__item">
-                        <h2 class="neon-ball__title">
-                            <span class="neon-ball__title-text">
-                                MOTS D’ORDRES
+                </ul>
+                <ul class="amoa__list">
+                    <li class="amoa__item-title amoa__item">Recette :
+
+                    </li>
+                    <li class="amoa__item">Establish revenue plans
+
+                    </li>
+                    <li class="amoa__item">Conduct tests: non-regression, integration and user tests
+
+                    </li>
+                    <li class="amoa__item">Write and keep up-to-date documentation for the monitoring of recipes
+
+
+                    </li>
+                </ul>
+                <ul class="amoa__list">
+                    <li class="amoa__item-title amoa__item">Coordination :
+
+                    </li>
+                    <li class="amoa__item">Plan and monitor the work
+
+                    </li>
+                    <li class="amoa__item">Make regular and precise reporting on the entrusted activity
+
+
+                    </li>
+                    <li class="amoa__item">Coordinate developments with applications
+
+
+                    </li>
+                    <li class="amoa__item">Coordinate with other ongoing projects
+
+
+
+                    </li>
+                    <li class="amoa__item">Prepare and participate in meetings around the project and write reports
+
+
+
+                    </li>
+                    <li class="amoa__item">Respect the group's safety standards
+
+
+                    </li>
+                    <li class="amoa__item">Define and draft documents in accordance with the Corporate Banking
+                        process (CMMi)
+
+
+                    </li>
+                    <li class="amoa__item">Document (user guides, configuration guides, project documents, project
+                        reporting, etc.)
+                    </li>
+                </ul>
+                <ul class="amoa__list">
+                    <li class="amoa__item-title amoa__item">For that you have 😋 :
+
+                    </li>
+                    <li class="amoa__item">Knowledge of payment methods: Transfers, Checks, Sepa, Target, Swift MT /
+                        MX messages, SCT / SDD, NOSTRI / NOSTRO, Correspondent Banking
+
+                    </li>
+                    <li class="amoa__item">Good analytical, editorial and interpersonal skills, you are at ease in
+                        leading projects
+
+                    </li>
+                    <li class="amoa__item">A good mastery of office automation tool flows.
+
+                    </li>
+                </ul>
+                <ul class="amoa__list amoa-preferable__list">
+                    <li class="amoa__item-title amoa__item">It would also be preferable that :
+
+
+                    </li>
+                    <li class="amoa-preferable__item_1 amoa__item"> You have at least 5 years of experience in Cash
+                        Management project management 😁
+
+
+                    </li>
+                    <li class="amoa-preferable__item_2 amoa__item"> Tu sois titulaire d’un BAC+5 – cursus Ingénieur
+                        😍
+                    </li>
+                    <li class="amoa-preferable__item_3 amoa__item"> Tu puisses travailler dans un environnement
+                        anglophone.
+
+                    </li>
+                </ul>
+                <div class="amoa__text">
+                    Are you wondering why HIGHFI and not another ESN? Don't look any longer! Joining HIGHFI means
+                    joining a human-sized company where we promote proximity with our consultants through
+                </div>
+                <ul class="amoa__list">
+                    <li class=" amoa__item">The setting up of an annual follow-up interview by your Sales
+                        representative and your Resource Manager
+
+
+
+                    </li>
+                    <li class="amoa__item"> Quarterly visits to your sales representative's site
+
+
+
+                    </li>
+                    <li class="amoa__item"> Rather nice evenings from time to time 🥳
+
+
+
+                    </li>
+                    <li class="amoa__item"> Our salespeople are really skilled in your job which will avoid casting
+                        mistakes for client presentations, no waste of time !
+                    </li>
+                    <li class="amoa__item">Training once a year after 1 year of seniority
+
+                    </li>
+                    <li class="amoa__item"> Nice cooptation bonuses
+
+                    </li>
+                    <li class="amoa__item">But not only !
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="spontaneous-form">
+        <div class="container">
+
+            <form class="form" action="">
+                <div class="form__title">spontaneous application</div>
+                <div class="form__inner">
+                    <div class="form-input-block">
+                        <label class="form-label form-name ">
+                            <div class="form-label__title form-name__title">LAST NAME </div>
+                            <span class="form-label__input form-name__input ">
+                                <input class="form-input" type="text" placeholder="" name="" />
                             </span>
-                        </h2>
+                        </label>
+                        <label class="form-label form-name ">
+                            <div class="form-label__title form-name__title">FIRST NAME </div>
+                            <span class="form-label__input form-name__input ">
+                                <input class="form-input" type="text" placeholder="" name="" />
+                            </span>
+                        </label>
+                        <label class="form-label form-email ">
+                            <div class="form-label__title form-email__title">FIRST NAME </div>
+                            <span class="form-label__input form-email__input ">
+                                <input class="form-input" type="text" placeholder="" name="" />
+                            </span>
+                        </label>
+                        <label class="form-label form-email ">
+                            <div class="form-label__title form-email__title">FIRST NAME </div>
+                            <span class="form-label__input form-email__input ">
+                                <input class="form-input" type="text" placeholder="" name="" />
+                            </span>
+                        </label>
+
                     </div>
-                    <!-- item -->
-                    <!-- item -->
-                    <div class="neon-ball__item  neon-ball__item_per   neon-ball__item_text-bottom">
-                        <div class="neon-ball__icon-wrap neon-ball__icon-wrap_5">
-                            <img class="neon-ball__icon" src="img/neon-dot.png" alt="">
-                        </div>
-                        <span class="neon-ball__text">PERENITE</span>
-                    </div>
-                    <!-- item -->
+                    <label class="form-label form-label-textarea ">
+                        <div class="form-label__title form-textarea__title">Text of request: *</div>
+                        <span class="form-label__textarea form-textarea__textarea ">
+                            <textarea name="form-textarea" rows="10"></textarea>
+                        </span>
+                    </label>
                 </div>
-                <!-- row -->
-
-            </div>
-        </div>
-
-
-
-        <img class="about-animation about-animation_4 wow animate__animated animate__zoomInUp" src="img/neon-ball.png"
-            alt="">
-
-
-        <img class="about-animation about-animation_5 wow animate__animated animate__zoomInUp" src="img/neon-ball.png"
-            alt="">
-
-
-    </div>
-    <!-- bg -->
-</div>
-
-    <div class="container-fluid">
-    <section class="section-run-num">
-        <div class="container">
-            <div class="run-num">
-                <div class="run-num__row">
-                    <!-- item -->
-                    <div class="run-num__item">
-                        <h3 class="run-num__title">
-                            Implémentation:
-                        </h3>
-                        <span class="run-num__text run-num__text_city">Paris | Lyon | Tunis</span>
+                <div class="form-btn">
+                    <div class="form-btn__attachmants">
+                        <a data-fancybox data-touch="false" href="#form-btn__attachmants"
+                            class=" btn-attachmants btn-form">
+                            <div class="btn__body-wrapp">
+                                <div class="btn__body">
+                                    <span class="btn__text">add attachments</span>
+                                </div>
+                            </div>
+                        </a>
                     </div>
-                    <!-- item -->
-                    <!-- item -->
-                    <div class="run-num__item run-num__item_lines">
-                        <h3 class="run-num__title">
-                            CA
-                        </h3>
-                        <span class="run-num__text run-num__text_num">86</span>
+                    <div class="form-btn__postulate">
+                        <a class=" btn-postulate btn-form">
+                            <div class="btn__body-wrapp">
+                                <div class="btn__body">
+                                    <span class="btn__text">postulate</span>
+                                </div>
+                            </div>
+                        </a>
                     </div>
-                    <!-- item -->
-                    <!-- item -->
-                    <div class="run-num__item">
-                        <h3 class="run-num__title">
-                            Collaborateurs:
-                        </h3>
-                        <span class="run-num__text run-num__text_num">120</span>
-                    </div>
-                    <!-- item -->
+
                 </div>
-            </div>
-        </div>
-    </section>
-</div>
+                <ul class="form__list">
+                    <li class="form__item form__item-title">
+                        If everything is OK, we meet ?! 😆
+                    </li>
+                    <li class="form__item">
+                        You will be contacted by an HR, following which you: - Receive a phone call from a sales
+                        representative
+                    </li>
+                    <li class="form__item">
+                        If everything is OK, we meet ?! 😆
+                    </li>
 
-    <div class="container-fluid">
-    <div class="section-clients">
-        <div class="container">
-            <div class="clients">
-                <!-- Slider main container -->
-                <div class="swiper-container">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide">
-                            <div class="slider-logo" style="background-image: url(img/clients/1.png)">
 
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slider-logo" style="background-image: url(img/clients/2.png)">
+                </ul>
+            </form>
 
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slider-logo" style="background-image: url(img/clients/3.png)">
-
-                            </div>
-                        </div>
-                        <!-- Slides -->
-                        <div class="swiper-slide">
-                            <div class="slider-logo" style="background-image: url(img/clients/4.png)">
-
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slider-logo" style="background-image: url(img/clients/5.png)">
-
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slider-logo" style="background-image: url(img/clients/6.png)">
-
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slider-logo" style="background-image: url(img/clients/7.png)">
-
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slider-logo" style="background-image: url(img/clients/8.png)">
-
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slider-logo" style="background-image: url(img/clients/9.png)">
-
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slider-logo" style="background-image: url(img/clients/10.png)">
-
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slider-logo" style="background-image: url(img/clients/11.png)">
-
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slider-logo" style="background-image: url(img/clients/12.png)">
-
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slider-logo" style="background-image: url(img/clients/13.png)">
-
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slider-logo" style="background-image: url(img/clients/14.png)">
-
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slider-logo" style="background-image: url(img/clients/15.png)">
-
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slider-logo" style="background-image: url(img/clients/16.png)">
-
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slider-logo" style="background-image: url(img/clients/17.png)">
-
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slider-logo" style="background-image: url(img/clients/18.png)">
-
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slider-logo" style="background-image: url(img/clients/19.png)">
-
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slider-logo" style="background-image: url(img/clients/20.png)">
-
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slider-logo" style="background-image: url(img/clients/21.png)">
-
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slider-logo" style="background-image: url(img/clients/22.png)">
-
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slider-logo" style="background-image: url(img/clients/23.png)">
-
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slider-logo" style="background-image: url(img/clients/24.png)">
-
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slider-logo" style="background-image: url(img/clients/25.png)">
-
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slider-logo" style="background-image: url(img/clients/26.png)">
-
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slider-logo" style="background-image: url(img/clients/27.png)">
-
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slider-logo" style="background-image: url(img/clients/28.png)">
-
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slider-logo" style="background-image: url(img/clients/29.png)">
-
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slider-logo" style="background-image: url(img/clients/30.png)">
-
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slider-logo" style="background-image: url(img/clients/31.png)">
-
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slider-logo" style="background-image: url(img/clients/32.png)">
-
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slider-logo" style="background-image: url(img/clients/33.png)">
-
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slider-logo" style="background-image: url(img/clients/34.png)">
-
-                            </div>
-                        </div>
-                       
-                    </div>
-
-                    <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-    <div class="container-fluid">
-    <section class="section-our-commitment">
-        <div class="container">
-            <!-- our-commitment -->
-            <div class="our-commitment">
-                <h2 class="our-commitment__title">
-                    Nos engagements
-                    RSE - Corporate Citizenship
-                </h2>
-                <!-- row -->
-                <div class="our-commitment__row">
-
-                    <!-- item -->
-                    <div class="our-commmitment__item  column-one-height">
-                        <div class="commitment-card column-one-height">
-                            <img src="img/icons/env-icon.png" alt="" class="commitment-card__icon">
-                            <h3 class="commitment-card__title">
-                                Environnement
-                            </h3>
-                            <div>
-                                <img src="img/icons/circle-btn.png" alt="">
-                            </div>
-                        </div>
-                        <div class="commitment-hidden column-one-height">
-                            <!-- hidden-list -->
-                            <ul class="commitment-hidden__list">
-                                <li class="commitment-hidden__li">
-                                    • Nous agissons et prenons des mesures pour la planète
-                                </li>
-                                <li class="commitment-hidden__li">
-                                    • Reduction de nos émissions de gaz à effet de serre (déplacement/électricité)
-                                </li>
-                                <li class="commitment-hidden__li">
-                                    • Nous sommes fiers de compt
-                                    er plus d’une vingtaine de
-                                    nationalités chez nos collabo
-                                    rateurs
-                                </li>
-                                <li class="commitment-hidden__li">
-                                    • Eco-gestion de nos fournitures et impressions
-                                </li>
-                                <li class="commitment-hidden__li">
-                                    • Campagnes de recyclage et tri-sélectif
-                                </li>
-                            </ul>
-                            <!-- hidden-list -->
-                        </div>
-                    </div>
-                    <!-- item -->
-                    <!-- item -->
-                    <div class="our-commmitment__item  column-one-height">
-                        <div class="commitment-card column-one-height">
-                            <img src="img/icons/social-icon.png" alt="" class="commitment-card__icon">
-                            <h3 class="commitment-card__title">
-                                Social
-                            </h3>
-                            <div>
-                                <img src="img/icons/circle-btn.png" alt="">
-                            </div>
-                        </div>
-                        <div class="commitment-hidden column-one-height">
-                            <!-- hidden-list -->
-                            <ul class="commitment-hidden__list">
-                                <li class="commitment-hidden__li">
-                                    • Egalité des chances, non-
-                                    discrimination et insertion
-                                    des handicapés
-                                </li>
-                                <li class="commitment-hidden__li">
-                                    • Proposition de contrat de
-                                    stage et d’apprentissage pour
-                                    nos futures diplômés
-                                </li>
-                                <li class="commitment-hidden__li">
-                                    • Nous sommes fiers de compt
-                                    er plus d’une vingtaine de
-                                    nationalités chez nos collabo
-                                    rateurs
-                                </li>
-                                <li class="commitment-hidden__li">
-                                    • Egalité des traitements Hom
-                                    me/Femme, memes
-                                    rémunérations, memes
-                                    perspectives
-                                </li>
-                                <li class="commitment-hidden__li">
-                                    • Travaillons en partenariat
-                                    avec plusieurs EA et ESAT
-                                </li>
-                                <li class="commitment-hidden__li">
-                                    • Signataire du Global Compact
-                                </li>
-                            </ul>
-                            <!-- hidden-list -->
-                        </div>
-                    </div>
-                    <!-- item -->
-                    <!-- item -->
-                    <div class="our-commmitment__item  column-one-height">
-                        <div class="commitment-card column-one-height">
-                            <img src="img/icons/network-icon.png" alt="" class="commitment-card__icon">
-                            <h3 class="commitment-card__title">
-                                Ethique des affaires
-                            </h3>
-                            <div>
-                                <img src="img/icons/circle-btn.png" alt="">
-                            </div>
-                        </div>
-                        <div class="commitment-hidden column-one-height">
-                            <!-- hidden-list -->
-                            <ul class="commitment-hidden__list">
-                                <li class="commitment-hidden__li">
-                                    • Faire des affaires légalement et avec intégrité est le fondement de la culture de
-                                    notre entreprise
-                                </li>
-                                <li class="commitment-hidden__li">
-                                    • Sensibilisation de nos collaborateurs internes
-                                </li>
-                                <li class="commitment-hidden__li">
-                                    • Partage constant des bonnes pratiques
-                                </li>
-                            </ul>
-                            <!-- hidden-list -->
-                        </div>
-                    </div>
-                    <!-- item -->
-                    <!-- item -->
-                    <div class="our-commmitment__item  column-one-height">
-                        <div class="commitment-card column-one-height">
-                            <img src="img/icons/money-icon.png" alt="" class="commitment-card__icon">
-                            <h3 class="commitment-card__title">
-                                Achats responsables
-                            </h3>
-                            <div>
-                                <img src="img/icons/circle-btn.png" alt="">
-                            </div>
-                        </div>
-                        <div class="commitment-hidden column-one-height">
-                            <!-- hidden-list -->
-                            <ul class="commitment-hidden__list">
-                                <li class="commitment-hidden__li">
-                                    • Nous cultivons la culture de l’achat responsable
-                                </li>
-                                <li class="commitment-hidden__li">
-                                    • Achat local et soutien au TPE
-                                </li>
-                                <li class="commitment-hidden__li">
-                                    • Signataire de la charte de la Médiation Relations Fournisseurs et Achats
-                                    Responsables
-                                </li>
-                            </ul>
-                            <!-- hidden-list -->
-                        </div>
-                    </div>
-                    <!-- item -->
-                </div>
-                <!-- row -->
-            </div>
-            <!-- our-commitment -->
         </div>
     </section>
-</div>
+
 
 
 </main>
-
-
-
-
 
     <footer class="footer footer-animate container-fluid">
 
@@ -1783,10 +1517,8 @@
 
 
 
-  
 
     <script src="js/main.js"></script>
-    <script src="js/about.js"></script>
     <script src="js/vendor.js"></script>
 </body>
 

@@ -7798,16 +7798,6 @@ body {
   margin-left: 1.5rem;
 }
 
-.js-offsetTopLeft,
-.js-offsetTopRight {
-  visibility: hidden;
-}
-
-.js-offsetTopLeft.visible,
-.js-offsetTopRight.visible {
-  visibility: visible;
-}
-
 .carriers-form-wrap {
   position: relative;
   z-index: 20;
