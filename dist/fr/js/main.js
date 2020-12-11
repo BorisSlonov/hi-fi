@@ -286,8 +286,6 @@ document.addEventListener("scroll", function (e) {
   var scrolled = document.scrollingElement.scrollTop;
   var position = content.offsetTop;
   var header = document.querySelector("header");
-  var leftTextWow = document.querySelector(".js-offsetTopLeft");
-  var rightTextWow = document.querySelector(".js-offsetTopRight");
 
   if (scrolled > position + 350) {
     content.classList.add('header-bgc');
@@ -297,10 +295,7 @@ document.addEventListener("scroll", function (e) {
   } //delay animation in 1 screen
 
 
-  if (scrolled > position + 200) {
-    leftTextWow.classList.add('visible', 'wow', 'animate__animated', 'animate__fadeInLeft');
-    rightTextWow.classList.add('visible', 'wow', 'animate__animated', 'animate__fadeIn');
-  }
+  if (scrolled > position + 200) {}
 });
 $(document).ready(function () {
   var href = location.href;

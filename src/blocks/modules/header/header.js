@@ -29,8 +29,7 @@ document.addEventListener("scroll", (e) => {
     let scrolled = document.scrollingElement.scrollTop;
     let position = content.offsetTop;
     let header = document.querySelector("header");
-    let leftTextWow = document.querySelector(".js-offsetTopLeft");
-    let rightTextWow = document.querySelector(".js-offsetTopRight");
+   
 
 
     if (scrolled > position + 350) {
@@ -47,8 +46,7 @@ document.addEventListener("scroll", (e) => {
     if (scrolled > position + 200) {
 
 
-        leftTextWow.classList.add('visible', 'wow', 'animate__animated', 'animate__fadeInLeft')
-        rightTextWow.classList.add('visible', 'wow', 'animate__animated', 'animate__fadeIn')
+       
 
     }
 
