@@ -55,8 +55,18 @@
 	position: relative;
 	max-width: 263px;
 
+
 	&__inner {
+		position: relative;
+		z-index: 10;
 		height: 100%;
+		transition: all .25s;
+
+		&:hover {
+			z-index: 20;
+			transform: scale(1.15);
+			box-shadow: 0 0 16px 0px rgba(19, 78, 61, 0.664);
+		}
 	}
 
 	&__header {
@@ -68,6 +78,8 @@
 		padding: 35% 20px;
 		max-height: 263px;
 		box-sizing: border-box;
+
+
 	}
 
 	&__content {
